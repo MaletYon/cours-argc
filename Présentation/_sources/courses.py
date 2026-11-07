@@ -17,7 +17,7 @@ ARGC = {
     "logo_d": "enspy",
     "n_jours": 30,
     "annee": "2026-2027",
-    "dossier": COURS + r"\GES4062\Présentation",
+    "dossier": COURS + r"\ENSPY\GES4062\Présentation",
     "fil_rouge": "GAROUA, LIZBIZ, WOURI, MOUNGO",
     "parties": [
         ("Prologue", "Le matin du 6 mars", "P00"),
