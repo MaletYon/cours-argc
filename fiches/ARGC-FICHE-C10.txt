@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C10
+Chapitre 10 : Simuler : Monte-Carlo et sensibilité
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Que fait une simulation de Monte-Carlo ?
+      a) Elle tire au hasard de nombreuses fois les facteurs incertains et étudie les résultats
+      b) Elle calcule une moyenne unique
+      c) Elle supprime l'incertitude
+      d) Elle remplace les experts
+
+ 2. Combien d'années LiZbiZ simule-t-elle pour R-02 ?
+      a) 100
+      b) 100 000
+      c) 1 000
+      d) 10 000
+
+ 3. Quelle loi modélise le nombre d'événements par an ?
+      a) Normale
+      b) Uniforme
+      c) Poisson
+      d) Log-normale
+
+ 4. Quelle loi modélise la perte par événement ?
+      a) Normale
+      b) Poisson
+      c) Binomiale
+      d) Log-normale
+
+ 5. Pourquoi une loi normale convient-elle mal à une perte ?
+      a) Elle est symétrique et admet des valeurs négatives
+      b) Elle est trop simple
+      c) Elle est interdite
+      d) Elle est discrète
+
+ 6. Quelle médiane de perte retient LiZbiZ pour R-02 ?
+      a) 200 millions
+      b) 290 millions
+      c) 326 millions
+      d) 540 millions
+
+ 7. Sans second facteur, quelle est la perte annuelle moyenne simulée ?
+      a) 20 millions
+      b) 65 millions
+      c) 94 millions
+      d) 326 millions
+
+ 8. Sans second facteur, quelle part des années a au moins une perte ?
+      a) 6 %
+      b) 10 %
+      c) 50 %
+      d) 25 %
+
+ 9. Sans second facteur, quelle part des années dépasse 100 millions ?
+      a) 24,7 %
+      b) 5,9 %
+      c) 10 %
+      d) 50 %
+
+10. Avec second facteur, quelle part des années dépasse 100 millions ?
+      a) 0,9 %
+      b) 5,9 %
+      c) 10 %
+      d) 24,7 %
+
+11. Avec second facteur, que vaut le 90e centile ?
+      a) 184 millions
+      b) 367 millions
+      c) 0
+      d) 482 millions
+
+12. Avec second facteur, que vaut le 95e centile ?
+      a) 0
+      b) 517 millions
+      c) 863 millions
+      d) 184 millions
+
+13. Sans second facteur, quelle part des années dépasse 500 millions ?
+      a) 5,4 %
+      b) 0,9 %
+      c) 10 %
+      d) 24,7 %
+
+14. L'appétence « moins de 100 millions neuf ans sur dix » admet au plus :
+      a) 1 % d'années au-delà
+      b) 10 % d'années au-delà
+      c) 25 % d'années au-delà
+      d) 50 % d'années au-delà
+
+15. Que donne la courbe de dépassement des pertes ?
+      a) Le coût des mesures
+      b) La liste des risques
+      c) La probabilité que la perte annuelle dépasse chaque montant
+      d) Le budget
+
+16. À quoi compare-t-on la courbe de dépassement ?
+      a) Au chiffre d'affaires
+      b) Au registre
+      c) À la matrice
+      d) À la courbe de tolérance du conseil
+
+17. Que fait une analyse de sensibilité ?
+      a) Elle fait varier une hypothèse et observe le résultat
+      b) Elle supprime une hypothèse
+      c) Elle calcule la moyenne
+      d) Elle ajoute des risques
+
+18. Si λ passe de 0,20 à 0,40, la perte moyenne passe de :
+      a) 20 à 40
+      b) 65 à 130
+      c) 94 à 188
+      d) 326 à 652
+
+19. Quelle hypothèse vérifier en priorité pour R-02 ?
+      a) La couleur du graphique
+      b) La graine aléatoire
+      c) La fréquence, sur laquelle agit le second facteur
+      d) Le nombre de tirages
+
+20. Que doit conserver Mme MOUAFO pour qu'un tiers refasse le calcul ?
+      a) Seulement le graphique
+      b) Seulement le chiffre final
+      c) Rien
+      d) Le programme, les lois, les paramètres et la graine
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. La moyenne d'une distribution de pertes dit la pire année.
+      Vrai / Faux
+
+22. La moyenne log-normale retenue (326 millions) est celle de l'estimation FAIR.
+      Vrai / Faux
+
+23. Un 90e centile nul signifie qu'il n'y a aucun risque.
+      Vrai / Faux
+
+24. Sans second facteur, l'appétence n'était pas respectée pour R-02.
+      Vrai / Faux
+
+25. Avec second facteur, l'appétence est respectée pour R-02.
+      Vrai / Faux
+
+26. Respecter l'appétence pour R-02 suffit à conclure pour toute l'entreprise.
+      Vrai / Faux
+
+27. Avec λ = 0,29, environ 75 % des années n'ont aucun événement.
+      Vrai / Faux
+
+28. Une analyse de sensibilité dit où dépenser l'effort de mesure.
+      Vrai / Faux
+
+29. Un risque rare se lit dans les centiles élevés.
+      Vrai / Faux
+
+30. L'auditeur doit refaire toute la simulation.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La loi du nombre d'événements indépendants et rares est la loi de ______.
+
+32. La loi positive et asymétrique des pertes est la loi log-______.
+
+33. La courbe qui donne la probabilité de dépasser chaque montant est la courbe de ______.
+
+34. Une valeur qui partage la distribution à 95 % est le 95e ______.
+
+35. Faire varier une hypothèse entre ses bornes est une analyse de ______.
+
+36. La méthode qui propage l'incertitude par tirages aléatoires porte le nom de Monte-______.
+
+37. Sans second facteur, la perte moyenne simulée est de ______ millions.
+
+38. Avec second facteur, la perte moyenne simulée est de ______ millions.
+
+39. Le paramètre de la loi de Poisson sans second facteur est λ = 0,______.
+
+40. La valeur qui fixe la suite des tirages aléatoires s'appelle la ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

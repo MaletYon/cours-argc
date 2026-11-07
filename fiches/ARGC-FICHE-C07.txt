@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C07
+Chapitre 7 : Estimer : échelles et matrices
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Qu'est-ce qu'une échelle ancrée ?
+      a) Des niveaux définis par une description et une plage de valeurs
+      b) Des couleurs
+      c) Des mots seuls
+      d) Un classement alphabétique
+
+ 2. Quel niveau de vraisemblance correspond à « une fois en un à trois ans » ?
+      a) 1
+      b) 3
+      c) 2
+      d) 4
+
+ 3. Quel niveau d'impact correspond à 5 à 50 millions et moins de 24 h d'arrêt ?
+      a) 1
+      b) 3
+      c) 2
+      d) 4
+
+ 4. Quel niveau d'impact correspond à plus de 500 millions ou plus de 3 jours d'arrêt ?
+      a) 1
+      b) 2
+      c) 3
+      d) 4
+
+ 5. Le niveau d'impact retenu est :
+      a) Le plus élevé des critères
+      b) La moyenne des critères
+      c) Le plus faible
+      d) Le premier critère
+
+ 6. Quelle plage de valeurs le score V × I couvre-t-il ?
+      a) 1 à 4
+      b) 1 à 16
+      c) 1 à 8
+      d) 0 à 100
+
+ 7. Une panne une fois tous les deux ans, 6 h et 8 millions. Score ?
+      a) 4
+      b) 9
+      c) 6
+      d) 12
+
+ 8. Quel risque a le score le plus élevé dans le registre de juin ?
+      a) R-01
+      b) R-07
+      c) R-15
+      d) R-02
+
+ 9. À partir de quel score un risque est-il intolérable chez LiZbiZ ?
+      a) 9
+      b) 5
+      c) 8
+      d) 12
+
+10. Combien de cases de la matrice 4 × 4 sont intolérables ?
+      a) 2
+      b) 4
+      c) 6
+      d) 8
+
+11. Pourquoi R-07 (score 8) est-il traité comme intolérable ?
+      a) Son score est de 12
+      b) Le prestataire l'exige
+      c) Il heurte l'énoncé « aucune fuite de données personnelles »
+      d) Il est ancien
+
+12. Qui a montré en 2008 les limites des matrices de risques ?
+      a) Knight
+      b) Coombs
+      c) Klein
+      d) Cox
+
+13. Des risques très différents dans la même case illustrent :
+      a) La compression
+      b) L'inversion
+      c) L'agrégation
+      d) La calibration
+
+14. Un risque plus coûteux en moyenne qui reçoit un score plus faible illustre :
+      a) La compression
+      b) L'inversion
+      c) L'ambiguïté
+      d) La normalité
+
+15. Risque X : 0,08 par an, 600 millions. Perte annuelle attendue ?
+      a) 8 millions
+      b) 60 millions
+      c) 48 millions
+      d) 600 millions
+
+16. Risque Y : 0,5 par an, 10 millions. Perte annuelle attendue ?
+      a) 10 millions
+      b) 20 millions
+      c) 50 millions
+      d) 5 millions
+
+17. Pourquoi ne peut-on pas additionner les scores du registre ?
+      a) Ils sont des rangs, pas des grandeurs
+      b) Ils sont trop grands
+      c) C'est interdit par la loi
+      d) Ils sont secrets
+
+18. Que faut-il garder à côté des cotes ?
+      a) Les couleurs
+      b) Les valeurs estimées avec leur intervalle
+      c) Les noms des cotateurs seulement
+      d) Rien
+
+19. Quelle colonne de la matrice faut-il examiner à part ?
+      a) I = 1
+      b) V = 1
+      c) I = 4
+      d) V = 2
+
+20. Pour les cinq ou dix risques les plus élevés, on passe :
+      a) À l'oubli
+      b) À l'acceptation
+      c) À la suppression
+      d) Au quantitatif
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Des échelles purement verbales rendent les cotes comparables.
+      Vrai / Faux
+
+22. Le risque brut se cote avec les mesures en place et vérifiées.
+      Vrai / Faux
+
+23. Un score de 6 est à traiter dans l'année.
+      Vrai / Faux
+
+24. Un score de 4 est accepté sous surveillance.
+      Vrai / Faux
+
+25. Une matrice peut classer les risques plus mal que le hasard dans certains cas.
+      Vrai / Faux
+
+26. Dans l'exemple de LiZbiZ, la matrice classe l'incendie de Douala avant les erreurs de saisie.
+      Vrai / Faux
+
+27. Une matrice mesure les risques.
+      Vrai / Faux
+
+28. Deux cotes qui divergent de plus d'un niveau signalent des échelles mal ancrées.
+      Vrai / Faux
+
+29. R-11 concerne l'inondation de l'entrepôt de Bonabéri.
+      Vrai / Faux
+
+30. Certains énoncés d'appétence ne passent pas par le score.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'auteur de « What's Wrong with Risk Matrices? » s'appelle ______.
+
+32. Le score est le produit V × ______.
+
+33. Des risques différents dans la même case illustrent la ______.
+
+34. Un classement à rebours de la perte attendue est une ______.
+
+35. Un score de 9 ou plus est ______.
+
+36. La matrice de LiZbiZ compte 4 × 4 = ______ cases.
+
+37. Le niveau de vraisemblance 4 s'appelle « quasi ______ ».
+
+38. Le score de R-02 est de ______.
+
+39. L'entrepôt inondable de Douala est celui de ______.
+
+40. Le niveau d'impact 3 s'appelle « ______ ».
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

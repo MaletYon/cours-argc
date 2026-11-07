@@ -1,0 +1,353 @@
+% ============================================================================
+% Fichier  : partie1/P01_C05_droit.tex
+% Titre    : Obligations Juridiques et Responsabilités
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : loi n° 2010/012 du 21 décembre 2010 (texte officiel : art. 4
+% point 9, 13, 26, 29, 30, 32) ; loi n° 2024/017 (principes seulement).
+% ============================================================================
+
+\chapter{Obligations Juridiques et Responsabilités}
+\label{chap:droit}
+\chaptermark{Obligations juridiques}
+
+\epigraph{%
+    « La loi ne demande pas d'éviter tout incident~;\\
+    elle demande d'avoir fait ce qu'il fallait. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:gouvernance}
+et~\ref{chap:cadres}~; cours SEC3266, chapitre sur le droit.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Citer les obligations de gestion des risques, de conservation et
+          d'audit que la loi n°~2010/012 impose aux exploitants.
+    \item Distinguer obligation de moyens et obligation de résultat.
+    \item Identifier les responsabilités contractuelle, civile et pénale en
+          jeu après un incident.
+    \item Préparer les décisions juridiques d'une crise~: plainte, rançon,
+          données personnelles, assurance.
+    \item Constituer la preuve qu'on a fait ce qu'il fallait.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : LiZbiZ avait-elle respecté la loi avant l'attaque~?}
+% ============================================================================
+
+Le 7~mars, Me~TSALA pose trois questions à M.~ETEME~: « Aviez-vous un
+dispositif normalisé de gestion des risques~? Avez-vous conservé vos
+journaux~? Quand a eu lieu votre dernier audit~? » Aux trois, la réponse
+est embarrassée. Ce chapitre présente ce que la loi exige, et comment le
+prouver.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Gérer les risques~: une obligation légale (section~\ref{sec:c05-risques}).
+    \item Conserver et surveiller (section~\ref{sec:c05-conserver}).
+    \item L'audit de sécurité (section~\ref{sec:c05-audit}).
+    \item Les responsabilités en jeu (section~\ref{sec:c05-responsabilites}).
+    \item Les décisions juridiques d'une crise (section~\ref{sec:c05-crise}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Gérer les Risques : une Obligation Légale}
+\label{sec:c05-risques}
+% ============================================================================
+
+\begin{boxjuris}
+\textbf{\loicam{n°~2010/012} du 21~décembre 2010 relative à la
+cybersécurité et la cybercriminalité au Cameroun} (texte officiel)
+
+\medskip
+\textbf{Article~26, alinéa~1}~: \textit{« Les exploitants des systèmes
+d'information prennent toutes les mesures techniques et administratives
+afin de garantir la sécurité des services offerts. A cet effet, ils se
+dotent de systèmes normalisés leur permettant d'identifier, d'évaluer, de
+traiter et de gérer continûment les risques liés à la sécurité des
+systèmes d'information dans le cadre des services offerts directement ou
+indirectement. »}
+
+\medskip
+\textbf{Article~30, alinéa~1}~: \textit{« Les exploitants des systèmes
+d'information évaluent, révisent leurs systèmes de sécurité et
+introduisent en cas de nécessité les modifications appropriées dans leurs
+pratiques, mesures et techniques de sécurité en fonction de l'évolution
+des technologies. »}
+
+\medskip
+\textbf{Portée.} La loi n'impose pas une méthode, mais un \emph{système
+normalisé} qui couvre les quatre temps du processus de l'ISO~31000~:
+identifier, évaluer, traiter, gérer continûment. Un registre établi après
+l'attaque ne prouve pas qu'on gérait les risques avant.
+\end{boxjuris}
+
+\begin{boxdef}
+\termecle{Obligation de moyens}~: obligation de mettre en œuvre tous les
+moyens raisonnables pour atteindre un but, sans garantir le résultat.
+\termecle{Obligation de résultat}~: obligation d'atteindre le résultat
+promis. La sécurité des systèmes relève, en règle générale, de la
+première~: on ne reproche pas l'attaque, mais l'absence de mesures.
+\end{boxdef}
+
+% ============================================================================
+\section{Conserver et Surveiller}
+\label{sec:c05-conserver}
+% ============================================================================
+
+\begin{boxjuris}
+\textbf{\loicam{n°~2010/012}, article~29} (texte officiel)
+
+\medskip
+\textbf{Alinéa~1}~: \textit{« Les exploitants des systèmes d'information
+ont l'obligation de conserver les données de connexion et de trafic de
+leurs systèmes d'information pendant une période de dix (10) ans. »}
+
+\medskip
+\textbf{Alinéa~2}~: \textit{« Les exploitants des systèmes d'information
+sont tenus d'installer des mécanismes de surveillance de contrôle d'accès
+aux données de leurs systèmes d'information. Les données conservées
+peuvent être accessibles lors des investigations judiciaires. »}
+
+\medskip
+\textbf{Portée.} Les journaux sont à la fois une obligation légale, une
+condition de la détection et la matière de l'enquête. La messagerie de
+LiZbiZ ne conservait que sept jours de journaux~: l'obligation n'était
+pas tenue, et l'enquête en a été privée.
+\end{boxjuris}
+
+% ============================================================================
+\section{L'Audit de Sécurité}
+\label{sec:c05-audit}
+% ============================================================================
+
+\begin{boxjuris}
+\textbf{\loicam{n°~2010/012}} (texte officiel)
+
+\medskip
+\textbf{Article~4, point~9}~: \textit{« Audit de sécurité~: examen
+méthodique des composantes et des acteurs de la sécurité, de la politique,
+des mesures, des solutions, des procédures et des moyens mis en oeuvre
+par une organisation, pour sécuriser son environnement, effectuer des
+contrôles de conformité, des contrôles d'évaluation de l'adéquation des
+moyens (organisationnels, techniques, humains, financiers) investis au
+regard des risques encourus, d'optimisation, de rationalité et de
+performance. »}
+
+\medskip
+\textbf{Article~13, alinéa~1}~: \textit{« Sont soumis à un audit de
+sécurité obligatoire, les réseaux de communications électroniques et les
+systèmes d'information, des opérateurs, des autorités de certification et
+des fournisseurs de services de communications électroniques. »}
+
+\medskip
+\textbf{Article~32, alinéas~1 et~2}~: \textit{« Les réseaux de
+communications électroniques et les systèmes d'information sont soumis à
+un régime d'audit de sécurité obligatoire et périodique de leurs systèmes
+de sécurité par l'Agence. »} \textit{« L'audit de sécurité et les mesures
+d'impact de gravité sont effectués chaque année ou lorsque les
+circonstances l'exigent. »}
+
+\medskip
+\textbf{Portée.} La définition légale rattache l'audit aux \emph{risques
+encourus}~: auditer, c'est vérifier que les moyens sont adéquats au
+regard des risques. Les conditions et les modalités de l'audit obligatoire
+sont fixées par voie réglementaire (article~13, alinéa~2)~; elles se
+vérifient dans les textes d'application et auprès de l'ANTIC.
+\end{boxjuris}
+
+% ============================================================================
+\section{Les Responsabilités en Jeu}
+\label{sec:c05-responsabilites}
+% ============================================================================
+
+\begin{tableaucours}{L{3.2cm}L{4.4cm}L{4.6cm}}{%
+    \tableauHeader{Responsabilité} &
+    \tableauHeader{Fondement} &
+    \tableauHeader{Chez LiZbiZ}
+}
+Contractuelle & Inexécution d'un contrat & Pénalités versées aux clients
+(74~millions)~; recours contre le prestataire \\
+Civile & Dommage causé à un tiers par une faute & Clients dont les
+données ont été publiées le 19~mars \\
+Pénale de l'attaquant & Infractions de la loi n°~2010/012 & Plainte du
+7~mars \\
+Des dirigeants & Faute de gestion, devant la société et les tiers selon
+le droit des sociétés & Question posée par les actionnaires \\
+Administrative & Contrôle de l'autorité de régulation & Conformité à
+l'article~26 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~5.1. Les responsabilités après un incident}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Croire que la qualité de victime protège de
+toute responsabilité.
+
+\smallskip
+\textbf{Règle~:} l'entreprise attaquée est victime au pénal, mais peut
+être responsable au civil et au contrat si elle n'avait pas pris les
+mesures raisonnables. Sa meilleure défense est un dossier qui montre ce
+qu'elle avait fait, avant l'incident.
+\end{boxalert}
+
+\begin{boxinfo}
+\textbf{Les données personnelles.} La loi n°~2024/017 relative à la
+protection des données à caractère personnel fixe le cadre camerounais
+(obligations des responsables de traitement, droits des personnes,
+autorité de protection). Le cours n'en cite pas les articles~: ils doivent
+être lus dans le texte publié au Journal officiel, avec le conseil
+juridique, avant toute décision, notamment sur l'information des personnes
+concernées après une fuite.
+\end{boxinfo}
+
+% ============================================================================
+\section{Les Décisions Juridiques d'une Crise}
+\label{sec:c05-crise}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Les décisions juridiques des premières 72 heures}
+\begin{enumerate}
+    \item \textbf{Désigner le conseil juridique} dès l'ouverture de la
+          cellule de crise.
+    \item \textbf{Préserver les preuves} (journaux, images, message de
+          rançon) avant toute remise en état.
+    \item \textbf{Déposer plainte} auprès de la police judiciaire, de la
+          gendarmerie ou du procureur.
+    \item \textbf{Déclarer le sinistre} à l'assureur dans le délai de la
+          police.
+    \item \textbf{Examiner la rançon} avec le conseil~: aucune garantie de
+          restitution, risque de financer une activité criminelle, et de
+          sanctions si le destinataire est visé par des mesures
+          internationales.
+    \item \textbf{Évaluer les obligations envers les personnes} dont les
+          données sont touchées (loi n°~2024/017) et envers les clients
+          (contrats).
+    \item \textbf{Notifier le prestataire} et activer les clauses du
+          contrat.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxscenario}{Opération GAROUA. Le dossier de Me TSALA}
+\textbf{Constatations.} Pas de registre des risques avant mars~; journaux
+de la messagerie conservés sept jours~; dernier audit en 2023, hors
+prestataire~; contrat sans clause de sécurité~; police d'assurance
+excluant les cyberattaques.
+
+\medskip
+\textbf{Analyse} (confiance moyenne). LiZbiZ peut difficilement démontrer
+qu'elle disposait du « système normalisé » de l'article~26. Son recours
+contre le prestataire est affaibli par l'absence de clause. Les actions
+engagées depuis avril (registre, audit, contrat révisé) ne réparent pas le
+passé, mais constituent le dossier de la prochaine fois.
+\end{boxscenario}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Relier chaque constat à son fondement.} Dans un rapport, l'auditeur
+cite pour chaque écart l'obligation qu'il méconnaît (article de loi,
+clause de contrat, politique interne). Un constat sans fondement est une
+opinion.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{L'article~26} impose un système normalisé de gestion
+          continue des risques~; \textbf{l'article~30}, la révision.
+    \item \textbf{L'article~29} impose dix ans de conservation des données
+          de connexion et une surveillance des accès.
+    \item \textbf{L'audit de sécurité} est défini par la loi au regard des
+          risques encourus (articles~4, 13, 32).
+    \item \textbf{La victime} peut être responsable au contrat et au civil~;
+          on se défend par un dossier constitué avant.
+    \item \textbf{En crise}~: conseil, preuves, plainte, assureur, rançon,
+          personnes concernées, prestataire.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: citer les articles~26,
+29, 30 et 32 et en tirer la portée~; distinguer obligation de moyens et
+de résultat~; nommer les responsabilités en jeu~; dérouler les décisions
+juridiques des 72 premières heures.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.1. L'article 26 \niveaubase}]
+Quels sont les quatre verbes de l'article~26 qui décrivent la gestion des
+risques~? À quelles étapes de l'ISO~31000 correspondent-ils~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.2. Dix ans \niveaubase}]
+Pendant combien de temps LiZbiZ doit-elle conserver les données de
+connexion de sa passerelle~? Quel article le prévoit~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.3. Moyens ou résultat \niveaubase}]
+L'obligation de sécurité d'un exploitant est-elle de moyens ou de
+résultat~? Quelle conséquence pour sa défense après une attaque~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.4. La définition \niveaumoyen}]
+Selon l'article~4, point~9, au regard de quoi l'audit évalue-t-il
+l'adéquation des moyens~? Qu'en déduisez-vous pour le programme d'audit~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.5. Responsabilités \niveaumoyen}]
+Pour chaque responsabilité du Tableau~5.1, donnez la preuve que LiZbiZ
+aurait dû pouvoir produire.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.6. La rançon \niveaumoyen}]
+Rédigez la note de Me~TSALA à M.~ETEME sur la rançon~: faits, risques,
+options, recommandation.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.7. Le contrat \niveaumoyen}]
+Quelles clauses auraient permis à LiZbiZ de se retourner contre SAHEL
+INFOGÉRANCE~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.8. Données personnelles \niveaumoyen}]
+Le 19~mars, des données de clients sont publiées. Quelles questions faut-il
+poser au conseil juridique, au regard de la loi n°~2024/017~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.9. Le dossier \niveauexpert}]
+Établissez la liste des pièces que LiZbiZ doit tenir à jour pour prouver,
+à tout moment, qu'elle respecte les articles~26, 29 et~30.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~5.10. L'assurance \niveauexpert}]
+Rédigez le cahier des charges d'une assurance cyber pour LiZbiZ~: garanties,
+exclusions à refuser, obligations de l'assuré, plafonds.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item Loi n°~2010/012 relative à la cybersécurité et la cybercriminalité
+          au Cameroun~\cite{loi2010012}.
+    \item Loi n°~2024/017 relative à la protection des données à caractère
+          personnel~\cite{loi2024017}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Les fondements sont posés. La Partie~II apprend à
+analyser les risques, en commençant par les identifier
+(Chapitre~\ref{chap:identifier}).
+\end{boxinfo}

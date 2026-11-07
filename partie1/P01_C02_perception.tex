@@ -1,0 +1,316 @@
+% ============================================================================
+% Fichier  : partie1/P01_C02_perception.tex
+% Titre    : Percevoir le Risque : Biais et Culture
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : Tversky et Kahneman (1974) ; Kahneman (2011) ; Slovic (1987) ;
+% Janis (1972) ; Vaughan (1996) ; Reason (1997) ; Hubbard et Seiersen (2016).
+% ============================================================================
+
+\chapter{Percevoir le Risque : Biais et Culture}
+\label{chap:perception}
+\chaptermark{Percevoir le risque}
+
+\epigraph{%
+    « Ce qui nous attire des ennuis, ce n'est pas ce que nous ignorons,\\
+    c'est ce que nous tenons pour certain et qui ne l'est pas. »%
+}{Formule d'usage dans la gestion des risques}
+
+\niveauChapitre{Fondamental}{Chapitre~\ref{chap:risque}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Reconnaître les heuristiques de disponibilité, de représentativité
+          et d'ancrage dans un jugement sur le risque.
+    \item Expliquer pourquoi le public et les experts ne hiérarchisent pas
+          les risques de la même manière.
+    \item Identifier les biais collectifs~: pensée de groupe, normalisation
+          de la déviance.
+    \item Décrire une culture juste et son rôle dans la remontée des
+          signaux.
+    \item Calibrer ses propres estimations par des intervalles.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : pourquoi « nous n'avons jamais été attaqués » a-t-il convaincu~?}
+% ============================================================================
+
+En février, l'argument a suffi à reporter le second facteur. En avril,
+après l'attaque, le comité de direction a voté sans débat un budget de
+sécurité quatre fois supérieur à celui de l'année précédente. Dans les
+deux cas, la décision a suivi la mémoire récente plus que l'analyse. Ce
+chapitre explique pourquoi, et comment s'en protéger.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Deux manières de penser (section~\ref{sec:c02-systemes}).
+    \item Les heuristiques (section~\ref{sec:c02-heuristiques}).
+    \item La perception du risque (section~\ref{sec:c02-perception}).
+    \item Les biais collectifs (section~\ref{sec:c02-collectifs}).
+    \item La culture du risque (section~\ref{sec:c02-culture}).
+    \item Se calibrer (section~\ref{sec:c02-calibrer}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Deux Manières de Penser}
+\label{sec:c02-systemes}
+% ============================================================================
+
+Daniel Kahneman décrit deux modes de pensée~: un mode rapide, intuitif,
+automatique, et un mode lent, délibéré, coûteux en
+effort~\cite{kahneman2011}. Le premier nous permet de réagir vite~; il
+répond souvent à une question plus facile que celle qui est posée. À la
+question « quelle est la probabilité d'une attaque cette année~? », il
+répond « me souviens-je d'une attaque récente~? ».
+
+\begin{boxdef}
+\termecle{Heuristique}~: règle de jugement simple, le plus souvent
+inconsciente, qui donne vite une réponse acceptable, mais produit des
+erreurs systématiques, les \termecle{biais}.
+\end{boxdef}
+
+% ============================================================================
+\section{Les Heuristiques}
+\label{sec:c02-heuristiques}
+% ============================================================================
+
+Amos Tversky et Daniel Kahneman ont décrit en 1974 trois heuristiques du
+jugement sous incertitude~\cite{tversky1974}.
+
+\begin{tableaucours}{L{3.0cm}L{4.6cm}L{4.6cm}}{%
+    \tableauHeader{Heuristique} &
+    \tableauHeader{Principe} &
+    \tableauHeader{Chez LiZbiZ}
+}
+Disponibilité & On juge probable ce dont on se souvient facilement &
+« Jamais attaqués » en février~; « tout est menacé » en avril \\
+Représentativité & On juge sur la ressemblance avec un stéréotype, en
+négligeant la fréquence de base & « Un rançongiciel vise les banques, pas
+la logistique » \\
+Ancrage & Une valeur initiale, même arbitraire, tire l'estimation &
+Le budget de l'an passé sert de point de départ au suivant \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~2.1. Les trois heuristiques de Tversky et Kahneman}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Estimer une fréquence d'attaque par sa propre
+expérience (« jamais vu ici »).
+
+\smallskip
+\textbf{Règle~:} partir d'une \emph{fréquence de base} externe (études
+publiées, données du secteur, signalements du centre de réponse national),
+puis l'ajuster par ce qui distingue l'organisation. L'absence d'attaque
+constatée peut aussi signifier une absence de détection.
+\end{boxalert}
+
+S'y ajoutent l'\termecle{excès d'optimisme} (croire que les malheurs
+arrivent aux autres), le \termecle{biais de normalité} (penser qu'une
+situation inhabituelle va revenir d'elle-même à la normale, comme le
+technicien qui redémarre les serveurs le 5~mars au soir) et le
+\termecle{biais rétrospectif} (juger après coup qu'un événement était
+évident).
+
+% ============================================================================
+\section{La Perception du Risque}
+\label{sec:c02-perception}
+% ============================================================================
+
+Paul Slovic a montré que le public ne classe pas les risques selon leur
+fréquence de décès, mais selon deux dimensions~: le caractère
+\emph{redouté} (catastrophique, involontaire, incontrôlable) et le
+caractère \emph{inconnu} (nouveau, invisible, aux effets
+différés)~\cite{slovic1987}. Un risque rare mais redouté et inconnu
+(une cyberattaque massive) mobilise plus qu'un risque fréquent et
+familier (les pannes).
+
+\begin{boxscenario}{Opération GAROUA. Deux budgets}
+\textbf{Constatation.} Budget de sécurité de 2025~: 45~millions de FCFA~;
+budget voté en avril 2026~: 180~millions, sans analyse des risques
+préalable.
+
+\medskip
+\textbf{Analyse} (confiance moyenne). Le premier budget était ancré sur
+l'historique et l'absence d'incident~; le second, sur l'effroi d'une
+crise récente. Ni l'un ni l'autre n'a été dérivé d'une analyse. Le risque
+est que les 180~millions financent des mesures visibles plutôt que les
+plus efficaces~: le registre du Chapitre~\ref{chap:traiter} doit les
+réaffecter.
+\end{boxscenario}
+
+% ============================================================================
+\section{Les Biais Collectifs}
+\label{sec:c02-collectifs}
+% ============================================================================
+
+Les groupes ne corrigent pas toujours les biais individuels~; ils peuvent
+les amplifier.
+
+\begin{tableaucours}{L{3.6cm}L{8.6cm}}{%
+    \tableauHeader{Biais} &
+    \tableauHeader{Description et parade}
+}
+Pensée de groupe & Un groupe soudé recherche l'unanimité au détriment de
+l'examen des options (Janis). Parade~: désigner un contradicteur, recueillir
+les avis par écrit avant la discussion~\cite{janis1972} \\
+Normalisation de la déviance & Un écart toléré sans conséquence devient la
+norme (Vaughan, à propos de Challenger). Parade~: tracer les dérogations et
+les revoir~\cite{vaughan1996} \\
+Effet d'autorité & L'avis du plus haut placé clôt le débat. Parade~: faire
+parler le plus haut placé en dernier \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~2.2. Trois biais collectifs}\end{center}
+
+\textbf{Exemple.} Le compte partagé du prestataire sans second facteur
+était connu depuis septembre~; il avait été accepté « provisoirement »,
+puis plus personne n'en parlait. C'est une normalisation de la déviance~:
+une exception devenue habitude.
+
+% ============================================================================
+\section{La Culture du Risque}
+\label{sec:c02-culture}
+% ============================================================================
+
+James Reason décrit une \termecle{culture juste}~: une organisation où l'on
+signale les erreurs et les quasi-accidents sans crainte de sanction
+injuste, tout en sanctionnant les comportements délibérément dangereux~;
+elle conditionne la remontée des signaux faibles~\cite{reason1997}.
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Rendre le signalement facile et utile.} Le gestionnaire ouvre un
+canal simple pour signaler un quasi-incident, répond à chaque signalement,
+et publie ce qui a changé grâce aux signalements. Un salarié qui ne voit
+jamais d'effet cesse de signaler.
+\end{boxmetier}
+
+% ============================================================================
+\section{Se Calibrer}
+\label{sec:c02-calibrer}
+% ============================================================================
+
+Douglas Hubbard et Richard Seiersen montrent qu'un expert peut apprendre à
+donner des estimations \termecle{calibrées}~: des intervalles à 90~\% qui
+contiennent la vraie valeur environ neuf fois sur dix~\cite{hubbard2016cyber}.
+Sans entraînement, la plupart des personnes donnent des intervalles trop
+étroits~: elles sont trop sûres d'elles.
+
+\begin{boxprocedure}
+\textbf{Estimer par un intervalle calibré}
+\begin{enumerate}
+    \item Donner une borne basse et une borne haute telles que l'on soit
+          sûr à 90~\% que la valeur est entre les deux.
+    \item Se demander~: « parierais-je autant sur mon intervalle que sur
+          une roue qui gagne neuf fois sur dix~? » Élargir si la roue
+          semble préférable.
+    \item Chercher une raison pour laquelle la valeur serait hors de
+          l'intervalle, de chaque côté.
+    \item Après coup, compter combien d'intervalles contenaient la valeur,
+          et corriger sa largeur.
+\end{enumerate}
+\end{boxprocedure}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Le jugement rapide} substitue une question facile à la
+          question posée.
+    \item \textbf{Disponibilité, représentativité, ancrage} faussent
+          l'estimation~; on part d'une fréquence de base.
+    \item \textbf{Le public} juge sur l'effroi et l'inconnu~; l'expert doit
+          le savoir pour communiquer.
+    \item \textbf{Les groupes} amplifient les biais~; contradicteur et avis
+          écrits les limitent.
+    \item \textbf{Une culture juste} fait remonter les signaux~;
+          \textbf{l'intervalle calibré} rend l'estimation honnête.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: nommer et reconnaître
+trois heuristiques~; expliquer les dimensions de Slovic~; décrire la
+pensée de groupe et la normalisation de la déviance~; définir une culture
+juste~; donner un intervalle calibré.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.1. Quelle heuristique~? \niveaubase}]
+Nommez l'heuristique~: « depuis l'attaque d'une banque voisine, je trouve
+les rançongiciels très probables »~; « le budget de cette année sera celui
+de l'an dernier plus 10~\% ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.2. Fréquence de base \niveaubase}]
+Pourquoi l'absence d'attaque constatée chez LiZbiZ avant mars ne prouve-t-elle
+pas l'absence d'attaque~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.3. Biais de normalité \niveaubase}]
+En quoi le redémarrage des serveurs le 5~mars à 22~h~05 illustre-t-il le
+biais de normalité~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.4. Slovic \niveaumoyen}]
+Placez sur les deux axes de Slovic~: une panne d'électricité~; une fuite
+de données personnelles~; une inondation d'entrepôt~; une fraude interne.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.5. Le comité \niveaumoyen}]
+Proposez trois règles de fonctionnement du comité des risques de LiZbiZ
+pour limiter la pensée de groupe et l'effet d'autorité.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.6. Dérogations \niveaumoyen}]
+Concevez un registre des dérogations qui empêche la normalisation de la
+déviance~: colonnes, propriétaire, durée, revue.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.7. Culture juste \niveaumoyen}]
+Un agent a cliqué sur un lien d'hameçonnage et l'a signalé aussitôt.
+Comment la direction doit-elle réagir dans une culture juste~? Et s'il
+l'avait caché~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.8. Calibrer \niveaumoyen}]
+Donnez un intervalle à 90~\% pour~: la population de Douala~; l'année de
+publication de l'ISO~31000 (première édition)~; la distance Douala-Garoua
+par la route. Vérifiez ensuite.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.9. Le budget d'avril \niveauexpert}]
+Proposez à M.~ETEME une méthode en quatre étapes pour affecter les
+180~millions de FCFA sans céder à l'effroi.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~2.10. Un atelier \niveauexpert}]
+Concevez un atelier d'une heure pour calibrer les dix experts qui
+estimeront les risques de LiZbiZ~: questions, déroulé, mesure du
+résultat.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item A.~Tversky et D.~Kahneman~\cite{tversky1974}~; D.~Kahneman~\cite{kahneman2011}.
+    \item P.~Slovic~\cite{slovic1987}~; J.~Reason~\cite{reason1997}.
+    \item D.~Hubbard et R.~Seiersen~\cite{hubbard2016cyber}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Pour que les décisions sur les risques ne dépendent
+pas de l'humeur du moment, il faut des rôles et des règles. Le
+Chapitre~\ref{chap:gouvernance} présente la gouvernance des risques.
+\end{boxinfo}

@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C19
+Chapitre 19 : Reprise informatique et résilience
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quelle technique atteint un RPO nul ?
+      a) La réplication synchrone
+      b) La sauvegarde hebdomadaire
+      c) La réplication asynchrone
+      d) L'archivage papier
+
+ 2. Quelle est la limite de la réplication face au rançongiciel ?
+      a) Elle est trop lente
+      b) Elle réplique aussi le chiffrement
+      c) Elle coûte trop peu
+      d) Elle est illégale
+
+ 3. Contre le rançongiciel, il faut des sauvegardes :
+      a) Sur le même serveur
+      b) Sans test
+      c) Versionnées, dont une hors ligne ou immuable, testées
+      d) Dans le domaine compromis
+
+ 4. Quelle technique a le RTO le plus court ?
+      a) Sauvegarde et restauration
+      b) Copie papier
+      c) Réplication asynchrone
+      d) Actif-actif sur deux sites
+
+ 5. Quelle norme traite de la préparation des TIC à la continuité ?
+      a) ISO/IEC 27031
+      b) ISO/IEC 27001
+      c) ISO 22361
+      d) ISO 19011
+
+ 6. Quel document du NIST traite des plans de contingence ?
+      a) SP 800-30
+      b) SP 800-34
+      c) SP 800-61
+      d) SP 800-84
+
+ 7. Dans quel ordre reprend-on ?
+      a) Applications, bases, réseau
+      b) Portail d'abord
+      c) Réseau, annuaire, bases, applications
+      d) Au hasard
+
+ 8. Que restaure-t-on après un rançongiciel ?
+      a) Les systèmes infectés
+      b) Rien
+      c) Tout tel quel
+      d) Les données, pas les systèmes infectés
+
+ 9. Quelle sauvegarde choisir ?
+      a) Une sauvegarde antérieure à l'entrée de l'attaquant, ou vérifiée
+      b) La plus récente sans vérification
+      c) N'importe laquelle
+      d) Celle de l'attaquant
+
+10. Combien de jours a pris la reconstruction de l'annuaire de LiZbiZ ?
+      a) Un
+      b) Quatre
+      c) Deux
+      d) Onze
+
+11. D'où LiZbiZ a-t-elle restauré en mars ?
+      a) D'une sauvegarde immuable
+      b) Du site de Yaoundé
+      c) D'une copie de fin janvier retrouvée sur un disque
+      d) De la réplication
+
+12. Combien de semaines de factures ont été ressaisies ?
+      a) Une
+      b) Trois
+      c) Onze
+      d) Six
+
+13. Qui a publié en 2021 des principes de résilience opérationnelle ?
+      a) Le Comité de Bâle
+      b) L'ISO
+      c) L'ANSSI
+      d) L'IIA
+
+14. La résilience opérationnelle raisonne en :
+      a) Serveurs seulement
+      b) Opérations critiques et tolérances à la perturbation
+      c) Budgets
+      d) Logiciels
+
+15. Qui approuve les tolérances à la perturbation ?
+      a) Le prestataire
+      b) Le technicien
+      c) Le conseil
+      d) Le client
+
+16. Combien de temps a pris la reprise de la facturation au test de novembre ?
+      a) 5 heures
+      b) 48 heures
+      c) 250 heures
+      d) 19 heures
+
+17. Combien d'heures de données ont été perdues au test ?
+      a) 5
+      b) 0
+      c) 4
+      d) 19
+
+18. Le RPO de 4 heures est-il tenu au test ?
+      a) Oui
+      b) Non
+      c) Sans objet
+      d) Partiellement
+
+19. Quelle action corrige l'écart de RPO ?
+      a) Supprimer le test
+      b) Allonger le RTO
+      c) La journalisation des transactions entre deux sauvegardes
+      d) Payer
+
+20. Combien d'heures la facturation est-elle restée arrêtée en mars ?
+      a) 48 heures
+      b) 80 heures
+      c) 19 heures
+      d) 250 h 20
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. La réplication protège contre la perte d'un site.
+      Vrai / Faux
+
+22. La réplication protège contre la corruption des données.
+      Vrai / Faux
+
+23. L'attaquant peut avoir laissé des accès persistants.
+      Vrai / Faux
+
+24. On reconnecte tout d'un coup après la restauration.
+      Vrai / Faux
+
+25. Les comptes sont réinitialisés depuis des postes sains.
+      Vrai / Faux
+
+26. Les scénarios de test doivent être sévères mais plausibles.
+      Vrai / Faux
+
+27. Le RTO de 48 heures est tenu au test de novembre.
+      Vrai / Faux
+
+28. Un objectif jamais mesuré est noté « atteint ».
+      Vrai / Faux
+
+29. Le plan de reprise fixe des critères de réussite et des vérifications.
+      Vrai / Faux
+
+30. Les sauvegardes de LiZbiZ ont été supprimées le 5 mars à 21 h 15.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La norme de préparation des TIC à la continuité est l'ISO/IEC ______.
+
+32. Une copie qui ne peut être ni modifiée ni effacée est dite ______.
+
+33. La réplication sans perte de données est la réplication ______.
+
+34. La capacité à fournir les opérations critiques à travers les perturbations est la ______ opérationnelle.
+
+35. La reprise de la facturation au test a pris ______ heures.
+
+36. Le document du NIST sur la contingence est le SP 800-______.
+
+37. Un accès laissé par l'attaquant pour revenir relève de la ______.
+
+38. Un objectif jamais mesuré est noté « ______ ».
+
+39. Les principes de résilience opérationnelle ont été publiés par le Comité de ______.
+
+40. La facturation est restée arrêtée 250 heures et ______ minutes en mars.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

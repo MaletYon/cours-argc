@@ -1,0 +1,302 @@
+% ============================================================================
+% Fichier  : partie4/P04_C19_reprise.tex
+% Titre    : Reprise Informatique et Résilience
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO/IEC 27031:2011 ; NIST SP 800-34 Rev. 1 (2010) ; Comité de
+% Bâle, Principles for Operational Resilience (2021). Chiffres de LiZbiZ :
+% cas fictif, cohérents avec SEC3266 (arrêt de 250 h 20 de la facturation).
+% ============================================================================
+
+\chapter{Reprise Informatique et Résilience}
+\label{chap:pra}
+\chaptermark{Reprise informatique et résilience}
+
+\epigraph{%
+    « Après un rançongiciel, on ne restaure pas un système~;\\
+    on en reconstruit un sain. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:bia}
+et~\ref{chap:pca}~; cours SEC3266, chapitre sur la continuité.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Choisir une technique de protection des données selon le RTO et
+          le RPO.
+    \item Rédiger un plan de reprise informatique.
+    \item Conduire une reprise après rançongiciel sans réinfecter.
+    \item Appliquer les principes de résilience opérationnelle.
+    \item Mesurer l'écart entre objectifs et capacité réelle.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : comment passer de 250 heures à moins de 48~?}
+% ============================================================================
+
+En mars, la facturation de LiZbiZ est restée arrêtée 250~h~20, pour un
+objectif fixé après coup à 48~heures. En juin, M.~KOUNOU doit présenter un
+plan de reprise qui tienne cet objectif, et le prouver par un test avant
+la fin de l'année.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Protéger les données selon les objectifs (section~\ref{sec:c19-techniques}).
+    \item Le plan de reprise informatique (section~\ref{sec:c19-pra}).
+    \item Reprendre après un rançongiciel (section~\ref{sec:c19-rancon}).
+    \item La résilience opérationnelle (section~\ref{sec:c19-resilience}).
+    \item Mesurer la capacité réelle (section~\ref{sec:c19-mesurer}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Protéger les Données selon les Objectifs}
+\label{sec:c19-techniques}
+% ============================================================================
+
+\begin{tableaucours}{L{3.6cm}L{2.4cm}L{2.4cm}L{3.8cm}}{%
+    \tableauHeader{Technique} &
+    \tableauHeader{RPO typique} &
+    \tableauHeader{RTO typique} &
+    \tableauHeader{Limite}
+}
+Sauvegarde et restauration & Heures à 1~jour & Heures à jours & Lente à
+restaurer en volume \\
+Réplication asynchrone & Minutes & Heures & Réplique aussi le chiffrement
+malveillant \\
+Réplication synchrone & Nul & Minutes à heures & Distance limitée, coût \\
+Actif-actif sur deux sites & Nul & Minutes & Coût élevé, complexité \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~19.1. Techniques de protection des données}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Compter sur la réplication contre le
+rançongiciel.
+
+\smallskip
+\textbf{Règle~:} la réplication protège contre la perte d'un site, pas
+contre la corruption~: elle recopie le chiffrement. Contre le
+rançongiciel, il faut des sauvegardes \emph{versionnées}, dont une copie
+\emph{hors ligne ou immuable}, administrée hors du domaine, et testée.
+\end{boxalert}
+
+% ============================================================================
+\section{Le Plan de Reprise Informatique}
+\label{sec:c19-pra}
+% ============================================================================
+
+L'\norme{ISO/IEC~27031} traite de la préparation des technologies de
+l'information à la continuité~\cite{iso27031_2011}~; le NIST SP~800-34 décrit
+les plans de contingence des systèmes~\cite{nist80034}.
+
+\begin{boxprocedure}
+\textbf{Contenu du plan de reprise informatique de LiZbiZ}
+\begin{enumerate}
+    \item Inventaire des systèmes, avec leur RTO et leur RPO (issus de
+          l'analyse d'impact).
+    \item Ordre de reprise selon les dépendances~: réseau, annuaire, bases,
+          applications.
+    \item Procédures de restauration, pas à pas, pour chaque système.
+    \item Site de reprise (centre de Yaoundé), capacités, accès.
+    \item Rôles~: équipe informatique, prestataire, éditeurs.
+    \item Critères de réussite et vérifications (intégrité des données,
+          tests fonctionnels avec les métiers).
+    \item Retour sur le site principal.
+\end{enumerate}
+\end{boxprocedure}
+
+% ============================================================================
+\section{Reprendre après un Rançongiciel}
+\label{sec:c19-rancon}
+% ============================================================================
+
+Après un rançongiciel, l'attaquant peut avoir laissé des accès (comptes
+créés, services installés). Restaurer sur l'infrastructure compromise, ou
+restaurer une sauvegarde postérieure à son entrée, revient à le réinviter.
+
+\begin{boxprocedure}
+\textbf{Reprise après rançongiciel}
+\begin{enumerate}
+    \item Préserver les preuves avant toute remise en état
+          (cours SEC3266).
+    \item Établir la date d'entrée de l'attaquant~; choisir un point de
+          restauration antérieur, ou vérifier la sauvegarde.
+    \item Reconstruire un environnement sain, isolé~: annuaire neuf, comptes
+          réinitialisés depuis des postes sains.
+    \item Restaurer les données, pas les systèmes infectés~; réinstaller les
+          systèmes à partir de sources sûres.
+    \item Vérifier l'absence de persistance (comptes, services, tâches
+          planifiées) avant de reconnecter.
+    \item Reconnecter progressivement, sous surveillance renforcée.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxscenario}{Opération GAROUA. Pourquoi onze jours}
+\textbf{Constatations.} Sauvegardes en ligne supprimées le 5~mars à
+21~h~15~; restauration à partir d'une copie de fin janvier retrouvée sur un
+disque~; ressaisie de six semaines de factures~; annuaire reconstruit du
+9 au 12~mars.
+
+\medskip
+\textbf{Analyse} (confiance élevée). Trois causes expliquent l'essentiel de
+l'arrêt~: l'absence de copie immuable (six semaines de données à
+ressaisir), l'absence de procédure de reconstruction de l'annuaire (quatre
+jours), et l'absence de site de reprise prêt. Le plan de juin traite les
+trois.
+\end{boxscenario}
+
+% ============================================================================
+\section{La Résilience Opérationnelle}
+\label{sec:c19-resilience}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Résilience opérationnelle}~: capacité d'une organisation à
+fournir ses opérations critiques à travers les perturbations, en anticipant,
+en absorbant, en s'adaptant et en se rétablissant.
+\end{boxdef}
+
+Le Comité de Bâle sur le contrôle bancaire a publié en 2021 des principes
+de résilience opérationnelle~\cite{bcbs2021resilience}. Ils déplacent le
+regard des systèmes vers les \emph{opérations critiques}~: pour chacune, on
+fixe une \emph{tolérance à la perturbation}, on cartographie ses
+interconnexions (personnes, technologies, tiers), et l'on teste la
+capacité à rester dans la tolérance face à des scénarios sévères mais
+plausibles.
+
+\begin{tableaucours}{L{4.8cm}L{7.4cm}}{%
+    \tableauHeader{Principe} &
+    \tableauHeader{Application à la BANQUE SANAGA}
+}
+Gouvernance & Le conseil approuve les tolérances \\
+Cartographie & Virements~: système central, annuaire, connexion aux
+paiements, équipes de Douala et de Yaoundé \\
+Gestion des tiers & Prestataire monétique, fournisseur du système central \\
+Continuité testée & Bascule annuelle sur le site de secours \\
+Gestion des incidents & Grille et escalade adaptées aux virements \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~19.2. Principes de résilience opérationnelle (d'après le Comité de Bâle, 2021)}\end{center}
+
+% ============================================================================
+\section{Mesurer la Capacité Réelle}
+\label{sec:c19-mesurer}
+% ============================================================================
+
+\begin{boxobjet}{R-01 · Test de reprise de novembre}
+\textbf{Scénario testé~:} perte du centre de Douala~; reprise de la
+facturation à Yaoundé à partir de la sauvegarde immuable de la nuit.
+\textbf{Résultat~:} facturation rétablie en 19~heures (RTO de 48~heures
+tenu)~; données perdues~: 5~heures (RPO de 4~heures non tenu, la
+sauvegarde ayant eu lieu à 1~h et la panne simulée à 6~h).
+\textbf{Action~:} journalisation des transactions entre deux sauvegardes.
+\textbf{Propriétaire~:} M.~KOUNOU. \textbf{Indicateur~:} durée de la dernière
+reprise mesurée.
+\end{boxobjet}
+
+\begin{boxmetier}{Responsable de la continuité}
+\textbf{Comparer la capacité mesurée aux objectifs.} Le responsable tient,
+pour chaque système critique, deux colonnes~: l'objectif (RTO, RPO) et la
+dernière valeur mesurée en test. Un objectif jamais mesuré est noté
+« inconnu », non « atteint ».
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{La technique} se choisit selon le RTO et le RPO~; la
+          réplication ne protège pas de la corruption.
+    \item \textbf{Le plan de reprise} fixe l'ordre, les procédures, le
+          site, les rôles et les critères de réussite.
+    \item \textbf{Après un rançongiciel}, on reconstruit un environnement
+          sain et l'on restaure les données, pas les systèmes infectés.
+    \item \textbf{La résilience opérationnelle} raisonne en opérations
+          critiques et en tolérances.
+    \item \textbf{La capacité réelle} se mesure en test et se compare aux
+          objectifs.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: associer une technique à
+des objectifs~; structurer un plan de reprise~; dérouler une reprise après
+rançongiciel~; énoncer les principes de résilience opérationnelle~;
+interpréter un résultat de test.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.1. Quelle technique~? \niveaubase}]
+Quelle technique du Tableau~19.1 choisir pour les virements de la BANQUE
+SANAGA (RPO nul, RTO 2~h)~? Et pour les rapports réglementaires~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.2. Le test \niveaubase}]
+Dans le test de novembre, le RTO et le RPO sont-ils tenus~? Justifiez par
+les chiffres.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.3. Réplication \niveaubase}]
+Pourquoi la réplication n'aurait-elle pas sauvé LiZbiZ en mars~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.4. Le point de restauration \niveaumoyen}]
+L'attaquant est entré le 2~mars à 23~h~12. Quelle sauvegarde faut-il
+restaurer, et à quelles vérifications la soumettre si l'on en prend une
+plus récente~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.5. L'ordre \niveaumoyen}]
+Établissez l'ordre de reprise des systèmes de LiZbiZ~: réseau, annuaire,
+base de facturation, application de facturation, messagerie, portail.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.6. Persistance \niveaumoyen}]
+Citez quatre traces de persistance à rechercher avant de reconnecter un
+système restauré.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.7. Tolérance \niveaumoyen}]
+Formulez la tolérance à la perturbation des virements de la BANQUE
+SANAGA, au sens du Comité de Bâle.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.8. Inconnu \niveaumoyen}]
+Pourquoi noter « inconnu » un objectif jamais mesuré~? Reliez à l'instrument
+du Chapitre~\ref{chap:retex}.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.9. Un plan de reprise \niveauexpert}]
+Rédigez la procédure de reprise de la facturation de LiZbiZ sur le site de
+Yaoundé, pas à pas, avec les vérifications.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~19.10. Scénario sévère \niveauexpert}]
+Proposez à la BANQUE SANAGA trois scénarios « sévères mais plausibles »
+pour tester sa résilience, et la mesure de réussite de chacun.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO/IEC~27031~\cite{iso27031_2011}~; NIST SP~800-34~\cite{nist80034}.
+    \item Comité de Bâle, \emph{Principles for Operational
+          Resilience}~\cite{bcbs2021resilience}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Un plan non exercé est une hypothèse. Le
+Chapitre~\ref{chap:exercer} apprend à exercer et à tester les plans.
+\end{boxinfo}

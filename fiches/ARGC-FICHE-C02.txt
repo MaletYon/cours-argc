@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C02
+Chapitre 2 : Percevoir le risque : biais et culture
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Qui décrit deux modes de pensée, rapide et lent ?
+      a) Kahneman
+      b) Knight
+      c) Perrow
+      d) Coombs
+
+ 2. Qu'est-ce qu'une heuristique ?
+      a) Une norme ISO
+      b) Une règle de jugement simple et rapide
+      c) Un logiciel
+      d) Une méthode d'audit
+
+ 3. Juger probable ce dont on se souvient facilement relève de :
+      a) L'ancrage
+      b) La représentativité
+      c) La disponibilité
+      d) La normalité
+
+ 4. Partir du budget de l'an passé pour fixer le suivant relève de :
+      a) La disponibilité
+      b) La représentativité
+      c) L'optimisme
+      d) L'ancrage
+
+ 5. « Un rançongiciel vise les banques, pas la logistique » relève de :
+      a) La représentativité
+      b) L'ancrage
+      c) La disponibilité
+      d) L'effroi
+
+ 6. En quelle année Tversky et Kahneman publient-ils leur article sur les heuristiques ?
+      a) 1921
+      b) 1974
+      c) 1987
+      d) 2011
+
+ 7. Par quoi faut-il commencer pour estimer une fréquence d'attaque ?
+      a) Sa propre expérience
+      b) L'avis du DG
+      c) Une fréquence de base externe
+      d) Le budget
+
+ 8. Le technicien qui redémarre les serveurs le 5 mars illustre :
+      a) L'ancrage
+      b) La représentativité
+      c) La pensée de groupe
+      d) Le biais de normalité
+
+ 9. Selon Slovic, le public classe les risques selon :
+      a) Leur caractère redouté et inconnu
+      b) Leur fréquence seule
+      c) Leur coût
+      d) Leur ancienneté
+
+10. Quel budget de sécurité LiZbiZ vote-t-il en avril 2026 ?
+      a) 45 millions
+      b) 180 millions
+      c) 80 millions
+      d) 312 millions
+
+11. Quel était le budget de sécurité de 2025 ?
+      a) 60 millions
+      b) 180 millions
+      c) 45 millions
+      d) 6 millions
+
+12. Qui a décrit la pensée de groupe ?
+      a) Vaughan
+      b) Reason
+      c) Slovic
+      d) Janis
+
+13. Qui a décrit la normalisation de la déviance à propos de Challenger ?
+      a) Vaughan
+      b) Janis
+      c) Weick
+      d) Klein
+
+14. Quelle parade contre l'effet d'autorité ?
+      a) Supprimer les réunions
+      b) Faire parler le plus haut placé en dernier
+      c) Voter à main levée d'abord
+      d) Laisser parler le DG en premier
+
+15. Le compte du prestataire accepté « provisoirement » puis oublié illustre :
+      a) La pensée de groupe
+      b) L'ancrage
+      c) La normalisation de la déviance
+      d) La disponibilité
+
+16. Qui décrit la culture juste ?
+      a) Frank Knight
+      b) Gary Klein
+      c) Timothy Coombs
+      d) James Reason
+
+17. Dans une culture juste, on sanctionne :
+      a) Les comportements délibérément dangereux
+      b) Toute erreur
+      c) Les signalements
+      d) Personne, jamais
+
+18. Un intervalle à 90 % bien calibré contient la vraie valeur :
+      a) Toujours
+      b) Environ neuf fois sur dix
+      c) Une fois sur deux
+      d) Rarement
+
+19. Sans entraînement, les intervalles donnés sont le plus souvent :
+      a) Trop larges
+      b) Justes
+      c) Trop étroits
+      d) Négatifs
+
+20. Qui montre qu'un expert peut apprendre à se calibrer ?
+      a) Bell et LaPadula
+      b) Freund et Jones
+      c) Saltzer et Schroeder
+      d) Hubbard et Seiersen
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. L'absence d'attaque constatée peut signifier une absence de détection.
+      Vrai / Faux
+
+22. Le biais rétrospectif fait juger après coup qu'un événement était évident.
+      Vrai / Faux
+
+23. Le budget voté en avril découlait d'une analyse des risques.
+      Vrai / Faux
+
+24. Un risque rare mais redouté mobilise souvent plus qu'un risque fréquent et familier.
+      Vrai / Faux
+
+25. Les groupes corrigent toujours les biais individuels.
+      Vrai / Faux
+
+26. Recueillir les avis par écrit avant la discussion limite la pensée de groupe.
+      Vrai / Faux
+
+27. Un salarié qui ne voit jamais d'effet à ses signalements cesse de signaler.
+      Vrai / Faux
+
+28. La culture juste interdit toute sanction.
+      Vrai / Faux
+
+29. Chercher une raison pour laquelle la valeur serait hors de l'intervalle aide à se calibrer.
+      Vrai / Faux
+
+30. Le jugement rapide répond souvent à une question plus facile que celle posée.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. Juger sur la facilité de se souvenir est l'heuristique de ______.
+
+32. Être tiré par une valeur initiale est l'effet d'______.
+
+33. La recherche d'unanimité d'un groupe soudé est la pensée de ______.
+
+34. La culture qui encourage le signalement sans sanction injuste est la culture ______.
+
+35. Des estimations dont les intervalles contiennent la valeur au bon taux sont dites ______.
+
+36. Croire qu'une situation anormale va revenir d'elle-même à la normale est le biais de ______.
+
+37. Le chercheur qui a étudié la perception du risque en 1987 s'appelle ______.
+
+38. Une erreur systématique de jugement est un ______.
+
+39. L'écart toléré qui devient la norme relève de la normalisation de la ______.
+
+40. Un intervalle calibré se donne à ______ %.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

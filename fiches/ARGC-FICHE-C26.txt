@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C26
+Chapitre 26 : Retour d'expérience, résilience et mesure
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Par quoi commence un retour d'expérience ?
+      a) La chronologie à partir de la main courante et des journaux
+      b) Les sanctions
+      c) Les solutions
+      d) Le budget
+
+ 2. Combien d'idées la réunion du 2 avril a-t-elle produites ?
+      a) Cinq
+      b) Quarante
+      c) Cent
+      d) Aucune
+
+ 3. Combien d'actions ont été décidées en mai ?
+      a) Quarante
+      b) Dix
+      c) Cinq
+      d) Une
+
+ 4. Que cherche le retour d'expérience dans une culture juste ?
+      a) Un coupable
+      b) Un bouc émissaire
+      c) Une prime
+      d) Pourquoi le système a permis l'erreur
+
+ 5. Qui distingue défaillances actives et conditions latentes ?
+      a) James Reason
+      b) Frank Knight
+      c) Timothy Coombs
+      d) Gary Klein
+
+ 6. Le redémarrage des serveurs le 5 mars est :
+      a) Une condition latente
+      b) Une défaillance active
+      c) Une décision stratégique
+      d) Un exercice
+
+ 7. L'absence de dispositif de gestion des risques est :
+      a) Une défaillance active
+      b) Un événement
+      c) Une condition latente
+      d) Un incident
+
+ 8. À quoi remonte la chaîne du compte du prestataire sans second facteur ?
+      a) À un virus
+      b) À la météo
+      c) Au client
+      d) À l'absence de suivi des audits
+
+ 9. Quand une action du retour d'expérience est-elle finie ?
+      a) Quand son effet est vérifié
+      b) Quand elle est décidée
+      c) Quand elle est écrite
+      d) Jamais
+
+10. Quelles sont les trois réponses de l'instrument du cours ?
+      a) Vert, orange, rouge
+      b) OUI, NON, NEK
+      c) 1, 2, 3
+      d) A, B, C
+
+11. Que signifie NEK ?
+      a) Non
+      b) Oui
+      c) Connaissance insuffisante pour conclure
+      d) Non applicable
+
+12. Que mesure µ ?
+      a) L'incertitude
+      b) L'entropie
+      c) Le coût
+      d) La conformité, part des OUI
+
+13. Que mesure U ?
+      a) L'incertitude, part des NEK
+      b) La conformité
+      c) L'entropie
+      d) Le nombre de questions
+
+14. Quelle est la valeur maximale de H ?
+      a) 1 bit
+      b) log2 3, environ 1,585 bit
+      c) 2 bits
+      d) 3 bits
+
+15. En mars, 3 OUI, 9 NON, 8 NEK. Que vaut µ ?
+      a) 0,40
+      b) 0,45
+      c) 0,15
+      d) 0,65
+
+16. En mars, que vaut U ?
+      a) 0,15
+      b) 0,20
+      c) 0,45
+      d) 0,40
+
+17. En octobre, 13 OUI, 3 NON, 4 NEK. Que vaut µ ?
+      a) 0,65
+      b) 0,20
+      c) 0,50
+      d) 0,85
+
+18. En octobre, compter les NEK comme des OUI afficherait :
+      a) 0,65
+      b) 0,85
+      c) 0,75
+      d) 1
+
+19. Les intervalles de µ en mars et en octobre :
+      a) Se recouvrent
+      b) Sont identiques
+      c) Ne se recouvrent pas : la progression est établie
+      d) N'existent pas
+
+20. Les intervalles de U en mars et en octobre :
+      a) Ne se recouvrent pas
+      b) Sont nuls
+      c) Sont identiques
+      d) Se recouvrent : la baisse est probable mais pas établie
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Un retour d'expérience de quarante idées change forcément les pratiques.
+      Vrai / Faux
+
+22. Le technicien du 5 mars n'avait ni consigne, ni grille, ni formation.
+      Vrai / Faux
+
+23. En octobre, la cellule s'est réunie en 25 minutes à l'exercice.
+      Vrai / Faux
+
+24. Réduire U est un progrès de la connaissance.
+      Vrai / Faux
+
+25. Un NON établi vaut mieux qu'un NEK, parce qu'il se traite.
+      Vrai / Faux
+
+26. Compter les NEK comme des OUI donne une image juste.
+      Vrai / Faux
+
+27. Vingt questions donnent une mesure très précise.
+      Vrai / Faux
+
+28. « 65 % de résilience » est une présentation correcte au conseil.
+      Vrai / Faux
+
+29. La mesure porte sur la préparation déclarée et vérifiée, pas sur la résilience face à une crise réelle.
+      Vrai / Faux
+
+30. La solidité face à une crise inopinée reste à démontrer.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La réponse « connaissance insuffisante » est notée ______.
+
+32. Une faiblesse d'organisation qui laisse passer les erreurs est une condition ______.
+
+33. Une erreur commise au contact du système est une défaillance ______.
+
+34. La mesure H est l'______.
+
+35. L'intervalle adapté aux petits effectifs est l'intervalle de ______.
+
+36. En octobre, U vaut 0,______.
+
+37. Le retour d'expérience a pour sigle ______.
+
+38. Le questionnaire de résilience compte ______ questions.
+
+39. L'auteur qui distingue défaillances actives et conditions latentes s'appelle ______.
+
+40. En mars, µ vaut 0,______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

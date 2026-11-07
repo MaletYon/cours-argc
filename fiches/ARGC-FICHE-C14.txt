@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C14
+Chapitre 14 : Auditer la gestion des risques et le SMSI
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quels sont les trois niveaux d'examen d'un dispositif de risques ?
+      a) Conception, fonctionnement, efficacité
+      b) Prix, délai, qualité
+      c) Plan, faire, vérifier
+      d) Avant, pendant, après
+
+ 2. « La méthode n'a pas d'échelle d'impact » relève de :
+      a) Le fonctionnement
+      b) La conception
+      c) L'efficacité
+      d) Le budget
+
+ 3. « Le comité ne s'est pas réuni au troisième trimestre » relève de :
+      a) La conception
+      b) L'efficacité
+      c) Le fonctionnement
+      d) La stratégie
+
+ 4. « Deux incidents n'étaient pas au registre » relève de :
+      a) La conception
+      b) Le fonctionnement
+      c) La conformité légale
+      d) L'efficacité
+
+ 5. Que révèle un incident absent du registre ?
+      a) Un trou d'identification
+      b) Un bon registre
+      c) Une fraude
+      d) Rien
+
+ 6. Combien d'incidents du trimestre n'étaient pas au registre ?
+      a) Aucun
+      b) Deux
+      c) Trois
+      d) Cinq
+
+ 7. Quel incident non prévu concerne les ordinateurs portables ?
+      a) La coupure de Garoua
+      b) L'erreur de tarif
+      c) Le vol d'un ordinateur portable d'un commercial
+      d) L'hameçonnage
+
+ 8. Combien de risques sur cinq sont recotés différemment ?
+      a) Un
+      b) Deux
+      c) Cinq
+      d) Trois
+
+ 9. Combien d'actions du plan sont réalisées et vérifiées ?
+      a) Quatre
+      b) Deux
+      c) Cinq
+      d) Six
+
+10. Combien de risques résiduels ont été acceptés oralement, sans trace ?
+      a) Un
+      b) Deux
+      c) Quatre
+      d) Six
+
+11. Combien de propriétaires interrogés sur trois connaissent leur plan ?
+      a) Zéro
+      b) Un
+      c) Deux
+      d) Trois
+
+12. De combien de manières un indicateur vert peut-il être faux selon le cours ?
+      a) Deux
+      b) Quatre
+      c) Cinq
+      d) Trois
+
+13. Quelle valeur affichait l'indicateur du second facteur ?
+      a) 100 %
+      b) 90 %
+      c) 96,6 %
+      d) 99 %
+
+14. Quel est le taux réel de connexions avec second facteur en septembre ?
+      a) 90 %
+      b) 96,6 %
+      c) 95 %
+      d) 100 %
+
+15. Pourquoi l'indicateur était-il faux ?
+      a) Sa source était un rapport papier
+      b) Son seuil était trop haut
+      c) Sa population excluait le compte vpn_secours
+      d) Il n'était pas calculé
+
+16. Comment l'auditeur vérifie-t-il un indicateur ?
+      a) En le recopiant
+      b) En demandant l'avis du propriétaire
+      c) En le supprimant
+      d) En le recalculant à partir des données brutes
+
+17. Quelle clause porte sur l'appréciation des risques ?
+      a) 6.1.2
+      b) 7.2
+      c) 9.3
+      d) 10.2
+
+18. Quelle clause porte sur le traitement des risques et la déclaration d'applicabilité ?
+      a) 8.1
+      b) 6.1.3
+      c) 9.1
+      d) 10.1
+
+19. Quelle clause porte sur la non-conformité et l'action corrective ?
+      a) 6.1.2
+      b) 8.2
+      c) 10.2
+      d) 9.2
+
+20. Quelle clause porte sur la surveillance et la mesure ?
+      a) 8.3
+      b) 9.3
+      c) 10.2
+      d) 9.1
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Une méthode conforme à l'ISO 31000 suffit à conclure que le dispositif est efficace.
+      Vrai / Faux
+
+22. Chaque incident survenu est un test du registre.
+      Vrai / Faux
+
+23. La coupure du lien de Garoua figurait au registre (R-03).
+      Vrai / Faux
+
+24. Une action déclarée réalisée a été contredite par un essai.
+      Vrai / Faux
+
+25. Le dispositif de LiZbiZ est jugé bien conçu.
+      Vrai / Faux
+
+26. Le taux réel de 96,6 % est en zone verte.
+      Vrai / Faux
+
+27. Un indicateur peut être faux par sa définition, sa population ou sa source.
+      Vrai / Faux
+
+28. La clause 9.3 concerne la revue de direction.
+      Vrai / Faux
+
+29. L'efficacité du dispositif est surestimée par le registre.
+      Vrai / Faux
+
+30. Le constat A-05 est une non-conformité majeure.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. Le niveau qui vérifie que le dispositif atteint son but est l'______.
+
+32. Le constat sur l'indicateur du second facteur porte la référence A-______.
+
+33. La clause de l'ISO/IEC 27001 sur l'action corrective est la clause 10.______.
+
+34. Faire coter le même risque par deux personnes teste la ______.
+
+35. Le taux réel du second facteur en septembre est de ______ %.
+
+36. La panne de ______ du centre de Douala n'était pas au registre.
+
+37. La norme qui fixe les exigences d'un SMSI est l'ISO/IEC ______.
+
+38. Le niveau qui vérifie que le dispositif est appliqué est le ______.
+
+39. Un indicateur vert peut être faussé par sa ______ (l'ensemble mesuré).
+
+40. Le nombre de connexions sans second facteur en septembre est de ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

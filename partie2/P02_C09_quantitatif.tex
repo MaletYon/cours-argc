@@ -1,0 +1,348 @@
+% ============================================================================
+% Fichier  : partie2/P02_C09_quantitatif.tex
+% Titre    : L'Analyse Quantitative : FAIR et Pertes Annuelles
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : Freund et Jones (2014), FAIR ; Hubbard et Seiersen (2016).
+% Estimations de LiZbiZ : cas fictif ; moyennes PERT calculées et vérifiées.
+% ============================================================================
+
+\chapter{L'Analyse Quantitative : FAIR et Pertes Annuelles}
+\label{chap:quantitatif}
+\chaptermark{FAIR et pertes annuelles}
+
+\epigraph{%
+    « Si vous savez qu'un chiffre est entre deux bornes,\\
+    vous savez déjà quelque chose de mesurable. »%
+}{Principe du cours, d'après D.~Hubbard}
+
+\niveauChapitre{Intermédiaire à expert}{Chapitres~\ref{chap:risque},
+\ref{chap:perception} et~\ref{chap:matrices}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Décomposer un risque selon la taxonomie FAIR (fréquence et
+          ampleur des pertes).
+    \item Estimer chaque facteur par un minimum, une valeur la plus
+          probable et un maximum.
+    \item Calculer une moyenne PERT et une perte annuelle attendue.
+    \item Comparer deux options de traitement en pertes évitées.
+    \item Présenter une estimation avec ses hypothèses et ses limites.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : combien le risque de rançongiciel coûtait-il à LiZbiZ chaque année~?}
+% ============================================================================
+
+En juin, le conseil demande un chiffre~: « combien ce risque nous
+coûte-t-il~? » Une cote « 12, intolérable » ne répond pas. Mme~MOUAFO
+applique la méthode FAIR au risque R-02, avec les directeurs et le
+prestataire, sur deux séances.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item La taxonomie FAIR (section~\ref{sec:c09-taxonomie}).
+    \item Estimer par trois points (section~\ref{sec:c09-estimer}).
+    \item La fréquence des pertes (section~\ref{sec:c09-frequence}).
+    \item L'ampleur des pertes (section~\ref{sec:c09-ampleur}).
+    \item La perte annuelle attendue (section~\ref{sec:c09-ale}).
+    \item Comparer des options (section~\ref{sec:c09-options}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{La Taxonomie FAIR}
+\label{sec:c09-taxonomie}
+% ============================================================================
+
+FAIR (\emph{Factor Analysis of Information Risk}) décompose le risque en
+facteurs que l'on peut estimer séparément~\cite{freund2014fair}.
+
+\begin{center}
+\begin{tikzpicture}[
+    b/.style = {draw=CouleurBordDef, fill=CouleurDef, rounded corners=3pt,
+        minimum width=2.6cm, minimum height=0.7cm, align=center,
+        font=\footnotesize\color{CouleurPrimaire}},
+    arrow/.style = {thick, color=CouleurSecondaire}]
+\node[b, fill=CouleurPrimaire, text=white] (r) at (0, 0) {\color{white}\textbf{Risque}};
+\node[b] (lef) at (-3.4, -1.3) {Fréquence des\\pertes (LEF)};
+\node[b] (lm) at (3.4, -1.3) {Ampleur des\\pertes (LM)};
+\node[b] (tef) at (-5.0, -2.8) {Fréquence des\\menaces (TEF)};
+\node[b] (vul) at (-1.8, -2.8) {Vulnérabilité};
+\node[b] (pl) at (1.8, -2.8) {Pertes\\primaires};
+\node[b] (sl) at (5.0, -2.8) {Pertes\\secondaires};
+\draw[arrow] (r) -- (lef); \draw[arrow] (r) -- (lm);
+\draw[arrow] (lef) -- (tef); \draw[arrow] (lef) -- (vul);
+\draw[arrow] (lm) -- (pl); \draw[arrow] (lm) -- (sl);
+\end{tikzpicture}
+\end{center}
+\vspace{-0.4em}
+\begin{center}{\small\itshape Figure~9.1. La taxonomie FAIR (simplifiée)}\end{center}
+
+\begin{boxdef}
+\textbf{Facteurs FAIR.} La \termecle{fréquence des pertes} (LEF) est le
+nombre d'événements de perte par an~; elle est le produit de la
+\emph{fréquence des menaces} (TEF, tentatives par an) et de la
+\emph{vulnérabilité} (probabilité qu'une tentative réussisse). L'\termecle{ampleur
+des pertes} (LM) réunit les pertes \emph{primaires} (subies par
+l'organisation) et \emph{secondaires} (dues aux réactions des tiers).
+\end{boxdef}
+
+\begin{tableaucours}{L{3.4cm}L{8.8cm}}{%
+    \tableauHeader{Forme de perte} &
+    \tableauHeader{Exemple chez LiZbiZ}
+}
+Productivité & Marge perdue pendant l'arrêt, heures supplémentaires \\
+Réponse & Prestataires de remise en état, conseil, communication \\
+Remplacement & Matériel, licences \\
+Amendes et jugements & Condamnations, sanctions \\
+Avantage concurrentiel & Tarifs ou secrets divulgués \\
+Réputation & Clients perdus, contrats non renouvelés \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~9.1. Les six formes de perte de FAIR}\end{center}
+
+% ============================================================================
+\section{Estimer par Trois Points}
+\label{sec:c09-estimer}
+% ============================================================================
+
+Chaque facteur est estimé par un \emph{minimum}, une \emph{valeur la plus
+probable} et un \emph{maximum}, par des experts calibrés
+(Chapitre~\ref{chap:perception}). La loi \termecle{PERT} en tire une moyenne~:
+\[
+\text{moyenne} = \frac{\text{min} + 4 \times \text{plus probable} + \text{max}}{6}.
+\]
+Elle pondère la valeur la plus probable sans ignorer les extrêmes.
+
+\begin{boxalert}
+\textbf{Violation typique.} Demander à l'expert « le » chiffre.
+
+\smallskip
+\textbf{Règle~:} demander trois valeurs et les raisons des bornes. Un
+chiffre unique cache l'incertitude~; trois valeurs la montrent, et la
+simulation (Chapitre~\ref{chap:simulation}) la propage.
+\end{boxalert}
+
+% ============================================================================
+\section{La Fréquence des Pertes}
+\label{sec:c09-frequence}
+% ============================================================================
+
+\begin{tableaucours}{L{4.4cm}cccc}{%
+    \tableauHeader{Facteur} &
+    \tableauHeader{Min.} &
+    \tableauHeader{Plus prob.} &
+    \tableauHeader{Max.} &
+    \tableauHeader{Moyenne}
+}
+TEF (tentatives sérieuses par an) & 2 & 2,5 & 4 & 2,67 \\
+Vulnérabilité sans second facteur & 5~\% & 10~\% & 20~\% & 10,8~\% \\
+Vulnérabilité avec second facteur & 1~\% & 2~\% & 5~\% & 2,3~\% \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~9.2. Fréquence des pertes de R-02 (estimations de juin)}\end{center}
+
+\textbf{Calcul.} LEF sans second facteur~: $2{,}67 \times 0{,}108 \approx
+0{,}29$ événement par an, soit un tous les trois à quatre ans environ.
+Avec second facteur~: $2{,}67 \times 0{,}023 \approx 0{,}06$, un tous les
+seize ans environ. Les valeurs les plus probables donnent $2{,}5 \times
+0{,}10 = 0{,}25$, l'hypothèse du Chapitre~\ref{chap:risque}.
+
+% ============================================================================
+\section{L'Ampleur des Pertes}
+\label{sec:c09-ampleur}
+% ============================================================================
+
+\begin{tableaucours}{L{4.4cm}cccc}{%
+    \tableauHeader{Perte (millions de FCFA)} &
+    \tableauHeader{Min.} &
+    \tableauHeader{Plus prob.} &
+    \tableauHeader{Max.} &
+    \tableauHeader{Moyenne}
+}
+\multicolumn{5}{l}{\textit{Pertes primaires}} \\
+Productivité & 30 & 60 & 150 & 70,0 \\
+Réponse & 40 & 80 & 120 & 80,0 \\
+Remplacement & 10 & 16 & 40 & 19,0 \\
+\multicolumn{5}{l}{\textit{Pertes secondaires (probabilité 0,8 par événement)}} \\
+Pénalités contractuelles & 20 & 74 & 120 & 72,7 \\
+Réputation (clients perdus) & 0 & 110 & 250 & 115,0 \\
+Amendes et jugements & 0 & 0 & 50 & 8,3 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~9.3. Ampleur des pertes de R-02}\end{center}
+
+\textbf{Calcul.} Pertes primaires moyennes~: $70 + 80 + 19 = 169$~millions.
+Pertes secondaires moyennes~: $72{,}7 + 115 + 8{,}3 = 196$~millions, à
+pondérer par leur probabilité~: $0{,}8 \times 196 \approx 157$. Ampleur
+moyenne par événement~: $169 + 157 \approx 326$~millions de FCFA.
+
+\begin{boxscenario}{Opération GAROUA. L'estimation confrontée au réel}
+\textbf{Constatation.} Coût estimé de la crise de mars~: 312~millions
+(Tableau~0.4), dans l'intervalle de l'estimation FAIR et proche de sa
+moyenne (326~millions).
+
+\medskip
+\textbf{Analyse} (confiance moyenne). Un seul événement ne valide pas un
+modèle~; il montre seulement que l'ordre de grandeur n'était pas absurde.
+Les experts ont d'ailleurs utilisé le coût de mars pour estimer certaines
+valeurs~: la concordance est en partie construite.
+\end{boxscenario}
+
+% ============================================================================
+\section{La Perte Annuelle Attendue}
+\label{sec:c09-ale}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Perte annuelle attendue} (FAIR)~: produit de la fréquence
+moyenne des pertes et de l'ampleur moyenne d'un événement. Elle compare
+des risques et des options~; elle ne dit rien de la pire année, que donne
+la simulation.
+\end{boxdef}
+
+\begin{tableaucours}{L{4.6cm}R{2.4cm}R{2.4cm}R{2.4cm}}{%
+    \tableauHeader{} &
+    \tableauHeader{LEF (par an)} &
+    \tableauHeader{LM (millions)} &
+    \tableauHeader{Perte annuelle}
+}
+Sans second facteur & 0,289 & 326 & 94 \\
+Avec second facteur & 0,062 & 326 & 20 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~9.4. Perte annuelle attendue de R-02 (millions de FCFA)}\end{center}
+
+% ============================================================================
+\section{Comparer des Options}
+\label{sec:c09-options}
+% ============================================================================
+
+Le second facteur coûte 6~millions par an. Il évite environ
+$94 - 20 = 74$~millions de pertes annuelles attendues. Le rapport entre
+pertes évitées nettes et coût~:
+\[
+\frac{74 - 6}{6} \approx 11.
+\]
+Chaque franc dépensé en évite, en moyenne, une dizaine. Même avec les
+bornes les plus défavorables (TEF de 2, vulnérabilité de 5~\% sans et de
+5~\% avec, ce qui annule l'effet), le calcul montre de quoi dépend la
+décision~: la réduction de la vulnérabilité, qu'il faut donc vérifier.
+
+\begin{boxobjet}{R-02 · Estimation FAIR (juin 2026)}
+\textbf{Scénario~:} rançongiciel par l'accès distant du prestataire.
+\textbf{Estimation~:} 0,29 événement par an, 326~millions par événement,
+94~millions de perte annuelle attendue. \textbf{Traitement~:} second
+facteur (perte attendue ramenée à 20~millions). \textbf{Propriétaire~:}
+M.~NGUELE. \textbf{Indicateur~:} part des connexions distantes avec second
+facteur (cible~: 100~\%).
+\end{boxobjet}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Montrer les hypothèses sur la même page que le chiffre.} Mme~MOUAFO
+présente au conseil la perte annuelle attendue, l'intervalle des
+estimations et les deux hypothèses dont le résultat dépend le plus.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{FAIR}~: risque = fréquence des pertes × ampleur~;
+          fréquence = menaces × vulnérabilité.
+    \item \textbf{Six formes de perte}, primaires et secondaires.
+    \item \textbf{Trois points} par facteur, moyenne PERT~: (min + 4 × plus
+          probable + max) / 6.
+    \item \textbf{La perte annuelle attendue} compare des options~; elle ne
+          décrit pas la pire année.
+    \item \textbf{Pertes évitées nettes sur coût}~: le langage du conseil.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: décomposer un risque
+selon FAIR~; nommer les six formes de perte~; calculer une moyenne PERT, une
+LEF, une ampleur et une perte annuelle attendue~; comparer deux options en
+pertes évitées nettes.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.1. PERT \niveaubase}]
+Un expert estime une perte entre 10 et 70~millions, le plus probablement
+25. Calculez la moyenne PERT.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.2. LEF \niveaubase}]
+Une fraude au virement est tentée en moyenne 6 fois par an et réussit
+une fois sur cinquante. Quelle est la fréquence des pertes~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.3. Formes de perte \niveaubase}]
+Classez dans les six formes de FAIR~: le salaire des agents qui ressaisissent
+les factures~; le client qui ne renouvelle pas son contrat~; l'achat d'un
+nouveau serveur.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.4. Ampleur \niveaumoyen}]
+Refaites le calcul de l'ampleur moyenne de R-02 si la probabilité des
+pertes secondaires passe de 0,8 à 0,5.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.5. La fraude \niveaumoyen}]
+Avec la LEF de l'exercice 9.2 et une perte moyenne de 60~millions,
+calculez la perte annuelle attendue. Une double validation à 4~millions
+par an qui divise la réussite par cinq est-elle justifiée~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.6. Les bornes \niveaumoyen}]
+Calculez la perte annuelle attendue de R-02 sans second facteur en
+prenant les minima de tous les facteurs, puis les maxima. Que vous
+apprend l'écart~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.7. Construite \niveaumoyen}]
+Pourquoi la concordance entre l'estimation et le coût réel de mars est-elle
+« en partie construite »~? Comment l'éviter dans une estimation future~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.8. Moyenne et pire année \niveaumoyen}]
+La perte annuelle attendue de R-02 avec second facteur est de 20~millions.
+LiZbiZ respecte-t-elle pour autant l'appétence « moins de 100~millions
+neuf ans sur dix »~? Que faut-il pour répondre~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.9. L'inondation \niveauexpert}]
+Conduisez une estimation FAIR simplifiée du risque R-11 (inondation de
+Bonabéri)~: facteurs, trois points, moyennes, perte annuelle attendue.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~9.10. La note au conseil \niveauexpert}]
+Rédigez la note d'une page de Mme~MOUAFO au conseil sur R-02~: chiffre,
+intervalle, hypothèses décisives, recommandation.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item J.~Freund et J.~Jones, \emph{Measuring and Managing Information
+          Risk: A FAIR Approach}~\cite{freund2014fair}.
+    \item D.~Hubbard et R.~Seiersen~\cite{hubbard2016cyber}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} La moyenne ne dit rien de la pire année. Le
+Chapitre~\ref{chap:simulation} propage les incertitudes par simulation de
+Monte-Carlo.
+\end{boxinfo}

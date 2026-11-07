@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C13
+Chapitre 13 : Conduire l'audit : preuves, échantillons, constats
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. À quelle étape confirme-t-on le périmètre et les critères avec l'audité ?
+      a) Réunion d'ouverture
+      b) Réunion de clôture
+      c) Rapport
+      d) Suivi
+
+ 2. À quelle étape présente-t-on les constats à l'audité ?
+      a) Préparation
+      b) Réunion de clôture
+      c) Réunion d'ouverture
+      d) Déclenchement
+
+ 3. Quelle source de preuve est la plus forte ?
+      a) Une déclaration
+      b) Un courriel
+      c) Un essai refait par l'auditeur
+      d) Une rumeur
+
+ 4. Quelle source de preuve est la plus faible ?
+      a) Un enregistrement du système
+      b) Un document signé
+      c) Une observation
+      d) Une déclaration
+
+ 5. Que fait-on d'une déclaration non corroborée ?
+      a) On la corrobore par un enregistrement ou un essai
+      b) On conclut dessus
+      c) On l'ignore
+      d) On la publie
+
+ 6. Quel échantillon seul permet d'étendre une conclusion chiffrée à la population ?
+      a) Par jugement
+      b) Statistique (aléatoire)
+      c) De convenance
+      d) Le premier venu
+
+ 7. Taille minimale pour un taux tolérable de 10 % à 95 %, sans anomalie attendue ?
+      a) 10
+      b) 59
+      c) 29
+      d) 99
+
+ 8. Taille minimale pour un taux tolérable de 5 % ?
+      a) 29
+      b) 46
+      c) 99
+      d) 59
+
+ 9. Taille minimale pour un taux tolérable de 3 % ?
+      a) 99
+      b) 29
+      c) 59
+      d) 299
+
+10. La taille d'échantillon dépend surtout :
+      a) De la taille de la population
+      b) Du taux tolérable et de la confiance
+      c) Du nom de l'auditeur
+      d) Du budget
+
+11. Une anomalie sur 29 : quelle limite supérieure à 95 % ?
+      a) 9,8 %
+      b) 20,2 %
+      c) 15,3 %
+      d) 1 %
+
+12. Deux anomalies sur 59 : quelle limite supérieure ?
+      a) 5,0 %
+      b) 7,8 %
+      c) 20,2 %
+      d) 10,3 %
+
+13. Zéro anomalie sur 29 : quelle limite supérieure ?
+      a) 9,8 %
+      b) 0 %
+      c) 5 %
+      d) 15,3 %
+
+14. Combien de connexions la passerelle a-t-elle enregistrées en septembre ?
+      a) 29
+      b) 1 340
+      c) 46
+      d) 4 812
+
+15. Quel compte se connectait sans second facteur ?
+      a) sahel_maint
+      b) pkounou
+      c) vpn_secours
+      d) admin2
+
+16. Combien de connexions ce compte a-t-il faites en septembre ?
+      a) 1
+      b) 29
+      c) 1 340
+      d) 46
+
+17. Quel élément n'appartient pas à un constat ?
+      a) L'opinion personnelle de l'auditeur
+      b) Le critère
+      c) La preuve
+      d) La cause
+
+18. Comment est classé le constat A-03 ?
+      a) Opportunité d'amélioration
+      b) Non-conformité majeure
+      c) Non-conformité mineure
+      d) Conformité
+
+19. Quelle est la cause du constat A-03 ?
+      a) Une panne
+      b) Un virus
+      c) Une exception accordée oralement et jamais revue
+      d) Un client
+
+20. Une fois la cause identifiée, l'auditeur passe :
+      a) À la clôture
+      b) Au silence
+      c) À un autre audit
+      d) Du sondage au test exhaustif ciblé
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Les listes de vérification se préparent avant la collecte.
+      Vrai / Faux
+
+22. Un journal exporté en présence de l'auditeur, avec son empreinte, est une preuve forte.
+      Vrai / Faux
+
+23. 29 connexions suffisent pour 1 340 comme pour 100 000, pour le même taux tolérable.
+      Vrai / Faux
+
+24. Un échantillon par jugement permet de conclure sur toute la population.
+      Vrai / Faux
+
+25. Zéro anomalie dans un échantillon prouve zéro anomalie dans la population.
+      Vrai / Faux
+
+26. Avec une anomalie sur 29, on peut conclure qu'au moins 90 % des connexions ont un second facteur.
+      Vrai / Faux
+
+27. Un constat doit être chiffré.
+      Vrai / Faux
+
+28. « Certaines connexions » est une formulation suffisante.
+      Vrai / Faux
+
+29. Faute de corroboration, le point reste ouvert.
+      Vrai / Faux
+
+30. Le constat relie l'écart à un risque du registre.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. Compter les anomalies dans un échantillon aléatoire est un échantillonnage par ______.
+
+32. La borne maximale du taux d'anomalies à 95 % est la limite ______.
+
+33. Une information pertinente et vérifiable est une ______ d'audit.
+
+34. Le compte exclu du second facteur s'appelle vpn_______.
+
+35. La taille minimale pour 10 % de taux tolérable est ______.
+
+36. Le constat A-03 est une non-conformité ______.
+
+37. La réunion qui ouvre l'audit est la réunion d'______.
+
+38. Le taux d'anomalies acceptable fixé par l'auditeur est le taux ______.
+
+39. Une anomalie sur 29 donne une limite supérieure de ______ %.
+
+40. Une affirmation de l'audité non vérifiée est une ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

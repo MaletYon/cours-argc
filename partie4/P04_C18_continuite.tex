@@ -1,0 +1,311 @@
+% ============================================================================
+% Fichier  : partie4/P04_C18_continuite.tex
+% Titre    : Stratégies et Plans de Continuité
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 22301:2019 (8.3, 8.4) ; ISO 22313:2020. Opérations GAROUA et
+% MOUNGO : cas fictifs, chiffres cohérents entre eux.
+% ============================================================================
+
+\chapter{Stratégies et Plans de Continuité}
+\label{chap:pca}
+\chaptermark{Stratégies et plans de continuité}
+
+\epigraph{%
+    « Le plan de continuité se juge le premier matin,\\
+    quand ceux qui doivent l'appliquer le trouvent sans le chercher. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitre~\ref{chap:bia}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Situer le système de management de la continuité de
+          l'ISO~22301.
+    \item Choisir une stratégie de continuité pour chaque type de
+          ressource.
+    \item Concevoir un mode dégradé.
+    \item Rédiger un plan de continuité d'activité~: déclenchement, rôles,
+          procédures, ressources.
+    \item Articuler plan de gestion de crise, plan de continuité et plan de
+          reprise informatique.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : comment LiZbiZ a-t-elle livré pendant l'inondation de Bonabéri~?}
+% ============================================================================
+
+Dans la nuit du 14 au 15~août 2026, l'entrepôt de Bonabéri, à Douala, est
+inondé par 40~cm d'eau. Cinq mois plus tôt, une telle nuit aurait arrêté
+les expéditions de Douala pour une semaine. Cette fois, LiZbiZ dispose
+d'un plan de continuité, écrit en juin après la crise de mars. Les
+expéditions reprennent en 36~heures depuis un entrepôt de repli. Ce
+chapitre montre comment un tel plan se construit.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Le système de management de la continuité (section~\ref{sec:c18-smca}).
+    \item Les stratégies par ressource (section~\ref{sec:c18-strategies}).
+    \item Le mode dégradé (section~\ref{sec:c18-degrade}).
+    \item Le plan de continuité (section~\ref{sec:c18-plan}).
+    \item Les trois plans (section~\ref{sec:c18-plans}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Le Système de Management de la Continuité}
+\label{sec:c18-smca}
+% ============================================================================
+
+L'\norme{ISO~22301:2019} fixe les exigences d'un système de management de
+la continuité d'activité, certifiable~\cite{iso22301_2019}~; l'ISO~22313
+en donne les lignes directrices~\cite{iso22313_2020}. Le cœur opérationnel
+est la clause~8~: analyse d'impact et appréciation des risques (8.2),
+stratégies et solutions (8.3), plans et procédures (8.4), programme
+d'exercices (8.5), évaluation de la documentation et des capacités (8.6).
+
+\begin{boxdef}
+\termecle{Continuité d'activité}~: capacité d'une organisation à
+continuer à fournir des produits et des services dans des délais et à une
+capacité acceptables, prédéfinis, pendant une perturbation.
+\end{boxdef}
+
+% ============================================================================
+\section{Les Stratégies par Ressource}
+\label{sec:c18-strategies}
+% ============================================================================
+
+\begin{tableaucours}{L{2.6cm}L{4.8cm}L{4.8cm}}{%
+    \tableauHeader{Ressource} &
+    \tableauHeader{Stratégies possibles} &
+    \tableauHeader{Choix de LiZbiZ}
+}
+Personnes & Polyvalence, suppléants désignés, travail à distance & Deux
+suppléants formés par poste clé \\
+Locaux & Site de repli, accord de réciprocité, location à la demande &
+Accord avec un entrepôt partenaire à Bassa (Douala) \\
+Technologies & Site de secours, nuage, matériel en réserve & Reprise du
+système central à Yaoundé (Chapitre~\ref{chap:pra}) \\
+Information & Sauvegardes hors ligne, documents papier & Sauvegardes
+immuables, bordereaux papier numérotés \\
+Fournisseurs & Second fournisseur, clauses de continuité, stocks & Second
+opérateur à Garoua, transporteurs de réserve \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~18.1. Stratégies de continuité par ressource}\end{center}
+
+Le choix se fait en comparant, pour chaque stratégie, son \emph{coût} et le
+RTO qu'elle permet d'atteindre, au regard du RTO exigé par l'analyse
+d'impact. On ne finance pas une stratégie plus rapide que nécessaire.
+
+% ============================================================================
+\section{Le Mode Dégradé}
+\label{sec:c18-degrade}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Mode dégradé}~: manière de poursuivre une activité, à un niveau
+réduit mais acceptable, sans une ou plusieurs de ses ressources habituelles.
+\end{boxdef}
+
+\begin{tableaucours}{L{3.2cm}L{9.0cm}}{%
+    \tableauHeader{Activité} &
+    \tableauHeader{Mode dégradé de LiZbiZ}
+}
+Expéditions & Bordereaux papier numérotés en carnets~; liste des clients
+prioritaires~; tournées fixes \\
+Suivi & Tableur partagé hors du système principal, mis à jour toutes les
+deux heures~; ligne téléphonique dédiée \\
+Facturation & Factures reconstituées à partir des bordereaux, émises dès le
+retour du système, par ordre d'ancienneté \\
+Paiements & Virements urgents seulement, double signature sur papier,
+plafond \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~18.2. Modes dégradés de LiZbiZ}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Un mode dégradé qui dépend de ce qui est en
+panne (un tableur stocké sur le serveur chiffré).
+
+\smallskip
+\textbf{Règle~:} le mode dégradé utilise des ressources \emph{indépendantes}
+de celles qu'il remplace~: papier, autre site, autre fournisseur. Il est
+préparé à l'avance (carnets imprimés, listes à jour) et entraîné.
+\end{boxalert}
+
+% ============================================================================
+\section{Le Plan de Continuité}
+\label{sec:c18-plan}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Structure du plan de continuité d'une activité}
+\begin{enumerate}
+    \item \textbf{Objet et périmètre}~: activité, sites, objectifs de
+          reprise.
+    \item \textbf{Critères de déclenchement}~: qui décide, à partir de quel
+          seuil.
+    \item \textbf{Rôles}~: responsable du plan, suppléants, équipes.
+    \item \textbf{Procédures}~: premières heures, mode dégradé, retour à la
+          normale.
+    \item \textbf{Ressources}~: site de repli, matériel, documents, accès.
+    \item \textbf{Contacts}~: internes, clients prioritaires, fournisseurs,
+          autorités, assureur.
+    \item \textbf{Fin de crise}~: critères de retour à la normale.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxscenario}{Opération MOUNGO. La nuit du 14 août}
+\textbf{Constatations.}
+\begin{itemize}
+    \item 15~août, 4~h~10~: le gardien signale 40~cm d'eau dans
+          l'entrepôt de Bonabéri.
+    \item 5~h~30~: M.~NGUELE, responsable du plan, le déclenche par
+          téléphone.
+    \item 6~h~00~: les équipes appliquent la procédure~: inventaire des
+          1\,200~colis, transfert des colis secs, information des clients
+          prioritaires.
+    \item 15~août, 18~h~00~: l'entrepôt partenaire de Bassa reçoit les
+          premiers colis~; 16~août, 16~h~00~: les expéditions de Douala
+          reprennent depuis Bassa.
+    \item Bilan~: 310~colis endommagés, d'une valeur déclarée de
+          96~millions de FCFA~; expéditions interrompues 36~heures.
+\end{itemize}
+
+\medskip
+\textbf{Analyse} (confiance élevée). Le RTO des expéditions, fixé à
+48~heures, est tenu. Les rayonnages surélevés, prévus pour septembre
+(Chapitre~\ref{chap:traiter}), n'étaient pas encore posés~: les colis au
+sol sont ceux qui ont été endommagés.
+\end{boxscenario}
+
+% ============================================================================
+\section{Les Trois Plans}
+\label{sec:c18-plans}
+% ============================================================================
+
+\begin{tableaucours}{L{3.6cm}L{4.2cm}L{4.4cm}}{%
+    \tableauHeader{Plan} &
+    \tableauHeader{Question} &
+    \tableauHeader{Responsable chez LiZbiZ}
+}
+Plan de gestion de crise & Qui décide, qui communique~? & M.~ETEME (DG) \\
+Plan de continuité & Comment continuer l'activité~? & Chaque directeur,
+pour son activité \\
+Plan de reprise informatique & Comment rétablir les systèmes~? &
+M.~KOUNOU \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~18.3. Trois plans, trois questions}\end{center}
+
+\begin{boxobjet}{R-11 · Inondation de Bonabéri (après MOUNGO)}
+\textbf{Scénario~:} inondation de l'entrepôt en saison des pluies.
+\textbf{Cotation~:} V passe de 2 à 3 (événement survenu, saisons plus
+pluvieuses), I reste à 3. \textbf{Traitement~:} plan de continuité (tenu),
+rayonnages surélevés (à accélérer), assurance des marchandises (à
+vérifier). \textbf{Propriétaire~:} M.~NGUELE. \textbf{Indicateur~:} part des
+colis stockés au sol entre juin et octobre.
+\end{boxobjet}
+
+\begin{boxmetier}{Responsable de la continuité}
+\textbf{Imprimer le plan.} Le responsable de la continuité garde une copie
+papier du plan et des contacts dans chaque site et chez chaque suppléant~:
+un plan stocké sur le serveur qui vient de tomber n'existe pas.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{L'ISO~22301} est certifiable~; sa clause~8 organise
+          analyse, stratégies, plans et exercices.
+    \item \textbf{Une stratégie par ressource}~: personnes, locaux,
+          technologies, information, fournisseurs.
+    \item \textbf{Le mode dégradé} utilise des ressources indépendantes,
+          préparées et entraînées.
+    \item \textbf{Le plan} dit qui déclenche, qui fait quoi, avec quoi,
+          jusqu'à quand.
+    \item \textbf{Crise, continuité, reprise}~: trois plans articulés.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: situer l'ISO~22301 et sa
+clause~8~; choisir une stratégie par ressource~; concevoir un mode
+dégradé~; structurer un plan de continuité~; distinguer les trois plans.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.1. Ressources \niveaubase}]
+Rangez dans les cinq types de ressources~: le gardien de Bonabéri~;
+l'entrepôt de Bassa~; les carnets de bordereaux~; le second opérateur.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.2. Le RTO tenu \niveaubase}]
+Calculez la durée d'interruption des expéditions lors de MOUNGO, du
+signalement à la reprise. Le RTO de 48~heures est-il tenu~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.3. Quel plan~? \niveaubase}]
+Quel plan répond à~: « qui appelle les clients prioritaires~? »~;
+« comment restaurer la base de facturation~? »~; « faut-il informer la
+presse~? »
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.4. Indépendance \niveaumoyen}]
+Vérifiez que chaque mode dégradé du Tableau~18.2 est indépendant des
+ressources qu'il remplace.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.5. Déclenchement \niveaumoyen}]
+Rédigez les critères de déclenchement du plan de continuité des
+expéditions de Douala.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.6. L'accord de repli \niveaumoyen}]
+Quelles clauses l'accord avec l'entrepôt partenaire de Bassa doit-il
+contenir~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.7. Les colis au sol \niveaumoyen}]
+Les colis endommagés étaient ceux stockés au sol. Quelle leçon pour le
+plan de traitement et pour l'indicateur de R-11~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.8. Fin de crise \niveaumoyen}]
+Proposez les critères de retour à la normale après MOUNGO.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.9. Un plan complet \niveauexpert}]
+Rédigez le plan de continuité de la facturation de LiZbiZ, selon la
+structure en sept points.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~18.10. Stratégie bancaire \niveauexpert}]
+À partir de l'analyse d'impact du Chapitre~\ref{chap:bia}, proposez à la
+BANQUE SANAGA une stratégie pour chacune des cinq ressources.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~22301~\cite{iso22301_2019}~; ISO~22313~\cite{iso22313_2020}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Le plan de reprise informatique est la partie la plus
+technique. Le Chapitre~\ref{chap:pra} la traite, avec la résilience
+opérationnelle.
+\end{boxinfo}

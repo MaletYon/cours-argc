@@ -1,0 +1,335 @@
+% ============================================================================
+% Fichier  : partie2/P02_C11_traiter.tex
+% Titre    : Traiter, Suivre et Rendre Compte
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 31000:2018 (6.5 à 6.7) ; COSO ERM (2017) ; ISO/IEC 27005.
+% Plan de traitement de LiZbiZ : cas fictif, montants cohérents entre eux.
+% ============================================================================
+
+\chapter{Traiter, Suivre et Rendre Compte}
+\label{chap:traiter}
+\chaptermark{Traiter, suivre, rendre compte}
+
+\epigraph{%
+    « Un risque n'est traité\\
+    que lorsque la mesure fonctionne. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:gouvernance},
+\ref{chap:matrices} et~\ref{chap:quantitatif}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Choisir une option de traitement selon l'ISO~31000.
+    \item Rédiger un plan de traitement complet.
+    \item Arbitrer un budget par les pertes évitées.
+    \item Définir des indicateurs clés de risque avec des seuils.
+    \item Rendre compte au comité et au conseil.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : comment dépenser les 180 millions votés en avril~?}
+% ============================================================================
+
+En avril, sous le choc, le comité de direction a voté 180~millions de
+FCFA pour la sécurité. En juin, le registre et les estimations sont
+prêts. Il reste à choisir les traitements, à les confier à des
+responsables, et à savoir, chaque trimestre, si le risque baisse
+vraiment.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Les options de traitement (section~\ref{sec:c11-options}).
+    \item Le plan de traitement (section~\ref{sec:c11-plan}).
+    \item Arbitrer le budget (section~\ref{sec:c11-budget}).
+    \item Les indicateurs clés de risque (section~\ref{sec:c11-kri}).
+    \item Rendre compte (section~\ref{sec:c11-rendre}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Les Options de Traitement}
+\label{sec:c11-options}
+% ============================================================================
+
+L'ISO~31000 énumère plusieurs options, qui se combinent~\cite{iso31000_2018}.
+
+\begin{tableaucours}{L{3.6cm}L{4.6cm}L{4.0cm}}{%
+    \tableauHeader{Option} &
+    \tableauHeader{Principe} &
+    \tableauHeader{Exemple chez LiZbiZ}
+}
+Éviter & Renoncer à l'activité qui crée le risque & Supprimer l'accès
+distant permanent du prestataire \\
+Retirer la source & Supprimer la cause & Remplacer FTP par SFTP \\
+Modifier la vraisemblance & Rendre l'événement moins probable & Second
+facteur, correctifs \\
+Modifier les conséquences & Limiter les dommages & Sauvegardes hors ligne,
+mode dégradé \\
+Partager & Transférer une part des conséquences & Assurance cyber, clauses
+du contrat \\
+Maintenir & Accepter en connaissance de cause, par écrit & Défiguration du
+portail, sous surveillance \\
+Prendre le risque & Saisir une opportunité & Ouvrir un portail client en
+ligne, avec ses mesures \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~11.1. Les options de traitement (d'après l'ISO 31000:2018)}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Croire que l'assurance « traite » le risque.
+
+\smallskip
+\textbf{Règle~:} l'assurance partage une part des pertes financières~;
+elle ne réduit ni la vraisemblance, ni l'arrêt de l'activité, ni l'atteinte
+aux clients. Elle complète la réduction, elle ne la remplace pas. Et
+l'assureur exige souvent, en contrepartie, des mesures (second facteur,
+sauvegardes).
+\end{boxalert}
+
+% ============================================================================
+\section{Le Plan de Traitement}
+\label{sec:c11-plan}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Plan de traitement}~: document qui précise, pour chaque risque
+traité, les actions retenues, leur justification, le responsable, les
+ressources, l'échéance, l'indicateur de suivi et le risque résiduel visé.
+\end{boxdef}
+
+\begin{tableaucours}{L{1.0cm}L{4.2cm}L{2.2cm}L{1.6cm}L{2.8cm}}{%
+    \tableauHeader{Risque} &
+    \tableauHeader{Action} &
+    \tableauHeader{Responsable} &
+    \tableauHeader{Échéance} &
+    \tableauHeader{Indicateur}
+}
+R-02 & Second facteur sur la passerelle & M.~KOUNOU & Juillet & Part des
+connexions avec second facteur \\
+R-02 & Bastion d'administration & M.~KOUNOU & Septembre & Part des accès
+du prestataire par le bastion \\
+R-01 & Sauvegardes hors ligne et immuables & M.~KOUNOU & Août & Durée du
+dernier test de restauration \\
+R-07 & Chiffrement des bases clients & M.~KOUNOU & Octobre & Part des
+bases chiffrées \\
+R-11 & Rayonnages surélevés et pompes & M.~NGUELE & Septembre & Hauteur
+des stocks au sol \\
+R-03 & Second lien télécom à Garoua & M.~NGUELE & Novembre & Durée des
+coupures \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~11.2. Extrait du plan de traitement de LiZbiZ}\end{center}
+
+Le \termecle{risque résiduel} est réévalué avec les seules mesures en place
+et vérifiées~; il est \emph{accepté par écrit} par le propriétaire et, au
+besoin, par la direction. Une mesure décidée mais non mise en œuvre ne
+réduit rien (cours SEC3266, Chapitre sur les risques).
+
+% ============================================================================
+\section{Arbitrer le Budget}
+\label{sec:c11-budget}
+% ============================================================================
+
+On classe les traitements par \emph{pertes annuelles évitées nettes} et par
+rapport au coût annuel. Les pertes évitées viennent des estimations FAIR
+(Chapitre~\ref{chap:quantitatif}) pour les risques majeurs, et d'ordres de
+grandeur pour les autres.
+
+\begin{tableaucours}{L{4.8cm}R{1.8cm}R{2.2cm}R{2.4cm}}{%
+    \tableauHeader{Traitement} &
+    \tableauHeader{Coût annuel} &
+    \tableauHeader{Pertes évitées} &
+    \tableauHeader{Rapport net}
+}
+Second facteur (R-02) & 6 & 74 & 11,3 \\
+Sauvegardes hors ligne (R-01) & 15 & 60 & 3,0 \\
+Bastion (R-02) & 10 & 25 & 1,5 \\
+Rayonnages et pompes (R-11) & 4 & 9 & 1,3 \\
+Surveillance externalisée (SOC) & 60 & 45 & -0,25 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~11.3. Arbitrage des traitements (millions de FCFA par an ; rapport = (évité moins coût) / coût)}\end{center}
+
+\begin{boxscenario}{Opération LIZBIZ. La décision de juin}
+\textbf{Constatation.} Les quatre premiers traitements coûtent 35~millions
+par an et évitent environ 168~millions de pertes attendues. La
+surveillance externalisée coûte plus qu'elle n'évite, selon les
+estimations.
+
+\medskip
+\textbf{Analyse} (confiance faible). La surveillance réduit surtout le
+délai de détection, dont l'effet sur les pertes est mal estimé~; le
+rapport négatif peut venir de cette sous-estimation. Le comité retient les
+quatre premiers traitements, et une surveillance limitée aux heures de
+nuit, à réévaluer après six mois de mesures.
+\end{boxscenario}
+
+% ============================================================================
+\section{Les Indicateurs Clés de Risque}
+\label{sec:c11-kri}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Indicateur clé de risque} (KRI)~: mesure qui signale à l'avance
+l'évolution d'un risque, assortie de seuils d'alerte. Il se distingue de
+l'indicateur de performance, qui mesure l'atteinte d'un objectif.
+\end{boxdef}
+
+\begin{tableaucours}{L{4.8cm}L{1.0cm}L{2.0cm}L{2.0cm}L{2.0cm}}{%
+    \tableauHeader{Indicateur} &
+    \tableauHeader{Risque} &
+    \tableauHeader{Vert} &
+    \tableauHeader{Orange} &
+    \tableauHeader{Rouge}
+}
+Connexions distantes avec second facteur & R-02 & 100~\% & 95 à 99~\% &
+moins de 95~\% \\
+Âge du dernier test de restauration réussi & R-01 & moins de 3~mois & 3 à
+6~mois & plus de 6~mois \\
+Correctifs critiques en retard & R-02 & 0 & 1 à 3 & plus de 3 \\
+Comptes orphelins actifs & R-07 & 0 & 1 à 5 & plus de 5 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~11.4. Indicateurs clés de risque de LiZbiZ}\end{center}
+
+Un bon indicateur clé de risque est \emph{avancé} (il bouge avant
+l'incident), \emph{mesurable} automatiquement si possible, et rattaché à un
+\emph{propriétaire} qui agit quand il passe à l'orange.
+
+% ============================================================================
+\section{Rendre Compte}
+\label{sec:c11-rendre}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Le rapport trimestriel au comité des risques}
+\begin{enumerate}
+    \item Les dix premiers risques, avec leur score et leur évolution
+          depuis le trimestre précédent.
+    \item L'avancement du plan de traitement~: actions faites, en retard,
+          bloquées.
+    \item Les indicateurs clés de risque passés à l'orange ou au rouge, et
+          ce qui a été fait.
+    \item Les incidents du trimestre et les risques qu'ils révèlent.
+    \item Les risques nouveaux ou émergents.
+    \item Les décisions demandées au comité.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxobjet}{R-01 · Arrêt de la facturation (suivi)}
+\textbf{Cotation~:} V=3, I=3 (score~9) en juin~; cible V=2, I=2 après
+sauvegardes testées et mode dégradé. \textbf{Traitement~:} sauvegardes hors
+ligne (août), test trimestriel. \textbf{Propriétaire~:} Mme~MBALLA.
+\textbf{Indicateur~:} âge du dernier test de restauration réussi (vert sous
+trois mois).
+\end{boxobjet}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Une page pour le conseil.} Le conseil reçoit chaque semestre une
+seule page~: respect de l'appétence, les cinq risques majeurs, les
+décisions qui lui reviennent. Le détail est en annexe.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Plusieurs options} se combinent~; l'assurance partage,
+          elle ne réduit pas.
+    \item \textbf{Le plan de traitement} nomme l'action, le responsable,
+          l'échéance, l'indicateur et le résiduel visé.
+    \item \textbf{On arbitre} par les pertes évitées nettes, en disant la
+          confiance de l'estimation.
+    \item \textbf{Les indicateurs clés de risque} sont avancés, mesurables,
+          à seuils, et ont un propriétaire.
+    \item \textbf{Rendre compte}~: dix risques, plan, indicateurs,
+          incidents, émergents, décisions.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: choisir une option de
+traitement~; rédiger une ligne de plan de traitement~; calculer un rapport
+net~; définir un indicateur clé de risque et ses seuils~; structurer un
+rapport trimestriel.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.1. Quelle option~? \niveaubase}]
+Donnez l'option de traitement~: souscrire une assurance~; fermer l'agence
+de Garoua~; installer des pompes à Bonabéri~; accepter la défiguration du
+portail.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.2. Rapport net \niveaubase}]
+Un traitement coûte 8~millions par an et évite 20~millions de pertes
+attendues. Calculez le rapport net.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.3. KRI ou KPI \niveaubase}]
+Classez en indicateur clé de risque ou de performance~: le chiffre
+d'affaires mensuel~; le nombre de correctifs critiques en retard~; le taux
+de livraison à l'heure.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.4. L'assurance \niveaumoyen}]
+Pourquoi l'assurance seule ne suffit-elle pas pour R-02~? Que demandera
+probablement l'assureur à LiZbiZ~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.5. Une ligne de plan \niveaumoyen}]
+Rédigez la ligne du plan de traitement pour le chiffrement des
+ordinateurs portables de la direction.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.6. Le budget \niveaumoyen}]
+Sur les 180~millions votés, combien restent après les quatre premiers
+traitements du Tableau~11.3 la première année~? Que proposez-vous d'en
+faire~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.7. Le SOC \niveaumoyen}]
+Le rapport net de la surveillance externalisée est négatif. Quelles
+pertes évitées l'estimation a-t-elle pu oublier~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.8. Seuils \niveaumoyen}]
+Proposez des seuils vert, orange et rouge pour l'indicateur « hauteur des
+marchandises stockées au sol à Bonabéri en saison des pluies ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.9. Le rapport \niveauexpert}]
+Rédigez le rapport trimestriel de septembre au comité des risques de
+LiZbiZ, à partir des éléments du chapitre.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~11.10. La page du conseil \niveauexpert}]
+Rédigez la page semestrielle au conseil~: appétence, cinq risques majeurs,
+décisions demandées.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~31000, traitement, suivi et rapport~\cite{iso31000_2018}.
+    \item COSO ERM~\cite{coso2017erm}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Un dispositif de risques se vérifie. La Partie~III
+apprend à l'auditer, en commençant par l'ISO~19011
+(Chapitre~\ref{chap:audit}).
+\end{boxinfo}

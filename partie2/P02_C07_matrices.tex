@@ -1,0 +1,334 @@
+% ============================================================================
+% Fichier  : partie2/P02_C07_matrices.tex
+% Titre    : Estimer : Échelles et Matrices
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 31000:2018 ; IEC 31010:2019 (matrice conséquence/vraisem-
+% blance) ; Cox (2008). Échelles : convention du cours, reprise de SEC3266.
+% ============================================================================
+
+\chapter{Estimer : Échelles et Matrices}
+\label{chap:matrices}
+\chaptermark{Échelles et matrices}
+
+\epigraph{%
+    « Une matrice de risques classe les risques~;\\
+    elle ne les mesure pas. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:risque}
+et~\ref{chap:identifier}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Construire des échelles de vraisemblance et d'impact ancrées sur
+          des valeurs.
+    \item Coter un risque et le placer dans une matrice.
+    \item Relier la matrice à l'appétence du conseil.
+    \item Expliquer les limites des matrices décrites par Cox.
+    \item Repérer une inversion de priorité et la corriger.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : comment classer 46 risques en une séance de comité~?}
+% ============================================================================
+
+Le registre de LiZbiZ compte 46~risques. Le comité de juin dispose de deux
+heures. Il lui faut un classement rapide, compréhensible et reproductible
+pour décider lesquels traiter d'abord. La matrice le permet~; elle peut
+aussi tromper. Ce chapitre montre comment s'en servir sans s'y fier
+aveuglément.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Les échelles (section~\ref{sec:c07-echelles}).
+    \item Coter et placer (section~\ref{sec:c07-coter}).
+    \item Matrice et appétence (section~\ref{sec:c07-appetence}).
+    \item Les limites des matrices (section~\ref{sec:c07-limites}).
+    \item Bien utiliser une matrice (section~\ref{sec:c07-usage}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Les Échelles}
+\label{sec:c07-echelles}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Échelle de cotation}~: suite ordonnée de niveaux, chacun défini
+par une description \emph{et} une plage de valeurs, qui permet à deux
+personnes de donner la même cote au même risque.
+\end{boxdef}
+
+\begin{tableaucours}{cL{4.6cm}L{6.4cm}}{%
+    \tableauHeader{Niveau} &
+    \tableauHeader{Vraisemblance (fréquence)} &
+    \tableauHeader{Impact (le plus élevé des critères)}
+}
+1 & Rare~: moins d'une fois en dix ans & Mineur~: moins de 5~millions de
+FCFA, arrêt de moins de 4~h \\
+2 & Possible~: une fois en trois à dix ans & Modéré~: 5 à 50~millions,
+arrêt de moins de 24~h \\
+3 & Probable~: une fois en un à trois ans & Majeur~: 50 à 500~millions,
+arrêt de 1 à 3~jours \\
+4 & Quasi certain~: plus d'une fois par an & Critique~: plus de
+500~millions, arrêt de plus de 3~jours, sanction ou atteinte grave aux
+personnes \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~7.1. Échelles de LiZbiZ (convention du cours)}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Des échelles purement verbales (« faible »,
+« moyen », « fort »).
+
+\smallskip
+\textbf{Règle~:} chaque niveau porte une plage de valeurs (fréquence,
+montant, durée). Sans ancrage, « probable » signifie 10~\% pour l'un et
+70~\% pour l'autre~: les cotes ne se comparent plus.
+\end{boxalert}
+
+% ============================================================================
+\section{Coter et Placer}
+\label{sec:c07-coter}
+% ============================================================================
+
+On cote chaque risque en vraisemblance (V) et en impact (I), sur la base
+des mesures \emph{en place et vérifiées}~: c'est le \termecle{risque
+brut} (ou inhérent, si l'on raisonne sans aucune mesure). Le score
+$V \times I$ va de 1 à~16.
+
+\begin{center}
+\begin{tikzpicture}[x=1.25cm, y=0.9cm]
+\foreach \v in {1,...,4} \foreach \i in {1,...,4} {
+    \pgfmathtruncatemacro{\s}{\v*\i}
+    \ifnum\s>8 \def\couleurcase{red!45}\else\ifnum\s>4 \def\couleurcase{orange!45}\else\def\couleurcase{green!30}\fi\fi
+    \fill[\couleurcase] (\i-1, \v-1) rectangle (\i, \v);
+    \draw[white, thick] (\i-1, \v-1) rectangle (\i, \v);
+    \node[font=\small] at (\i-0.5, \v-0.5) {\s};
+}
+\foreach \i in {1,...,4} \node[font=\footnotesize] at (\i-0.5, -0.4) {I=\i};
+\foreach \v in {1,...,4} \node[font=\footnotesize] at (-0.5, \v-0.5) {V=\v};
+\node[font=\footnotesize, text=CouleurSecondaire] at (2, -1.0) {Impact};
+\node[font=\footnotesize, text=CouleurSecondaire, rotate=90] at (-1.2, 2) {Vraisemblance};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.4em}
+\begin{center}{\small\itshape Figure~7.1. Matrice 4 × 4 de LiZbiZ~: vert acceptable, orange à traiter, rouge intolérable}\end{center}
+
+\begin{tableaucours}{L{1.0cm}L{6.0cm}cccL{2.0cm}}{%
+    \tableauHeader{Réf.} &
+    \tableauHeader{Risque} &
+    \tableauHeader{V} &
+    \tableauHeader{I} &
+    \tableauHeader{Score} &
+    \tableauHeader{Zone}
+}
+R-02 & Usurpation de l'accès distant du prestataire & 3 & 4 & 12 &
+Intolérable \\
+R-01 & Arrêt de la facturation plus de deux jours & 3 & 3 & 9 &
+Intolérable \\
+R-07 & Fuite de données personnelles de clients & 2 & 4 & 8 & À traiter \\
+R-11 & Inondation de l'entrepôt de Bonabéri & 2 & 3 & 6 & À traiter \\
+R-03 & Défaillance de l'opérateur de Garoua & 2 & 3 & 6 & À traiter \\
+R-15 & Défiguration du portail de suivi & 2 & 2 & 4 & Acceptable \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~7.2. Extrait du registre de LiZbiZ (juin 2026)}\end{center}
+
+% ============================================================================
+\section{Matrice et Appétence}
+\label{sec:c07-appetence}
+% ============================================================================
+
+Les zones de la matrice traduisent l'appétence du conseil
+(Chapitre~\ref{chap:gouvernance})~: un score de 9 ou plus est
+intolérable et traité sans délai~; de 5 à~8, il est traité dans l'année~;
+de 1 à~4, il est accepté sous surveillance. Mais certains énoncés
+d'appétence ne passent pas par le score~: « aucune fuite de données
+personnelles acceptée » rend R-07 intolérable quel que soit son score.
+
+\begin{boxscenario}{Opération LIZBIZ. La règle d'exception}
+\textbf{Constatation.} R-07 a un score de 8 (à traiter dans l'année),
+mais l'appétence du conseil n'accepte aucune fuite de données
+personnelles.
+
+\medskip
+\textbf{Décision du comité.} Un risque qui heurte un énoncé d'appétence
+est traité comme intolérable, quel que soit son score. R-07 passe en
+priorité.
+\end{boxscenario}
+
+% ============================================================================
+\section{Les Limites des Matrices}
+\label{sec:c07-limites}
+% ============================================================================
+
+Louis Anthony Cox a montré en 2008 que les matrices de risques peuvent
+classer les risques plus mal qu'un tirage au hasard dans certains
+cas~\cite{cox2008matrices}. Ses critiques principales~:
+
+\begin{tableaucours}{L{3.6cm}L{8.6cm}}{%
+    \tableauHeader{Limite} &
+    \tableauHeader{Explication}
+}
+Compression & Des risques très différents tombent dans la même case~: un
+impact de 60 et un de 480~millions ont la même cote~3 \\
+Inversion & Un risque plus coûteux en moyenne peut recevoir un score plus
+faible qu'un autre \\
+Multiplication d'ordinaux & $V \times I$ multiplie des rangs, pas des
+grandeurs~: « 2 » n'est pas « deux fois 1 » \\
+Ambiguïté & La cote dépend de qui cote et de ce qu'il imagine \\
+Pas d'agrégation & On ne peut pas additionner des scores pour obtenir le
+risque global \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~7.3. Les limites des matrices (d'après Cox, 2008)}\end{center}
+
+\begin{boxscenario}{Opération LIZBIZ. Une inversion}
+\textbf{Constatation.} Risque X, « incendie du centre de Douala »~:
+fréquence estimée 0,08 par an (V=1), perte 600~millions (I=4), score~4,
+acceptable. Risque Y, « erreurs de saisie des bordereaux »~: fréquence
+0,5 par an (V=3), perte 10~millions (I=2), score~6, à traiter.
+
+\medskip
+\textbf{Analyse} (confiance moyenne). Perte annuelle attendue de X~:
+$0{,}08 \times 600 = 48$~millions~; de Y~: $0{,}5 \times 10 = 5$~millions.
+La matrice classe Y avant X alors que X coûte près de dix fois plus en
+moyenne, et peut menacer l'entreprise. C'est une inversion au sens de Cox.
+\end{boxscenario}
+
+% ============================================================================
+\section{Bien Utiliser une Matrice}
+\label{sec:c07-usage}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Cinq règles pour une matrice utile}
+\begin{enumerate}
+    \item \textbf{Ancrer} chaque niveau sur des valeurs
+          (Tableau~7.1).
+    \item \textbf{Garder les valeurs} estimées à côté des cotes~: fréquence
+          et perte, avec leur intervalle.
+    \item \textbf{Examiner à part} les impacts critiques à faible
+          vraisemblance (la colonne I=4), quel que soit leur score.
+    \item \textbf{Appliquer les énoncés d'appétence} qui ne passent pas par
+          le score.
+    \item \textbf{Passer au quantitatif} pour les cinq ou dix risques les
+          plus élevés (Chapitre~\ref{chap:quantitatif}).
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxobjet}{R-11 · Inondation de l'entrepôt de Bonabéri}
+\textbf{Scénario~:} du fait de l'implantation de l'entrepôt en zone basse
+près du Wouri, de fortes pluies l'inondent, ce qui détruit des
+marchandises de clients et arrête les expéditions de Douala.
+\textbf{Cotation~:} V=2, I=3 (score~6). \textbf{Traitement~:} réduire
+(rayonnages surélevés, pompes, alerte météo) et transférer (assurance des
+marchandises). \textbf{Propriétaire~:} M.~NGUELE. \textbf{Indicateur~:}
+hauteur des marchandises stockées au sol en saison des pluies.
+\end{boxobjet}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Tester la reproductibilité.} L'auditeur fait coter cinq risques du
+registre par deux personnes, séparément. Si les cotes divergent de plus
+d'un niveau, les échelles ne sont pas assez ancrées.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Des échelles ancrées} sur des valeurs rendent les cotes
+          comparables.
+    \item \textbf{Le score} $V \times I$ classe~; les zones traduisent
+          l'appétence.
+    \item \textbf{Certains énoncés d'appétence} rendent un risque
+          intolérable quel que soit son score.
+    \item \textbf{Les matrices compriment, inversent, ne s'additionnent
+          pas} (Cox).
+    \item \textbf{On garde les valeurs} à côté des cotes, et l'on passe au
+          quantitatif pour les risques majeurs.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: construire une échelle
+ancrée~; coter un risque et le placer~; appliquer l'appétence~; énoncer les
+limites de Cox~; détecter une inversion par la perte annuelle attendue.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.1. Coter \niveaubase}]
+Une panne de l'onduleur de Yaoundé survient une fois tous les deux ans et
+arrête le centre six heures pour un coût de 8~millions. Cotez V et I,
+calculez le score, donnez la zone.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.2. Ancrer \niveaubase}]
+Pourquoi le niveau d'impact retenu est-il « le plus élevé des critères »~?
+Donnez un exemple où le montant est faible mais la durée longue.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.3. Zones \niveaubase}]
+Combien de cases de la matrice 4 × 4 sont intolérables, à traiter,
+acceptables~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.4. Compression \niveaumoyen}]
+Donnez deux risques de même cote d'impact dont les pertes diffèrent d'un
+facteur huit. Que perd le comité à ne voir que la cote~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.5. Inversion \niveaumoyen}]
+Construisez un exemple d'inversion avec deux risques de votre choix, et
+montrez-la par la perte annuelle attendue.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.6. Appétence \niveaumoyen}]
+Quels risques du Tableau~7.2 heurtent un énoncé d'appétence du
+Tableau~3.2, indépendamment de leur score~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.7. Additionner \niveaumoyen}]
+Un directeur propose de mesurer le « risque global » de LiZbiZ par la somme
+des scores du registre. Que lui répondez-vous~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.8. Reproductibilité \niveaumoyen}]
+Deux directeurs cotent R-03 en V=2 et V=4. Que faites-vous~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.9. Une échelle bancaire \niveauexpert}]
+Proposez des échelles adaptées à la BANQUE SANAGA (montants, durées,
+critères réglementaires et de réputation).
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~7.10. Au-delà de la matrice \niveauexpert}]
+Rédigez une page pour convaincre le comité de LiZbiZ de compléter la
+matrice par des estimations chiffrées pour ses cinq premiers risques.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item L.~A.~Cox, « What's Wrong with Risk Matrices~? »~\cite{cox2008matrices}.
+    \item IEC~31010~\cite{iec31010}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Pour les risques numériques majeurs, LiZbiZ applique
+une méthode par scénarios. Le Chapitre~\ref{chap:ebios} présente
+l'ISO/IEC~27005 et EBIOS Risk Manager.
+\end{boxinfo}

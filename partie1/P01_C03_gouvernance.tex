@@ -1,0 +1,323 @@
+% ============================================================================
+% Fichier  : partie1/P01_C03_gouvernance.tex
+% Titre    : Gouvernance des Risques
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : IIA, modèle des trois lignes (2020) ; COSO ERM (2017) ;
+% ISO 31000:2018 (leadership et engagement). Organisation de LiZbiZ fictive.
+% ============================================================================
+
+\chapter{Gouvernance des Risques}
+\label{chap:gouvernance}
+\chaptermark{Gouvernance des risques}
+
+\epigraph{%
+    « Un risque sans propriétaire\\
+    est un risque que personne ne traite. »%
+}{Principe du cours}
+
+\niveauChapitre{Fondamental}{Chapitres~\ref{chap:risque}
+et~\ref{chap:perception}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Répartir les responsabilités entre conseil, direction, propriétaires
+          de risques, fonction risques et audit interne.
+    \item Appliquer le modèle des trois lignes de l'IIA.
+    \item Formuler une appétence et des tolérances au risque.
+    \item Définir le rôle et la composition d'un comité des risques.
+    \item Maîtriser les risques d'une activité externalisée.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : qui, chez LiZbiZ, répondait du risque du prestataire~?}
+% ============================================================================
+
+Le contrat avec SAHEL INFOGÉRANCE avait été signé par la direction des
+opérations, négocié par la direction financière, et suivi par
+l'informatique. Chacun pensait que l'un des deux autres veillait à la
+sécurité. Personne n'en était chargé par écrit. Ce chapitre montre comment
+attribuer chaque risque à quelqu'un, et vérifier qu'il s'en occupe.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Les rôles (section~\ref{sec:c03-roles}).
+    \item Le modèle des trois lignes (section~\ref{sec:c03-lignes}).
+    \item Appétence et tolérance (section~\ref{sec:c03-appetence}).
+    \item Le comité des risques (section~\ref{sec:c03-comite}).
+    \item Les risques externalisés (section~\ref{sec:c03-tiers}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Les Rôles}
+\label{sec:c03-roles}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Gouvernance des risques}~: ensemble des rôles, des règles et des
+instances par lesquels une organisation fixe le niveau de risque qu'elle
+accepte, attribue chaque risque à un responsable et vérifie que les
+risques sont traités.
+\end{boxdef}
+
+\begin{tableaucours}{L{3.4cm}L{8.8cm}}{%
+    \tableauHeader{Acteur} &
+    \tableauHeader{Rôle}
+}
+Conseil d'administration & Fixe l'appétence au risque, approuve la
+politique, reçoit le compte rendu des risques majeurs \\
+Direction générale & Met en œuvre la politique, arbitre les ressources,
+répond devant le conseil \\
+Propriétaire de risque & Responsable de l'activité exposée~; décide du
+traitement de son risque et en rend compte \\
+Fonction risques & Fournit la méthode, consolide le registre, alerte,
+conseille~; ne possède pas les risques \\
+Audit interne & Donne au conseil une assurance indépendante sur le
+dispositif \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~3.1. Les rôles de la gouvernance des risques}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Faire de la fonction risques (ou du service
+informatique) le propriétaire de tous les risques.
+
+\smallskip
+\textbf{Règle~:} le propriétaire d'un risque est celui qui a l'autorité et
+le budget pour le traiter, c'est-à-dire le responsable de l'activité
+exposée. La fonction risques l'aide, elle ne le remplace pas.
+\end{boxalert}
+
+% ============================================================================
+\section{Le Modèle des Trois Lignes}
+\label{sec:c03-lignes}
+% ============================================================================
+
+L'Institut des auditeurs internes (IIA) a publié en 2020 une mise à jour
+du modèle des « trois lignes »~\cite{iia2020troislignes}. Il décrit les rôles
+plutôt que des barrières~: la première ligne gère les risques dans les
+opérations, la deuxième apporte expertise, méthode et surveillance, la
+troisième, l'audit interne, donne une assurance indépendante à l'organe de
+gouvernance.
+
+\begin{center}
+\begin{tikzpicture}[
+    b/.style = {draw=CouleurBordDef, fill=CouleurDef, rounded corners=3pt,
+        minimum width=3.4cm, minimum height=1.0cm, align=center,
+        font=\small\color{CouleurPrimaire}},
+    arrow/.style = {-{Stealth[length=4pt]}, thick, color=CouleurSecondaire}]
+\node[b, fill=CouleurPrimaire, text=white, minimum width=11cm] (g) at (3.9, 2.2)
+    {\color{white}\bfseries Organe de gouvernance (conseil)};
+\node[b] (l1) at (0, 0) {\textbf{1\textsuperscript{re} ligne}\\opérations, métiers};
+\node[b] (l2) at (3.9, 0) {\textbf{2\textsuperscript{e} ligne}\\risques, conformité};
+\node[b] (l3) at (7.8, 0) {\textbf{3\textsuperscript{e} ligne}\\audit interne};
+\draw[arrow] (l1) -- (g.south -| l1);
+\draw[arrow] (l2) -- (g.south -| l2);
+\draw[arrow] (l3) -- (g.south -| l3);
+\draw[arrow, dashed] (l2) -- (l1);
+\end{tikzpicture}
+\end{center}
+\vspace{-0.4em}
+\begin{center}{\small\itshape Figure~3.1. Le modèle des trois lignes (d'après l'IIA, 2020)}\end{center}
+
+\begin{boxscenario}{Opération LIZBIZ. La nouvelle organisation}
+\textbf{Constatation} (avril 2026). LiZbiZ recrute une gestionnaire des
+risques, Mme~MOUAFO, rattachée au directeur général (deuxième ligne). Mme
+NKENG, contrôleuse interne, voit son rôle d'audit confirmé et rattaché au
+comité d'audit du conseil (troisième ligne). Chaque directeur devient
+propriétaire des risques de son activité (première ligne).
+
+\medskip
+\textbf{Analyse} (confiance élevée). La séparation entre la fonction qui
+conseille (Mme~MOUAFO) et celle qui contrôle (Mme~NKENG) garantit que
+l'audit ne juge pas un dispositif qu'il a lui-même conçu.
+\end{boxscenario}
+
+% ============================================================================
+\section{Appétence et Tolérance}
+\label{sec:c03-appetence}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Appétence au risque} (COSO ERM)~: types et niveau de risque qu'une
+organisation est disposée à accepter pour atteindre sa
+mission~\cite{coso2017erm}. La \termecle{tolérance} précise, pour un objectif
+donné, l'écart acceptable autour de la cible, sous forme mesurable.
+\end{boxdef}
+
+\begin{tableaucours}{L{4.0cm}L{8.2cm}}{%
+    \tableauHeader{Domaine} &
+    \tableauHeader{Énoncé adopté par le conseil de LiZbiZ (mai 2026)}
+}
+Continuité & Aucun arrêt de la facturation de plus de deux jours ouvrés \\
+Données clients & Aucune fuite de données personnelles acceptée~; tout
+traitement de ces données est chiffré \\
+Pertes financières & Perte annuelle liée aux incidents informatiques
+inférieure à 100~millions de FCFA dans neuf ans sur dix \\
+Prestataires & Aucun accès distant d'un tiers sans second facteur ni
+journalisation \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~3.2. L'appétence au risque de LiZbiZ}\end{center}
+
+Une bonne appétence est \emph{mesurable}~: on doit pouvoir dire, à la fin
+de l'année, si elle a été respectée. « Nous avons une faible appétence au
+risque cyber » ne se vérifie pas~; « aucun arrêt de plus de deux jours »
+se vérifie.
+
+% ============================================================================
+\section{Le Comité des Risques}
+\label{sec:c03-comite}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Le comité des risques de LiZbiZ}
+\begin{enumerate}
+    \item \textbf{Composition}~: directeur général (président), directeurs
+          propriétaires de risques, gestionnaire des risques (secrétaire),
+          contrôleuse interne (invitée, sans voix délibérative).
+    \item \textbf{Fréquence}~: trimestrielle, et extraordinaire après tout
+          incident majeur.
+    \item \textbf{Ordre du jour}~: évolution des risques majeurs, état des
+          plans de traitement, indicateurs, dérogations, risques
+          émergents.
+    \item \textbf{Décisions}~: consignées avec le propriétaire, l'échéance
+          et le budget.
+    \item \textbf{Compte rendu} au conseil une fois par semestre.
+\end{enumerate}
+\end{boxprocedure}
+
+% ============================================================================
+\section{Les Risques Externalisés}
+\label{sec:c03-tiers}
+% ============================================================================
+
+Externaliser une activité ne transfère pas la responsabilité de ses
+risques. LiZbiZ reste exploitant de ses systèmes au sens de la loi
+(Chapitre~\ref{chap:droit}), même si SAHEL INFOGÉRANCE les administre.
+
+\begin{tableaucours}{L{3.4cm}L{8.8cm}}{%
+    \tableauHeader{Étape} &
+    \tableauHeader{Exigence}
+}
+Avant le contrat & Évaluer le prestataire~; préciser ses accès et ses
+obligations de sécurité \\
+Contrat & Délai de notification d'un incident, second facteur, droit
+d'audit, réversibilité, assurance \\
+Pendant & Revue périodique des accès, indicateurs, audit \\
+Fin & Retrait des accès, restitution et effacement des données \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~3.3. Maîtriser un prestataire}\end{center}
+
+\begin{boxobjet}{R-02 · Accès distant d'un prestataire}
+\textbf{Scénario~:} un compte du prestataire est usurpé et donne accès au
+domaine. \textbf{Cotation~:} vraisemblance 3, impact 4 (score~12,
+intolérable). \textbf{Traitement~:} réduire (second facteur, bastion,
+plages horaires) et contractualiser (notification sous 24~heures, droit
+d'audit). \textbf{Propriétaire~:} M.~NGUELE, signataire du contrat.
+\textbf{Indicateur~:} part des accès du prestataire passés par le bastion.
+\end{boxobjet}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Vérifier que chaque risque a un nom.} L'auditeur prend le registre
+et, pour chaque risque majeur, vérifie que le propriétaire désigné sait
+qu'il l'est, connaît son plan de traitement et peut montrer où il en est.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Le conseil} fixe l'appétence~; \textbf{la direction} met
+          en œuvre~; \textbf{le propriétaire} traite son risque.
+    \item \textbf{Trois lignes}~: les opérations gèrent, la fonction risques
+          aide et surveille, l'audit donne une assurance indépendante.
+    \item \textbf{L'appétence} se formule de manière mesurable.
+    \item \textbf{Le comité des risques} décide, consigne, rend compte.
+    \item \textbf{Externaliser} ne transfère pas la responsabilité.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: attribuer un risque à un
+propriétaire~; placer un acteur dans les trois lignes~; rédiger un énoncé
+d'appétence mesurable~; décrire un comité des risques~; énumérer les
+clauses de sécurité d'un contrat d'externalisation.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.1. Quelle ligne~? \niveaubase}]
+Placez dans les trois lignes~: le chef d'agence de Garoua~; Mme~MOUAFO~;
+Mme~NKENG~; le RSSI~; un auditeur externe mandaté par le conseil.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.2. Le propriétaire \niveaubase}]
+Qui doit être propriétaire du risque « fraude au virement »~: la DAF, le
+RSSI ou la gestionnaire des risques~? Justifiez.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.3. Mesurable \niveaubase}]
+Réécrivez de manière mesurable~: « LiZbiZ a une faible tolérance aux
+interruptions de service ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.4. Indépendance \niveaumoyen}]
+Pourquoi Mme~NKENG ne doit-elle pas rédiger elle-même la méthode d'analyse
+des risques qu'elle auditera~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.5. Le contrat \niveaumoyen}]
+Rédigez cinq clauses de sécurité à ajouter au contrat de SAHEL
+INFOGÉRANCE.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.6. Appétence et décision \niveaumoyen}]
+Une option coûte 30~millions et ramène la perte dans neuf ans sur dix à
+80~millions~; une autre coûte 10~millions et la ramène à 120~millions.
+Laquelle respecte l'appétence du Tableau~3.2~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.7. L'ordre du jour \niveaumoyen}]
+Rédigez l'ordre du jour du comité des risques extraordinaire du 12~mars.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.8. RACI \niveaumoyen}]
+Établissez une matrice RACI (réalise, approuve, consulté, informé) pour la
+mise en place du second facteur sur la passerelle.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.9. Charte \niveauexpert}]
+Rédigez la charte de la fonction risques de LiZbiZ~: mission, rattachement,
+droits d'accès à l'information, relations avec l'audit.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~3.10. Une banque \niveauexpert}]
+Comment la gouvernance des risques de la BANQUE SANAGA doit-elle différer
+de celle de LiZbiZ~? Considérez la taille, la supervision et la nature
+des risques.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item IIA, \emph{The IIA's Three Lines Model}~\cite{iia2020troislignes}.
+    \item COSO, \emph{Enterprise Risk Management}~\cite{coso2017erm}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Les rôles posés, il faut une méthode commune. Le
+Chapitre~\ref{chap:cadres} présente l'ISO~31000 et le COSO ERM.
+\end{boxinfo}

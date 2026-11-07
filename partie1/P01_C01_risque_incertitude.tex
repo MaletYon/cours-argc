@@ -1,0 +1,339 @@
+% ============================================================================
+% Fichier  : partie1/P01_C01_risque_incertitude.tex
+% Titre    : Risque, Incertitude et Décision
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 31000:2018 ; ISO Guide 73:2009 ; Knight (1921) ; Taleb
+% (2007) ; Perrow (1984). Chiffres de LiZbiZ : cas fictif, cohérents entre eux.
+% ============================================================================
+
+\chapter{Risque, Incertitude et Décision}
+\label{chap:risque}
+\chaptermark{Risque, incertitude, décision}
+
+\epigraph{%
+    « Une bonne décision peut mal tourner,\\
+    et une mauvaise décision peut bien tourner. »%
+}{Principe du cours}
+
+\niveauChapitre{Fondamental}{Prologue~; notions de probabilité.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Définir le risque selon l'ISO~31000 et le distinguer de
+          l'incertitude au sens de Knight.
+    \item Décrire un risque par une distribution de conséquences, et non par
+          un seul chiffre.
+    \item Calculer et interpréter une perte annuelle attendue.
+    \item Juger une décision sur l'information disponible, et non sur son
+          résultat.
+    \item Reconnaître les limites de la prévision face aux événements rares.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : le risque de rançongiciel était-il connu en février~?}
+% ============================================================================
+
+En février 2026, M.~KOUNOU avait proposé d'exiger un second facteur sur la
+passerelle d'accès distant, pour 6~millions de FCFA par an. La dépense
+avait été reportée~: « nous n'avons jamais été attaqués ». Le risque
+était-il connu~? Pouvait-on le chiffrer~? Et la décision de reporter
+était-elle mauvaise, ou seulement malchanceuse~?
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Risque et incertitude (section~\ref{sec:c01-definir}).
+    \item Probabilité et conséquences (section~\ref{sec:c01-distribution}).
+    \item La perte annuelle attendue (section~\ref{sec:c01-esperance}).
+    \item Juger une décision (section~\ref{sec:c01-decision}).
+    \item Les événements rares (section~\ref{sec:c01-rares}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Risque et Incertitude}
+\label{sec:c01-definir}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Risque} (ISO~31000)~: effet de l'incertitude sur les objectifs.
+Un effet est un écart par rapport à ce qui est attendu~; il peut être
+positif ou négatif. Le risque s'exprime souvent par des sources de risque,
+des événements, leurs conséquences et leur vraisemblance.
+\end{boxdef}
+
+La définition de l'\norme{ISO~31000} et du \norme{Guide~ISO~73} rattache
+le risque aux \emph{objectifs}~: sans objectif, pas de risque. Pour
+LiZbiZ, l'objectif « facturer chaque jour ouvré » donne son sens au risque
+« arrêt de la facturation »~\cite{iso31000_2018,isoguide73}.
+
+En 1921, l'économiste Frank Knight distingue le \termecle{risque}, dont on
+connaît la distribution des issues, et l'\termecle{incertitude}, dont on ne
+la connaît pas~\cite{knight1921}. Le lancer d'un dé relève du risque~; la
+date de la prochaine attaque contre LiZbiZ relève, en grande partie, de
+l'incertitude. Le travail du gestionnaire de risques consiste à faire
+passer ce qui peut l'être de l'incertitude au risque, par l'observation,
+les données et le jugement d'experts, et à reconnaître ce qui n'y passera
+pas.
+
+\begin{tableaucours}{L{3.0cm}L{4.6cm}L{4.6cm}}{%
+    \tableauHeader{Situation} &
+    \tableauHeader{Ce que l'on sait} &
+    \tableauHeader{Exemple chez LiZbiZ}
+}
+Risque & Les issues et leurs probabilités & Pannes de disques, connues
+par les statistiques du fabricant \\
+Incertitude mesurable & Les issues, et une estimation des probabilités &
+Hameçonnage, estimé par les signalements et les études publiées \\
+Incertitude profonde & Ni la liste des issues, ni leurs probabilités &
+Une rupture technologique, une crise politique régionale \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~1.1. Du risque à l'incertitude profonde}\end{center}
+
+% ============================================================================
+\section{Probabilité et Conséquences}
+\label{sec:c01-distribution}
+% ============================================================================
+
+Un risque ne se résume pas à un nombre. Il se décrit par la
+\termecle{distribution des conséquences}~: pour chaque perte possible, la
+probabilité qu'elle survienne sur une période. Deux risques de même perte
+moyenne peuvent être très différents.
+
+\begin{tableaucours}{L{3.6cm}L{4.2cm}L{4.2cm}}{%
+    \tableauHeader{} &
+    \tableauHeader{Risque A~: pannes fréquentes} &
+    \tableauHeader{Risque B~: rançongiciel}
+}
+Fréquence annuelle & 10 pannes & 0,25 événement \\
+Perte par événement & 3~millions de FCFA & 120~millions de FCFA \\
+Perte annuelle moyenne & 30~millions & 30~millions \\
+Pire année plausible & 45~millions & 300~millions ou plus \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~1.2. Même moyenne, deux risques différents}\end{center}
+
+\textbf{Analyse.} Les deux risques coûtent 30~millions par an en moyenne,
+mais le risque~B peut, une année donnée, menacer la trésorerie. Une
+entreprise peut absorber A dans son budget~; elle doit transférer ou
+réduire B. C'est la \emph{queue} de la distribution, et non sa moyenne,
+qui décide.
+
+% ============================================================================
+\section{La Perte Annuelle Attendue}
+\label{sec:c01-esperance}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Perte annuelle attendue}~: espérance de la perte sur un an,
+égale, pour un scénario simple, au produit de la fréquence annuelle et de
+la perte moyenne par événement. Elle sert à comparer des options, non à
+prévoir une année particulière.
+\end{boxdef}
+
+\begin{boxscenario}{Opération GAROUA. La décision de février}
+\textbf{Hypothèses} (établies après coup, confiance faible à moyenne)~:
+fréquence annuelle d'un rançongiciel réussi sans second facteur, 0,25~;
+avec second facteur, 0,05~; perte par événement, 300~millions de FCFA
+(Tableau~0.4)~; coût du second facteur, 6~millions par an.
+
+\medskip
+\textbf{Calcul.} Sans second facteur~: $0{,}25 \times 300 = 75$~millions
+par an. Avec~: $0{,}05 \times 300 + 6 = 21$~millions par an.
+
+\medskip
+\textbf{Analyse} (confiance moyenne). Même si les fréquences sont
+incertaines, l'écart est si grand que la décision ne change pas tant que
+la fréquence sans second facteur dépasse $6/300 + 0{,}05 = 0{,}07$ par an.
+Reporter la dépense n'était pas justifié par les chiffres~; il était
+justifié par l'absence de chiffres.
+\end{boxscenario}
+
+Ce raisonnement est un \termecle{seuil de rentabilité}~: au lieu de
+chercher la « vraie » fréquence, on cherche la fréquence à partir de
+laquelle la décision bascule, puis on se demande si l'on y croit. C'est
+souvent plus facile que d'estimer la fréquence elle-même.
+
+% ============================================================================
+\section{Juger une Décision}
+\label{sec:c01-decision}
+% ============================================================================
+
+Une décision se juge sur l'information disponible au moment de la
+prendre, et non sur son résultat. Si LiZbiZ avait installé le second
+facteur et avait été attaqué par une autre voie, la décision aurait
+été bonne et le résultat mauvais. À l'inverse, reporter la dépense et ne
+pas être attaqué aurait été une mauvaise décision au résultat favorable.
+
+\begin{tableaucours}{L{3.2cm}L{4.5cm}L{4.5cm}}{%
+    \tableauHeader{} &
+    \tableauHeader{Résultat favorable} &
+    \tableauHeader{Résultat défavorable}
+}
+Bonne décision & Mérité & Malchance \\
+Mauvaise décision & Chance & Conséquence prévisible \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~1.3. Décision et résultat}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Juger une décision à son résultat (« on n'a
+jamais été attaqués, donc on avait raison »).
+
+\smallskip
+\textbf{Règle~:} documenter, au moment de décider, les options, les
+hypothèses et l'information disponible. Le retour d'expérience juge
+ensuite la qualité de ce dossier, et non la chance
+(Chapitre~\ref{chap:retex}).
+\end{boxalert}
+
+Trois critères éclairent une décision sous incertitude~: la perte attendue
+(ce que l'on perd en moyenne), la perte dans un scénario sévère (ce que
+l'on ne peut pas se permettre) et la \termecle{valeur de l'information}
+(ce que coûterait d'en savoir plus avant de décider). Un dirigeant averse
+au risque peut préférer une option plus chère en moyenne si elle supprime
+le scénario qui le ruinerait.
+
+% ============================================================================
+\section{Les Événements Rares}
+\label{sec:c01-rares}
+% ============================================================================
+
+Certains événements sont si rares qu'aucune statistique ne permet de les
+estimer, et leurs conséquences si grandes qu'ils dominent toutes les
+autres. Nassim Taleb les appelle des « cygnes noirs »~: rares, d'impact
+extrême, et expliqués après coup comme s'ils avaient été
+prévisibles~\cite{taleb2007}. Charles Perrow avait montré, dès 1984, que
+dans les systèmes complexes et étroitement couplés, des défaillances
+mineures peuvent se combiner en accident majeur~: il les nommait
+« accidents normaux »~\cite{perrow1984}.
+
+\begin{boxinfo}
+\textbf{Ce que l'on peut faire face à l'imprévisible.} On ne prévoit pas
+l'événement, mais on réduit la fragilité~: couplages moins étroits
+(segmentation, liaisons coupables entre sites), marges (trésorerie,
+stocks), capacité de réaction (cellule de crise entraînée). C'est l'objet
+des Parties~IV et~V.
+\end{boxinfo}
+
+\begin{boxobjet}{R-01 · Arrêt de la facturation}
+\textbf{Scénario~:} un incident informatique arrête la facturation plus
+de deux jours ouvrés. \textbf{Cotation~:} fréquence estimée de 0,3 par an,
+perte par événement de 40 à 300~millions de FCFA. \textbf{Traitement~:}
+réduire (second facteur, sauvegardes hors ligne) et transférer (assurance
+cyber). \textbf{Propriétaire~:} Mme~MBALLA. \textbf{Indicateur~:} durée du
+dernier test de restauration de la facturation.
+\end{boxobjet}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Chiffrer le seuil, pas seulement le risque.} Quand la fréquence
+est incertaine, le gestionnaire présente à la direction la fréquence à
+partir de laquelle l'investissement se justifie, et les raisons de croire
+qu'elle est dépassée.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Le risque} est l'effet de l'incertitude sur les
+          objectifs (ISO~31000)~; Knight distingue risque et incertitude.
+    \item \textbf{Un risque} se décrit par une distribution~; la queue
+          compte autant que la moyenne.
+    \item \textbf{La perte annuelle attendue} compare des options~; le
+          seuil de rentabilité évite d'estimer ce qu'on ne sait pas.
+    \item \textbf{Une décision} se juge sur l'information disponible, pas
+          sur son résultat.
+    \item \textbf{Face aux événements rares}, on réduit la fragilité.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: définir le risque selon
+l'ISO~31000~; distinguer risque et incertitude~; comparer deux risques de
+même moyenne~; calculer une perte annuelle attendue et un seuil de
+rentabilité~; distinguer bonne décision et bon résultat.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.1. Définir \niveaubase}]
+Donnez, pour LiZbiZ, un objectif, un risque qui s'y rattache, sa source,
+l'événement redouté et sa conséquence.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.2. Knight \niveaubase}]
+Classez en risque, incertitude mesurable ou incertitude profonde~: la
+panne d'un onduleur~; une fraude au virement~; une nouvelle loi sur les
+données~; une inondation à Bonabéri.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.3. Calculer \niveaubase}]
+Une fraude au virement survient en moyenne une fois tous les quatre ans
+pour une perte de 60~millions de FCFA. Quelle est la perte annuelle
+attendue~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.4. Le seuil \niveaumoyen}]
+Une double validation des virements coûte 4~millions par an et divise la
+fréquence par quatre. À partir de quelle fréquence initiale est-elle
+rentable, pour une perte de 60~millions par événement~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.5. La queue \niveaumoyen}]
+Expliquez à Mme~MBALLA pourquoi le risque~B du Tableau~1.2 justifie une
+assurance, alors que le risque~A n'en justifie pas.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.6. Décision ou chance \niveaumoyen}]
+Classez dans le Tableau~1.3~: LiZbiZ installe le second facteur et n'est
+pas attaquée~; elle reporte la dépense et est attaquée~; elle reporte et
+n'est pas attaquée.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.7. Le dossier \niveaumoyen}]
+Rédigez la note de décision que M.~KOUNOU aurait dû remettre en février~:
+options, hypothèses, chiffres, recommandation.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.8. Couplage \niveaumoyen}]
+En quoi les liaisons ouvertes entre les sites de LiZbiZ illustrent-elles
+le couplage étroit au sens de Perrow~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.9. Sensibilité \niveauexpert}]
+Refaites le calcul de la décision de février avec une perte par
+événement de 120~millions au lieu de 300. La conclusion change-t-elle~?
+Pour quelle perte bascule-t-elle~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~1.10. Fragilité \niveauexpert}]
+Proposez cinq mesures qui réduisent la fragilité de LiZbiZ face à un
+événement que l'on ne sait pas prévoir. Pour chacune, dites quel couplage
+ou quelle marge elle crée.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~31000~\cite{iso31000_2018}~; Guide~ISO~73~\cite{isoguide73}.
+    \item F.~Knight, \emph{Risk, Uncertainty and Profit}~\cite{knight1921}.
+    \item C.~Perrow, \emph{Normal Accidents}~\cite{perrow1984}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Les chiffres ne suffisent pas~: les personnes perçoivent
+les risques à travers des biais. Le Chapitre~\ref{chap:perception} les
+présente.
+\end{boxinfo}

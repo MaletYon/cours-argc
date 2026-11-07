@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C03
+Chapitre 3 : Gouvernance des risques
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Qui fixe l'appétence au risque ?
+      a) Le conseil d'administration
+      b) Le prestataire
+      c) L'auditeur externe
+      d) Le service informatique
+
+ 2. Qui est propriétaire d'un risque ?
+      a) La fonction risques
+      b) Le responsable de l'activité exposée
+      c) L'audit interne
+      d) Le RSSI toujours
+
+ 3. Quel est le rôle de la fonction risques ?
+      a) Posséder tous les risques
+      b) Auditer son propre travail
+      c) Fournir la méthode, consolider, alerter et conseiller
+      d) Approuver le budget
+
+ 4. Quel acteur donne une assurance indépendante au conseil ?
+      a) La première ligne
+      b) La fonction risques
+      c) Le prestataire
+      d) L'audit interne
+
+ 5. Quel organisme a publié le modèle des trois lignes mis à jour en 2020 ?
+      a) L'IIA
+      b) L'ISO
+      c) Le NIST
+      d) L'ANSSI
+
+ 6. Les opérations et les métiers forment la :
+      a) Deuxième ligne
+      b) Première ligne
+      c) Troisième ligne
+      d) Gouvernance
+
+ 7. Mme MOUAFO, gestionnaire des risques, relève de la :
+      a) Première ligne
+      b) Troisième ligne
+      c) Deuxième ligne
+      d) Gouvernance
+
+ 8. Mme NKENG, contrôleuse interne rattachée au comité d'audit, relève de la :
+      a) Première ligne
+      b) Deuxième ligne
+      c) Direction générale
+      d) Troisième ligne
+
+ 9. Quel référentiel définit l'appétence au risque cité dans le cours ?
+      a) COSO ERM
+      b) ISO 19011
+      c) NIST SP 800-61
+      d) ISO 22320
+
+10. Quel énoncé d'appétence est mesurable ?
+      a) « Faible appétence au risque cyber »
+      b) « Aucun arrêt de la facturation de plus de deux jours ouvrés »
+      c) « Être prudents »
+      d) « Sécurité maximale »
+
+11. Quelle perte annuelle informatique LiZbiZ tolère-t-elle neuf ans sur dix ?
+      a) Moins de 50 millions
+      b) Moins de 312 millions
+      c) Moins de 100 millions
+      d) Aucune
+
+12. Quelle option respecte l'appétence : perte neuf ans sur dix de 80 millions ou de 120 millions ?
+      a) 120 millions
+      b) Les deux
+      c) Aucune
+      d) 80 millions
+
+13. Qui préside le comité des risques de LiZbiZ ?
+      a) Le directeur général
+      b) La gestionnaire des risques
+      c) La contrôleuse interne
+      d) Le prestataire
+
+14. À quelle fréquence se réunit le comité des risques ?
+      a) Mensuelle
+      b) Trimestrielle
+      c) Annuelle
+      d) Jamais
+
+15. Quel est le statut de la contrôleuse interne au comité ?
+      a) Présidente
+      b) Secrétaire
+      c) Invitée sans voix délibérative
+      d) Absente
+
+16. À quelle fréquence le comité rend-il compte au conseil ?
+      a) Chaque mois
+      b) Tous les cinq ans
+      c) Jamais
+      d) Chaque semestre
+
+17. Externaliser une activité transfère-t-il la responsabilité de ses risques ?
+      a) Non
+      b) Oui, entièrement
+      c) Seulement les risques techniques
+      d) Seulement si le contrat est long
+
+18. Quelle clause manquait au contrat de SAHEL INFOGÉRANCE ?
+      a) Le prix
+      b) Le délai de notification d'un incident
+      c) Le nom du prestataire
+      d) La date de signature
+
+19. Qui est propriétaire du risque R-02 (accès distant du prestataire) ?
+      a) M. KOUNOU
+      b) Mme MOUAFO
+      c) M. NGUELE
+      d) Mme NKENG
+
+20. Quelle cotation reçoit R-02 ?
+      a) V 2, I 2, score 4
+      b) V 4, I 4, score 16
+      c) V 1, I 3, score 3
+      d) V 3, I 4, score 12
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. La fonction risques remplace les propriétaires de risques.
+      Vrai / Faux
+
+22. Le propriétaire d'un risque a l'autorité et le budget pour le traiter.
+      Vrai / Faux
+
+23. Le modèle de 2020 décrit des rôles plutôt que des barrières.
+      Vrai / Faux
+
+24. L'audit peut juger un dispositif qu'il a lui-même conçu.
+      Vrai / Faux
+
+25. La tolérance précise l'écart acceptable autour d'une cible.
+      Vrai / Faux
+
+26. L'appétence est un critère de coût.
+      Vrai / Faux
+
+27. Les décisions du comité sont consignées avec un propriétaire, une échéance et un budget.
+      Vrai / Faux
+
+28. LiZbiZ reste exploitant de ses systèmes au sens de la loi, même si un prestataire les administre.
+      Vrai / Faux
+
+29. Un contrat d'externalisation doit prévoir un droit d'audit.
+      Vrai / Faux
+
+30. Le comité ne se réunit qu'en cas d'incident.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'Institut des auditeurs internes a pour sigle anglais ______.
+
+32. Le niveau de risque qu'une organisation accepte est l'______ au risque.
+
+33. Le modèle de l'IIA s'appelle le modèle des trois ______.
+
+34. La personne qui répond d'un risque en est le ______.
+
+35. La gestionnaire des risques recrutée en avril s'appelle Mme ______.
+
+36. Le directeur des opérations de LiZbiZ s'appelle M. ______.
+
+37. Le référentiel du COSO sur la gestion des risques d'entreprise a pour sigle ______.
+
+38. Le comité des risques se réunit tous les ______ mois.
+
+39. L'acteur qui fixe l'appétence est le ______ d'administration.
+
+40. Une matrice réalise, approuve, consulté, informé a pour sigle ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

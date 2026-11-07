@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-P00
+Chapitre 0 : Prologue : le matin du 6 mars
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Combien de salariés compte LiZbiZ ?
+      a) 150
+      b) 50
+      c) 212
+      d) 500
+
+ 2. Quel chiffre d'affaires annuel LiZbiZ réalise-t-elle environ ?
+      a) 2,4 milliards de FCFA
+      b) 24 milliards de FCFA
+      c) 240 milliards de FCFA
+      d) 80 millions de FCFA
+
+ 3. Combien de centres de données LiZbiZ exploite-t-elle ?
+      a) Deux
+      b) Trois
+      c) Quatre
+      d) Six
+
+ 4. Quel prestataire exploite les centres de Garoua et de Douala ?
+      a) AUDIX CONSEIL
+      b) BANQUE SANAGA
+      c) TRANSLOG SERVICES
+      d) SAHEL INFOGÉRANCE
+
+ 5. Qu'est-ce que LiZbiZ n'avait pas en février 2026 ?
+      a) Un registre des risques, un plan de continuité, un plan de crise
+      b) Un pare-feu
+      c) Des clients
+      d) Une messagerie
+
+ 6. À quelle heure M. KOUNOU découvre-t-il le chiffrement ?
+      a) 5 h 00
+      b) 7 h 30
+      c) 10 h 30
+      d) 11 h 10
+
+ 7. Quel montant la rançon réclame-t-elle ?
+      a) 8 500 dollars
+      b) 85 millions de FCFA
+      c) 85 000 dollars
+      d) 312 millions de FCFA
+
+ 8. À quelle heure les liaisons entre sites sont-elles coupées ?
+      a) 7 h 45
+      b) 9 h 05
+      c) 18 h 30
+      d) 11 h 10
+
+ 9. Combien de temps s'écoule entre la découverte et la coupure des liaisons ?
+      a) 3 h 40
+      b) 40 minutes
+      c) 1 h 40
+      d) 11 heures
+
+10. Que découvre Mme MBALLA à 13 h ?
+      a) Les sauvegardes sont intactes
+      b) La police d'assurance ne couvre pas les cyberattaques
+      c) Le prestataire a payé
+      d) Les clients sont informés
+
+11. Qu'est-ce qui circule sur les réseaux sociaux à 18 h 30 ?
+      a) Le communiqué officiel
+      b) Le registre des risques
+      c) Une photographie du message de rançon
+      d) La liste des clients
+
+12. Quand le premier communiqué aux clients est-il diffusé ?
+      a) Le 6 mars à 11 h
+      b) Le 9 mars
+      c) Le 16 mars
+      d) Le 7 mars à 9 h
+
+13. Quelle décision M. ETEME prend-il le 8 mars ?
+      a) Ne pas payer la rançon
+      b) Payer la rançon
+      c) Licencier le prestataire
+      d) Fermer Garoua
+
+14. Quand la facturation reprend-elle ?
+      a) Le 9 mars
+      b) Le 16 mars
+      c) Le 12 mars
+      d) Le 2 avril
+
+15. Que se passe-t-il le 19 mars ?
+      a) La reprise de la facturation
+      b) Le retour d'expérience
+      c) La publication d'un échantillon de 2 Go de données clients
+      d) Le paiement de la rançon
+
+16. Quel est le coût total estimé de la crise au 2 avril ?
+      a) 96 millions
+      b) 188 millions
+      c) 85 000 dollars
+      d) 312 millions
+
+17. Quelle part du coût total est constatée et non estimée ?
+      a) 188 millions
+      b) 124 millions
+      c) 110 millions
+      d) 312 millions
+
+18. « Les liaisons ont été coupées à 11 h 10 » est :
+      a) Une supposition
+      b) Une constatation
+      c) Une opinion
+      d) Une rumeur
+
+19. « Le prestataire est incompétent » est :
+      a) Une constatation
+      b) Une supposition
+      c) Une opinion
+      d) Une preuve
+
+20. « Si l'on avait coupé à 8 h, rien n'aurait changé » est :
+      a) Une constatation
+      b) Une opinion
+      c) Un fait établi
+      d) Une supposition
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Le dernier audit de sécurité de LiZbiZ datait de 2023 et ne couvrait pas le prestataire.
+      Vrai / Faux
+
+22. Une main courante a été tenue dès 7 h 30 le 6 mars.
+      Vrai / Faux
+
+23. Les serveurs de Yaoundé et de Bafoussam ont été épargnés.
+      Vrai / Faux
+
+24. À 20 h, une personne était désignée pour répondre aux journalistes.
+      Vrai / Faux
+
+25. La plainte a été déposée le 7 mars auprès de la police judiciaire à Douala.
+      Vrai / Faux
+
+26. Le retour d'expérience a eu lieu le 2 avril.
+      Vrai / Faux
+
+27. Les « clients perdus » du Tableau 0.4 sont un coût constaté.
+      Vrai / Faux
+
+28. Une supposition peut être vérifiée ou infirmée par des faits.
+      Vrai / Faux
+
+29. Une opinion suffit à fonder une conclusion.
+      Vrai / Faux
+
+30. Le cours relie chaque défaut de mars à une partie du cours.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. Le responsable informatique de LiZbiZ s'appelle M. ______.
+
+32. Le directeur général de LiZbiZ s'appelle M. ______.
+
+33. La directrice administrative et financière s'appelle Mme ______.
+
+34. L'avocat de la société s'appelle Me ______.
+
+35. Le registre chronologique des faits et des décisions d'une crise est la main ______.
+
+36. La facturation a repris ______ jours après l'attaque.
+
+37. La chargée de communication s'appelle Mme ______.
+
+38. Le siège de LiZbiZ est à ______.
+
+39. Le coût estimé de la crise est de ______ millions de FCFA.
+
+40. Un fait vérifiable s'appelle une ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

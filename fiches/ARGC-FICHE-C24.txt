@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C24
+Chapitre 24 : Communiquer en crise
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quel principe veut un premier message dans l'heure qui suit la décision de crise ?
+      a) Tôt
+      b) Exact
+      c) Cohérent
+      d) Empathique
+
+ 2. « Ne dire que ce qui est établi » relève du principe :
+      a) Tôt
+      b) Exact
+      c) Régulier
+      d) Interne d'abord
+
+ 3. Qui doit apprendre la crise en premier ?
+      a) La presse
+      b) Les concurrents
+      c) Les salariés
+      d) Les réseaux sociaux
+
+ 4. Que faire « tant qu'on ne sait pas tout » ?
+      a) Se taire
+      b) Spéculer
+      c) Accuser le prestataire
+      d) Publier un message d'attente
+
+ 5. Combien de temps après la découverte LiZbiZ a-t-elle diffusé son premier message externe ?
+      a) 25 h 30
+      b) 1 heure
+      c) 3 h 40
+      d) 11 jours
+
+ 6. Par quel canal informe-t-on les clients touchés par une fuite ?
+      a) Un communiqué seul
+      b) Une lettre individuelle
+      c) Rien
+      d) Un affichage
+
+ 7. Par quel canal informe-t-on les clients majeurs ?
+      a) La presse
+      b) Les réseaux sociaux seuls
+      c) L'appel du directeur commercial
+      d) Rien
+
+ 8. Qui a proposé la théorie situationnelle de la communication de crise ?
+      a) Gary Klein
+      b) Karl Weick
+      c) Paul Slovic
+      d) Timothy Coombs
+
+ 9. Sur quoi la réponse doit-elle être adaptée selon Coombs ?
+      a) La responsabilité attribuée à l'organisation
+      b) Le budget
+      c) La date
+      d) Le nombre de salariés
+
+10. Une catastrophe naturelle relève du groupe :
+      a) Accident
+      b) Victime
+      c) Évitable
+      d) Négligent
+
+11. Une défaillance technique relève du groupe :
+      a) Victime
+      b) Évitable
+      c) Accident
+      d) Criminel
+
+12. Une négligence de la direction relève du groupe :
+      a) Victime
+      b) Accident
+      c) Neutre
+      d) Évitable
+
+13. Quand la responsabilité attribuée est forte, il faut :
+      a) Reconstruire (excuses, réparation)
+      b) Nier
+      c) Se taire
+      d) Attaquer l'accusateur
+
+14. Que révèle la presse le 21 mars ?
+      a) Le paiement de la rançon
+      b) L'accès du prestataire n'avait pas de second facteur, recommandé en 2023
+      c) Le nom de l'attaquant
+      d) Une nouvelle attaque
+
+15. Quel élément ne figure pas dans un message d'attente ?
+      a) Ce qui s'est passé
+      b) Ce que l'on fait
+      c) Des spéculations sur la cause
+      d) Quand viendra la prochaine information
+
+16. À combien de clients LiZbiZ écrit-elle après MOUNGO ?
+      a) 310
+      b) 1 200
+      c) 96
+      d) 47
+
+17. À quelle heure part la lettre aux clients de MOUNGO ?
+      a) 15 août, 11 h
+      b) 14 août, 22 h
+      c) 16 août, 16 h
+      d) 20 août
+
+18. Que prépare la fiche de questions et réponses ?
+      a) Le budget
+      b) Les réponses aux questions prévisibles
+      c) Le plan de reprise
+      d) Le contrat
+
+19. Combien de porte-parole ?
+      a) Tous les directeurs
+      b) Aucun
+      c) Un seul, désigné et formé
+      d) Le prestataire
+
+20. Que ne dit-on pas aux médias ?
+      a) Ce que l'on fait
+      b) Ce que l'on sait
+      c) Quand on en dira plus
+      d) Les détails techniques utiles à l'attaquant
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Le silence est rempli par d'autres.
+      Vrai / Faux
+
+22. Il faut attendre la cause pour parler de la situation.
+      Vrai / Faux
+
+23. Un passé de crises semblables aggrave l'attribution de responsabilité.
+      Vrai / Faux
+
+24. Après le 21 mars, insister sur la seule qualité de victime suffisait.
+      Vrai / Faux
+
+25. MOUNGO a donné lieu à une escalade médiatique.
+      Vrai / Faux
+
+26. Le message d'attente dit ce que l'on ne sait pas encore.
+      Vrai / Faux
+
+27. Les salariés reçoivent une consigne écrite sur les réseaux sociaux.
+      Vrai / Faux
+
+28. On corrige les erreurs factuelles en ligne sans polémique.
+      Vrai / Faux
+
+29. Les autorités sont informées selon le conseil juridique.
+      Vrai / Faux
+
+30. Les modèles de messages se préparent à froid.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'auteur de la théorie situationnelle de la communication de crise s'appelle ______.
+
+32. Le premier message bref de crise est le message d'______.
+
+33. La personne qui parle au nom de l'entreprise est le porte-______.
+
+34. Le groupe de crise à responsabilité forte est le groupe « ______ ».
+
+35. La stratégie qui consiste à s'excuser et à réparer est « ______ ».
+
+36. Les clients touchés par MOUNGO sont au nombre de ______.
+
+37. Le principe qui veut informer les salariés en premier est « interne d'______ ».
+
+38. La fiche de questions et ______ prépare le porte-parole.
+
+39. La presse révèle le manquement le ______ mars.
+
+40. Les clients dont les données sont publiées reçoivent une lettre ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

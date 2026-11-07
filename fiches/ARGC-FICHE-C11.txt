@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C11
+Chapitre 11 : Traiter, suivre et rendre compte
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Renoncer à l'activité qui crée le risque, c'est :
+      a) Éviter
+      b) Partager
+      c) Maintenir
+      d) Réduire
+
+ 2. Souscrire une assurance cyber, c'est :
+      a) Éviter
+      b) Partager
+      c) Maintenir
+      d) Retirer la source
+
+ 3. Remplacer FTP par SFTP, c'est :
+      a) Partager
+      b) Maintenir
+      c) Retirer la source
+      d) Prendre le risque
+
+ 4. Installer des sauvegardes hors ligne modifie surtout :
+      a) La vraisemblance
+      b) La source
+      c) L'appétence
+      d) Les conséquences
+
+ 5. Que fait l'assurance ?
+      a) Elle partage une part des pertes financières
+      b) Elle réduit la vraisemblance
+      c) Elle supprime le risque
+      d) Elle empêche l'arrêt de l'activité
+
+ 6. Ouvrir un portail client en ligne avec ses mesures, c'est :
+      a) Éviter
+      b) Prendre le risque pour saisir une opportunité
+      c) Partager
+      d) Maintenir
+
+ 7. Que contient une ligne du plan de traitement ?
+      a) Le nom du fournisseur seul
+      b) Le score seul
+      c) Action, responsable, échéance, indicateur, résiduel visé
+      d) La couleur
+
+ 8. Qui est responsable du second facteur sur la passerelle ?
+      a) M. NGUELE
+      b) Mme MBALLA
+      c) Mme NKENG
+      d) M. KOUNOU
+
+ 9. Qui est responsable des rayonnages et des pompes de Bonabéri ?
+      a) M. NGUELE
+      b) M. KOUNOU
+      c) Mme ABOMO
+      d) Mme MOUAFO
+
+10. Le risque résiduel est accepté :
+      a) Oralement
+      b) Par écrit
+      c) Jamais
+      d) Par le prestataire
+
+11. Comment calcule-t-on le rapport net d'un traitement ?
+      a) Coût / pertes évitées
+      b) Pertes évitées × coût
+      c) (Pertes évitées - coût) / coût
+      d) Coût - pertes évitées
+
+12. Quel est le rapport net des sauvegardes hors ligne (15 millions, 60 évités) ?
+      a) 1,5
+      b) 4,0
+      c) 11,3
+      d) 3,0
+
+13. Quel traitement a un rapport net négatif selon les estimations ?
+      a) La surveillance externalisée
+      b) Le second facteur
+      c) Le bastion
+      d) Les pompes
+
+14. Combien coûtent par an les quatre premiers traitements retenus ?
+      a) 6 millions
+      b) 35 millions
+      c) 60 millions
+      d) 180 millions
+
+15. Un traitement coûte 8 et évite 20 millions. Rapport net ?
+      a) 0,4
+      b) 2,5
+      c) 1,5
+      d) 12
+
+16. Qu'est-ce qu'un indicateur clé de risque ?
+      a) Le chiffre d'affaires
+      b) Un score de matrice
+      c) Une norme
+      d) Une mesure avancée de l'évolution d'un risque, avec des seuils
+
+17. Le chiffre d'affaires mensuel est :
+      a) Un indicateur de performance
+      b) Un indicateur clé de risque
+      c) Un risque
+      d) Une mesure de sécurité
+
+18. Quand l'indicateur du second facteur est-il au vert ?
+      a) De 95 à 99 %
+      b) À 100 %
+      c) Sous 95 %
+      d) Jamais
+
+19. Âge du dernier test de restauration réussi : quand est-il rouge ?
+      a) Moins de 3 mois
+      b) 3 à 6 mois
+      c) Plus de 6 mois
+      d) Jamais
+
+20. Combien de pages le conseil reçoit-il chaque semestre ?
+      a) Dix
+      b) Cinquante
+      c) Aucune
+      d) Une
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. L'assurance remplace la réduction du risque.
+      Vrai / Faux
+
+22. L'assureur exige souvent des mesures en contrepartie.
+      Vrai / Faux
+
+23. Une mesure décidée mais non mise en œuvre réduit le risque.
+      Vrai / Faux
+
+24. Le rapport négatif de la surveillance peut venir d'une sous-estimation de ses effets.
+      Vrai / Faux
+
+25. Le comité retient une surveillance limitée aux heures de nuit, à réévaluer.
+      Vrai / Faux
+
+26. Un bon indicateur clé de risque bouge avant l'incident.
+      Vrai / Faux
+
+27. Un indicateur clé de risque n'a pas besoin de propriétaire.
+      Vrai / Faux
+
+28. Le rapport trimestriel présente les risques émergents.
+      Vrai / Faux
+
+29. Le détail du registre figure dans la page du conseil.
+      Vrai / Faux
+
+30. Les options de traitement se combinent.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'indicateur clé de risque a pour sigle anglais ______.
+
+32. Renoncer à l'activité à risque, c'est ______ le risque.
+
+33. Le risque qui subsiste après les mesures vérifiées est le risque ______.
+
+34. Le budget voté en avril est de ______ millions de FCFA.
+
+35. Transférer une part des conséquences par une assurance, c'est ______ le risque.
+
+36. Les pertes évitées par les quatre premiers traitements sont d'environ ______ millions.
+
+37. Un indicateur clé de risque comporte des ______ d'alerte.
+
+38. Le rapport au comité des risques est ______.
+
+39. Le document qui précise les actions de traitement est le plan de ______.
+
+40. Le rapport net du bastion est de 1,______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

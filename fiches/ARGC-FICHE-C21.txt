@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C21
+Chapitre 21 : Qu'est-ce qu'une crise ?
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quelle norme donne des lignes directrices pour le management de crise ?
+      a) ISO 22361
+      b) ISO 22301
+      c) ISO 19011
+      d) ISO 31000
+
+ 2. Selon l'ISO 22361, une crise est marquée par :
+      a) Une panne mineure
+      b) Un haut degré d'incertitude et l'exigence d'une action urgente
+      c) Un audit
+      d) Un exercice
+
+ 3. Un incident se gère par des procédures, une crise par :
+      a) Des factures
+      b) Des audits
+      c) Des décisions
+      d) Des contrats
+
+ 4. Lequel n'est pas un caractère d'une crise selon le cours ?
+      a) L'incertitude
+      b) L'urgence
+      c) L'exposition
+      d) La routine
+
+ 5. La photographie du message de rançon illustre :
+      a) L'exposition
+      b) La routine
+      c) La certitude
+      d) La lenteur
+
+ 6. Le prestataire lui-même en cause illustre :
+      a) La certitude
+      b) Le débordement des moyens habituels
+      c) L'exposition
+      d) La lenteur
+
+ 7. Pourquoi MOUNGO n'a-t-il pas été une crise ?
+      a) Coût trop faible
+      b) Le DG était absent
+      c) Cause connue, étendue mesurable, plan disponible, pas d'exposition
+      d) Il pleuvait
+
+ 8. Le critère qui distingue crise et incident n'est pas :
+      a) L'incertitude
+      b) L'exposition
+      c) L'enjeu
+      d) Le coût seul
+
+ 9. Une fraude interne qui dure des années est une crise :
+      a) Rampante
+      b) Soudaine
+      c) Naturelle
+      d) Technique
+
+10. Un incendie est une crise :
+      a) Rampante
+      b) Soudaine
+      c) Comptable
+      d) Lente
+
+11. Qui a montré que les crises naissent souvent de situations connues mais non traitées ?
+      a) Knight
+      b) Cox
+      c) Lagadec
+      d) Freund
+
+12. La crise de mars était :
+      a) Seulement rampante
+      b) Imprévisible en tout
+      c) Naturelle
+      d) Soudaine dans son déclenchement, rampante dans ses causes
+
+13. Combien de phases compte le cycle de crise du cours ?
+      a) Cinq
+      b) Trois
+      c) Quatre
+      d) Sept
+
+14. À quelle phase perd-on le plus de temps ?
+      a) La préparation
+      b) L'alerte
+      c) La sortie
+      d) L'après-crise
+
+15. Que se passe-t-il à la sortie de crise ?
+      a) On relâche tout
+      b) On paie
+      c) On décide de la fin et l'on allège le dispositif
+      d) On recommence
+
+16. Quand réunir la cellule de crise ?
+      a) Quand on est sûr
+      b) Après la crise
+      c) Jamais
+      d) Au premier doute sérieux
+
+17. Qui a étudié l'effondrement du sens à Mann Gulch ?
+      a) Karl Weick
+      b) Gary Klein
+      c) Timothy Coombs
+      d) James Reason
+
+18. En quelle année a eu lieu l'incendie de Mann Gulch ?
+      a) 1974
+      b) 1949
+      c) 1993
+      d) 2007
+
+19. Quelles sont les trois colonnes du point de situation ?
+      a) Qui, quoi, combien
+      b) Avant, pendant, après
+      c) Ce que l'on sait, ce que l'on ne sait pas, ce que l'on fait
+      d) Coût, délai, qualité
+
+20. Par quoi le directeur de crise ouvre-t-il chaque réunion ?
+      a) Les solutions
+      b) Le budget
+      c) Les sanctions
+      d) Le point de situation
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Une organisation préparée peut gérer comme un incident ce qui aurait été une crise.
+      Vrai / Faux
+
+22. GAROUA cumule tous les caractères de la crise.
+      Vrai / Faux
+
+23. Le montant suffit à distinguer crise et incident.
+      Vrai / Faux
+
+24. Les crises frappent souvent des organisations qui refusent d'envisager l'impensable.
+      Vrai / Faux
+
+25. Le coût d'une fausse alerte est une heure de réunion.
+      Vrai / Faux
+
+26. Il faut attendre d'être sûr que c'est une crise pour réunir la cellule.
+      Vrai / Faux
+
+27. Le retour d'expérience nourrit la préparation.
+      Vrai / Faux
+
+28. Reconstruire une compréhension partagée est le premier objectif de la gestion de crise.
+      Vrai / Faux
+
+29. Le 6 mars à 10 h 30, la réunion portait sur les causes plutôt que sur les décisions.
+      Vrai / Faux
+
+30. Le management de crise inclut l'anticipation et la préparation.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La norme de management de crise est l'ISO ______.
+
+32. Une crise qui naît d'une dégradation lente est dite ______.
+
+33. L'incendie étudié par Weick est celui de Mann ______.
+
+34. La phase où l'on décide sous incertitude est la phase ______.
+
+35. L'auteur de « La gestion des crises » (1991) s'appelle ______.
+
+36. La phase après la crise est l'______-crise.
+
+37. Le point de situation compte ______ colonnes.
+
+38. Quand le public et les médias s'en saisissent, on parle d'______.
+
+39. La première phase du cycle est la ______.
+
+40. Le chercheur qui a décrit l'effondrement du sens s'appelle ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

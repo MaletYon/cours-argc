@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C16
+Chapitre 16 : Gérer les incidents de sécurité
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Une alerte d'antivirus bloquée est :
+      a) Un événement
+      b) Un incident majeur
+      c) Une crise
+      d) Un sinistre
+
+ 2. Un compte à privilèges compromis est :
+      a) Un événement
+      b) Un incident majeur
+      c) Un incident
+      d) Une rumeur
+
+ 3. Des serveurs chiffrés sur deux sites relèvent :
+      a) D'un événement
+      b) D'un incident mineur
+      c) D'une crise
+      d) D'un exercice
+
+ 4. Qui gère une crise ?
+      a) L'exploitation
+      b) Le prestataire seul
+      c) Le standard
+      d) La cellule de crise présidée par le DG
+
+ 5. Quelle norme décrit la gestion des incidents de sécurité ?
+      a) ISO/IEC 27035
+      b) ISO 22301
+      c) ISO 19011
+      d) ISO 31000
+
+ 6. Combien de phases compte la gestion des incidents selon l'ISO/IEC 27035-1:2023 ?
+      a) Trois
+      b) Cinq
+      c) Quatre
+      d) Sept
+
+ 7. Quelle est la première phase ?
+      a) Répondre
+      b) Tirer les enseignements
+      c) Planifier et préparer
+      d) Détecter
+
+ 8. Dans quelle phase classe-t-on et escalade-t-on l'incident ?
+      a) Planifier
+      b) Répondre
+      c) Apprendre
+      d) Évaluer et décider
+
+ 9. Quel document du NIST de 2025 relie la réponse aux incidents au CSF 2.0 ?
+      a) SP 800-61 Rev. 3
+      b) SP 800-30
+      c) SP 800-84
+      d) SP 800-34
+
+10. Sous quel délai escalade-t-on un incident de gravité 4 au DG ?
+      a) 4 heures
+      b) 1 heure
+      c) Dans la journée
+      d) Une semaine
+
+11. Sous quel délai escalade-t-on un incident de gravité 3 ?
+      a) 1 heure
+      b) Dans la journée
+      c) 4 heures
+      d) Jamais
+
+12. En cas de doute sur la gravité, que fait-on ?
+      a) On prend le niveau inférieur
+      b) On attend
+      c) On redémarre
+      d) On prend le niveau supérieur
+
+13. Avant quelle heure le DG devait-il être prévenu le 5 mars ?
+      a) 23 h 05
+      b) 21 h 40
+      c) 22 h 05
+      d) 7 h 30
+
+14. Qui coordonne l'incident et décide dans son périmètre ?
+      a) Le journaliste
+      b) Le responsable de l'incident
+      c) Le client
+      d) L'assureur
+
+15. Que faut-il faire avant d'agir sur une machine compromise ?
+      a) La formater
+      b) La redémarrer
+      c) Préserver : ne pas éteindre, isoler, collecter
+      d) L'ignorer
+
+16. Quel a été le délai de détection en mars ?
+      a) 9 h 50
+      b) 3 h 40
+      c) 11 jours
+      d) 80 h 18 min
+
+17. Combien de temps après la détection le DG a-t-il été prévenu ?
+      a) 15 minutes
+      b) 1 heure
+      c) 3 h 40
+      d) 1 jour
+
+18. Que mesure le délai de confinement ?
+      a) De l'attaque à la détection
+      b) De la détection au confinement
+      c) Du confinement au rétablissement
+      d) La durée de la crise
+
+19. Que signifie un faible taux d'incidents prévus au registre ?
+      a) Le registre est parfait
+      b) Il n'y a pas d'incident
+      c) Le registre a des trous
+      d) Le SOC est efficace
+
+20. Quel est le délai entre le chiffrement (21 h 40) et la détection (7 h 30) ?
+      a) 3 h 40
+      b) 11 h 50
+      c) 80 heures
+      d) 9 h 50
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Un incident se gère par des procédures, une crise par des décisions.
+      Vrai / Faux
+
+22. On peut sauter l'évaluation et redémarrer pour voir.
+      Vrai / Faux
+
+23. Une escalade inutile coûte moins qu'une escalade manquée.
+      Vrai / Faux
+
+24. La grille de gravité de LiZbiZ est une convention du cours, à adapter.
+      Vrai / Faux
+
+25. Le juridique fait partie de l'équipe de réponse.
+      Vrai / Faux
+
+26. On reclasse l'incident à chaque point de situation.
+      Vrai / Faux
+
+27. Le responsable de la continuité reçoit les escalades de gravité 3 et 4.
+      Vrai / Faux
+
+28. Le rétablissement de la facturation a pris 11 jours.
+      Vrai / Faux
+
+29. Une publication de données clients est un simple événement.
+      Vrai / Faux
+
+30. La phase « tirer les enseignements » met à jour le registre des risques.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La norme de gestion des incidents est l'ISO/IEC ______.
+
+32. Le niveau de gravité le plus élevé de la grille est le niveau ______.
+
+33. Le délai de détection de mars est de 80 heures et ______ minutes.
+
+34. Face à un rançongiciel, on isole sans ______.
+
+35. Un incident de gravité 4 s'escalade sous ______ heure.
+
+36. Le document du NIST sur la réponse aux incidents est le SP 800-______.
+
+37. Le registre chronologique de l'incident est la main ______.
+
+38. Une occurrence qui indique une possible violation est un ______ de sécurité.
+
+39. Le technicien d'astreinte de mars s'appelle M. ______.
+
+40. Transmettre un incident au niveau supérieur s'appelle l'______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

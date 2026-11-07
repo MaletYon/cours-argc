@@ -1,0 +1,303 @@
+% ============================================================================
+% Fichier  : partie5/P05_C25_exercices.tex
+% Titre    : Les Exercices de Crise
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 22361:2022 ; ISO 22301:2019 (8.5) ; NIST SP 800-84 (2006).
+% Exercice du 22 octobre 2026 de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{Les Exercices de Crise}
+\label{chap:exercices-crise}
+\chaptermark{Les exercices de crise}
+
+\epigraph{%
+    « On ne s'élève pas au niveau de ses attentes en crise~;\\
+    on retombe au niveau de son entraînement. »%
+}{Formule d'usage chez les instructeurs}
+
+\niveauChapitre{Intermédiaire à expert}{Chapitres~\ref{chap:exercer},
+\ref{chap:cellule} à~\ref{chap:communiquer}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Concevoir un exercice de crise pour une cellule de direction.
+    \item Écrire un scénario et un chronogramme d'injections réalistes.
+    \item Animer, observer et préserver la sécurité de l'exercice.
+    \item Conduire un débriefing à chaud et un débriefing à froid.
+    \item Mesurer la progression d'une cellule d'un exercice à l'autre.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : la cellule de crise de LiZbiZ ferait-elle mieux aujourd'hui qu'en mars~?}
+% ============================================================================
+
+Le 22~octobre 2026, Mme~MOUAFO réunit la direction de LiZbiZ pour un
+premier exercice sur table de deux heures. Le scénario n'est pas
+annoncé. La question n'est pas de « réussir », mais de mesurer, par
+rapport au 6~mars, ce qui a progressé et ce qui manque encore.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Ce qu'entraîne un exercice de crise (section~\ref{sec:c25-objet}).
+    \item Le scénario et les injections (section~\ref{sec:c25-scenario}).
+    \item Animer et observer (section~\ref{sec:c25-animer}).
+    \item Débriefer (section~\ref{sec:c25-debriefer}).
+    \item Mesurer la progression (section~\ref{sec:c25-progression}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Ce qu'Entraîne un Exercice de Crise}
+\label{sec:c25-objet}
+% ============================================================================
+
+Un exercice de continuité éprouve des procédures~; un exercice de crise
+éprouve une \emph{organisation qui décide}~: se réunir vite, partager la
+situation, décider sous incertitude, communiquer, tenir la main courante.
+Il donne aux dirigeants l'expérience que les crises réelles, rares, ne
+leur donnent pas (Chapitre~\ref{chap:decider}).
+
+\begin{tableaucours}{L{4.6cm}L{7.6cm}}{%
+    \tableauHeader{Capacité} &
+    \tableauHeader{Objectif mesurable de l'exercice d'octobre}
+}
+Se réunir & Cellule réunie en moins de 30~minutes après l'alerte \\
+Tenir la main courante & Main courante ouverte dans les 5~minutes \\
+Communiquer & Premier message validé en moins de 60~minutes \\
+Décider & Décisions conservatoires prises avant le premier point \\
+Joindre & Tous les contacts utiles joints par l'annuaire de crise \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~25.1. Capacités entraînées et objectifs}\end{center}
+
+% ============================================================================
+\section{Le Scénario et les Injections}
+\label{sec:c25-scenario}
+% ============================================================================
+
+Le scénario part du registre des risques. En octobre, Mme~MOUAFO choisit
+un risque de la zone de contrôle de l'écosystème
+(Chapitre~\ref{chap:ebios})~: une fuite de données chez un transporteur
+sous-traitant.
+
+\begin{tableaucours}{L{1.4cm}L{7.8cm}L{3.0cm}}{%
+    \tableauHeader{Temps} &
+    \tableauHeader{Injection} &
+    \tableauHeader{Capacité visée}
+}
+T+0 & Un transporteur signale qu'un fichier de 3\,000~adresses de
+destinataires de LiZbiZ est en vente sur un forum & Se réunir \\
+T+15 & Un journaliste appelle pour confirmation & Communiquer \\
+T+35 & Le transporteur ignore depuis quand le fichier a fuité & Décider
+sous incertitude \\
+T+50 & Un client majeur menace de suspendre son contrat & Parties
+prenantes \\
+T+70 & Le directeur général doit quitter la salle (suppléant) & Suppléance \\
+T+90 & Le vendeur propose de « retirer » le fichier contre paiement &
+Politique sur les rançons \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~25.2. Chronogramme de l'exercice du 22 octobre}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Un scénario si dur que la cellule est
+submergée et n'apprend rien, ou si doux qu'elle ne rencontre aucune
+difficulté.
+
+\smallskip
+\textbf{Règle~:} doser~: chaque injection met une capacité à l'épreuve,
+une seule à la fois au début, puis plusieurs. L'animateur peut accélérer
+ou ralentir selon la réaction de la cellule.
+\end{boxalert}
+
+% ============================================================================
+\section{Animer et Observer}
+\label{sec:c25-animer}
+% ============================================================================
+
+\begin{tableaucours}{L{3.2cm}L{9.0cm}}{%
+    \tableauHeader{Rôle} &
+    \tableauHeader{Mission}
+}
+Directeur d'exercice & Garant du cadre et de la sécurité~; peut suspendre \\
+Animateurs & Jouent les tiers (journaliste, client, transporteur), envoient
+les injections \\
+Observateurs & Notent, sur une grille, les heures et les faits liés à
+chaque objectif \\
+Joueurs & La cellule de crise, dans ses rôles réels \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~25.3. Les rôles d'un exercice de crise}\end{center}
+
+Chaque message porte la mention « EXERCICE »~; un mot d'arrêt est convenu
+pour le cas où un incident réel surviendrait pendant l'exercice. Aucun
+appel n'est passé à un vrai journaliste ni à un vrai client.
+
+% ============================================================================
+\section{Débriefer}
+\label{sec:c25-debriefer}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Deux débriefings}
+\begin{enumerate}
+    \item \textbf{À chaud}, juste après l'exercice, trente minutes~: chaque
+          joueur dit ce qui l'a aidé, ce qui l'a gêné, ce qu'il ferait
+          autrement. On ne juge personne.
+    \item \textbf{À froid}, une à deux semaines plus tard~: rapport fondé
+          sur les grilles d'observation~; objectifs atteints ou non~;
+          actions, responsables, échéances.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxscenario}{Opération LIZBIZ. L'exercice du 22 octobre}
+\textbf{Constatations} (grilles d'observation).
+\begin{itemize}
+    \item Cellule réunie en 25~minutes~; main courante ouverte à
+          4~minutes.
+    \item Premier message validé à 52~minutes.
+    \item Décision de refuser le paiement conforme à la politique, prise en
+          8~minutes.
+    \item Suppléance~: Mme~MBALLA prend la direction, mais un numéro sur
+          vingt-trois de l'annuaire de crise est faux.
+    \item Personne n'est chargé d'appeler l'assureur~; l'appel n'est pas
+          passé.
+\end{itemize}
+
+\medskip
+\textbf{Analyse} (confiance élevée). Quatre objectifs sur cinq sont atteints
+(contre aucun le 6~mars). Les deux écarts sont simples à corriger~: mise à
+jour trimestrielle de l'annuaire, ajout de l'assureur à la fiche réflexe
+(Chapitre~\ref{chap:cellule}).
+\end{boxscenario}
+
+% ============================================================================
+\section{Mesurer la Progression}
+\label{sec:c25-progression}
+% ============================================================================
+
+\begin{tableaucours}{L{5.2cm}R{3.4cm}R{3.4cm}}{%
+    \tableauHeader{Indicateur} &
+    \tableauHeader{6~mars (réel)} &
+    \tableauHeader{22~octobre (exercice)}
+}
+Délai de réunion de la cellule & 3~h & 25~min \\
+Délai d'ouverture de la main courante & Plus d'un jour & 4~min \\
+Délai du premier message externe & 25~h~30 & 52~min \\
+Contacts joints par l'annuaire & Pas d'annuaire & 22 sur 23 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~25.4. Progression de la cellule de crise de LiZbiZ}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Comparer un exercice préparé et une crise
+réelle comme s'ils étaient équivalents.
+
+\smallskip
+\textbf{Règle~:} l'exercice se déroule un jour ouvré, à heure connue, avec
+une cellule présente~; la crise de mars a éclaté un vendredi à l'aube, le
+DG sur la route. La progression est réelle, mais elle doit être confirmée
+par un exercice inopiné, hors des heures ouvrées.
+\end{boxalert}
+
+\begin{boxmetier}{Directeur de crise}
+\textbf{Jouer son propre rôle.} M.~ETEME participe aux exercices dans son
+rôle réel et accepte d'être mis en défaut~: un directeur général qui se
+fait remplacer à l'exercice ne sera pas prêt le jour venu.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Un exercice de crise} éprouve une organisation qui
+          décide, avec des objectifs mesurables.
+    \item \textbf{Le scénario} vient du registre~; les injections sont
+          dosées et datées.
+    \item \textbf{Animateurs, observateurs, directeur d'exercice}~; mention
+          « EXERCICE » et mot d'arrêt.
+    \item \textbf{Débriefing à chaud} sans jugement, \textbf{à froid} fondé
+          sur les observations.
+    \item \textbf{La progression} se mesure d'un exercice à l'autre, et se
+          confirme par un exercice inopiné.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: fixer les objectifs d'un
+exercice de crise~; écrire un chronogramme d'injections~; répartir les
+rôles~; conduire les deux débriefings~; mesurer une progression.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.1. Les objectifs \niveaubase}]
+Combien d'objectifs du Tableau~25.1 l'exercice d'octobre a-t-il atteints~?
+Lesquels ne l'ont pas été~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.2. Les rôles \niveaubase}]
+Qui, dans l'exercice, joue le journaliste~? Qui peut suspendre l'exercice~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.3. La progression \niveaubase}]
+Calculez, pour chaque indicateur du Tableau~25.4, le gain entre mars et
+octobre.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.4. Une injection \niveaumoyen}]
+Ajoutez deux injections au chronogramme d'octobre pour éprouver la
+communication interne.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.5. La grille \niveaumoyen}]
+Construisez la grille d'observation de l'objectif « premier message validé
+en moins de 60~minutes ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.6. À chaud \niveaumoyen}]
+Préparez les trois questions du débriefing à chaud et la règle qui
+empêche d'en faire un procès.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.7. L'assureur \niveaumoyen}]
+L'appel à l'assureur a été oublié. Corrigez la fiche réflexe de la
+première heure (Chapitre~\ref{chap:cellule}).
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.8. Inopiné \niveaumoyen}]
+Concevez un exercice inopiné d'une heure, un samedi matin, et dites ce
+qu'il mesure que l'exercice d'octobre ne mesurait pas.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.9. L'exercice de février \niveauexpert}]
+Concevez l'exercice sur table « rançongiciel » de février 2027~: objectifs,
+scénario, chronogramme de huit injections, rôles, sécurité.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~25.10. Le rapport à froid \niveauexpert}]
+Rédigez le rapport à froid de l'exercice du 22~octobre.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~22361~\cite{iso22361_2022}~; NIST SP~800-84~\cite{nist80084}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Exercices et crises réelles ne servent que si l'on en
+tire les leçons. Le Chapitre~\ref{chap:retex} traite du retour
+d'expérience et de la mesure de la résilience.
+\end{boxinfo}

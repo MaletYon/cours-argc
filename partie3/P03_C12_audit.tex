@@ -1,0 +1,321 @@
+% ============================================================================
+% Fichier  : partie3/P03_C12_audit.tex
+% Titre    : L'Audit selon l'ISO 19011
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 19011:2018 ; ISO/IEC 27007:2020 ; loi n° 2010/012 (art. 13 et
+% 32, cités au chapitre 5). Programme d'audit de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{L'Audit selon l'ISO 19011}
+\label{chap:audit}
+\chaptermark{L'audit selon l'ISO 19011}
+
+\epigraph{%
+    « Auditer, ce n'est pas chercher des fautes~;\\
+    c'est établir, preuves à l'appui, ce qui fonctionne et ce qui manque. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:gouvernance},
+\ref{chap:droit} et~\ref{chap:traiter}~; cours INF3226.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Distinguer les audits de première, deuxième et troisième partie.
+    \item Énoncer les sept principes de l'audit de l'ISO~19011.
+    \item Établir un programme d'audit fondé sur les risques.
+    \item Définir les rôles d'une équipe d'audit et les compétences
+          attendues.
+    \item Situer l'ISO/IEC~27007 pour l'audit d'un système de management de
+          la sécurité.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : que fallait-il auditer, et quand, chez LiZbiZ~?}
+% ============================================================================
+
+Le dernier audit de sécurité de LiZbiZ datait de 2023 et ne couvrait pas
+le prestataire. Au printemps 2026, la mission d'AUDIX CONSEIL a examiné
+cinq domaines du système d'information (cours INF3226). En septembre, le
+comité d'audit demande à Mme~NKENG un \emph{programme} d'audit sur deux
+ans, qui couvre en priorité ce qui présente le plus de risques, y compris
+le dispositif de gestion des risques lui-même.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Les types d'audit (section~\ref{sec:c12-types}).
+    \item Les principes de l'audit (section~\ref{sec:c12-principes}).
+    \item Le programme d'audit (section~\ref{sec:c12-programme}).
+    \item Les rôles et les compétences (section~\ref{sec:c12-roles}).
+    \item L'audit d'un système de management de la sécurité (section~\ref{sec:c12-27007}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Les Types d'Audit}
+\label{sec:c12-types}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Audit} (ISO~19011)~: processus méthodique, indépendant et
+documenté, permettant d'obtenir des preuves objectives et de les évaluer de
+manière objective pour déterminer dans quelle mesure les critères d'audit
+sont satisfaits~\cite{iso19011_2018}.
+\end{boxdef}
+
+\begin{tableaucours}{L{3.2cm}L{4.4cm}L{4.6cm}}{%
+    \tableauHeader{Type} &
+    \tableauHeader{Qui audite} &
+    \tableauHeader{Exemple}
+}
+Première partie & L'organisation elle-même (audit interne) & Mme~NKENG
+audite le dispositif de risques \\
+Deuxième partie & Un client ou un donneur d'ordre & LiZbiZ audite SAHEL
+INFOGÉRANCE, selon la clause du contrat \\
+Troisième partie & Un organisme indépendant & Certification ISO/IEC~27001~;
+audit de l'Agence au titre de l'article~32 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~12.1. Les trois types d'audit}\end{center}
+
+Les \termecle{critères d'audit} sont le référentiel auquel on compare les
+preuves~: une norme, une politique interne, une clause de contrat, un
+article de loi. Sans critère, il n'y a pas d'écart, seulement des opinions.
+
+% ============================================================================
+\section{Les Principes de l'Audit}
+\label{sec:c12-principes}
+% ============================================================================
+
+\begin{tableaucours}{L{4.2cm}L{8.0cm}}{%
+    \tableauHeader{Principe} &
+    \tableauHeader{Ce qu'il exige}
+}
+Intégrité & Honnêteté, diligence, respect de la loi, impartialité \\
+Présentation impartiale & Rapporter fidèlement, y compris les désaccords
+non résolus \\
+Conscience professionnelle & Diligence et jugement proportionnés à
+l'importance de la tâche \\
+Confidentialité & Protéger les informations obtenues \\
+Indépendance & Ne pas auditer son propre travail~; rester libre de tout
+conflit d'intérêts \\
+Approche fondée sur la preuve & Des conclusions vérifiables, fondées sur un
+échantillon d'informations disponibles \\
+Approche fondée sur le risque & Concentrer l'audit sur ce qui compte pour
+l'organisation et pour l'atteinte des objectifs de l'audit \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~12.2. Les sept principes de l'audit (ISO 19011:2018)}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Confier l'audit du dispositif de risques à la
+personne qui l'a conçu.
+
+\smallskip
+\textbf{Règle~:} Mme~MOUAFO ne peut pas auditer le registre qu'elle tient~;
+Mme~NKENG le peut, parce qu'elle n'y a pas pris part
+(Chapitre~\ref{chap:gouvernance}). Si l'auditeur a conseillé la
+conception, il le déclare et l'on confie le sujet à un autre.
+\end{boxalert}
+
+% ============================================================================
+\section{Le Programme d'Audit}
+\label{sec:c12-programme}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Programme d'audit}~: ensemble d'un ou plusieurs audits planifiés
+pour une durée donnée et dirigés vers un but spécifique. Il précise les
+objectifs, les risques et opportunités du programme, l'étendue, les
+ressources, le calendrier et la manière de le surveiller.
+\end{boxdef}
+
+Un programme fondé sur les risques consacre plus d'audits, et plus tôt,
+aux processus les plus exposés, en s'appuyant sur le registre des risques
+(Chapitre~\ref{chap:matrices}).
+
+\begin{tableaucours}{L{4.4cm}L{2.0cm}L{2.6cm}L{3.0cm}}{%
+    \tableauHeader{Audit} &
+    \tableauHeader{Risques} &
+    \tableauHeader{Période} &
+    \tableauHeader{Type}
+}
+Accès distants et prestataire & R-02 & Octobre 2026 & 1\textsuperscript{re}
+et 2\textsuperscript{e} partie \\
+Dispositif de gestion des risques & Tous & Octobre 2026 & 1\textsuperscript{re}
+partie \\
+Sauvegardes et reprise & R-01 & Janvier 2027 & 1\textsuperscript{re} partie \\
+Données personnelles & R-07 & Mars 2027 & 1\textsuperscript{re} partie,
+avec conseil \\
+Continuité des agences & R-03, R-11 & Juin 2027 & 1\textsuperscript{re}
+partie \\
+Préparation à la certification ISO/IEC~27001 & SMSI & Septembre 2027 &
+Audit à blanc \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~12.3. Programme d'audit 2026-2027 de LiZbiZ}\end{center}
+
+\begin{boxscenario}{Opération LIZBIZ. Le programme validé}
+\textbf{Constatation.} Le comité d'audit valide le programme le
+30~septembre. Le premier audit, « accès distants et prestataire », combine
+un audit interne et l'audit de SAHEL INFOGÉRANCE prévu par la nouvelle
+clause du contrat.
+
+\medskip
+\textbf{Analyse} (confiance élevée). Le programme suit l'ordre des risques
+du registre~: c'est l'approche fondée sur le risque. Il prévoit en outre
+d'auditer le dispositif de risques lui-même, sans quoi un registre faux
+orienterait faussement tout le programme.
+\end{boxscenario}
+
+% ============================================================================
+\section{Les Rôles et les Compétences}
+\label{sec:c12-roles}
+% ============================================================================
+
+\begin{tableaucours}{L{4.0cm}L{8.2cm}}{%
+    \tableauHeader{Rôle} &
+    \tableauHeader{Responsabilité}
+}
+Responsable du programme & Établit, met en œuvre, surveille et améliore le
+programme \\
+Responsable de l'équipe d'audit & Prépare et conduit un audit, répartit les
+tâches, rédige le rapport \\
+Auditeur & Recueille et évalue les preuves, rédige les constats \\
+Expert technique & Apporte une compétence particulière, sous la
+responsabilité d'un auditeur \\
+Guide et observateur & Accompagnent l'équipe sans participer à
+l'évaluation \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~12.4. Les rôles d'un audit}\end{center}
+
+L'ISO~19011 décrit les compétences de l'auditeur~: comportement
+professionnel (éthique, ouverture, observation, ténacité), connaissances
+génériques (principes, méthodes, systèmes de management) et connaissances
+propres à la discipline (ici, les risques et la sécurité de l'information).
+
+% ============================================================================
+\section{L'Audit d'un Système de Management de la Sécurité}
+\label{sec:c12-27007}
+% ============================================================================
+
+L'\norme{ISO/IEC~27007:2020} complète l'ISO~19011 pour l'audit d'un système
+de management de la sécurité de l'information~\cite{iso27007_2020}. Elle
+précise ce qu'il faut examiner aux clauses~4 à~10 de l'ISO/IEC~27001
+(contexte, leadership, planification dont l'appréciation des risques,
+support, fonctionnement, évaluation, amélioration) et comment relier les
+mesures de l'annexe~A aux risques.
+
+\begin{boxobjet}{R-02 · Point d'audit}
+\textbf{Scénario audité~:} usurpation de l'accès distant du prestataire.
+\textbf{Critères~:} politique d'accès distant, clause du contrat
+(octobre 2026), article~29, alinéa~2 de la loi n°~2010/012.
+\textbf{Preuves attendues~:} configuration de la passerelle, journaux de
+connexion, liste des comptes du prestataire, procès-verbal de l'audit du
+prestataire. \textbf{Propriétaire~:} M.~NGUELE.
+\end{boxobjet}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Écrire les critères avant d'arriver.} L'auditeur liste, avant la
+réunion d'ouverture, chaque critère et la preuve qui permettra de dire s'il
+est satisfait. Ce qu'il ne peut pas relier à un critère n'ira pas dans le
+rapport comme écart.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{L'audit} compare des preuves objectives à des critères~;
+          il est interne, de deuxième ou de troisième partie.
+    \item \textbf{Sept principes}, dont l'indépendance, l'approche fondée
+          sur la preuve et l'approche fondée sur le risque.
+    \item \textbf{Le programme} suit le registre des risques et audite aussi
+          le dispositif de risques.
+    \item \textbf{Les rôles} sont distincts~; l'expert technique travaille
+          sous la responsabilité d'un auditeur.
+    \item \textbf{L'ISO/IEC~27007} adapte l'ISO~19011 au système de
+          management de la sécurité.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: définir l'audit et les
+critères d'audit~; distinguer les trois types~; citer les sept principes~;
+construire un programme fondé sur les risques~; situer l'ISO/IEC~27007.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.1. Quel type~? \niveaubase}]
+Classez~: l'audit de LiZbiZ par son assureur~; l'audit de la paie par
+Mme~NKENG~; l'audit de certification par un organisme accrédité.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.2. Les critères \niveaubase}]
+Donnez trois critères d'audit possibles pour l'audit « sauvegardes et
+reprise ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.3. Principes \niveaubase}]
+Quel principe un auditeur viole-t-il en omettant du rapport un désaccord
+avec l'audité~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.4. Indépendance \niveaumoyen}]
+M.~KOUNOU propose d'auditer lui-même les sauvegardes, qu'il connaît
+mieux que quiconque. Que répondez-vous~? Comment utiliser sa compétence~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.5. Fondé sur le risque \niveaumoyen}]
+Justifiez l'ordre du programme du Tableau~12.3 par le registre des risques
+du Chapitre~\ref{chap:matrices}.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.6. Le prestataire \niveaumoyen}]
+Quelles conditions doit réunir l'audit de SAHEL INFOGÉRANCE par LiZbiZ
+pour être possible et utile~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.7. L'expert \niveaumoyen}]
+AUDIX CONSEIL fournit un expert des passerelles d'accès distant. Quel est
+son rôle, et qui signe les constats~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.8. Les risques du programme \niveaumoyen}]
+Citez trois risques qui menacent le programme d'audit lui-même, et une
+parade pour chacun.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.9. Un programme bancaire \niveauexpert}]
+Construisez le programme d'audit sur deux ans de la BANQUE SANAGA,
+fondé sur ses risques.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~12.10. Clauses 4 à 10 \niveauexpert}]
+Pour chaque clause de 4 à 10 de l'ISO/IEC~27001, donnez une preuve que
+l'auditeur demandera à LiZbiZ.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~19011~\cite{iso19011_2018}~; ISO/IEC~27007~\cite{iso27007_2020}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Le programme posé, il faut conduire chaque audit. Le
+Chapitre~\ref{chap:conduire} traite des preuves, des échantillons et des
+constats.
+\end{boxinfo}

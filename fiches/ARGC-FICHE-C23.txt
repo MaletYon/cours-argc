@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C23
+Chapitre 23 : Décider en situation de crise
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Qui a décrit la décision fondée sur la reconnaissance ?
+      a) Gary Klein
+      b) Daniel Kahneman
+      c) Frank Knight
+      d) Charles Perrow
+
+ 2. Sous pression, que font les experts selon Klein ?
+      a) Ils comparent toutes les options
+      b) Ils reconnaissent la situation et simulent une action plausible
+      c) Ils tirent au sort
+      d) Ils attendent
+
+ 3. Pourquoi les exercices sont-ils utiles selon Klein ?
+      a) Ils coûtent peu
+      b) Ils remplacent les plans
+      c) Ils donnent l'expérience que les crises réelles, rares, ne donnent pas
+      d) Ils sont obligatoires
+
+ 4. Toute l'attention sur un seul problème relève de :
+      a) La pensée de groupe
+      b) L'excès de confiance
+      c) La fatigue
+      d) L'effet tunnel
+
+ 5. « Lundi, tout sera rétabli » illustre :
+      a) Le biais de normalité et l'excès de confiance
+      b) L'effet tunnel
+      c) La pensée de groupe
+      d) La prudence
+
+ 6. Quelle parade contre l'excès de confiance ?
+      a) Annoncer une date précise
+      b) Annoncer des fourchettes avec leur hypothèse
+      c) Se taire
+      d) Promettre
+
+ 7. Quelle parade contre la fatigue ?
+      a) Café
+      b) Réunions plus longues
+      c) Relèves et sommeil imposé au directeur de crise
+      d) Aucune
+
+ 8. Quand la facturation a-t-elle réellement repris ?
+      a) Le 9 mars
+      b) Le 12 mars
+      c) Le 19 mars
+      d) Le 16 mars
+
+ 9. Couper les liaisons entre sites est une décision :
+      a) Réversible
+      b) Irréversible
+      c) Interdite
+      d) Juridique
+
+10. Payer la rançon est une décision :
+      a) Réversible
+      b) Irréversible
+      c) Technique
+      d) Anodine
+
+11. Comment traite-t-on une décision réversible et conservatoire ?
+      a) Après avis de toute la direction
+      b) Jamais
+      c) Vite, sur l'information disponible
+      d) Après la crise
+
+12. Effacer un serveur pour le réinstaller est :
+      a) Réversible
+      b) Sans conséquence
+      c) Conservatoire
+      d) Irréversible (preuves perdues)
+
+13. Quelle est la première étape pour structurer une décision ?
+      a) Formuler la question et l'échéance réelle
+      b) Décider
+      c) Communiquer
+      d) Payer
+
+14. Quel critère ne figure pas dans la décision sur la rançon ?
+      a) La continuité
+      b) La couleur du message
+      c) Le droit et l'éthique
+      d) Le précédent
+
+15. Quand la décision de ne pas payer est-elle consignée ?
+      a) Le 6 mars à 10 h 30
+      b) Le 7 mars à 8 h 20
+      c) Le 8 mars à 18 h 10
+      d) Le 19 mars
+
+16. Quelle information manquait au moment de la décision ?
+      a) Le montant de la rançon
+      b) Le nom du DG
+      c) L'existence de l'attaque
+      d) L'étendue des données copiées
+
+17. Qui peut couper les liaisons sans attendre le DG, depuis juin ?
+      a) Le responsable informatique ou l'astreinte
+      b) Le client
+      c) La presse
+      d) Personne
+
+18. Quelle est la position de principe de LiZbiZ sur les rançons ?
+      a) Toujours payer
+      b) Ne pas payer, sauf dérogation du DG après avis juridique écrit
+      c) Laisser le prestataire décider
+      d) Négocier toujours
+
+19. Qui peut basculer en mode dégradé sans attendre le DG ?
+      a) Le client
+      b) L'assureur
+      c) Le directeur des opérations
+      d) Le juriste
+
+20. Que se garde le directeur de crise ?
+      a) Les gestes conservatoires
+      b) La restauration
+      c) La main courante
+      d) Les décisions irréversibles
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Face à une situation vraiment nouvelle, il faut revenir à une décision délibérée.
+      Vrai / Faux
+
+22. L'annonce « lundi, tout sera rétabli » a coûté de la crédibilité à chaque report.
+      Vrai / Faux
+
+23. Le 6 mars, la coupure des liaisons a été décidée immédiatement.
+      Vrai / Faux
+
+24. Ne pas décider est aussi une décision.
+      Vrai / Faux
+
+25. Il faut consigner la décision, ses motifs et l'information disponible.
+      Vrai / Faux
+
+26. La décision de ne pas payer sera jugée sur la publication du 19 mars.
+      Vrai / Faux
+
+27. Des options intermédiaires peuvent exister entre payer et ne pas payer.
+      Vrai / Faux
+
+28. Le premier message public peut être préapprouvé à froid.
+      Vrai / Faux
+
+29. Un contradicteur désigné aide contre la pensée de groupe.
+      Vrai / Faux
+
+30. Les délégations se donnent à l'oral pendant la crise.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'auteur de « Sources of Power » s'appelle ______.
+
+32. Toute l'attention sur un seul problème est l'effet ______.
+
+33. Une décision qui ne peut pas être défaite est ______.
+
+34. La rançon demandée est de ______ dollars.
+
+35. Le pouvoir donné à l'avance de décider est une ______.
+
+36. Annoncer un délai par une ______ plutôt qu'une date évite l'excès de confiance.
+
+37. La décision de ne pas payer est prise le ______ mars.
+
+38. Couper les liaisons est une mesure ______ et réversible.
+
+39. La décision fondée sur la ______ est le modèle de Klein.
+
+40. L'avocat consulté sur la rançon s'appelle Me ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

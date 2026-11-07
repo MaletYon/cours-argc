@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C25
+Chapitre 25 : Les exercices de crise
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Qu'éprouve un exercice de crise ?
+      a) Une organisation qui décide
+      b) Une procédure technique seule
+      c) Un logiciel
+      d) Un budget
+
+ 2. Quand LiZbiZ tient-elle son premier exercice sur table de crise ?
+      a) Le 6 mars 2026
+      b) Le 22 octobre 2026
+      c) Le 15 août 2026
+      d) En février 2027
+
+ 3. Quel est l'objectif de délai de réunion de la cellule ?
+      a) Moins de 3 heures
+      b) Moins d'un jour
+      c) Moins de 30 minutes
+      d) Aucun
+
+ 4. Quel est l'objectif de délai du premier message ?
+      a) Moins de 5 minutes
+      b) Moins d'un jour
+      c) Moins d'une semaine
+      d) Moins de 60 minutes
+
+ 5. D'où vient le scénario d'un exercice ?
+      a) Du registre des risques
+      b) D'un film
+      c) Du hasard
+      d) Du prestataire
+
+ 6. Quel scénario est joué en octobre ?
+      a) Une inondation
+      b) Une fuite de données chez un transporteur sous-traitant
+      c) Un incendie
+      d) Une grève
+
+ 7. Combien d'adresses sont en vente dans le scénario ?
+      a) 300
+      b) 30 000
+      c) 3 000
+      d) 47
+
+ 8. À T+70, que se passe-t-il ?
+      a) Un journaliste appelle
+      b) Le vendeur propose un paiement
+      c) Un client menace
+      d) Le DG doit quitter la salle
+
+ 9. Que propose le vendeur à T+90 ?
+      a) De retirer le fichier contre paiement
+      b) De se rendre
+      c) D'acheter LiZbiZ
+      d) Rien
+
+10. Qui peut suspendre l'exercice ?
+      a) Un joueur
+      b) Le directeur d'exercice
+      c) Le journaliste
+      d) Le client
+
+11. Qui joue les tiers (journaliste, client) ?
+      a) Les joueurs
+      b) Les observateurs
+      c) Les animateurs
+      d) Le DG
+
+12. Que notent les observateurs ?
+      a) Leurs opinions sur les personnes
+      b) Le menu
+      c) Rien
+      d) Les heures et les faits liés à chaque objectif
+
+13. Quand a lieu le débriefing à chaud ?
+      a) Juste après l'exercice
+      b) Un mois plus tard
+      c) Jamais
+      d) Avant l'exercice
+
+14. Sur quoi se fonde le débriefing à froid ?
+      a) Les souvenirs
+      b) Les grilles d'observation
+      c) Les rumeurs
+      d) Le budget
+
+15. En combien de temps la cellule est-elle réunie en octobre ?
+      a) 4 minutes
+      b) 52 minutes
+      c) 25 minutes
+      d) 3 heures
+
+16. En combien de temps le premier message est-il validé en octobre ?
+      a) 25 minutes
+      b) 60 minutes
+      c) 25 h 30
+      d) 52 minutes
+
+17. Combien de numéros de l'annuaire de crise sont faux ?
+      a) Un sur vingt-trois
+      b) Aucun
+      c) Cinq
+      d) Tous
+
+18. Quel appel n'est pas passé pendant l'exercice ?
+      a) L'appel au DG
+      b) L'appel à l'assureur
+      c) L'appel au transporteur
+      d) L'appel à la presse
+
+19. Combien d'objectifs sur cinq sont atteints en octobre ?
+      a) Deux
+      b) Trois
+      c) Quatre
+      d) Cinq
+
+20. Qu'est-ce qui confirmera la progression ?
+      a) Un communiqué
+      b) Un budget
+      c) Rien
+      d) Un exercice inopiné hors des heures ouvrées
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Le scénario est annoncé aux joueurs à l'avance.
+      Vrai / Faux
+
+22. Au début, chaque injection met une seule capacité à l'épreuve.
+      Vrai / Faux
+
+23. Aucun appel n'est passé à un vrai journaliste pendant l'exercice.
+      Vrai / Faux
+
+24. Un mot d'arrêt est convenu.
+      Vrai / Faux
+
+25. Le débriefing à chaud juge les personnes.
+      Vrai / Faux
+
+26. La décision de refuser le paiement a été prise en 8 minutes, conforme à la politique.
+      Vrai / Faux
+
+27. Un exercice préparé et une crise réelle se comparent sans réserve.
+      Vrai / Faux
+
+28. Le 6 mars, aucun objectif de l'exercice n'aurait été atteint.
+      Vrai / Faux
+
+29. Le DG doit jouer son propre rôle aux exercices.
+      Vrai / Faux
+
+30. Mme MBALLA prend la direction quand le DG quitte la salle.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La personne qui garantit le cadre et la sécurité est le directeur d'______.
+
+32. Le débriefing juste après l'exercice est le débriefing à ______.
+
+33. Le débriefing fondé sur les grilles, une à deux semaines après, est à ______.
+
+34. Un exercice non annoncé est dit ______.
+
+35. La cellule est réunie en ______ minutes en octobre.
+
+36. Le chronogramme liste les ______ et leur heure.
+
+37. L'exercice d'octobre dure ______ heures.
+
+38. L'annuaire a permis de joindre 22 contacts sur ______.
+
+39. Le premier message est validé à ______ minutes.
+
+40. Les personnes qui notent les faits sont les ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C09
+Chapitre 9 : L'analyse quantitative : FAIR et pertes annuelles
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Que signifie FAIR ?
+      a) Factor Analysis of Information Risk
+      b) Fast Analysis of IT Risk
+      c) Federal Assessment of Information Resources
+      d) Financial Audit of Information Records
+
+ 2. Selon FAIR, le risque est le produit de :
+      a) La menace et la vulnérabilité
+      b) La fréquence des pertes et de l'ampleur des pertes
+      c) L'impact et le coût
+      d) La probabilité et le budget
+
+ 3. La fréquence des pertes est le produit de :
+      a) L'ampleur et la vulnérabilité
+      b) La menace et l'impact
+      c) La fréquence des menaces et de la vulnérabilité
+      d) Le coût et la durée
+
+ 4. Combien de formes de perte FAIR distingue-t-il ?
+      a) Trois
+      b) Quatre
+      c) Dix
+      d) Six
+
+ 5. Le salaire des agents qui ressaisissent les factures est une perte de :
+      a) Productivité
+      b) Réputation
+      c) Remplacement
+      d) Amendes
+
+ 6. L'achat d'un nouveau serveur est une perte de :
+      a) Productivité
+      b) Remplacement
+      c) Réponse
+      d) Réputation
+
+ 7. Un client qui ne renouvelle pas son contrat est une perte de :
+      a) Réponse
+      b) Remplacement
+      c) Réputation
+      d) Productivité
+
+ 8. Quelle est la formule de la moyenne PERT ?
+      a) (min + max) / 2
+      b) (min + plus probable + max) / 3
+      c) max - min
+      d) (min + 4 × plus probable + max) / 6
+
+ 9. Min 10, plus probable 25, max 70. Moyenne PERT ?
+      a) 30
+      b) 25
+      c) 35
+      d) 40
+
+10. Quelle est la fréquence moyenne des menaces (TEF) estimée pour R-02 ?
+      a) 2,5
+      b) 2,67
+      c) 4
+      d) 0,29
+
+11. Quelle est la vulnérabilité moyenne sans second facteur ?
+      a) 2,3 %
+      b) 5 %
+      c) 10,8 %
+      d) 20 %
+
+12. Quelle est la fréquence des pertes sans second facteur ?
+      a) 0,06
+      b) 0,25
+      c) 2,67
+      d) 0,29
+
+13. 6 tentatives par an, réussite une fois sur cinquante. Fréquence des pertes ?
+      a) 0,12
+      b) 0,06
+      c) 0,3
+      d) 6
+
+14. Quelle est la moyenne des pertes primaires de R-02 ?
+      a) 70 millions
+      b) 169 millions
+      c) 80 millions
+      d) 326 millions
+
+15. Quelle probabilité de pertes secondaires retient-on par événement ?
+      a) 0,5
+      b) 1
+      c) 0,8
+      d) 0,25
+
+16. Quelle est l'ampleur moyenne d'un événement de R-02 ?
+      a) 169 millions
+      b) 196 millions
+      c) 312 millions
+      d) 326 millions
+
+17. Quelle est la perte annuelle attendue de R-02 sans second facteur ?
+      a) 94 millions
+      b) 20 millions
+      c) 75 millions
+      d) 326 millions
+
+18. Quelle est la perte annuelle attendue de R-02 avec second facteur ?
+      a) 6 millions
+      b) 20 millions
+      c) 74 millions
+      d) 94 millions
+
+19. Quel est le rapport net (pertes évitées moins coût, divisé par le coût) du second facteur ?
+      a) 1,5
+      b) 3
+      c) 11
+      d) 74
+
+20. De quelle hypothèse la décision dépend-elle le plus ?
+      a) La couleur du rapport
+      b) Le nombre de salariés
+      c) Le prix du serveur
+      d) La réduction de la vulnérabilité
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Les pertes secondaires viennent des réactions des tiers.
+      Vrai / Faux
+
+22. Il faut demander à l'expert un chiffre unique.
+      Vrai / Faux
+
+23. Trois valeurs montrent l'incertitude qu'un chiffre unique cache.
+      Vrai / Faux
+
+24. Le coût réel de mars (312 millions) se trouve dans l'intervalle de l'estimation FAIR.
+      Vrai / Faux
+
+25. Un seul événement valide un modèle.
+      Vrai / Faux
+
+26. La perte annuelle attendue décrit la pire année.
+      Vrai / Faux
+
+27. Le second facteur évite environ 74 millions de pertes annuelles attendues.
+      Vrai / Faux
+
+28. Avec les valeurs les plus probables, LEF vaut 0,25 sans second facteur.
+      Vrai / Faux
+
+29. Les hypothèses doivent figurer sur la même page que le chiffre présenté au conseil.
+      Vrai / Faux
+
+30. FAIR a été décrit par Freund et Jones.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La fréquence des pertes a pour sigle anglais ______.
+
+32. L'ampleur des pertes a pour sigle anglais ______.
+
+33. La fréquence des menaces a pour sigle anglais ______.
+
+34. La moyenne pondérée min, plus probable, max porte le nom de moyenne ______.
+
+35. Les pertes subies par l'organisation elle-même sont les pertes ______.
+
+36. Les pertes dues aux réactions des tiers sont les pertes ______.
+
+37. La perte annuelle attendue de R-02 sans second facteur est d'environ ______ millions.
+
+38. L'ampleur moyenne d'un événement de R-02 est de ______ millions.
+
+39. Le rapport net du second facteur est d'environ ______.
+
+40. La probabilité qu'une tentative réussisse est la ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

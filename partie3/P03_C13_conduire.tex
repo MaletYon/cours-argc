@@ -1,0 +1,322 @@
+% ============================================================================
+% Fichier  : partie3/P03_C13_conduire.tex
+% Titre    : Conduire l'Audit : Preuves, Échantillons, Constats
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 19011:2018 (6.3 à 6.4, annexe A) ; ISO/IEC 27007:2020.
+% Tailles d'échantillon et limites supérieures : loi binomiale, confiance
+% 95 %, calculées et vérifiées. Audit d'octobre 2026 : cas fictif.
+% ============================================================================
+
+\chapter{Conduire l'Audit : Preuves, Échantillons, Constats}
+\label{chap:conduire}
+\chaptermark{Preuves, échantillons, constats}
+
+\epigraph{%
+    « Zéro anomalie dans un échantillon\\
+    ne veut pas dire zéro anomalie dans la population. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire à expert}{Chapitre~\ref{chap:audit}~;
+notions de probabilité.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Dérouler les étapes d'un audit, de la préparation à la réunion de
+          clôture.
+    \item Juger la force d'une preuve selon sa source.
+    \item Dimensionner un échantillon par attributs et en tirer une limite
+          supérieure d'anomalies.
+    \item Rédiger un constat~: critère, fait, preuve, cause, conséquence.
+    \item Distinguer non-conformité, opportunité d'amélioration et
+          conformité.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : 29 connexions examinées suffisent-elles à conclure sur 1 340~?}
+% ============================================================================
+
+En octobre, Mme~NKENG audite les accès distants de LiZbiZ. En septembre,
+la passerelle a enregistré 1\,340~connexions. Elle ne peut pas les examiner
+toutes à la main. Combien en examiner, comment les choisir, et que
+conclure si elle trouve une ou deux connexions sans second facteur~?
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Les étapes d'un audit (section~\ref{sec:c13-etapes}).
+    \item Les preuves (section~\ref{sec:c13-preuves}).
+    \item Échantillonner (section~\ref{sec:c13-echantillon}).
+    \item Conclure sur la population (section~\ref{sec:c13-conclure}).
+    \item Rédiger un constat (section~\ref{sec:c13-constat}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Les Étapes d'un Audit}
+\label{sec:c13-etapes}
+% ============================================================================
+
+\begin{tableaucours}{L{3.6cm}L{8.6cm}}{%
+    \tableauHeader{Étape} &
+    \tableauHeader{Contenu (d'après l'ISO 19011:2018)}
+}
+Déclenchement & Contact avec l'audité, faisabilité, accès aux informations \\
+Préparation & Revue documentaire, plan d'audit, répartition des tâches,
+documents de travail (listes de vérification, plans d'échantillonnage) \\
+Réunion d'ouverture & Confirmer le périmètre, les critères, le
+calendrier, les modalités \\
+Collecte et vérification & Entretiens, observations, examen de documents et
+d'enregistrements, essais \\
+Constats & Comparer les preuves aux critères \\
+Conclusions & Synthèse des constats au regard des objectifs de l'audit \\
+Réunion de clôture & Présenter constats et conclusions, recueillir les
+désaccords \\
+Rapport et suivi & Rapport, actions correctives, vérification
+(Chapitre~\ref{chap:rapport}) \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~13.1. Les étapes d'un audit}\end{center}
+
+% ============================================================================
+\section{Les Preuves}
+\label{sec:c13-preuves}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Preuve d'audit}~: enregistrements, énoncés de faits ou autres
+informations, pertinents pour les critères d'audit et vérifiables.
+\end{boxdef}
+
+\begin{tableaucours}{L{3.4cm}L{2.2cm}L{6.6cm}}{%
+    \tableauHeader{Source} &
+    \tableauHeader{Force} &
+    \tableauHeader{Exemple}
+}
+Essai refait par l'auditeur & Élevée & Tenter une connexion à la passerelle
+sans second facteur \\
+Enregistrement produit par le système & Élevée & Journal de la passerelle,
+exporté en présence de l'auditeur, avec son empreinte \\
+Document & Moyenne & Politique d'accès distant signée \\
+Observation & Moyenne & Voir le technicien se connecter par le bastion \\
+Déclaration & Faible & « Tout le monde a le second facteur depuis juillet » \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~13.2. Force des preuves selon leur source}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Conclure sur une déclaration.
+
+\smallskip
+\textbf{Règle~:} une déclaration oriente la recherche, elle ne prouve pas.
+On la corrobore par un enregistrement ou un essai. Faute de corroboration,
+le point reste ouvert (au Chapitre~\ref{chap:retex}, on le cotera \NEK{}).
+\end{boxalert}
+
+% ============================================================================
+\section{Échantillonner}
+\label{sec:c13-echantillon}
+% ============================================================================
+
+Quand la population est trop grande, l'auditeur examine un
+\termecle{échantillon}. Il peut le choisir \emph{par jugement} (les
+connexions de nuit, celles du prestataire) ou \emph{statistiquement}
+(au hasard), ce qui seul permet d'étendre une conclusion chiffrée à la
+population.
+
+\begin{boxdef}
+\termecle{Échantillonnage par attributs}~: on compte, dans un échantillon
+tiré au hasard, les éléments qui présentent une anomalie (oui ou non). On
+fixe un \emph{taux tolérable} d'anomalies et un \emph{niveau de confiance}.
+\end{boxdef}
+
+Si l'on s'attend à ne trouver aucune anomalie, la taille minimale $n$ pour
+conclure, avec une confiance de 95~\%, que le taux d'anomalies est
+inférieur au taux tolérable $t$ vérifie $(1 - t)^n \le 0{,}05$~:
+\[
+n \ge \frac{\ln 0{,}05}{\ln(1 - t)}.
+\]
+
+\begin{tableaucours}{L{4.0cm}R{3.0cm}}{%
+    \tableauHeader{Taux tolérable} &
+    \tableauHeader{Taille minimale}
+}
+10~\% & 29 \\
+5~\% & 59 \\
+3~\% & 99 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~13.3. Tailles d'échantillon, confiance 95~\%, aucune anomalie attendue}\end{center}
+
+La taille dépend du taux tolérable et de la confiance, presque pas de la
+taille de la population, dès que celle-ci est grande. 29 connexions
+suffisent pour 1\,340 comme pour 100\,000.
+
+% ============================================================================
+\section{Conclure sur la Population}
+\label{sec:c13-conclure}
+% ============================================================================
+
+Si l'échantillon contient des anomalies, on calcule la \termecle{limite
+supérieure} du taux d'anomalies dans la population, à 95~\% de confiance.
+
+\begin{tableaucours}{L{3.6cm}R{2.8cm}R{2.8cm}}{%
+    \tableauHeader{Anomalies trouvées} &
+    \tableauHeader{Échantillon de 29} &
+    \tableauHeader{Échantillon de 59}
+}
+0 & 9,8~\% & 5,0~\% \\
+1 & 15,3~\% & 7,8~\% \\
+2 & 20,2~\% & 10,3~\% \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~13.4. Limite supérieure du taux d'anomalies, confiance 95~\%}\end{center}
+
+\begin{boxscenario}{Opération LIZBIZ. Les connexions de septembre}
+\textbf{Constatation.} Sur 29~connexions tirées au hasard parmi 1\,340,
+une s'est faite sans second facteur, par le compte « vpn\_secours »,
+exclu de la politique pour « dépannage ». L'essai de l'auditrice confirme
+que ce compte se connecte avec son seul mot de passe.
+
+\medskip
+\textbf{Analyse} (confiance élevée). Avec une anomalie sur 29, le taux
+réel peut atteindre 15,3~\%~: on ne peut pas conclure que 90~\% au moins
+des connexions ont un second facteur. Mais l'enjeu n'est plus statistique~:
+la cause est identifiée (un compte exclu), et toutes les connexions de ce
+compte sont à examiner, par un test exhaustif ciblé.
+\end{boxscenario}
+
+% ============================================================================
+\section{Rédiger un Constat}
+\label{sec:c13-constat}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Les éléments d'un constat}
+\begin{enumerate}
+    \item \textbf{Critère}~: l'exigence (politique, clause, article).
+    \item \textbf{Constat}~: le fait observé, chiffré.
+    \item \textbf{Preuve}~: la pièce qui l'établit, avec sa référence.
+    \item \textbf{Cause}~: pourquoi l'écart existe.
+    \item \textbf{Conséquence}~: le risque qui en résulte, relié au registre.
+    \item \textbf{Classement}~: non-conformité (majeure ou mineure),
+          opportunité d'amélioration, ou conformité.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxobjet}{Constat A-03 · Compte d'accès distant sans second facteur}
+\textbf{Critère~:} politique d'accès distant (juillet 2026)~: « toute
+connexion distante exige un second facteur ». \textbf{Constat~:} le compte
+« vpn\_secours » se connecte sans second facteur~; 46~connexions en
+septembre. \textbf{Preuve~:} journal de la passerelle (export du 8~octobre,
+empreinte SHA-256 consignée), essai du 9~octobre. \textbf{Cause~:}
+exception accordée oralement en juillet, jamais revue. \textbf{Conséquence~:}
+R-02 n'est pas réduit comme le registre l'indique. \textbf{Classement~:}
+non-conformité majeure.
+\end{boxobjet}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Chiffrer, puis expliquer.} L'auditeur ne se contente pas d'écrire
+« certaines connexions »~: il donne le nombre, la période, la preuve, et
+passe du sondage au test exhaustif dès qu'il a identifié une cause.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Un audit} se prépare, s'ouvre, collecte, constate,
+          conclut et se clôt en réunion.
+    \item \textbf{Une preuve} vaut selon sa source~: essai et enregistrement
+          avant document, observation et déclaration.
+    \item \textbf{L'échantillon statistique} seul permet d'étendre une
+          conclusion~: 29 pour 10~\% de taux tolérable à 95~\%.
+    \item \textbf{Une anomalie trouvée} élève la limite supérieure~; une
+          cause identifiée appelle un test exhaustif.
+    \item \textbf{Un constat}~: critère, fait, preuve, cause, conséquence,
+          classement.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: dérouler les étapes d'un
+audit~; classer une preuve par sa force~; calculer une taille d'échantillon
+sans anomalie attendue~; lire une limite supérieure~; rédiger un constat
+complet.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.1. Les étapes \niveaubase}]
+À quelle étape de l'audit se fait~: la confirmation du périmètre avec
+l'audité~; l'export du journal~; la présentation des constats~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.2. Classer les preuves \niveaubase}]
+Classez par force décroissante~: un courriel du prestataire~; l'export
+du journal~; la politique signée~; un essai de connexion.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.3. Taille \niveaubase}]
+Quelle taille d'échantillon faut-il pour conclure, à 95~\% de confiance et
+sans anomalie attendue, à un taux d'anomalies inférieur à 5~\%~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.4. La formule \niveaumoyen}]
+Vérifiez par le calcul que 29 est la plus petite taille qui satisfait
+$(1 - 0{,}10)^n \le 0{,}05$.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.5. Lire la limite \niveaumoyen}]
+Avec deux anomalies dans un échantillon de 59, peut-on conclure à un taux
+inférieur à 10~\%~? Justifiez par le Tableau~13.4.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.6. Par jugement \niveaumoyen}]
+Dans quels cas l'auditeur doit-il préférer un échantillon par jugement~?
+Que ne peut-il alors pas conclure~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.7. Le constat \niveaumoyen}]
+Rédigez un constat complet pour l'écart suivant~: la sauvegarde de la
+facturation n'a pas été testée depuis sa mise en place en août.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.8. Majeure ou mineure \niveaumoyen}]
+Classez en non-conformité majeure, mineure ou opportunité
+d'amélioration~: une politique non signée~; aucun registre des dérogations~;
+le compte « vpn\_secours ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.9. Le plan d'audit \niveauexpert}]
+Rédigez le plan de l'audit « accès distants et prestataire »~: objectifs,
+critères, périmètre, calendrier, échantillons, preuves attendues.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~13.10. Calculer une limite \niveauexpert}]
+Écrivez la méthode (ou le programme) qui calcule la limite supérieure à
+95~\% du taux d'anomalies pour $k$ anomalies dans un échantillon de $n$,
+et vérifiez la valeur 15,3~\% pour $k=1$, $n=29$.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~19011, conduite de l'audit~\cite{iso19011_2018}.
+    \item ISO/IEC~27007~\cite{iso27007_2020}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Le Chapitre~\ref{chap:auditer-risques} applique la
+méthode à un objet particulier~: le dispositif de gestion des risques et
+le système de management de la sécurité.
+\end{boxinfo}

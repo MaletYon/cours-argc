@@ -1,0 +1,319 @@
+% ============================================================================
+% Fichier  : partie2/P02_C06_identifier.tex
+% Titre    : Identifier les Risques
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 31000:2018 (6.4.2) ; IEC 31010:2019 ; ISO/IEC 27005:2022.
+% Atelier d'identification de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{Identifier les Risques}
+\label{chap:identifier}
+\chaptermark{Identifier les risques}
+
+\epigraph{%
+    « Le risque le plus dangereux\\
+    est celui qui ne figure pas dans le registre. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:risque}
+à~\ref{chap:cadres}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Formuler un risque sous la forme cause, événement, conséquence.
+    \item Choisir et combiner des techniques d'identification.
+    \item Classer les risques selon une taxonomie utile.
+    \item Partir des objectifs et des processus pour ne rien oublier.
+    \item Repérer les signaux faibles et les risques émergents.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : pourquoi le prestataire ne figurait-il dans aucune liste~?}
+% ============================================================================
+
+Lors de l'atelier de mai, chaque directeur de LiZbiZ cite les risques de
+son activité. Personne ne cite SAHEL INFOGÉRANCE~: pour la DAF, c'est un
+fournisseur~; pour l'informatique, un sous-traitant~; pour les opérations,
+un contrat. Un risque qui traverse les frontières des directions échappe
+aux listes établies direction par direction. Ce chapitre montre comment
+identifier sans laisser de trou.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Formuler un risque (section~\ref{sec:c06-formuler}).
+    \item Partir des objectifs et des processus (section~\ref{sec:c06-processus}).
+    \item Les techniques d'identification (section~\ref{sec:c06-techniques}).
+    \item Classer~: les taxonomies (section~\ref{sec:c06-taxonomie}).
+    \item Les signaux faibles (section~\ref{sec:c06-signaux}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Formuler un Risque}
+\label{sec:c06-formuler}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Énoncé de risque}~: phrase qui relie une \emph{cause} (source ou
+vulnérabilité), un \emph{événement} incertain et ses \emph{conséquences}
+sur un objectif. Forme recommandée~: « Du fait de [cause], [événement]
+peut survenir, ce qui entraînerait [conséquence sur l'objectif]. »
+\end{boxdef}
+
+\begin{tableaucours}{L{4.0cm}L{8.2cm}}{%
+    \tableauHeader{Énoncé} &
+    \tableauHeader{Diagnostic}
+}
+« Risque cyber » & Une catégorie, pas un risque~: ni cause, ni événement,
+ni conséquence \\
+« Manque de sauvegardes » & Une cause, pas un risque \\
+« Perte de clients » & Une conséquence, pas un risque \\
+« Du fait d'un accès distant du prestataire sans second facteur, un
+attaquant peut chiffrer les serveurs, ce qui arrêterait la facturation
+plusieurs jours » & Un risque bien formulé \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~6.1. Formuler un risque}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Inscrire au registre des mots-clés (« cyber »,
+« réputation », « RH »).
+
+\smallskip
+\textbf{Règle~:} un mot-clé ne se cote pas et ne se traite pas. On le
+décompose en scénarios formulés, chacun avec sa cause, son événement et sa
+conséquence.
+\end{boxalert}
+
+% ============================================================================
+\section{Partir des Objectifs et des Processus}
+\label{sec:c06-processus}
+% ============================================================================
+
+L'ISO~31000 rattache le risque aux objectifs~: on identifie d'abord ce que
+l'organisation doit atteindre, puis ce qui peut l'en empêcher. Une méthode
+sûre consiste à parcourir les \emph{processus} de l'entreprise et, pour
+chacun, ses ressources (personnes, systèmes, fournisseurs, locaux) et ses
+dépendances.
+
+\begin{tableaucours}{L{3.2cm}L{4.2cm}L{4.8cm}}{%
+    \tableauHeader{Processus} &
+    \tableauHeader{Ressources critiques} &
+    \tableauHeader{Exemple de risque}
+}
+Facturer & Application intégrée, base de Douala, comptabilité & Arrêt de
+l'application plus de deux jours \\
+Expédier & Agences, véhicules, suivi des expéditions & Inondation d'un
+entrepôt (Bonabéri) \\
+Payer & Banque, double validation, trésorerie & Fraude au virement par
+usurpation d'un dirigeant \\
+Administrer le SI & SAHEL INFOGÉRANCE, comptes à privilèges & Usurpation
+du compte du prestataire \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~6.2. Identifier par les processus}\end{center}
+
+% ============================================================================
+\section{Les Techniques d'Identification}
+\label{sec:c06-techniques}
+% ============================================================================
+
+\begin{tableaucours}{L{3.2cm}L{4.6cm}L{4.4cm}}{%
+    \tableauHeader{Technique} &
+    \tableauHeader{Apport} &
+    \tableauHeader{Limite}
+}
+Atelier pluridisciplinaire & Croise les points de vue, fait émerger les
+risques transversaux & Biais de groupe (Chapitre~\ref{chap:perception}) \\
+Entretiens individuels & Libère la parole, détaille un processus & Long~;
+vision partielle \\
+Listes de contrôle & Ne rien oublier de connu & N'invente rien de nouveau \\
+Historique des incidents & Données réelles & Ne montre que le passé \\
+Revue de l'écosystème & Prestataires, clients, partenaires & Dépend de
+l'information obtenue des tiers \\
+Analyse de scénarios & Explore l'inhabituel & Demande une animation
+experte \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~6.3. Techniques d'identification (d'après l'IEC 31010)}\end{center}
+
+\begin{boxprocedure}
+\textbf{Conduire un atelier d'identification}
+\begin{enumerate}
+    \item Envoyer à l'avance les objectifs, la liste des processus et
+          l'historique des incidents.
+    \item Faire écrire à chacun, en silence, ses risques pendant dix
+          minutes, avant toute discussion.
+    \item Regrouper, reformuler selon la forme cause, événement,
+          conséquence~; supprimer les doublons.
+    \item Parcourir chaque processus et chaque tiers~: « qu'a-t-on
+          oublié~? »
+    \item Désigner pour chaque risque un propriétaire provisoire.
+    \item Consigner les risques écartés et la raison de leur exclusion.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxscenario}{Opération LIZBIZ. L'atelier de mai}
+\textbf{Constatation.} L'atelier réunit huit personnes de six directions.
+Après la phase d'écriture silencieuse, 63~propositions~; après
+regroupement et reformulation, 41~risques. Le parcours des tiers en ajoute
+cinq, dont l'usurpation du compte du prestataire et la défaillance de
+l'unique opérateur de télécommunications de Garoua.
+
+\medskip
+\textbf{Analyse} (confiance élevée). Les cinq risques ajoutés par la revue
+de l'écosystème n'avaient été cités par personne~: l'identification par
+direction laisse passer les risques qui n'appartiennent à aucune.
+\end{boxscenario}
+
+% ============================================================================
+\section{Classer : les Taxonomies}
+\label{sec:c06-taxonomie}
+% ============================================================================
+
+Une \termecle{taxonomie des risques} répartit les risques en familles
+stables, pour vérifier que chacune a été examinée et consolider les
+résultats. Elle ne doit être ni trop fine (on ne s'y retrouve plus), ni
+trop grossière (« opérationnel » couvre tout).
+
+\begin{tableaucours}{L{3.0cm}L{9.2cm}}{%
+    \tableauHeader{Famille} &
+    \tableauHeader{Exemples chez LiZbiZ}
+}
+Stratégique & Perte d'un client majeur~; arrivée d'un concurrent \\
+Opérationnel & Inondation d'entrepôt~; panne de l'application~; erreur
+de saisie \\
+Numérique & Rançongiciel~; fuite de données~; usurpation d'accès \\
+Financier & Fraude au virement~; impayé d'un client \\
+Conformité & Méconnaissance de l'article~26~; données personnelles \\
+Tiers & Défaillance du prestataire~; dépendance à un opérateur \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~6.4. Une taxonomie pour LiZbiZ}\end{center}
+
+% ============================================================================
+\section{Les Signaux Faibles}
+\label{sec:c06-signaux}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Signal faible}~: information partielle, isolée ou ambiguë, qui
+peut annoncer un risque nouveau ou l'aggravation d'un risque connu.
+\end{boxdef}
+
+Les signaux faibles se trouvent dans les quasi-incidents, les plaintes des
+clients, les alertes des autorités, l'actualité des pairs. En janvier
+2026, une entreprise de logistique voisine avait été frappée par un
+rançongiciel entré par l'accès d'un prestataire~; l'information avait
+circulé, sans être rapprochée de la situation de LiZbiZ.
+
+\begin{boxobjet}{R-03 · Défaillance de l'opérateur de Garoua}
+\textbf{Scénario~:} du fait d'un opérateur unique à Garoua, une coupure
+prolongée du réseau isole l'agence, ce qui empêche le suivi et la
+facturation des expéditions du Nord. \textbf{Cotation~:} vraisemblance 2,
+impact 3. \textbf{Traitement~:} réduire (second lien par un autre
+opérateur, mode dégradé papier). \textbf{Propriétaire~:} M.~NGUELE.
+\textbf{Indicateur~:} durée cumulée des coupures du trimestre.
+\end{boxobjet}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Tenir une veille.} Mme~MOUAFO tient une liste des incidents
+publiés dans le secteur et, pour chacun, se demande~: « cela pourrait-il
+nous arriver, par où, et l'avons-nous au registre~? »
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Un risque se formule}~: cause, événement, conséquence sur
+          un objectif.
+    \item \textbf{On part des objectifs et des processus}, et l'on parcourt
+          les tiers.
+    \item \textbf{Les techniques se combinent}~: atelier, entretiens,
+          listes, historique, écosystème, scénarios.
+    \item \textbf{Une taxonomie} vérifie la couverture et consolide.
+    \item \textbf{Les signaux faibles} nourrissent le registre~; la veille
+          les rapproche de sa propre situation.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: formuler un risque~;
+identifier par les processus~; animer un atelier~; choisir une technique~;
+classer selon une taxonomie~; exploiter un signal faible.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.1. Diagnostiquer \niveaubase}]
+Dites s'il s'agit d'une cause, d'un événement, d'une conséquence ou d'un
+risque formulé~: « absence de second facteur »~; « publication des données
+clients »~; « arrêt de la facturation ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.2. Formuler \niveaubase}]
+Formulez trois risques pour le processus « Payer » de LiZbiZ.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.3. Classer \niveaubase}]
+Classez dans la taxonomie du Tableau~6.4 les risques R-01, R-02 et R-03.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.4. L'atelier \niveaumoyen}]
+Pourquoi faire écrire chacun en silence avant la discussion~? Quel biais
+du Chapitre~\ref{chap:perception} la règle combat-elle~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.5. Les tiers \niveaumoyen}]
+Dressez la liste des tiers dont dépend la facturation de LiZbiZ, et un
+risque pour chacun.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.6. Écarter \niveaumoyen}]
+Pourquoi consigner les risques écartés et la raison de leur exclusion~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.7. Signal faible \niveaumoyen}]
+L'attaque d'une entreprise voisine en janvier était un signal faible.
+Décrivez le circuit qui aurait permis de le rapprocher de LiZbiZ.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.8. Inondation \niveaumoyen}]
+Identifiez les risques de l'entrepôt de Bonabéri pendant la saison des
+pluies~: causes, événements, conséquences.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.9. Une banque \niveauexpert}]
+Préparez l'atelier d'identification des risques du système central de la
+BANQUE SANAGA~: participants, documents, déroulé, taxonomie.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~6.10. Complétude \niveauexpert}]
+Comment vérifier qu'un registre de 46~risques est complet~? Proposez trois
+contrôles indépendants.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~31000~\cite{iso31000_2018}~; IEC~31010~\cite{iec31010}.
+    \item ISO/IEC~27005~\cite{iso27005_2022}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Une fois identifiés, les risques doivent être cotés.
+Le Chapitre~\ref{chap:matrices} présente les échelles et les matrices,
+avec leurs limites.
+\end{boxinfo}

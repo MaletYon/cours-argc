@@ -1,0 +1,316 @@
+% ============================================================================
+% Fichier  : partie4/P04_C17_bia.tex
+% Titre    : L'Analyse d'Impact sur l'Activité
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 22301:2019 (8.2.2) ; ISO/TS 22317:2021. Analyse d'impact de
+% la BANQUE SANAGA (Opération WOURI) : cas fictif.
+% ============================================================================
+
+\chapter{L'Analyse d'Impact sur l'Activité}
+\label{chap:bia}
+\chaptermark{Analyse d'impact sur l'activité}
+
+\epigraph{%
+    « On ne reprend pas tout en même temps~;\\
+    on reprend d'abord ce qui ne peut pas attendre. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:matrices}
+et~\ref{chap:incidents}~; cours SEC3266, chapitre sur la continuité.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Conduire une analyse d'impact sur l'activité selon l'ISO/TS~22317.
+    \item Mesurer l'évolution des impacts dans le temps.
+    \item Fixer la période d'interruption maximale tolérable, le délai de
+          reprise et la perte de données admissible.
+    \item Recenser les dépendances d'une activité.
+    \item En déduire l'ordre de reprise.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : quelles activités de la BANQUE SANAGA ne peuvent pas attendre~?}
+% ============================================================================
+
+La BANQUE SANAGA exploite son système central à Douala. M.~EYENGA,
+responsable de la continuité, doit dire à la direction, pour chaque
+activité, combien de temps elle peut s'arrêter et combien de données elle
+peut perdre, avant de choisir et de financer un site de secours. Sans cette
+analyse, tout semble urgent, et rien n'est priorisé.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item L'objet de l'analyse d'impact (section~\ref{sec:c17-objet}).
+    \item Mesurer l'impact dans le temps (section~\ref{sec:c17-temps}).
+    \item Les objectifs de reprise (section~\ref{sec:c17-objectifs}).
+    \item Les dépendances (section~\ref{sec:c17-dependances}).
+    \item L'ordre de reprise (section~\ref{sec:c17-ordre}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{L'Objet de l'Analyse d'Impact}
+\label{sec:c17-objet}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Analyse d'impact sur l'activité} (BIA)~: processus qui analyse
+l'impact d'une interruption sur l'organisation au fil du temps, pour fixer
+les priorités et les objectifs de reprise de chaque
+activité~\cite{iso22301_2019,iso22317_2021}.
+\end{boxdef}
+
+L'analyse d'impact précède le choix des stratégies~: on ne finance un site
+chaud que pour les activités qui le justifient. Elle se conduit avec les
+\emph{responsables d'activité}, et non avec l'informatique seule~: c'est le
+métier qui connaît l'impact d'une heure d'arrêt.
+
+% ============================================================================
+\section{Mesurer l'Impact dans le Temps}
+\label{sec:c17-temps}
+% ============================================================================
+
+Pour chaque activité, on cote l'impact d'une interruption après une heure,
+quatre heures, un jour, trois jours, une semaine, sur plusieurs
+critères~: financier, réglementaire, clients, réputation. L'impact retenu à
+chaque durée est le plus élevé des critères.
+
+\begin{tableaucours}{L{4.0cm}ccccc}{%
+    \tableauHeader{Activité} &
+    \tableauHeader{1~h} &
+    \tableauHeader{4~h} &
+    \tableauHeader{1~j} &
+    \tableauHeader{3~j} &
+    \tableauHeader{1~sem.}
+}
+Virements et compensation & 2 & 4 & 4 & 4 & 4 \\
+Retraits aux distributeurs, cartes & 1 & 2 & 3 & 4 & 4 \\
+Opérations aux guichets & 1 & 2 & 3 & 4 & 4 \\
+Banque en ligne & 1 & 1 & 2 & 3 & 4 \\
+Instruction des crédits & 1 & 1 & 1 & 2 & 3 \\
+Rapports réglementaires & 1 & 1 & 1 & 1 & 3 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~17.1. Impact dans le temps (1 mineur à 4 critique), BANQUE SANAGA}\end{center}
+
+\textbf{Lecture.} Les virements deviennent critiques en quatre heures,
+parce que la séance de compensation du jour serait manquée~; les rapports
+réglementaires peuvent attendre plusieurs jours. L'impact croît par
+paliers, liés à des échéances externes. La direction a fixé que l'impact
+devient inacceptable lorsqu'il atteint 3 (majeur)~: la première durée où
+c'est le cas donne la période d'interruption maximale tolérable.
+
+% ============================================================================
+\section{Les Objectifs de Reprise}
+\label{sec:c17-objectifs}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Période d'interruption maximale tolérable} (MTPD)~: durée au-delà
+de laquelle l'impact d'une interruption devient inacceptable.
+\termecle{Délai de reprise visé} (RTO)~: durée, inférieure à la MTPD, au
+terme de laquelle l'activité doit avoir repris à un niveau minimal.
+\termecle{Perte de données maximale admissible} (RPO)~: quantité de données,
+exprimée en durée, que l'on accepte de perdre. Le \termecle{niveau minimal
+de continuité} (MBCO) est le niveau d'activité acceptable pendant la
+perturbation.
+\end{boxdef}
+
+\begin{tableaucours}{L{4.0cm}R{1.6cm}R{1.6cm}R{1.8cm}L{2.8cm}}{%
+    \tableauHeader{Activité} &
+    \tableauHeader{MTPD} &
+    \tableauHeader{RTO} &
+    \tableauHeader{RPO} &
+    \tableauHeader{Niveau minimal}
+}
+Virements et compensation & 4~h & 2~h & 0 & Virements urgents, séance
+du jour \\
+Retraits, cartes & 1~j & 4~h & 15~min & Distributeurs des grandes villes \\
+Guichets & 1~j & 8~h & 15~min & Retraits plafonnés, mode manuel \\
+Banque en ligne & 3~j & 12~h & 1~h & Consultation des comptes \\
+Instruction des crédits & 1~sem. & 3~j & 1~j & Dossiers urgents \\
+Rapports réglementaires & 1~sem. & 5~j & 1~j & Rapports à échéance \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~17.2. Objectifs de reprise de la BANQUE SANAGA (Opération WOURI)}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Fixer le RTO égal à la MTPD.
+
+\smallskip
+\textbf{Règle~:} le RTO laisse une marge sous la MTPD, parce que la
+détection, la décision et la bascule prennent du temps. Un RTO de 4~h pour
+une MTPD de 4~h signifie qu'au moindre retard, l'impact devient
+inacceptable.
+\end{boxalert}
+
+% ============================================================================
+\section{Les Dépendances}
+\label{sec:c17-dependances}
+% ============================================================================
+
+Une activité ne reprend que si toutes les ressources dont elle dépend
+reprennent~: personnes, locaux, applications, données, fournisseurs. Le
+RTO d'une ressource doit être au plus égal au plus petit RTO des
+activités qui en dépendent.
+
+\begin{tableaucours}{L{3.6cm}L{4.6cm}L{2.0cm}L{2.0cm}}{%
+    \tableauHeader{Ressource} &
+    \tableauHeader{Activités qui en dépendent} &
+    \tableauHeader{RTO exigé} &
+    \tableauHeader{RTO actuel}
+}
+Système central & Toutes & 2~h & 24~h \\
+Annuaire et authentification & Toutes & 2~h & 6~h \\
+Réseau entre agences & Guichets, retraits & 4~h & 4~h \\
+Prestataire monétique & Retraits, cartes & 4~h & 2~h \\
+Connexion aux systèmes de paiement & Virements & 2~h & 8~h \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~17.3. Dépendances et écarts de RTO}\end{center}
+
+\begin{boxscenario}{Opération WOURI. Les écarts}
+\textbf{Constatation.} Trois ressources ont un RTO actuel supérieur au RTO
+exigé~: le système central (24~h pour 2~h), l'annuaire (6~h pour 2~h) et
+la connexion aux systèmes de paiement (8~h pour 2~h).
+
+\medskip
+\textbf{Analyse} (confiance élevée). Avec ces écarts, une perte du site de
+Douala manquerait la séance de compensation du jour~: la MTPD des
+virements serait dépassée. L'analyse d'impact justifie un site de secours
+chaud pour ces trois ressources, et pas pour les autres
+(Chapitre~\ref{chap:pca}).
+\end{boxscenario}
+
+% ============================================================================
+\section{L'Ordre de Reprise}
+\label{sec:c17-ordre}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Établir l'ordre de reprise}
+\begin{enumerate}
+    \item Classer les activités par RTO croissant.
+    \item Pour chacune, lister ses ressources et leurs dépendances.
+    \item Reprendre d'abord les ressources dont dépendent les activités les
+          plus urgentes (réseau, annuaire, système central).
+    \item Puis les activités, dans l'ordre des RTO.
+    \item Vérifier que la somme des durées de reprise tient dans les RTO.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxobjet}{R-W1 · Perte du site de Douala}
+\textbf{Scénario~:} du fait d'un site unique, un incendie ou un
+rançongiciel rend indisponible le système central, ce qui arrête les
+virements au-delà de la séance de compensation. \textbf{Cotation~:}
+V=2, I=4 (score~8, mais impact critique en quatre heures).
+\textbf{Traitement~:} site de secours chaud pour le système central,
+l'annuaire et la connexion aux paiements. \textbf{Propriétaire~:} le
+directeur des opérations bancaires. \textbf{Indicateur~:} durée de bascule
+mesurée au dernier test.
+\end{boxobjet}
+
+\begin{boxmetier}{Responsable de la continuité}
+\textbf{Faire signer les objectifs par les métiers.} M.~EYENGA fait valider
+chaque MTPD, RTO et RPO par le responsable de l'activité et présente à la
+direction le coût de chaque niveau~: c'est la direction qui choisit, en
+connaissance du prix.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{L'analyse d'impact} précède les stratégies et se conduit
+          avec les métiers.
+    \item \textbf{L'impact croît dans le temps}, par paliers liés aux
+          échéances.
+    \item \textbf{MTPD, RTO, RPO, niveau minimal}~: le RTO laisse une marge
+          sous la MTPD.
+    \item \textbf{Les dépendances} imposent leur RTO aux ressources.
+    \item \textbf{L'ordre de reprise} commence par les ressources des
+          activités les plus urgentes.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: définir l'analyse
+d'impact~; coter l'impact dans le temps~; distinguer MTPD, RTO, RPO et
+niveau minimal~; repérer un écart de RTO sur une ressource~; établir un
+ordre de reprise.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.1. Définitions \niveaubase}]
+Expliquez la différence entre MTPD et RTO avec l'exemple des virements.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.2. Lire le tableau \niveaubase}]
+D'après le Tableau~17.1, au bout de combien de temps les retraits
+deviennent-ils critiques~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.3. RPO nul \niveaubase}]
+Que signifie un RPO nul pour les virements~? Quelle technique permet de
+l'atteindre~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.4. Écarts \niveaumoyen}]
+Calculez, pour chaque ressource du Tableau~17.3, l'écart entre RTO actuel et
+RTO exigé. Laquelle est la plus urgente~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.5. Le prestataire monétique \niveaumoyen}]
+Le prestataire monétique a un RTO de 2~h, meilleur que l'exigence. Cela
+suffit-il pour que les retraits reprennent en 4~h~? Justifiez par les
+dépendances.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.6. L'ordre \niveaumoyen}]
+Établissez l'ordre de reprise des ressources et des activités de la BANQUE
+SANAGA.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.7. Le niveau minimal \niveaumoyen}]
+Proposez un niveau minimal de continuité pour les guichets pendant trois
+jours sans système central.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.8. LiZbiZ \niveaumoyen}]
+Construisez le tableau de l'impact dans le temps pour la facturation et le
+suivi des expéditions de LiZbiZ.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.9. Le questionnaire \niveauexpert}]
+Rédigez le questionnaire d'entretien d'analyse d'impact que M.~EYENGA
+soumet aux responsables d'activité.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~17.10. Le coût des objectifs \niveauexpert}]
+Présentez à la direction de la BANQUE SANAGA trois options de RTO pour le
+système central (2~h, 8~h, 24~h), avec leurs conséquences sur les
+activités et un ordre de grandeur de coût.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~22301~\cite{iso22301_2019}~; ISO/TS~22317~\cite{iso22317_2021}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Les objectifs fixés, il faut choisir les stratégies et
+écrire les plans. C'est l'objet du Chapitre~\ref{chap:pca}.
+\end{boxinfo}

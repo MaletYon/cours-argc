@@ -1,0 +1,205 @@
+% ============================================================================
+% Fichier     : ARGC_main.tex
+% Titre       : Analyse des Risques et Gestion de Crise
+% Auteur      : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Institution : ENSP Yaoundé · Université de Yaoundé I · LIMSI
+% Version     : 1.0 -- novembre 2026
+% ============================================================================
+
+\documentclass[12pt, twoside, openright, a4paper]{book}
+
+% --- Feuille de style unifiée ---
+\usepackage{Style_ARGC}
+\raggedbottom  % évite les blancs étirés entre un tableau et sa légende
+
+% --- Bibliographie ---
+\addbibresource{bibliographie/ARGC_references.bib}
+
+% ============================================================================
+% MÉTADONNÉES PDF
+% ============================================================================
+\hypersetup{
+    pdftitle={Analyse des Risques et Gestion de Crise},
+    pdfauthor={MINKA MI NGUIDJOÏ Thierry Emmanuel},
+    pdfsubject={GES4062 · Génie Informatique, niveau 4 · ENSP Yaoundé I},
+    pdfkeywords={gestion des risques, ISO 31000, EBIOS RM, FAIR, audit ISO 19011, continuité ISO 22301, gestion de crise ISO 22361}
+}
+
+\begin{document}
+
+% --------------------------------------------------------------------------
+% ÉLÉMENTS PRÉLIMINAIRES (pages romaines)
+% --------------------------------------------------------------------------
+\frontmatter
+
+    \input{front/00_page_titre}
+    \cleardoublepage
+
+    \input{front/01_avant_propos}
+    \cleardoublepage
+
+    \input{front/02_mode_emploi}
+    \cleardoublepage
+
+    \input{front/03_ndap_sukulu}
+    \cleardoublepage
+
+    \tableofcontents
+    \cleardoublepage
+
+    \listoffigures
+    \listoftables
+    \cleardoublepage
+
+% CORPS (pages arabes)
+% Numérotation des chapitres CONTINUE sur tout le cours : le prologue est le
+% chapitre 0, puis C01 à C21, un numéro par fichier.
+% --------------------------------------------------------------------------
+\mainmatter
+
+    \part*{Prologue Opérationnel}
+    \addcontentsline{toc}{part}{Prologue Opérationnel}
+        \setcounter{chapter}{-1}
+        \IfFileExists{partie0/P00_le_matin_du_6_mars.tex}{\input{partie0/P00_le_matin_du_6_mars}}{}
+
+    \part{Fondements du Risque}
+    \label{part:fondements}
+
+        \IfFileExists{partie1/P01_C01_risque_incertitude.tex}{\input{partie1/P01_C01_risque_incertitude}}{}
+        \IfFileExists{partie1/P01_C02_perception.tex}{\input{partie1/P01_C02_perception}}{}
+        \IfFileExists{partie1/P01_C03_gouvernance.tex}{\input{partie1/P01_C03_gouvernance}}{}
+        \IfFileExists{partie1/P01_C04_cadres.tex}{\input{partie1/P01_C04_cadres}}{}
+        \IfFileExists{partie1/P01_C05_droit.tex}{\input{partie1/P01_C05_droit}}{}
+
+    \part{Analyser les Risques}
+    \label{part:analyse}
+
+        \IfFileExists{partie2/P02_C06_identifier.tex}{\input{partie2/P02_C06_identifier}}{}
+        \IfFileExists{partie2/P02_C07_matrices.tex}{\input{partie2/P02_C07_matrices}}{}
+        \IfFileExists{partie2/P02_C08_ebios.tex}{\input{partie2/P02_C08_ebios}}{}
+        \IfFileExists{partie2/P02_C09_quantitatif.tex}{\input{partie2/P02_C09_quantitatif}}{}
+        \IfFileExists{partie2/P02_C10_simulation.tex}{\input{partie2/P02_C10_simulation}}{}
+        \IfFileExists{partie2/P02_C11_traiter.tex}{\input{partie2/P02_C11_traiter}}{}
+
+    \part{Auditer le Dispositif}
+    \label{part:audit}
+
+        \IfFileExists{partie3/P03_C12_audit.tex}{\input{partie3/P03_C12_audit}}{}
+        \IfFileExists{partie3/P03_C13_conduire.tex}{\input{partie3/P03_C13_conduire}}{}
+        \IfFileExists{partie3/P03_C14_auditer_risques.tex}{\input{partie3/P03_C14_auditer_risques}}{}
+        \IfFileExists{partie3/P03_C15_rapport.tex}{\input{partie3/P03_C15_rapport}}{}
+
+    \part{Incidents et Continuité}
+    \label{part:continuite}
+
+        \IfFileExists{partie4/P04_C16_incidents.tex}{\input{partie4/P04_C16_incidents}}{}
+        \IfFileExists{partie4/P04_C17_bia.tex}{\input{partie4/P04_C17_bia}}{}
+        \IfFileExists{partie4/P04_C18_continuite.tex}{\input{partie4/P04_C18_continuite}}{}
+        \IfFileExists{partie4/P04_C19_reprise.tex}{\input{partie4/P04_C19_reprise}}{}
+        \IfFileExists{partie4/P04_C20_exercer.tex}{\input{partie4/P04_C20_exercer}}{}
+
+    \part{Gestion de Crise}
+    \label{part:crise}
+
+        \IfFileExists{partie5/P05_C21_crise.tex}{\input{partie5/P05_C21_crise}}{}
+        \IfFileExists{partie5/P05_C22_cellule.tex}{\input{partie5/P05_C22_cellule}}{}
+        \IfFileExists{partie5/P05_C23_decider.tex}{\input{partie5/P05_C23_decider}}{}
+        \IfFileExists{partie5/P05_C24_communiquer.tex}{\input{partie5/P05_C24_communiquer}}{}
+        \IfFileExists{partie5/P05_C25_exercices.tex}{\input{partie5/P05_C25_exercices}}{}
+
+    \part{Apprendre et Mesurer}
+    \label{part:mesure}
+
+        \IfFileExists{partie6/P06_C26_retex.tex}{\input{partie6/P06_C26_retex}}{}
+
+% --------------------------------------------------------------------------
+% ANNEXES
+% --------------------------------------------------------------------------
+\appendix
+
+    \input{annexes/Ann_A_glossaire}
+    \input{annexes/Ann_B_outils}
+    \input{annexes/Ann_C_templates}
+    \input{annexes/Ann_D_textes}
+    \input{annexes/Ann_E_bibliographie}
+    \input{annexes/Ann_F_contacts}
+
+% --------------------------------------------------------------------------
+% ÉLÉMENTS FINAUX
+% --------------------------------------------------------------------------
+\backmatter
+
+    \nocite{*}
+    \printbibliography[heading=bibintoc, title={Références bibliographiques}]
+
+    \printindex
+
+% ==============================================================================
+% 4ÈME DE COUVERTURE
+% ==============================================================================
+\clearpage
+\thispagestyle{empty}
+\pagecolor{CouleurPrimaire}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \fill[CouleurAccent]
+        (current page.south west) rectangle
+        ([yshift=1.8cm] current page.south east);
+    \fill[CouleurAccent]
+        ([yshift=-1.4cm] current page.north west) rectangle
+        ([yshift=-1.7cm] current page.north east);
+\end{tikzpicture}
+
+\vspace*{2.5cm}
+
+\begin{center}
+    {\color{CouleurAccent}\rule{0.6\linewidth}{1pt}}\\[1.5ex]
+    {\color{white}\Large\bfseries À propos de ce cours}\\[1.5ex]
+    {\color{CouleurAccent}\rule{0.6\linewidth}{1pt}}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\begin{minipage}{0.75\textwidth}
+\color{white!85!gray}\setstretch{1.4}
+Gérer un risque, c'est décider avant de savoir~; gérer une crise, c'est
+décider sans avoir le temps de savoir. Ce cours apprend à faire l'un et
+l'autre avec méthode, et à rendre compte de ce que l'on ignore.
+
+\medskip
+
+Il progresse en six parties, précédées d'un prologue~: les fondements du
+risque, l'analyse des risques (qualitative, EBIOS Risk Manager, FAIR,
+Monte-Carlo), l'audit du dispositif (ISO~19011), les incidents et la
+continuité (ISO/IEC~27035, ISO~22301), la gestion de crise (ISO~22361) et
+le retour d'expérience.
+
+\medskip
+
+Chaque notion est ancrée dans les standards internationaux et dans le droit
+camerounais. Le cours s'adresse aux élèves ingénieurs en génie informatique
+de l'ENSP Yaoundé et aux professionnels qui exercent comme gestionnaires de
+risques, auditeurs des systèmes d'information, responsables de la
+continuité, directeurs de crise ou chargés de communication de crise.
+\end{minipage}
+\end{center}
+
+\vfill
+
+\begin{center}
+    {\color{CouleurAccent}\rule{0.7\linewidth}{1.2pt}}\\[1.2ex]
+    {\color{white}\large\bfseries MINKA MI NGUIDJOÏ Thierry Emmanuel}\\[0.4ex]
+    {\color{white!80!gray}\small
+        CISA~·~CISM~·~CGEIT~·~CRISC~·~CDPSE~·~ISO 27001~·~ISO 22301~·~ISO 9001}\\[0.3ex]
+    {\color{white!70!gray}\footnotesize\itshape
+        Chercheur au laboratoire d'Ingénierie Mathématiques et des Systèmes d'Information}\\[0.3ex]
+    {\color{white!70!gray}\footnotesize\itshape
+        Chercheur~|~Cryptologue~|~Auditeur Senior~|~Expert Judiciaire~|~GRC \& Sécurité de l'Information}\\[1.2ex]
+    {\color{CouleurAccent}\rule{0.7\linewidth}{1.2pt}}
+\end{center}
+
+\vspace{1cm}
+
+\afterpage{\nopagecolor}
+\end{document}

@@ -1,0 +1,309 @@
+% ============================================================================
+% Fichier  : partie3/P03_C15_rapport.tex
+% Titre    : Le Rapport et le Suivi des Actions
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 19011:2018 (6.5 et 6.7) ; ISO/IEC 27001:2022 (10.2).
+% Rapport d'audit d'octobre 2026 de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{Le Rapport et le Suivi des Actions}
+\label{chap:rapport}
+\chaptermark{Rapport et suivi}
+
+\epigraph{%
+    « Un audit sans suivi\\
+    n'est qu'un inventaire des regrets. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:audit}
+à~\ref{chap:auditer-risques}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Structurer un rapport d'audit pour ses différents lecteurs.
+    \item Hiérarchiser les constats et formuler des recommandations
+          vérifiables.
+    \item Recueillir et traiter la réponse de l'audité.
+    \item Conduire une action corrective selon l'ISO/IEC~27001 (10.2).
+    \item Suivre la clôture des actions et en vérifier l'efficacité.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : les constats de 2023 avaient-ils été suivis~?}
+% ============================================================================
+
+En relisant le rapport d'audit de 2023, Mme~NKENG découvre une
+recommandation~: « étendre le second facteur aux accès des tiers ». Elle
+avait été acceptée, puis oubliée. Aucun suivi n'avait été organisé. Ce
+chapitre montre comment écrire un rapport qui sera lu, et organiser un
+suivi qui sera tenu.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item La structure du rapport (section~\ref{sec:c15-structure}).
+    \item Hiérarchiser et recommander (section~\ref{sec:c15-recommander}).
+    \item La réponse de l'audité (section~\ref{sec:c15-reponse}).
+    \item L'action corrective (section~\ref{sec:c15-corrective}).
+    \item Suivre et clore (section~\ref{sec:c15-suivi}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{La Structure du Rapport}
+\label{sec:c15-structure}
+% ============================================================================
+
+\begin{tableaucours}{L{3.6cm}L{8.6cm}}{%
+    \tableauHeader{Partie} &
+    \tableauHeader{Contenu}
+}
+Synthèse & Une page pour la direction~: conclusion d'ensemble, trois à
+cinq constats majeurs, décisions demandées \\
+Cadre & Objectifs, périmètre, critères, période, équipe, limites \\
+Constats & Chaque constat avec critère, fait, preuve, cause, conséquence,
+classement (Chapitre~\ref{chap:conduire}) \\
+Recommandations & Une ou plusieurs par constat, vérifiables \\
+Réponse de l'audité & Accord ou désaccord, plan d'action, responsable,
+échéance \\
+Annexes & Liste des preuves, échantillons, personnes rencontrées \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~15.1. Structure d'un rapport d'audit}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Taire les limites de l'audit.
+
+\smallskip
+\textbf{Règle~:} le rapport dit ce qui n'a pas été examiné et pourquoi
+(accès refusé, temps, périmètre). Un lecteur qui croit tout couvert prend
+les silences pour des conformités.
+\end{boxalert}
+
+% ============================================================================
+\section{Hiérarchiser et Recommander}
+\label{sec:c15-recommander}
+% ============================================================================
+
+\begin{tableaucours}{L{2.4cm}L{5.6cm}L{4.2cm}}{%
+    \tableauHeader{Priorité} &
+    \tableauHeader{Critère} &
+    \tableauHeader{Délai de traitement}
+}
+1 & Non-conformité majeure~; risque intolérable non réduit & Un mois \\
+2 & Non-conformité mineure~; risque à traiter & Trois mois \\
+3 & Opportunité d'amélioration & Selon le plan annuel \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~15.2. Hiérarchiser les constats (convention du cours)}\end{center}
+
+Une recommandation \emph{vérifiable} dit ce qui doit être vrai, et non ce
+qu'il faudrait « envisager »~: « au 30~novembre, aucun compte d'accès
+distant ne se connecte sans second facteur, et l'indicateur est calculé
+sur toutes les connexions » se vérifie~; « renforcer la sécurité des
+accès » ne se vérifie pas.
+
+\begin{boxscenario}{Opération LIZBIZ. La synthèse du rapport d'octobre}
+\textbf{Conclusion d'ensemble.} Le dispositif de gestion des risques est
+correctement conçu et fonctionne en partie~; son efficacité est
+surestimée.
+
+\medskip
+\textbf{Constats majeurs.} A-03, compte d'accès distant sans second
+facteur (priorité~1)~; A-05, indicateur calculé sur une population
+incomplète (priorité~2)~; A-07, deux risques résiduels acceptés sans
+trace (priorité~2)~; A-08, deux risques manquants au registre
+(priorité~2).
+
+\medskip
+\textbf{Décision demandée.} Supprimer toute exception au second facteur
+sans validation du comité des risques.
+\end{boxscenario}
+
+% ============================================================================
+\section{La Réponse de l'Audité}
+\label{sec:c15-reponse}
+% ============================================================================
+
+L'audité répond à chaque constat~: il l'accepte ou le conteste, et propose
+une action, un responsable et une échéance. Un désaccord n'est pas effacé~:
+il figure au rapport, avec les arguments des deux parties (principe de
+présentation impartiale, Chapitre~\ref{chap:audit}).
+
+\begin{tableaucours}{L{1.2cm}L{2.4cm}L{5.0cm}L{1.6cm}L{1.6cm}}{%
+    \tableauHeader{Constat} &
+    \tableauHeader{Réponse} &
+    \tableauHeader{Action} &
+    \tableauHeader{Resp.} &
+    \tableauHeader{Échéance}
+}
+A-03 & Accepté & Second facteur sur « vpn\_secours », procédure de
+dérogation & M.~KOUNOU & 30~nov. \\
+A-05 & Accepté & Recalcul de l'indicateur sur toutes les connexions &
+Mme~MOUAFO & 15~nov. \\
+A-07 & Accepté & Formulaire d'acceptation signé & Mme~MOUAFO & 30~nov. \\
+A-08 & Partiellement & Ajout du risque « équipement nomade »~; la
+climatisation est jugée couverte par R-01 & Mme~MOUAFO & 31~déc. \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~15.3. Réponse de la direction au rapport d'octobre}\end{center}
+
+% ============================================================================
+\section{L'Action Corrective}
+\label{sec:c15-corrective}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Action corrective (d'après l'ISO/IEC 27001, 10.2)}
+\begin{enumerate}
+    \item \textbf{Réagir}~: maîtriser et corriger l'écart (activer le second
+          facteur sur le compte).
+    \item \textbf{Analyser la cause}~: pourquoi l'écart existe-t-il, et
+          peut-il exister ailleurs~? (exceptions orales non tracées).
+    \item \textbf{Agir sur la cause}~: procédure de dérogation écrite,
+          limitée dans le temps, validée par le comité.
+    \item \textbf{Vérifier l'efficacité}~: refaire l'essai, recalculer
+          l'indicateur, rechercher d'autres exceptions.
+    \item \textbf{Mettre à jour} le registre et, si besoin, le système de
+          management.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxdef}
+\termecle{Correction} et \termecle{action corrective}~: la correction
+supprime l'écart constaté~; l'action corrective supprime sa cause pour
+éviter qu'il ne se reproduise.
+\end{boxdef}
+
+% ============================================================================
+\section{Suivre et Clore}
+\label{sec:c15-suivi}
+% ============================================================================
+
+Le suivi est tenu par l'audit (troisième ligne) dans un tableau des
+recommandations, présenté au comité d'audit. Une action n'est
+\emph{close} que lorsque l'auditeur en a vérifié l'efficacité, et non
+lorsque l'audité la déclare faite.
+
+\begin{boxobjet}{Constat A-03 · Suivi}
+\textbf{Action~:} second facteur sur le compte « vpn\_secours »,
+procédure de dérogation. \textbf{Déclarée réalisée~:} 22~novembre.
+\textbf{Vérifiée~:} 3~décembre, par un essai de connexion (refusé sans
+second facteur) et par l'export du journal (aucune connexion sans second
+facteur depuis le 22~novembre). \textbf{Statut~:} close.
+\end{boxobjet}
+
+\begin{tableaucours}{L{6.0cm}R{3.0cm}}{%
+    \tableauHeader{Indicateur de suivi} &
+    \tableauHeader{Fin décembre}
+}
+Recommandations émises & 9 \\
+Closes après vérification & 6 \\
+En cours, dans les délais & 2 \\
+En retard & 1 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~15.4. Tableau de suivi des recommandations (audit d'octobre)}\end{center}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Ne clore que ce qu'on a vérifié.} Mme~NKENG refuse de clore sur
+une déclaration~: elle demande la preuve de mise en œuvre, puis la preuve
+d'efficacité. La recommandation de 2023, déclarée « en cours » pendant
+trois ans, ne l'aurait pas été sous ce régime.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Le rapport} s'adresse à plusieurs lecteurs~: synthèse,
+          cadre et limites, constats, recommandations, réponse, annexes.
+    \item \textbf{Les constats} se hiérarchisent~; les recommandations sont
+          vérifiables.
+    \item \textbf{La réponse de l'audité} figure au rapport, désaccords
+          compris.
+    \item \textbf{L'action corrective} traite la cause, pas seulement
+          l'écart, et vérifie son efficacité.
+    \item \textbf{Une action est close} quand l'auditeur a vérifié son
+          efficacité.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: structurer un rapport~;
+hiérarchiser des constats~; rédiger une recommandation vérifiable~;
+distinguer correction et action corrective~; tenir un tableau de suivi.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.1. Vérifiable \niveaubase}]
+Réécrivez de manière vérifiable~: « améliorer la gestion des sauvegardes ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.2. Priorité \niveaubase}]
+Donnez la priorité des constats A-03, A-05 et A-08 selon le
+Tableau~15.2, et le délai correspondant.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.3. Correction ou action corrective \niveaubase}]
+Classez~: activer le second facteur sur le compte~; créer une procédure de
+dérogation~; supprimer le compte.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.4. La synthèse \niveaumoyen}]
+Réécrivez la synthèse du rapport d'octobre en dix lignes pour le conseil.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.5. Le désaccord \niveaumoyen}]
+La direction conteste en partie A-08. Comment le rapport doit-il présenter
+ce désaccord~? L'auditrice doit-elle céder~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.6. Les limites \niveaumoyen}]
+Rédigez la section « limites » du rapport d'octobre~: ce qui n'a pas été
+examiné et pourquoi.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.7. Clore \niveaumoyen}]
+M.~KOUNOU déclare l'action A-03 réalisée. Quelles preuves Mme~NKENG
+exige-t-elle avant de la clore~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.8. Le suivi \niveaumoyen}]
+Calculez le taux de clôture vérifiée du Tableau~15.4. Que proposez-vous
+pour l'action en retard~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.9. La recommandation de 2023 \niveauexpert}]
+Analysez pourquoi la recommandation de 2023 a été oubliée, et proposez un
+dispositif de suivi qui l'aurait empêché.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~15.10. Un rapport complet \niveauexpert}]
+Rédigez le rapport complet de l'audit « accès distants et prestataire »,
+selon la structure du Tableau~15.1.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~19011, rapport et suivi~\cite{iso19011_2018}.
+    \item ISO/IEC~27001, clause~10~\cite{iso27001_2022}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} L'audit vérifie que les mesures tiennent. Quand
+elles cèdent, il faut gérer l'incident. La Partie~IV commence par la
+gestion des incidents (Chapitre~\ref{chap:incidents}).
+\end{boxinfo}

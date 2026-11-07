@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C01
+Chapitre 1 : Risque, incertitude et décision
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Comment l'ISO 31000 définit-elle le risque ?
+      a) L'effet de l'incertitude sur les objectifs
+      b) La probabilité d'une perte
+      c) Une menace exploitant une vulnérabilité
+      d) Un danger imminent
+
+ 2. Selon l'ISO 31000, un effet peut être :
+      a) Seulement négatif
+      b) Positif ou négatif
+      c) Seulement financier
+      d) Seulement technique
+
+ 3. Qui a distingué risque et incertitude en 1921 ?
+      a) Daniel Kahneman
+      b) Nassim Taleb
+      c) Frank Knight
+      d) Charles Perrow
+
+ 4. Chez Knight, le risque désigne une situation où :
+      a) On ignore tout
+      b) Il n'y a pas d'issue
+      c) On connaît le résultat
+      d) On connaît la distribution des issues
+
+ 5. Une rupture technologique imprévisible relève :
+      a) De l'incertitude profonde
+      b) Du risque
+      c) De l'incertitude mesurable
+      d) De la certitude
+
+ 6. Deux risques ont la même perte moyenne. Lequel exige d'être transféré ou réduit ?
+      a) Celui dont les pertes sont fréquentes et petites
+      b) Celui dont la pire année peut menacer la trésorerie
+      c) Aucun
+      d) Les deux de la même façon
+
+ 7. Quelle partie de la distribution décide souvent du traitement ?
+      a) La moyenne seule
+      b) Le mode
+      c) La queue
+      d) Le minimum
+
+ 8. Risque A : 10 pannes par an à 3 millions. Quelle perte annuelle moyenne ?
+      a) 3 millions
+      b) 10 millions
+      c) 300 millions
+      d) 30 millions
+
+ 9. Comment calcule-t-on la perte annuelle attendue d'un scénario simple ?
+      a) Fréquence × perte moyenne
+      b) Perte maximale
+      c) Fréquence + perte
+      d) Perte ÷ fréquence
+
+10. Fréquence 0,25 par an, perte 300 millions. Perte annuelle attendue ?
+      a) 25 millions
+      b) 75 millions
+      c) 300 millions
+      d) 1 200 millions
+
+11. Avec second facteur (0,05 par an et 6 millions de coût), la perte attendue est de :
+      a) 15 millions
+      b) 75 millions
+      c) 21 millions
+      d) 6 millions
+
+12. À partir de quelle fréquence le second facteur devient-il rentable dans l'exemple de LiZbiZ ?
+      a) 0,01 par an
+      b) 0,25 par an
+      c) 1 par an
+      d) 0,07 par an
+
+13. Que permet le raisonnement par seuil de rentabilité ?
+      a) Éviter d'estimer précisément une fréquence incertaine
+      b) Supprimer le risque
+      c) Prévoir l'année suivante
+      d) Calculer la perte maximale
+
+14. Une fraude coûte 60 millions une fois tous les quatre ans. Perte annuelle attendue ?
+      a) 4 millions
+      b) 15 millions
+      c) 60 millions
+      d) 240 millions
+
+15. Sur quoi juge-t-on une décision ?
+      a) Sur son résultat
+      b) Sur l'avis du conseil
+      c) Sur l'information disponible au moment de la prendre
+      d) Sur la chance
+
+16. Une mauvaise décision au résultat favorable relève :
+      a) Du mérite
+      b) De la malchance
+      c) D'une conséquence prévisible
+      d) De la chance
+
+17. Que faut-il documenter au moment de décider ?
+      a) Les options, les hypothèses et l'information disponible
+      b) Seulement le coût
+      c) Le nom du fournisseur
+      d) Rien
+
+18. Comment Taleb nomme-t-il les événements rares, d'impact extrême, expliqués après coup ?
+      a) Accidents normaux
+      b) Cygnes noirs
+      c) Signaux faibles
+      d) Risques résiduels
+
+19. Qui a décrit les « accidents normaux » des systèmes complexes et étroitement couplés ?
+      a) Knight
+      b) Slovic
+      c) Perrow
+      d) Reason
+
+20. Face à l'imprévisible, que peut-on faire ?
+      a) Prévoir l'événement
+      b) Ne rien faire
+      c) Augmenter le couplage
+      d) Réduire la fragilité
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Sans objectif, il n'y a pas de risque au sens de l'ISO 31000.
+      Vrai / Faux
+
+22. Deux risques de même moyenne sont équivalents pour la décision.
+      Vrai / Faux
+
+23. La perte annuelle attendue prévoit la perte d'une année particulière.
+      Vrai / Faux
+
+24. Reporter le second facteur était justifié par les chiffres disponibles.
+      Vrai / Faux
+
+25. Une bonne décision peut mal tourner.
+      Vrai / Faux
+
+26. « On n'a jamais été attaqués, donc on avait raison » juge la décision à son résultat.
+      Vrai / Faux
+
+27. La segmentation entre sites réduit le couplage.
+      Vrai / Faux
+
+28. Les cygnes noirs sont faciles à prévoir par les statistiques.
+      Vrai / Faux
+
+29. Le Guide ISO 73 est un vocabulaire du management du risque.
+      Vrai / Faux
+
+30. La valeur de l'information mesure ce que coûterait d'en savoir plus avant de décider.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'économiste qui distingue risque et incertitude s'appelle ______.
+
+32. La norme de lignes directrices du management du risque est l'ISO ______.
+
+33. Le coût annuel du second facteur proposé par M. KOUNOU est de ______ millions de FCFA.
+
+34. Taleb parle de cygnes ______.
+
+35. Perrow parle d'accidents ______.
+
+36. La partie extrême d'une distribution de pertes est sa ______.
+
+37. La valeur à partir de laquelle une décision bascule est un seuil de ______.
+
+38. Une bonne décision au résultat défavorable relève de la ______.
+
+39. Le vocabulaire du management du risque est le Guide ISO ______.
+
+40. Le risque se décrit par une ______ des conséquences.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

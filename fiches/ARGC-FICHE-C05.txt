@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C05
+Chapitre 5 : Obligations juridiques et responsabilités
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quel article de la loi n° 2010/012 impose des systèmes normalisés de gestion continue des risques ?
+      a) Article 26
+      b) Article 13
+      c) Article 29
+      d) Article 65
+
+ 2. Quels sont les quatre verbes de l'article 26 ?
+      a) Planifier, faire, vérifier, agir
+      b) Identifier, évaluer, traiter, gérer continûment
+      c) Détecter, répondre, rétablir, apprendre
+      d) Chiffrer, signer, sauvegarder, auditer
+
+ 3. Quel article impose d'évaluer et de réviser les systèmes de sécurité ?
+      a) Article 7
+      b) Article 25
+      c) Article 30
+      d) Article 42
+
+ 4. L'obligation de sécurité d'un exploitant est en règle générale :
+      a) De résultat
+      b) Inexistante
+      c) Pénale seulement
+      d) De moyens
+
+ 5. Pendant combien de temps les exploitants conservent-ils les données de connexion et de trafic ?
+      a) Dix ans
+      b) Un an
+      c) Cinq ans
+      d) Vingt ans
+
+ 6. Quel article impose cette conservation aux exploitants des systèmes d'information ?
+      a) Article 26
+      b) Article 29
+      c) Article 32
+      d) Article 13
+
+ 7. Combien de jours de journaux la messagerie de LiZbiZ conservait-elle ?
+      a) 30
+      b) 90
+      c) 7
+      d) 3 650
+
+ 8. Que prévoit l'article 29, alinéa 2 ?
+      a) Le paiement des rançons
+      b) La certification ISO
+      c) L'audit des clients
+      d) Des mécanismes de surveillance du contrôle d'accès aux données
+
+ 9. Où la loi définit-elle l'audit de sécurité ?
+      a) Article 4, point 9
+      b) Article 26
+      c) Article 41
+      d) Article 74
+
+10. Au regard de quoi l'audit évalue-t-il l'adéquation des moyens selon la loi ?
+      a) Du budget
+      b) Des risques encourus
+      c) Des concurrents
+      d) Des clients
+
+11. Quel article soumet à un audit de sécurité obligatoire les réseaux et systèmes des opérateurs ?
+      a) Article 26
+      b) Article 30
+      c) Article 13
+      d) Article 44
+
+12. Selon l'article 32, à quelle fréquence l'audit et les mesures d'impact de gravité sont-ils effectués ?
+      a) Tous les cinq ans
+      b) Jamais
+      c) Tous les mois
+      d) Chaque année ou lorsque les circonstances l'exigent
+
+13. À qui les rapports d'audit de l'article 32 sont-ils adressés ?
+      a) Au Ministre chargé des Télécommunications
+      b) À la presse
+      c) Aux clients
+      d) Au prestataire
+
+14. Les pénalités versées aux clients relèvent de la responsabilité :
+      a) Pénale
+      b) Contractuelle
+      c) Administrative
+      d) Aucune
+
+15. L'entreprise victime d'une attaque peut-elle être responsable au civil ?
+      a) Non, jamais
+      b) Seulement si elle a payé
+      c) Oui, si elle n'avait pas pris les mesures raisonnables
+      d) Seulement à l'étranger
+
+16. Quelle est la meilleure défense de l'entreprise attaquée ?
+      a) Garder le silence
+      b) Accuser le prestataire
+      c) Payer la rançon
+      d) Un dossier qui montre ce qu'elle avait fait avant l'incident
+
+17. Quand désigner le conseil juridique ?
+      a) Dès l'ouverture de la cellule de crise
+      b) Après la crise
+      c) Au retour d'expérience
+      d) Jamais
+
+18. Que faut-il faire avant toute remise en état ?
+      a) Redémarrer
+      b) Préserver les preuves
+      c) Effacer les journaux
+      d) Payer
+
+19. Quelle loi encadre les données personnelles au Cameroun ?
+      a) Loi n° 2010/012
+      b) Loi n° 2010/013
+      c) Loi n° 2024/017
+      d) Loi n° 86/016
+
+20. Que garantit le paiement d'une rançon ?
+      a) La restitution des données
+      b) La non-publication
+      c) L'arrestation de l'attaquant
+      d) Rien
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Un registre établi après l'attaque prouve qu'on gérait les risques avant.
+      Vrai / Faux
+
+22. La loi n° 2010/012 impose une méthode précise de gestion des risques.
+      Vrai / Faux
+
+23. Les journaux sont à la fois une obligation légale, une condition de la détection et la matière de l'enquête.
+      Vrai / Faux
+
+24. Les conditions de l'audit obligatoire de l'article 13 sont fixées par voie réglementaire.
+      Vrai / Faux
+
+25. L'entreprise attaquée est victime au pénal.
+      Vrai / Faux
+
+26. La qualité de victime protège de toute responsabilité.
+      Vrai / Faux
+
+27. Le cours cite les articles de la loi n° 2024/017.
+      Vrai / Faux
+
+28. Il faut déclarer le sinistre à l'assureur dans le délai de la police.
+      Vrai / Faux
+
+29. Payer une rançon peut exposer à des sanctions selon le destinataire.
+      Vrai / Faux
+
+30. La définition légale de l'audit rattache l'audit aux risques encourus.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La loi relative à la cybersécurité porte le numéro 2010/______.
+
+32. Les données de connexion se conservent ______ ans.
+
+33. L'audit obligatoire et périodique par l'Agence est prévu à l'article ______.
+
+34. L'obligation de mettre en œuvre les moyens raisonnables est une obligation de ______.
+
+35. L'Agence nationale des technologies de l'information et de la communication a pour sigle ______.
+
+36. La loi sur les données personnelles porte le numéro 2024/______.
+
+37. L'article ______ impose l'évaluation et la révision des systèmes de sécurité.
+
+38. La conservation des données de connexion des exploitants est prévue à l'article ______.
+
+39. La responsabilité née de l'inexécution d'un contrat est ______.
+
+40. Après une attaque, on dépose ______ auprès de la police judiciaire.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

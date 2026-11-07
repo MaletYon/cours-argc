@@ -1,0 +1,309 @@
+% ============================================================================
+% Fichier  : partie3/P03_C14_auditer_risques.tex
+% Titre    : Auditer la Gestion des Risques et le SMSI
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 31000:2018 ; ISO/IEC 27001:2022 (clauses 6, 8, 9, 10) ;
+% ISO/IEC 27007:2020 ; IIA, modèle des trois lignes (2020). Audit d'octobre
+% 2026 de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{Auditer la Gestion des Risques et le SMSI}
+\label{chap:auditer-risques}
+\chaptermark{Auditer les risques et le SMSI}
+
+\epigraph{%
+    « Un registre qui n'a jamais été surpris par un incident\\
+    n'a probablement jamais été confronté à un incident. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire à expert}{Chapitres~\ref{chap:traiter},
+\ref{chap:audit} et~\ref{chap:conduire}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Auditer la conception, le fonctionnement et l'efficacité d'un
+          dispositif de gestion des risques.
+    \item Rapprocher les incidents du registre pour trouver les risques
+          oubliés.
+    \item Tester la reproductibilité des cotations et la réalité des
+          mesures déclarées.
+    \item Auditer un indicateur clé de risque~: définition, population,
+          source.
+    \item Relier l'audit aux clauses de l'ISO/IEC~27001.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : le registre de LiZbiZ dit-il vrai~?}
+% ============================================================================
+
+En octobre, Mme~NKENG audite le dispositif mis en place par Mme~MOUAFO
+depuis avril. Le registre compte 46~risques, le plan de traitement six
+actions, le tableau de bord quatre indicateurs, tous verts. Tout semble en
+ordre. L'audit doit dire si le dispositif est bien conçu, s'il fonctionne,
+et s'il produit l'effet attendu.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Trois niveaux d'examen (section~\ref{sec:c14-niveaux}).
+    \item Rapprocher incidents et registre (section~\ref{sec:c14-incidents}).
+    \item Tester cotations et mesures (section~\ref{sec:c14-tests}).
+    \item Auditer un indicateur (section~\ref{sec:c14-indicateur}).
+    \item Les clauses de l'ISO/IEC 27001 (section~\ref{sec:c14-27001}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Trois Niveaux d'Examen}
+\label{sec:c14-niveaux}
+% ============================================================================
+
+\begin{tableaucours}{L{2.8cm}L{4.4cm}L{5.0cm}}{%
+    \tableauHeader{Niveau} &
+    \tableauHeader{Question} &
+    \tableauHeader{Preuves}
+}
+Conception & Le dispositif est-il bien pensé~? & Politique, appétence,
+critères, rôles, méthode \\
+Fonctionnement & Est-il appliqué comme prévu~? & Registre à jour, comptes
+rendus du comité, plans suivis, indicateurs mesurés \\
+Efficacité & Atteint-il son but~? & Incidents prévus ou non, appétence
+respectée, risques réellement réduits \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~14.1. Auditer un dispositif de risques}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} S'arrêter à la conception (« la méthode existe,
+elle est conforme à l'ISO~31000 »).
+
+\smallskip
+\textbf{Règle~:} une méthode excellente, mal appliquée, ne protège de rien.
+L'auditeur descend jusqu'à l'efficacité~: les risques ont-ils baissé, et
+le registre a-t-il prévu les incidents survenus~?
+\end{boxalert}
+
+% ============================================================================
+\section{Rapprocher Incidents et Registre}
+\label{sec:c14-incidents}
+% ============================================================================
+
+Chaque incident survenu est un test du registre~: figurait-il parmi les
+scénarios identifiés~? Avec quelle cote~? Un incident absent du registre
+révèle un trou d'identification~; un incident d'un risque coté
+« acceptable » peut révéler une sous-estimation.
+
+\begin{tableaucours}{L{4.8cm}L{1.6cm}L{5.8cm}}{%
+    \tableauHeader{Incident du trimestre} &
+    \tableauHeader{Au registre} &
+    \tableauHeader{Lecture}
+}
+Coupure du lien de Garoua (19~h) & R-03 & Prévu, cote cohérente \\
+Hameçonnage d'une assistante, signalé à temps & R-02 & Prévu \\
+Erreur de tarif sur un contrat & R-19 & Prévu \\
+Vol d'un ordinateur portable d'un commercial & Non & Trou~: pas de
+risque « perte d'équipement nomade » \\
+Panne de la climatisation du centre de Douala & Non & Trou~: dépendances
+techniques des centres non examinées \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~14.2. Rapprochement des incidents de juillet à septembre}\end{center}
+
+% ============================================================================
+\section{Tester Cotations et Mesures}
+\label{sec:c14-tests}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Quatre tests du dispositif}
+\begin{enumerate}
+    \item \textbf{Reproductibilité}~: faire recoter cinq risques par deux
+          personnes, séparément~; comparer.
+    \item \textbf{Réalité des mesures}~: pour chaque action déclarée
+          réalisée, demander la preuve de mise en œuvre et de vérification.
+    \item \textbf{Acceptations}~: vérifier que chaque risque résiduel
+          accepté l'a été par écrit, par la bonne personne.
+    \item \textbf{Propriétaires}~: interroger trois propriétaires sur leur
+          risque, son plan et son indicateur.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxscenario}{Opération LIZBIZ. Ce que l'audit d'octobre a trouvé}
+\textbf{Constatations.}
+\begin{itemize}
+    \item Recotation~: trois risques sur cinq diffèrent d'au moins un
+          niveau entre les deux cotateurs.
+    \item Plan de traitement~: six actions~; quatre réalisées et
+          vérifiées~; une en retard (second lien de Garoua)~; une déclarée
+          réalisée mais contredite par un essai (second facteur, compte
+          « vpn\_secours », Chapitre~\ref{chap:conduire}).
+    \item Acceptations~: deux risques résiduels acceptés oralement, sans
+          trace.
+    \item Propriétaires~: deux sur trois connaissent leur plan~; un ignore
+          qu'il est propriétaire.
+\end{itemize}
+
+\medskip
+\textbf{Analyse} (confiance élevée). Le dispositif est bien conçu et
+fonctionne en partie~; son efficacité est surestimée par un registre qui
+compte comme réalisée une action incomplète.
+\end{boxscenario}
+
+% ============================================================================
+\section{Auditer un Indicateur}
+\label{sec:c14-indicateur}
+% ============================================================================
+
+Un indicateur vert peut être faux de trois manières~: la \emph{définition}
+ne mesure pas le risque, la \emph{population} est incomplète, la
+\emph{source} n'est pas fiable.
+
+\begin{boxobjet}{Constat A-05 · Indicateur du second facteur}
+\textbf{Critère~:} indicateur clé de risque « part des connexions
+distantes avec second facteur » (Tableau~11.4). \textbf{Constat~:}
+l'indicateur affiche 100~\%, mais il est calculé sur les comptes
+\emph{nominatifs} seulement~; le compte « vpn\_secours » en est exclu par
+construction. Sur toutes les connexions de septembre, le taux réel est de
+$(1\,340 - 46) / 1\,340 \approx 96{,}6~\%$, soit l'orange.
+\textbf{Preuve~:} requête de calcul de l'indicateur, export du journal.
+\textbf{Cause~:} population de l'indicateur définie par la même liste que
+la politique, exceptions comprises. \textbf{Classement~:} non-conformité
+mineure (l'écart principal est traité au constat A-03).
+\end{boxobjet}
+
+\begin{boxmetier}{Auditeur des systèmes d'information}
+\textbf{Recalculer un indicateur à partir de la source.} L'auditeur ne
+recopie pas le tableau de bord~: il refait le calcul d'au moins un
+indicateur depuis les données brutes, et compare.
+\end{boxmetier}
+
+% ============================================================================
+\section{Les Clauses de l'ISO/IEC 27001}
+\label{sec:c14-27001}
+% ============================================================================
+
+Pour un système de management de la sécurité, l'audit du dispositif de
+risques s'appuie sur les clauses de l'ISO/IEC~27001~\cite{iso27001_2022}
+et sur les recommandations de l'ISO/IEC~27007~\cite{iso27007_2020}.
+
+\begin{tableaucours}{L{2.0cm}L{4.4cm}L{5.8cm}}{%
+    \tableauHeader{Clause} &
+    \tableauHeader{Exigence} &
+    \tableauHeader{Preuve demandée chez LiZbiZ}
+}
+6.1.2 & Appréciation des risques & Méthode, critères, registre daté \\
+6.1.3 & Traitement des risques & Plan de traitement, déclaration
+d'applicabilité, acceptation des résiduels \\
+8.2 et 8.3 & Appréciation et traitement réalisés à intervalles planifiés
+& Comptes rendus des revues trimestrielles \\
+9.1 & Surveillance et mesure & Définition et calcul des indicateurs \\
+9.2 & Audit interne & Programme et rapports d'audit \\
+9.3 & Revue de direction & Compte rendu de la revue \\
+10.2 & Non-conformité et action corrective & Suivi des constats A-03 et
+A-05 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~14.3. Clauses de l'ISO/IEC 27001 relatives aux risques}\end{center}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Accueillir l'audit comme une aide.} Mme~MOUAFO fournit les sources
+brutes, pas seulement les tableaux~; un constat sur son indicateur
+améliore son dispositif avant qu'un incident ne le fasse.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Trois niveaux}~: conception, fonctionnement, efficacité.
+    \item \textbf{Chaque incident} teste le registre~: prévu ou non, et
+          avec quelle cote.
+    \item \textbf{Quatre tests}~: reproductibilité, réalité des mesures,
+          acceptations, propriétaires.
+    \item \textbf{Un indicateur} se vérifie par sa définition, sa
+          population et sa source.
+    \item \textbf{L'ISO/IEC~27001} (6.1, 8, 9, 10) donne les critères pour un
+          système de management.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: distinguer conception,
+fonctionnement et efficacité~; rapprocher incidents et registre~; conduire
+les quatre tests~; auditer un indicateur~; citer les clauses de
+l'ISO/IEC~27001 relatives aux risques.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.1. Quel niveau~? \niveaubase}]
+Classez en conception, fonctionnement ou efficacité~: « la méthode n'a pas
+d'échelle d'impact »~; « le comité ne s'est pas réuni au troisième
+trimestre »~; « deux incidents n'étaient pas au registre ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.2. Trous \niveaubase}]
+Formulez les deux risques manquants révélés par le Tableau~14.2.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.3. Recalculer \niveaubase}]
+Vérifiez le taux réel de connexions avec second facteur du constat A-05.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.4. Reproductibilité \niveaumoyen}]
+Trois risques sur cinq sont recotés différemment. Quelles causes
+possibles, et quelles corrections~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.5. Acceptation orale \niveaumoyen}]
+Pourquoi une acceptation orale d'un risque résiduel est-elle un écart~?
+Quel critère méconnaît-elle~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.6. Le propriétaire qui s'ignore \niveaumoyen}]
+Un directeur ignore qu'il est propriétaire d'un risque. Rédigez le
+constat et sa recommandation.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.7. Population \niveaumoyen}]
+Donnez un autre exemple d'indicateur vert faussé par sa population, pris
+dans la sécurité des postes de travail.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.8. Clause 10.2 \niveaumoyen}]
+Que doit contenir, selon la clause 10.2, la réponse de LiZbiZ au constat
+A-03~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.9. Programme de tests \niveauexpert}]
+Construisez la liste de vérification complète de l'audit du dispositif de
+risques de LiZbiZ~: points, critère, preuve, test.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~14.10. Opinion d'ensemble \niveauexpert}]
+Rédigez la conclusion d'ensemble de Mme~NKENG sur le dispositif, en trois
+paragraphes~: conception, fonctionnement, efficacité.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO/IEC~27001~\cite{iso27001_2022}~; ISO/IEC~27007~\cite{iso27007_2020}.
+    \item IIA, modèle des trois lignes~\cite{iia2020troislignes}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Les constats doivent être écrits, présentés et
+suivis. Le Chapitre~\ref{chap:rapport} traite du rapport et du suivi des
+actions.
+\end{boxinfo}

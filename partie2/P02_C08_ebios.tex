@@ -1,0 +1,373 @@
+% ============================================================================
+% Fichier  : partie2/P02_C08_ebios.tex
+% Titre    : ISO/IEC 27005 et EBIOS Risk Manager
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO/IEC 27005:2022 ; ISO/IEC 27001:2022 ; ANSSI, EBIOS Risk
+% Manager (2018). Cotations de l'écosystème de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{ISO/IEC 27005 et EBIOS Risk Manager}
+\label{chap:ebios}
+\chaptermark{ISO/IEC 27005 et EBIOS RM}
+
+\epigraph{%
+    « L'attaquant ne vise pas vos serveurs~;\\
+    il vise ce qu'ils permettent. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:cadres}
+à~\ref{chap:matrices}~; cours SEC3266, chapitre sur les risques.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Situer l'ISO/IEC~27005 dans le système de management de
+          l'ISO/IEC~27001.
+    \item Distinguer l'approche par les événements et l'approche par les
+          actifs.
+    \item Conduire les cinq ateliers d'EBIOS Risk Manager.
+    \item Coter la menace des parties prenantes de l'écosystème.
+    \item Construire un scénario stratégique et un scénario opérationnel.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : l'attaque de mars pouvait-elle être écrite d'avance~?}
+% ============================================================================
+
+En juillet, Mme~MOUAFO conduit la première étude EBIOS Risk Manager de
+LiZbiZ. Au troisième atelier, la cartographie de l'écosystème place SAHEL
+INFOGÉRANCE seule dans la zone de danger. Au quatrième, le scénario
+opérationnel décrit, étape par étape, l'attaque de mars. Ce chapitre
+déroule la méthode, deux séances durant.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item L'ISO/IEC 27005 (section~\ref{sec:c08-27005}).
+    \item EBIOS Risk Manager~: principes (section~\ref{sec:c08-principes}).
+    \item Ateliers 1 et 2~: socle, sources de risque (section~\ref{sec:c08-a12}).
+    \item Atelier 3~: l'écosystème (section~\ref{sec:c08-a3}).
+    \item Atelier 4~: les scénarios opérationnels (section~\ref{sec:c08-a4}).
+    \item Atelier 5~: le traitement (section~\ref{sec:c08-a5}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{L'ISO/IEC 27005}
+\label{sec:c08-27005}
+% ============================================================================
+
+L'\norme{ISO/IEC~27005:2022} donne des recommandations pour gérer les
+risques liés à la sécurité de l'information, conformément aux exigences
+de l'\norme{ISO/IEC~27001}~\cite{iso27005_2022,iso27001_2022}. Elle
+reprend le processus de l'ISO~31000 et l'applique au système de
+management de la sécurité de l'information.
+
+\begin{tableaucours}{L{3.4cm}L{4.4cm}L{4.4cm}}{%
+    \tableauHeader{Approche} &
+    \tableauHeader{Point de départ} &
+    \tableauHeader{Usage}
+}
+Par les événements & Les scénarios stratégiques, les sources de risque et
+leurs chemins & Vue de direction, risques majeurs, écosystème \\
+Par les actifs & Les actifs, leurs menaces et leurs vulnérabilités &
+Analyse détaillée d'un périmètre technique \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~8.1. Les deux approches de l'ISO/IEC 27005:2022}\end{center}
+
+Dans un système de management ISO/IEC~27001, l'appréciation des risques
+conduit au choix des mesures de l'annexe~A et à la \termecle{déclaration
+d'applicabilité}, qui justifie chaque mesure retenue ou exclue.
+
+% ============================================================================
+\section{EBIOS Risk Manager : Principes}
+\label{sec:c08-principes}
+% ============================================================================
+
+EBIOS Risk Manager, publiée par l'ANSSI en 2018, est une méthode par
+scénarios, compatible avec l'ISO~31000 et l'ISO/IEC~27005~\cite{anssi2018ebios}.
+Elle s'organise en cinq ateliers.
+
+\begin{tableaucours}{L{3.2cm}L{4.4cm}L{4.6cm}}{%
+    \tableauHeader{Atelier} &
+    \tableauHeader{Question} &
+    \tableauHeader{Livrable}
+}
+1. Cadrage et socle & Que protège-t-on, contre quel événement redouté~? &
+Valeurs métier, biens supports, événements redoutés et gravité, socle de
+sécurité \\
+2. Sources de risque & Qui pourrait attaquer, pour quoi~? & Couples source
+de risque et objectif visé, retenus ou non \\
+3. Scénarios stratégiques & Par quel chemin dans l'écosystème~? &
+Cartographie de la menace, scénarios stratégiques, mesures sur
+l'écosystème \\
+4. Scénarios opérationnels & Par quelles étapes techniques~? & Modes
+opératoires, vraisemblance \\
+5. Traitement & Quelles mesures, quel risque résiduel~? & Stratégie,
+plan d'amélioration continue, risques résiduels \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~8.2. Les cinq ateliers d'EBIOS Risk Manager}\end{center}
+
+La méthode distingue un \termecle{cycle stratégique} (ateliers 1 à 3,
+repris à un rythme pluriannuel ou lors d'un changement majeur) et un
+\termecle{cycle opérationnel} (ateliers 4 et 5, repris plus souvent, au
+fil de l'évolution des menaces et des mesures).
+
+% ============================================================================
+\section{Ateliers 1 et 2 : Socle et Sources de Risque}
+\label{sec:c08-a12}
+% ============================================================================
+
+\begin{tableaucours}{L{3.4cm}L{5.4cm}c}{%
+    \tableauHeader{Valeur métier} &
+    \tableauHeader{Événement redouté} &
+    \tableauHeader{Gravité}
+}
+Facturation & Facturation arrêtée plus de trois jours & G4 \\
+Suivi des expéditions & Suivi indisponible ou faussé plus d'un jour & G3 \\
+Données clients & Divulgation de données personnelles & G4 \\
+Paiements & Virement frauduleux de plus de 50~millions & G3 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~8.3. Atelier 1~: valeurs métier et événements redoutés de LiZbiZ}\end{center}
+
+\begin{tableaucours}{L{3.6cm}L{5.4cm}L{2.6cm}}{%
+    \tableauHeader{Source de risque} &
+    \tableauHeader{Objectif visé} &
+    \tableauHeader{Décision}
+}
+Groupe criminel & Lucre par rançon et revente de données & Retenu \\
+Complice interne & Fraude au virement & Retenu \\
+Ancien salarié & Revente de données clients & Retenu \\
+Concurrent & Espionnage des tarifs & Non retenu (motivation faible) \\
+Militant & Défiguration du portail & Non retenu (gravité faible) \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~8.4. Atelier 2~: couples source de risque et objectif visé}\end{center}
+
+% ============================================================================
+\section{Atelier 3 : l'Écosystème}
+\label{sec:c08-a3}
+% ============================================================================
+
+L'attaquant passe souvent par un tiers moins protégé. L'atelier~3 cote
+chaque partie prenante sur quatre critères, de 1 à 4.
+
+\begin{boxdef}
+\termecle{Niveau de menace d'une partie prenante} (EBIOS RM)~:
+\[
+\text{Menace} = \frac{\text{Dépendance} \times \text{Pénétration}}
+{\text{Maturité cyber} \times \text{Confiance}}
+\]
+La \emph{dépendance} et la \emph{pénétration} (accès au système) exposent~;
+la \emph{maturité cyber} et la \emph{confiance} protègent. Les seuils des
+zones de danger, de contrôle et de veille sont fixés par l'étude.
+\end{boxdef}
+
+\begin{tableaucours}{L{3.6cm}ccccc}{%
+    \tableauHeader{Partie prenante} &
+    \tableauHeader{Dép.} &
+    \tableauHeader{Pén.} &
+    \tableauHeader{Mat.} &
+    \tableauHeader{Conf.} &
+    \tableauHeader{Menace}
+}
+SAHEL INFOGÉRANCE & 4 & 4 & 2 & 2 & 4,00 \\
+Transporteurs sous-traitants & 2 & 2 & 1 & 2 & 2,00 \\
+Éditeur de l'application & 3 & 2 & 3 & 3 & 0,67 \\
+Clients reliés par échange de données & 2 & 2 & 2 & 3 & 0,67 \\
+Opérateur de Garoua & 3 & 1 & 3 & 3 & 0,33 \\
+Banque & 2 & 1 & 4 & 4 & 0,13 \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~8.5. Atelier 3~: menace des parties prenantes de LiZbiZ}\end{center}
+
+\begin{boxscenario}{Opération LIZBIZ. La cartographie de juillet}
+\textbf{Seuils retenus par l'étude}~: danger au-dessus de~2,5~; contrôle
+de 0,9 à~2,5~; veille en dessous de~0,9.
+
+\medskip
+\textbf{Constatation.} SAHEL INFOGÉRANCE (4,00) est seule en zone de
+danger~; les transporteurs (2,00) sont en zone de contrôle~; les autres
+parties prenantes sont en veille.
+
+\medskip
+\textbf{Scénario stratégique retenu.} Un groupe criminel compromet un
+technicien du prestataire, utilise son accès distant pour atteindre le
+domaine, chiffre les serveurs et exige une rançon (événement redouté~:
+facturation arrêtée plus de trois jours, G4).
+
+\medskip
+\textbf{Mesures sur l'écosystème.} Second facteur et bastion pour le
+prestataire (pénétration et maturité)~; clauses de sécurité et audit
+annuel (confiance). Objectif~: ramener la menace sous~2,5.
+\end{boxscenario}
+
+% ============================================================================
+\section{Atelier 4 : les Scénarios Opérationnels}
+\label{sec:c08-a4}
+% ============================================================================
+
+L'atelier~4 décrit le mode opératoire, étape par étape, et cote sa
+vraisemblance sur une échelle V1 à V4.
+
+\begin{tableaucours}{L{3.0cm}L{6.4cm}L{2.8cm}}{%
+    \tableauHeader{Étape} &
+    \tableauHeader{Action de l'attaquant} &
+    \tableauHeader{Mesure qui l'arrête}
+}
+Connaître & Identifier un technicien du prestataire et son fournisseur de
+messagerie & Sensibilisation \\
+Entrer & Hameçonner, puis se connecter à la passerelle avec le mot de
+passe & Second facteur \\
+Trouver & Explorer le réseau, trouver un serveur non corrigé & Correctifs,
+segmentation \\
+Exploiter & Obtenir les droits d'administrateur du domaine & Mots de passe
+locaux uniques, bastion \\
+Agir & Copier, détruire les sauvegardes, chiffrer & Sauvegardes hors ligne,
+détection \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~8.6. Atelier 4~: scénario opérationnel du rançongiciel}\end{center}
+
+\textbf{Vraisemblance.} Avant mesures~: V4 (quasi certain), chaque étape
+étant facile. Après second facteur, correctifs et sauvegardes hors ligne~:
+V2, l'attaquant devant franchir plusieurs barrières indépendantes.
+
+% ============================================================================
+\section{Atelier 5 : le Traitement}
+\label{sec:c08-a5}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Atelier 5 chez LiZbiZ}
+\begin{enumerate}
+    \item Choisir, pour chaque risque, une option (réduire, transférer,
+          éviter, accepter) au regard de l'appétence.
+    \item Inscrire les mesures dans un \termecle{plan d'amélioration
+          continue de la sécurité} (PACS)~: responsable, échéance, coût,
+          indicateur.
+    \item Réévaluer gravité et vraisemblance avec les seules mesures en
+          place et vérifiées~: c'est le risque résiduel.
+    \item Faire accepter formellement les risques résiduels par la
+          direction.
+    \item Fixer la date de la prochaine revue du cycle opérationnel.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxobjet}{R-02 · Usurpation de l'accès distant du prestataire}
+\textbf{Scénario~:} stratégique et opérationnel des Tableaux~8.5 et~8.6.
+\textbf{Cotation~:} G4, V4 avant mesures~; G4, V2 cible.
+\textbf{Traitement~:} second facteur (juillet), bastion (septembre),
+clauses et audit (contrat renouvelé en octobre). \textbf{Propriétaire~:}
+M.~NGUELE. \textbf{Indicateur~:} niveau de menace de SAHEL INFOGÉRANCE
+recoté à chaque revue.
+\end{boxobjet}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Faire écrire le scénario par ceux qui le vivraient.} Mme~MOUAFO
+fait rédiger le mode opératoire par l'informatique et le prestataire
+ensemble~: c'est en décrivant l'attaque étape par étape que chacun voit la
+barrière qui manque.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{L'ISO/IEC~27005} applique l'ISO~31000 au système de
+          management de la sécurité de l'information~; deux approches, par
+          les événements ou par les actifs.
+    \item \textbf{EBIOS RM}~: cinq ateliers, un cycle stratégique et un cycle
+          opérationnel.
+    \item \textbf{L'écosystème} se cote~: dépendance × pénétration, divisé
+          par maturité × confiance.
+    \item \textbf{Le scénario opérationnel} montre, étape par étape, la
+          barrière qui manque.
+    \item \textbf{Le traitement} produit un plan, un risque résiduel et une
+          acceptation formelle.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: situer l'ISO/IEC~27005~;
+nommer les cinq ateliers~; formuler un couple source de risque et objectif
+visé~; calculer le niveau de menace d'une partie prenante~; décrire un
+scénario opérationnel et ses barrières.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.1. Les ateliers \niveaubase}]
+Dans quel atelier d'EBIOS RM se rangent~: la liste des valeurs métier~; la
+cotation de la maturité du prestataire~; le plan d'amélioration continue~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.2. Calculer la menace \niveaubase}]
+Une société de gardiennage a une dépendance de 2, une pénétration de 1,
+une maturité de 1 et une confiance de 2. Calculez sa menace et sa zone.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.3. Les couples \niveaubase}]
+Formulez deux couples source de risque et objectif visé pour l'ANPP.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.4. Recoter le prestataire \niveaumoyen}]
+Après les mesures, la pénétration de SAHEL INFOGÉRANCE passe à 2, sa
+maturité à 3 et la confiance à 3. Recalculez sa menace. Quitte-t-elle la
+zone de danger~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.5. Les transporteurs \niveaumoyen}]
+Les transporteurs sont en zone de contrôle. Quelles mesures proposer, sur
+quels critères agissent-elles~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.6. Écarter \niveaumoyen}]
+Pourquoi le couple « concurrent, espionnage des tarifs » n'a-t-il pas été
+retenu~? Dans quelles circonstances faudrait-il le réexaminer~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.7. Un scénario opérationnel \niveaumoyen}]
+Décrivez le scénario opérationnel « complice interne, fraude au
+virement » en cinq étapes, avec une barrière par étape.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.8. Barrières indépendantes \niveaumoyen}]
+Pourquoi plusieurs barrières \emph{indépendantes} réduisent-elles la
+vraisemblance plus qu'une seule barrière très forte~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.9. L'atelier 1 de la banque \niveauexpert}]
+Conduisez l'atelier~1 pour la BANQUE SANAGA~: quatre valeurs métier, leurs
+biens supports, les événements redoutés et leur gravité.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~8.10. Déclaration d'applicabilité \niveauexpert}]
+À partir du Tableau~8.6, indiquez quatre mesures de l'annexe~A de
+l'ISO/IEC~27001 que LiZbiZ doit retenir, avec leur justification.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ANSSI, \emph{EBIOS Risk Manager}~\cite{anssi2018ebios}.
+    \item ISO/IEC~27005~\cite{iso27005_2022}~; ISO/IEC~27001~\cite{iso27001_2022}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Une vraisemblance V2 ou V4 reste une cote. Le
+Chapitre~\ref{chap:quantitatif} apprend à estimer le risque en fréquences
+et en montants, avec la méthode FAIR.
+\end{boxinfo}

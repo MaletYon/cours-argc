@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C22
+Chapitre 22 : La cellule de crise
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quels sont les deux niveaux de la cellule de crise ?
+      a) Stratégique et opérationnel
+      b) Interne et externe
+      c) Jour et nuit
+      d) Technique et juridique
+
+ 2. Que fait le niveau stratégique ?
+      a) Restaure les serveurs
+      b) Fixe les priorités et décide des arbitrages
+      c) Répond au standard
+      d) Imprime les bordereaux
+
+ 3. Pourquoi M. KOUNOU ne siège-t-il pas trois heures en cellule stratégique ?
+      a) Il est absent
+      b) Il n'est pas concerné
+      c) Il doit rester à la manœuvre de la restauration
+      d) Il est sanctionné
+
+ 4. Quelle norme traite de la gestion des situations d'urgence ?
+      a) ISO 22301
+      b) ISO 19011
+      c) ISO/IEC 27035
+      d) ISO 22320
+
+ 5. Qui est directeur de crise chez LiZbiZ ?
+      a) M. ETEME
+      b) M. KOUNOU
+      c) Mme ABOMO
+      d) Me TSALA
+
+ 6. Qui est suppléante du directeur de crise ?
+      a) Mme NKENG
+      b) Mme MBALLA
+      c) Mme ABOMO
+      d) Mme MOUAFO
+
+ 7. Qui tient la main courante ?
+      a) M. ETEME
+      b) M. NGUELE
+      c) Mme NKENG
+      d) Me TSALA
+
+ 8. Qui coordonne la cellule ?
+      a) M. ABENA
+      b) M. NANGA
+      c) Le prestataire
+      d) Mme MOUAFO
+
+ 9. Pourquoi chaque rôle a-t-il un suppléant ?
+      a) La crise dure et le titulaire peut être absent
+      b) Pour la décoration
+      c) Pour le budget
+      d) Par obligation légale
+
+10. Que consigne la main courante ?
+      a) Seulement les décisions
+      b) Heure, type, contenu, source, échéance
+      c) Seulement les noms
+      d) Les opinions
+
+11. Comment corrige-t-on une erreur dans la main courante ?
+      a) En effaçant
+      b) En arrachant la page
+      c) Par une nouvelle ligne datée
+      d) On ne corrige pas
+
+12. « Ne pas payer la rançon tant que l'avis juridique n'est pas rendu » est de type :
+      a) Fait
+      b) Information
+      c) Action
+      d) Décision
+
+13. « Yaoundé et Bafoussam opérationnels » est de type :
+      a) Fait
+      b) Décision
+      c) Action
+      d) Opinion
+
+14. Par quoi commence chaque point de situation ?
+      a) Les décisions
+      b) Le point en trois colonnes
+      c) La communication
+      d) Le prochain point
+
+15. Par quoi finit chaque point de situation ?
+      a) Le budget
+      b) Les sanctions
+      c) L'heure du prochain point
+      d) Le communiqué
+
+16. Quelle est la première action de la fiche réflexe ?
+      a) Payer
+      b) Redémarrer
+      c) Appeler la presse
+      d) Réunir la cellule et désigner la personne de la main courante
+
+17. Quelle mesure conservatoire figure dans la fiche réflexe ?
+      a) Couper les liaisons et protéger les sauvegardes
+      b) Effacer les journaux
+      c) Publier un communiqué complet
+      d) Attendre
+
+18. Avec une fiche réflexe, vers quelle heure les liaisons pouvaient-elles être coupées le 6 mars ?
+      a) Vers 11 h 10
+      b) Vers 8 h
+      c) Vers 18 h 30
+      d) Le lendemain
+
+19. Toutes les combien d'heures au plus la relève se fait-elle ?
+      a) 4 heures
+      b) 24 heures
+      c) 12 heures
+      d) 48 heures
+
+20. Qui annonce la fin de crise ?
+      a) Le prestataire
+      b) La presse
+      c) Personne
+      d) Le directeur de crise
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Les mêmes personnes doivent travailler aux deux niveaux.
+      Vrai / Faux
+
+22. Le 6 mars, le DG était sur la route de Yaoundé.
+      Vrai / Faux
+
+23. En crise, ce qui n'est pas écrit n'a pas été décidé.
+      Vrai / Faux
+
+24. On peut effacer une ligne fausse de la main courante.
+      Vrai / Faux
+
+25. La main courante sert aussi à apprendre après la crise.
+      Vrai / Faux
+
+26. La cellule se réunit à heures fixes.
+      Vrai / Faux
+
+27. L'annuaire de crise doit être imprimé.
+      Vrai / Faux
+
+28. La salle de crise doit dépendre du réseau de l'entreprise.
+      Vrai / Faux
+
+29. La crise s'éteint d'elle-même sans annonce.
+      Vrai / Faux
+
+30. La fiche réflexe prévoit de prévenir le conseil juridique, l'assureur et le prestataire.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. Le registre chronologique de la crise est la main ______.
+
+32. La personne qui décide et arbitre est le directeur de ______.
+
+33. Le niveau qui décide est le niveau ______.
+
+34. Le niveau qui agit est le niveau ______.
+
+35. La liste imprimée des contacts de crise est l'______ de crise.
+
+36. La chargée de communication s'appelle Mme ______.
+
+37. La fiche de la première heure est la fiche ______.
+
+38. Le remplacement d'une équipe par une autre est la ______.
+
+39. La main courante a été ouverte le ______ mars.
+
+40. La norme de gestion des urgences est l'ISO ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

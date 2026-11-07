@@ -1,0 +1,305 @@
+% ============================================================================
+% Fichier  : partie4/P04_C20_exercer.tex
+% Titre    : Exercer et Tester les Plans
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 22301:2019 (8.5) ; NIST SP 800-84 (2006). Programme
+% d'exercices de LiZbiZ et bascule de la BANQUE SANAGA : cas fictifs.
+% ============================================================================
+
+\chapter{Exercer et Tester les Plans}
+\label{chap:exercer}
+\chaptermark{Exercer et tester les plans}
+
+\epigraph{%
+    « Un exercice qui réussit tout n'a rien appris à personne. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:pca}
+et~\ref{chap:pra}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Distinguer revue, exercice et test, et leurs niveaux de réalisme.
+    \item Construire un programme d'exercices sur plusieurs années.
+    \item Concevoir un exercice~: objectifs mesurables, scénario, injections,
+          observation.
+    \item Évaluer un exercice et en tirer un plan d'actions.
+    \item Limiter les risques d'un test sur des systèmes réels.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : comment savoir que le plan de continuité fonctionne, avant la prochaine crise~?}
+% ============================================================================
+
+En juin, LiZbiZ dispose d'un plan de continuité et d'un plan de reprise.
+Personne ne les a jamais utilisés. En août, l'inondation de Bonabéri a
+prouvé le premier pour les expéditions de Douala~; mais la facturation,
+les autres sites et la cellule de crise n'ont pas été éprouvés. Il faut un
+programme d'exercices, avant que les événements ne s'en chargent.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Revue, exercice, test (section~\ref{sec:c20-types}).
+    \item Le programme d'exercices (section~\ref{sec:c20-programme}).
+    \item Concevoir un exercice (section~\ref{sec:c20-concevoir}).
+    \item Évaluer (section~\ref{sec:c20-evaluer}).
+    \item Tester sans nuire (section~\ref{sec:c20-nuire}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Revue, Exercice, Test}
+\label{sec:c20-types}
+% ============================================================================
+
+L'ISO~22301 exige un programme d'exercices et de tests, fondé sur des
+scénarios, qui valide dans le temps l'efficacité des stratégies et des
+plans~\cite{iso22301_2019}. Le NIST SP~800-84 décrit les programmes de
+tests, de formation et d'exercices~\cite{nist80084}.
+
+\begin{tableaucours}{L{3.4cm}L{5.0cm}L{1.8cm}L{2.0cm}}{%
+    \tableauHeader{Forme} &
+    \tableauHeader{Principe} &
+    \tableauHeader{Réalisme} &
+    \tableauHeader{Coût}
+}
+Revue documentaire & Relire le plan, vérifier contacts et procédures &
+Faible & Faible \\
+Exercice sur table & Les acteurs discutent un scénario autour d'une table
+& Moyen & Faible \\
+Exercice fonctionnel & Les acteurs agissent dans leurs rôles, sans toucher
+la production & Élevé & Moyen \\
+Test technique & Restaurer, basculer, mesurer sur des systèmes réels ou
+copiés & Élevé & Moyen à élevé \\
+Exercice grandeur réelle & Toute l'organisation, systèmes compris &
+Très élevé & Élevé \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~20.1. Les formes d'exercice et de test}\end{center}
+
+\begin{boxdef}
+\termecle{Exercice}~: activité qui entraîne des personnes et évalue des
+plans ou des capacités à partir d'un scénario. \termecle{Test}~: exercice
+dont on attend un résultat mesurable, réussi ou échoué (une restauration
+en moins de 48~heures).
+\end{boxdef}
+
+% ============================================================================
+\section{Le Programme d'Exercices}
+\label{sec:c20-programme}
+% ============================================================================
+
+Un programme progresse du simple au complexe, couvre toutes les activités
+critiques sur un cycle, et varie les scénarios.
+
+\begin{tableaucours}{L{2.2cm}L{4.4cm}L{3.4cm}L{2.2cm}}{%
+    \tableauHeader{Période} &
+    \tableauHeader{Exercice} &
+    \tableauHeader{Plan éprouvé} &
+    \tableauHeader{Forme}
+}
+Sept. 2026 & Relecture et appel des contacts & Tous & Revue \\
+Oct. 2026 & Prise en main de la cellule de crise & Gestion de crise & Sur
+table \\
+Nov. 2026 & Reprise de la facturation à Yaoundé & Reprise informatique &
+Test technique \\
+Fév. 2027 & Rançongiciel, cellule de crise & Gestion de crise & Sur table \\
+Mai 2027 & Coupure de Garoua quatre jours & Continuité du Nord &
+Fonctionnel \\
+Sept. 2027 & Perte de Douala, bascule & Tous & Grandeur réelle partielle \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~20.2. Programme d'exercices 2026-2027 de LiZbiZ}\end{center}
+
+% ============================================================================
+\section{Concevoir un Exercice}
+\label{sec:c20-concevoir}
+% ============================================================================
+
+\begin{boxprocedure}
+\textbf{Concevoir un exercice}
+\begin{enumerate}
+    \item \textbf{Objectifs mesurables}~: « la facturation reprend en moins
+          de 48~heures », « le DG est prévenu en moins d'une heure ».
+    \item \textbf{Périmètre et participants}~: qui joue, qui observe, qui
+          anime.
+    \item \textbf{Scénario} réaliste, tiré du registre des risques.
+    \item \textbf{Injections}~: messages qui font évoluer la situation à
+          heures fixes (un journaliste appelle, la sauvegarde est corrompue).
+    \item \textbf{Grille d'observation}~: pour chaque objectif, ce que
+          l'observateur note et quand.
+    \item \textbf{Règles de sécurité}~: mot d'arrêt, communication
+          « EXERCICE » sur chaque message.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxalert}
+\textbf{Violation typique.} Un scénario connu à l'avance des joueurs, sans
+surprise.
+
+\smallskip
+\textbf{Règle~:} les joueurs connaissent la date et le cadre, pas le
+scénario. Au moins une injection doit mettre le plan en défaut (un
+suppléant absent, un fournisseur injoignable)~: c'est là qu'on apprend.
+\end{boxalert}
+
+% ============================================================================
+\section{Évaluer}
+\label{sec:c20-evaluer}
+% ============================================================================
+
+\begin{boxscenario}{Opération LIZBIZ. Le test de reprise de novembre}
+\textbf{Objectifs.} Facturation reprise en moins de 48~heures~; données
+perdues inférieures à 4~heures~; contrôle de dix factures par la DAF.
+
+\medskip
+\textbf{Constatations.} Reprise en 19~heures~; perte de 5~heures de
+données~; huit factures sur dix conformes, deux avec un taux de taxe
+erroné (paramètre non restauré).
+
+\medskip
+\textbf{Analyse} (confiance élevée). Le RTO est tenu~; le RPO ne l'est pas
+(Chapitre~\ref{chap:pra})~; la restauration des paramètres n'était pas
+dans la procédure. Le test a fait apparaître deux écarts que rien d'autre
+n'aurait révélés.
+\end{boxscenario}
+
+\begin{tableaucours}{L{4.4cm}L{2.2cm}L{5.6cm}}{%
+    \tableauHeader{Objectif} &
+    \tableauHeader{Résultat} &
+    \tableauHeader{Action}
+}
+Reprise en moins de 48~h & Atteint (19~h) & Aucune \\
+Perte inférieure à 4~h & Non atteint (5~h) & Journalisation des
+transactions \\
+Dix factures conformes & Non atteint (8/10) & Ajouter les paramètres à la
+procédure \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~20.3. Évaluation du test de novembre}\end{center}
+
+% ============================================================================
+\section{Tester sans Nuire}
+\label{sec:c20-nuire}
+% ============================================================================
+
+Un test sur des systèmes réels peut lui-même provoquer un incident. On le
+prépare comme un changement~: fenêtre en heures creuses, sauvegarde
+préalable, critère d'arrêt, retour arrière prévu et répété, information des
+utilisateurs et des clients concernés.
+
+\begin{boxobjet}{R-W1 · Bascule annuelle de la BANQUE SANAGA}
+\textbf{Scénario testé~:} perte du site de Douala~; bascule du système
+central sur le site de secours. \textbf{Fenêtre~:} un samedi de 22~h à
+6~h. \textbf{Critère d'arrêt~:} toute anomalie sur un virement réel.
+\textbf{Résultat attendu~:} bascule en moins de 2~heures, aucun écart de
+solde. \textbf{Propriétaire~:} M.~EYENGA. \textbf{Indicateur~:} durée
+mesurée de la bascule.
+\end{boxobjet}
+
+\begin{boxmetier}{Responsable de la continuité}
+\textbf{Mesurer, pas raconter.} Le responsable fait chronométrer chaque
+étape par un observateur et consigne les heures. Le rapport compare les
+durées mesurées aux objectifs, étape par étape.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Revue, sur table, fonctionnel, technique, grandeur
+          réelle}~: un réalisme et un coût croissants.
+    \item \textbf{Le programme} progresse, couvre les activités critiques et
+          varie les scénarios.
+    \item \textbf{Un exercice} a des objectifs mesurables, des injections et
+          des observateurs.
+    \item \textbf{L'évaluation} compare objectif et résultat et produit des
+          actions.
+    \item \textbf{Un test réel} se prépare comme un changement, avec un
+          critère d'arrêt.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: distinguer les formes
+d'exercice~; construire un programme~; rédiger des objectifs mesurables et
+des injections~; évaluer un exercice~; préparer un test réel sans risque
+excessif.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.1. Quelle forme~? \niveaubase}]
+Classez~: appeler tous les contacts du plan~; restaurer la base de
+facturation sur une machine de test~; réunir la direction autour d'un
+scénario d'inondation.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.2. Mesurable \niveaubase}]
+Réécrivez de manière mesurable~: « vérifier que la cellule de crise sait
+se réunir ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.3. Le test de novembre \niveaubase}]
+Quels objectifs du test de novembre sont atteints, lesquels ne le sont
+pas~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.4. Injections \niveaumoyen}]
+Proposez cinq injections pour l'exercice sur table « rançongiciel » de
+février 2027, avec leur heure.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.5. Observation \niveaumoyen}]
+Construisez la grille d'observation de l'exercice « coupure de Garoua
+quatre jours ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.6. Les paramètres \niveaumoyen}]
+Deux factures sur dix avaient un taux erroné. Quelle cause, et quelle
+correction à la procédure~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.7. Critère d'arrêt \niveaumoyen}]
+Pourquoi un critère d'arrêt est-il indispensable à la bascule de la
+BANQUE SANAGA~? Que se passe-t-il s'il est atteint~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.8. Programme \niveaumoyen}]
+Le programme du Tableau~20.2 couvre-t-il toutes les activités critiques de
+LiZbiZ~? Que manque-t-il~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.9. Un dossier d'exercice \niveauexpert}]
+Rédigez le dossier complet de l'exercice fonctionnel de mai 2027~:
+objectifs, scénario, injections, participants, observation, sécurité.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~20.10. Rapport d'exercice \niveauexpert}]
+Rédigez le rapport du test de novembre~: cadre, objectifs, résultats
+chronométrés, écarts, actions.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~22301, programme d'exercices~\cite{iso22301_2019}.
+    \item NIST SP~800-84~\cite{nist80084}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Quand l'incident déborde les plans, l'organisation
+entre en crise. La Partie~V commence par définir la crise
+(Chapitre~\ref{chap:crise}).
+\end{boxinfo}

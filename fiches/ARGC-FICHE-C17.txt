@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C17
+Chapitre 17 : L'analyse d'impact sur l'activité
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Que fixe l'analyse d'impact sur l'activité ?
+      a) Les priorités et les objectifs de reprise de chaque activité
+      b) Le prix des serveurs
+      c) La liste des salariés
+      d) Le budget marketing
+
+ 2. Quelle norme technique traite de l'analyse d'impact sur l'activité ?
+      a) ISO 19011
+      b) ISO/TS 22317
+      c) ISO/IEC 27005
+      d) ISO 22320
+
+ 3. Avec qui conduit-on l'analyse d'impact ?
+      a) L'informatique seule
+      b) Le prestataire seul
+      c) Les responsables d'activité
+      d) Les clients
+
+ 4. L'analyse d'impact intervient :
+      a) Après le plan
+      b) Après la crise seulement
+      c) Jamais
+      d) Avant le choix des stratégies
+
+ 5. Quelle activité de la BANQUE SANAGA devient critique en quatre heures ?
+      a) Les virements et la compensation
+      b) Les crédits
+      c) Les rapports réglementaires
+      d) La banque en ligne
+
+ 6. Pourquoi les virements deviennent-ils critiques en quatre heures ?
+      a) Les clients dorment
+      b) La séance de compensation du jour serait manquée
+      c) Le soleil se couche
+      d) Le prestataire part
+
+ 7. À partir de quel niveau d'impact la direction juge-t-elle l'interruption inacceptable ?
+      a) 1
+      b) 2
+      c) 3
+      d) 4
+
+ 8. Que désigne la MTPD ?
+      a) La perte de données admissible
+      b) Le délai de détection
+      c) Le coût maximal
+      d) La période d'interruption maximale tolérable
+
+ 9. Que désigne le RTO ?
+      a) Le délai de reprise visé
+      b) La perte de données admissible
+      c) La durée de la crise
+      d) Le niveau d'impact
+
+10. Que désigne le RPO ?
+      a) Le délai de reprise
+      b) La perte de données maximale admissible
+      c) La période tolérable
+      d) Le niveau minimal
+
+11. Quel RTO pour les virements de la BANQUE SANAGA ?
+      a) 4 heures
+      b) 8 heures
+      c) 2 heures
+      d) 24 heures
+
+12. Quel RPO pour les virements ?
+      a) 15 minutes
+      b) 1 heure
+      c) 1 jour
+      d) Nul
+
+13. Quelle MTPD pour la banque en ligne ?
+      a) 3 jours
+      b) 4 heures
+      c) 1 jour
+      d) 1 semaine
+
+14. Le RTO doit être :
+      a) Égal à la MTPD
+      b) Inférieur à la MTPD, avec une marge
+      c) Supérieur à la MTPD
+      d) Sans rapport
+
+15. Quel RTO actuel a le système central ?
+      a) 2 heures
+      b) 6 heures
+      c) 24 heures
+      d) 8 heures
+
+16. Quel RTO est exigé pour le système central ?
+      a) 4 heures
+      b) 8 heures
+      c) 24 heures
+      d) 2 heures
+
+17. Quelle ressource n'a pas d'écart de RTO ?
+      a) Le prestataire monétique
+      b) Le système central
+      c) L'annuaire
+      d) La connexion aux systèmes de paiement
+
+18. Une activité reprend au rythme :
+      a) De sa dépendance la plus rapide
+      b) De sa dépendance la plus lente
+      c) De la moyenne
+      d) Du prestataire
+
+19. Par quoi commence l'ordre de reprise ?
+      a) Les rapports
+      b) La banque en ligne
+      c) Les ressources des activités les plus urgentes
+      d) Les crédits
+
+20. Quelle stratégie l'analyse d'impact justifie-t-elle pour le système central ?
+      a) Aucun secours
+      b) Un site froid
+      c) Une copie papier
+      d) Un site de secours chaud
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. On finance un site chaud pour toutes les activités sans distinction.
+      Vrai / Faux
+
+22. L'impact croît par paliers liés à des échéances externes.
+      Vrai / Faux
+
+23. Les rapports réglementaires peuvent attendre plusieurs jours.
+      Vrai / Faux
+
+24. Le niveau minimal de continuité est le niveau d'activité acceptable pendant la perturbation.
+      Vrai / Faux
+
+25. Un RTO égal à la MTPD laisse une marge suffisante.
+      Vrai / Faux
+
+26. Trois ressources ont un RTO actuel supérieur au RTO exigé.
+      Vrai / Faux
+
+27. Le RTO d'une ressource doit être au plus égal au plus petit RTO des activités qui en dépendent.
+      Vrai / Faux
+
+28. Avec les écarts actuels, la perte du site de Douala manquerait la séance de compensation.
+      Vrai / Faux
+
+29. Les objectifs de reprise sont validés par les responsables d'activité.
+      Vrai / Faux
+
+30. C'est l'informatique seule qui choisit le niveau d'objectif et son coût.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La période d'interruption maximale tolérable a pour sigle anglais ______.
+
+32. Le délai de reprise visé a pour sigle ______.
+
+33. La perte de données maximale admissible a pour sigle ______.
+
+34. L'analyse d'impact sur l'activité a pour sigle anglais ______.
+
+35. Le niveau minimal de continuité a pour sigle anglais ______.
+
+36. Le responsable de la continuité de la BANQUE SANAGA s'appelle M. ______.
+
+37. Le RTO actuel de l'annuaire est de ______ heures.
+
+38. La MTPD des virements est de ______ heures.
+
+39. Un site de secours avec systèmes prêts et données répliquées est un site ______.
+
+40. L'opération de la BANQUE SANAGA s'appelle l'opération ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

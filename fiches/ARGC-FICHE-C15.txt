@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C15
+Chapitre 15 : Le rapport et le suivi des actions
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quelle partie du rapport s'adresse à la direction ?
+      a) La synthèse
+      b) Les annexes
+      c) La liste des preuves
+      d) Les échantillons
+
+ 2. Pourquoi dire les limites de l'audit ?
+      a) Pour allonger le rapport
+      b) Pour éviter que les silences soient pris pour des conformités
+      c) Par politesse
+      d) Par obligation fiscale
+
+ 3. Où figure la liste des personnes rencontrées ?
+      a) Dans la synthèse
+      b) Dans le titre
+      c) Dans les annexes
+      d) Nulle part
+
+ 4. Quel délai pour un constat de priorité 1 ?
+      a) Trois mois
+      b) Un an
+      c) Aucun
+      d) Un mois
+
+ 5. Quel délai pour un constat de priorité 2 ?
+      a) Trois mois
+      b) Un mois
+      c) Six mois
+      d) Un an
+
+ 6. Quelle recommandation est vérifiable ?
+      a) « Renforcer la sécurité des accès »
+      b) « Au 30 novembre, aucun compte distant sans second facteur »
+      c) « Envisager des améliorations »
+      d) « Être vigilant »
+
+ 7. Quelle priorité reçoit le constat A-03 ?
+      a) 2
+      b) 3
+      c) 1
+      d) Aucune
+
+ 8. Quelle décision le rapport demande-t-il au conseil ?
+      a) Payer la rançon
+      b) Fermer Garoua
+      c) Changer de prestataire
+      d) Supprimer toute exception au second facteur sans validation du comité
+
+ 9. Que devient un désaccord de l'audité ?
+      a) Il figure au rapport avec les arguments des deux parties
+      b) Il est effacé
+      c) Il est ignoré
+      d) Il annule le constat
+
+10. Quel constat la direction accepte-t-elle seulement en partie ?
+      a) A-03
+      b) A-08
+      c) A-05
+      d) A-07
+
+11. Qui est responsable de l'action sur A-03 ?
+      a) Mme MOUAFO
+      b) Mme NKENG
+      c) M. KOUNOU
+      d) M. ETEME
+
+12. Quelle norme décrit l'action corrective utilisée dans le cours ?
+      a) ISO 22301, clause 8.4
+      b) ISO 19011, clause 5
+      c) ISO 31000, clause 6.4
+      d) ISO/IEC 27001, clause 10.2
+
+13. Que supprime l'action corrective ?
+      a) La cause de l'écart
+      b) L'écart seulement
+      c) L'auditeur
+      d) Le rapport
+
+14. Activer le second facteur sur le compte est :
+      a) Une action corrective
+      b) Une correction
+      c) Une opportunité
+      d) Un constat
+
+15. Créer une procédure de dérogation écrite est :
+      a) Une correction
+      b) Une sanction
+      c) Une action corrective
+      d) Un audit
+
+16. Quand une action est-elle close ?
+      a) Quand l'audité la déclare faite
+      b) Au bout d'un an
+      c) Jamais
+      d) Quand l'auditeur en a vérifié l'efficacité
+
+17. Qui tient le suivi des recommandations ?
+      a) L'audit (troisième ligne)
+      b) Le prestataire
+      c) Le client
+      d) La presse
+
+18. Combien de recommandations sont closes après vérification fin décembre ?
+      a) Trois
+      b) Six
+      c) Neuf
+      d) Une
+
+19. Quand l'action A-03 a-t-elle été vérifiée ?
+      a) Le 22 novembre
+      b) Le 30 novembre
+      c) Le 3 décembre
+      d) Le 8 octobre
+
+20. Quelle recommandation de 2023 avait été oubliée ?
+      a) Changer de logo
+      b) Acheter des serveurs
+      c) Fermer une agence
+      d) Étendre le second facteur aux accès des tiers
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Un lecteur qui croit tout couvert prend les silences pour des conformités.
+      Vrai / Faux
+
+22. Une recommandation doit dire ce qui doit être vrai.
+      Vrai / Faux
+
+23. L'auditrice doit céder à tout désaccord de la direction.
+      Vrai / Faux
+
+24. L'action corrective vérifie son efficacité.
+      Vrai / Faux
+
+25. La correction suffit toujours.
+      Vrai / Faux
+
+26. La recommandation de 2023 a été suivie.
+      Vrai / Faux
+
+27. Le taux de clôture vérifiée fin décembre est d'environ deux tiers.
+      Vrai / Faux
+
+28. On clôt une action sur simple déclaration de l'audité.
+      Vrai / Faux
+
+29. La réponse de l'audité figure dans le rapport.
+      Vrai / Faux
+
+30. Les constats A-05, A-07 et A-08 sont de priorité 2.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'action qui supprime l'écart sans traiter sa cause est une ______.
+
+32. La première page du rapport, pour la direction, est la ______.
+
+33. Une action n'est close que lorsque son ______ est vérifiée.
+
+34. Fin décembre, ______ recommandations sur neuf sont closes.
+
+35. Une recommandation qui dit ce qui doit être vrai est ______.
+
+36. La clause de l'ISO/IEC 27001 sur l'action corrective est la clause ______.
+
+37. L'action A-03 a été vérifiée le ______ décembre.
+
+38. L'audité peut accepter ou ______ un constat.
+
+39. Le suivi des recommandations est présenté au comité d'______.
+
+40. Un constat de priorité 1 se traite en un ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

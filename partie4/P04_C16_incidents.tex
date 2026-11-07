@@ -1,0 +1,321 @@
+% ============================================================================
+% Fichier  : partie4/P04_C16_incidents.tex
+% Titre    : Gérer les Incidents de Sécurité
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO/IEC 27035-1:2023 ; NIST SP 800-61 Rev. 3 (2025). Registre
+% des incidents de LiZbiZ : cas fictif.
+% ============================================================================
+
+\chapter{Gérer les Incidents de Sécurité}
+\label{chap:incidents}
+\chaptermark{Gérer les incidents}
+
+\epigraph{%
+    « Un incident mal classé est un incident mal traité. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:traiter}
+et~\ref{chap:rapport}~; cours SEC3266, chapitre sur les opérations.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Distinguer événement, incident et crise.
+    \item Dérouler les phases de la gestion des incidents selon
+          l'ISO/IEC~27035.
+    \item Classer un incident et l'escalader selon une grille.
+    \item Organiser l'équipe de réponse et ses liens avec la direction.
+    \item Mesurer la gestion des incidents et en tirer des enseignements
+          pour le registre.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : à partir de quand un incident devient-il l'affaire du directeur général~?}
+% ============================================================================
+
+Le 5~mars à 22~h~05, le technicien d'astreinte voit que l'application ne
+répond plus. Il redémarre les serveurs et rentre chez lui~: pour lui,
+c'est une panne. Le lendemain à 7~h~30, c'est une crise. Entre les deux,
+aucune grille ne disait qui prévenir, ni à partir de quand. Ce chapitre
+traite de la gestion des incidents du point de vue de l'organisation.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Événement, incident, crise (section~\ref{sec:c16-definitions}).
+    \item Les phases de l'ISO/IEC 27035 (section~\ref{sec:c16-phases}).
+    \item Classer et escalader (section~\ref{sec:c16-classer}).
+    \item L'équipe de réponse (section~\ref{sec:c16-equipe}).
+    \item Mesurer et apprendre (section~\ref{sec:c16-mesurer}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Événement, Incident, Crise}
+\label{sec:c16-definitions}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Événement de sécurité}~: occurrence qui indique une possible
+violation de la sécurité ou une défaillance des mesures.
+\termecle{Incident de sécurité}~: un ou plusieurs événements indésirables
+qui ont une probabilité significative de compromettre l'activité ou de
+menacer la sécurité de l'information~\cite{iso27035_2023}. Une
+\termecle{crise} est une situation qui dépasse les capacités de la gestion
+courante et exige des décisions de la direction (Chapitre~\ref{chap:crise}).
+\end{boxdef}
+
+\begin{tableaucours}{L{3.0cm}L{4.6cm}L{4.6cm}}{%
+    \tableauHeader{Niveau} &
+    \tableauHeader{Exemple} &
+    \tableauHeader{Qui gère}
+}
+Événement & Une alerte d'antivirus bloquée & Exploitation, sans escalade \\
+Incident & Un poste infecté, isolé & Équipe de réponse \\
+Incident majeur & Un compte à privilèges compromis & Équipe de réponse,
+RSSI, direction informée \\
+Crise & Serveurs chiffrés sur deux sites & Cellule de crise présidée par le
+DG \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~16.1. De l'événement à la crise}\end{center}
+
+% ============================================================================
+\section{Les Phases de l'ISO/IEC 27035}
+\label{sec:c16-phases}
+% ============================================================================
+
+L'\norme{ISO/IEC~27035-1:2023} décrit cinq phases de gestion des
+incidents~\cite{iso27035_2023}. Le NIST SP~800-61 Rev.~3 (2025) les relie
+aux fonctions du NIST CSF~2.0~\cite{nist80061r3}.
+
+\begin{tableaucours}{L{3.4cm}L{8.8cm}}{%
+    \tableauHeader{Phase} &
+    \tableauHeader{Contenu}
+}
+Planifier et préparer & Politique, équipe, procédures, outils, grille de
+gravité, contacts, exercices \\
+Détecter et signaler & Recevoir les alertes et les signalements, les
+enregistrer \\
+Évaluer et décider & Qualifier l'événement, décider s'il s'agit d'un
+incident, le classer, l'escalader \\
+Répondre & Confiner, éradiquer, rétablir, préserver les preuves,
+communiquer \\
+Tirer les enseignements & Analyser les causes, améliorer les mesures, le
+registre et les procédures \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~16.2. Les cinq phases de l'ISO/IEC 27035-1:2023}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Sauter l'évaluation (« on redémarre et on
+verra »).
+
+\smallskip
+\textbf{Règle~:} tout événement inhabituel sur un système critique est
+évalué selon la grille avant d'agir~; en cas de doute, on escalade. Une
+escalade inutile coûte un appel~; une escalade manquée a coûté, en mars,
+une nuit et des preuves.
+\end{boxalert}
+
+% ============================================================================
+\section{Classer et Escalader}
+\label{sec:c16-classer}
+% ============================================================================
+
+\begin{tableaucours}{L{2.0cm}L{5.4cm}L{4.8cm}}{%
+    \tableauHeader{Gravité} &
+    \tableauHeader{Critère} &
+    \tableauHeader{Escalade}
+}
+4 · Critique & Activité arrêtée sur plusieurs sites~; données sensibles
+exfiltrées~; atteinte publique & DG et cellule de crise, sous 1~heure \\
+3 · Haute & Compte à privilèges compromis~; un site arrêté & RSSI et
+direction, sous 4~heures \\
+2 · Moyenne & Poste ou serveur isolé touché, sans propagation & Équipe de
+réponse, dans la journée \\
+1 · Basse & Tentative bloquée, signalement & Traitement courant \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~16.3. Grille de gravité et d'escalade de LiZbiZ (convention du cours)}\end{center}
+
+\begin{boxscenario}{Opération GAROUA. Ce que la grille aurait changé}
+\textbf{Constatation.} À 22~h~05 le 5~mars, l'application de facturation
+ne répond plus à Douala et à Garoua, et un message de rançon s'affiche sur
+un serveur.
+
+\medskip
+\textbf{Analyse} (confiance élevée). Selon la grille, deux sites arrêtés
+et un message de rançon font un incident de gravité~4~: escalade au DG
+sous une heure, soit avant 23~h~05. La cellule de crise aurait été réunie
+dans la nuit, au lieu de 10~h~30 le lendemain.
+\end{boxscenario}
+
+% ============================================================================
+\section{L'Équipe de Réponse}
+\label{sec:c16-equipe}
+% ============================================================================
+
+\begin{tableaucours}{L{3.8cm}L{8.4cm}}{%
+    \tableauHeader{Rôle} &
+    \tableauHeader{Responsabilité}
+}
+Responsable de l'incident & Coordonne, décide dans son périmètre, escalade \\
+Analystes & Qualifient, confinent, éradiquent, collectent les preuves \\
+Prestataire & Agit sur les systèmes qu'il administre, selon le contrat \\
+Juridique & Preuves, plainte, obligations envers les tiers \\
+Communication & Messages internes et externes, validés \\
+Direction & Arbitre au-delà du périmètre, décide en cas de crise \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~16.4. Les rôles de la réponse à incident}\end{center}
+
+\begin{boxprocedure}
+\textbf{Ouvrir un incident chez LiZbiZ}
+\begin{enumerate}
+    \item Enregistrer l'incident (numéro, heure, source, description).
+    \item Classer selon la grille~; en cas de doute, prendre le niveau
+          supérieur.
+    \item Escalader selon le délai de la grille, par téléphone, puis par
+          écrit.
+    \item Désigner le responsable de l'incident et ouvrir une main
+          courante.
+    \item Préserver avant d'agir~: ne pas éteindre, isoler, collecter.
+    \item Reclasser à chaque point de situation.
+\end{enumerate}
+\end{boxprocedure}
+
+% ============================================================================
+\section{Mesurer et Apprendre}
+\label{sec:c16-mesurer}
+% ============================================================================
+
+\begin{tableaucours}{L{4.8cm}L{7.4cm}}{%
+    \tableauHeader{Indicateur} &
+    \tableauHeader{Définition}
+}
+Délai de détection & Du début de l'incident à sa détection \\
+Délai d'escalade & De la détection à l'escalade au niveau de la grille \\
+Délai de confinement & De la détection au confinement \\
+Délai de rétablissement & De la détection au retour à la normale \\
+Part des incidents au registre & Incidents dont le scénario figurait au
+registre des risques (Chapitre~\ref{chap:auditer-risques}) \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~16.5. Indicateurs de la gestion des incidents}\end{center}
+
+\begin{boxobjet}{R-02 · Leçons de l'incident de mars}
+\textbf{Scénario~:} usurpation de l'accès distant du prestataire.
+\textbf{Délais constatés~:} détection, 80~h~18~min~; escalade au DG,
+15~minutes après la détection~; confinement (coupure des liaisons),
+3~h~40~; rétablissement de la facturation, 11~jours. \textbf{Leçons~:}
+grille d'escalade, astreinte formée, guide de réponse au rançongiciel.
+\textbf{Propriétaire~:} M.~KOUNOU. \textbf{Indicateur~:} délai d'escalade
+des incidents de gravité~3 et~4.
+\end{boxobjet}
+
+\begin{boxmetier}{Responsable de la continuité}
+\textbf{Relier incident et continuité.} Le responsable de la continuité
+reçoit toute escalade de gravité~3 ou~4~: c'est lui qui juge s'il faut
+basculer en mode dégradé ou activer le plan de continuité.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Événement, incident, crise}~: trois niveaux, trois
+          gestionnaires.
+    \item \textbf{L'ISO/IEC~27035}~: préparer, détecter, évaluer, répondre,
+          apprendre.
+    \item \textbf{Une grille} classe et fixe le délai d'escalade~; dans le
+          doute, on escalade.
+    \item \textbf{L'équipe de réponse} associe technique, prestataire,
+          juridique, communication et direction.
+    \item \textbf{On mesure} détection, escalade, confinement,
+          rétablissement, et l'on nourrit le registre.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: distinguer événement,
+incident et crise~; nommer les cinq phases~; classer un incident et
+l'escalader~; décrire les rôles de la réponse~; définir les délais qui la
+mesurent.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.1. Quel niveau~? \niveaubase}]
+Classez en événement, incident, incident majeur ou crise~: une alerte
+d'hameçonnage bloquée~; l'agence de Garoua sans réseau pendant six
+heures~; la publication de données clients.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.2. Les phases \niveaubase}]
+Dans quelle phase de l'ISO/IEC~27035 se rangent~: l'exercice annuel~; la
+plainte~; la mise à jour du registre après l'incident~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.3. Le délai \niveaubase}]
+D'après la grille, avant quelle heure le DG devait-il être prévenu le
+5~mars~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.4. L'astreinte \niveaumoyen}]
+Rédigez la fiche réflexe de l'astreinte de LiZbiZ pour un serveur qui ne
+répond plus la nuit.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.5. Reclasser \niveaumoyen}]
+Un incident ouvert en gravité~2 (un serveur touché) révèle, deux heures
+plus tard, l'usage d'un compte d'administrateur du domaine. Que faites-vous~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.6. Le prestataire \niveaumoyen}]
+Quelles obligations le contrat de SAHEL INFOGÉRANCE doit-il prévoir pour la
+gestion des incidents~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.7. Les délais \niveaumoyen}]
+Calculez, pour l'incident de mars, le délai entre le chiffrement
+(5~mars, 21~h~40) et la détection (6~mars, 7~h~30). Pourquoi est-il plus
+parlant que les 80~heures pour la direction~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.8. Le registre \niveaumoyen}]
+Pourquoi mesurer la part des incidents dont le scénario figurait au
+registre~? Que signifie un taux faible~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.9. Une procédure \niveauexpert}]
+Rédigez la procédure de gestion des incidents de LiZbiZ selon les cinq
+phases, en deux pages.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~16.10. Une grille bancaire \niveauexpert}]
+Adaptez la grille du Tableau~16.3 à la BANQUE SANAGA, en tenant compte des
+clients, des autorités de supervision et des systèmes de paiement.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO/IEC~27035-1~\cite{iso27035_2023}.
+    \item NIST SP~800-61 Rev.~3~\cite{nist80061r3}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Pour décider d'un mode dégradé, il faut savoir ce que
+chaque activité peut supporter. Le Chapitre~\ref{chap:bia} présente
+l'analyse d'impact sur l'activité.
+\end{boxinfo}

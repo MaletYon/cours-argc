@@ -1,0 +1,339 @@
+% ============================================================================
+% Fichier  : partie1/P01_C04_cadres.tex
+% Titre    : Les Cadres de Management des Risques
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : ISO 31000:2018 ; COSO ERM (2017) ; IEC 31010:2019 ;
+% ISO/IEC 27005:2022 ; NIST SP 800-30 Rev. 1 (2012).
+% ============================================================================
+
+\chapter{Les Cadres de Management des Risques}
+\label{chap:cadres}
+\chaptermark{Les cadres de management des risques}
+
+\epigraph{%
+    « Une méthode commune ne garantit pas de bons jugements,\\
+    mais elle permet de les comparer. »%
+}{Principe du cours}
+
+\niveauChapitre{Intermédiaire}{Chapitres~\ref{chap:risque}
+et~\ref{chap:gouvernance}.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Énoncer les principes, le cadre organisationnel et le processus de
+          l'ISO~31000.
+    \item Situer le COSO ERM, ses composantes et son usage.
+    \item Choisir une technique d'appréciation dans l'IEC~31010.
+    \item Articuler un cadre général et un cadre propre à la sécurité de
+          l'information (ISO/IEC~27005, NIST SP~800-30).
+    \item Proposer un cadre adapté à une entreprise de taille moyenne.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : quelle méthode adopter pour que les risques de LiZbiZ soient comparables~?}
+% ============================================================================
+
+En avril, chaque direction de LiZbiZ présente « ses » risques au comité~:
+la DAF les cote de 1 à 5, l'informatique en rouge, orange et vert, les
+opérations en jours d'arrêt. Aucun classement global n'est possible.
+Mme~MOUAFO doit proposer un cadre commun, sans imposer une usine à gaz à
+une entreprise de 150~personnes.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item L'ISO 31000 (section~\ref{sec:c04-iso31000}).
+    \item Le processus de management du risque (section~\ref{sec:c04-processus}).
+    \item Le COSO ERM (section~\ref{sec:c04-coso}).
+    \item Les techniques de l'IEC 31010 (section~\ref{sec:c04-31010}).
+    \item Les cadres propres à la sécurité de l'information (section~\ref{sec:c04-securite}).
+    \item Un cadre pour LiZbiZ (section~\ref{sec:c04-lizbiz}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{L'ISO 31000}
+\label{sec:c04-iso31000}
+% ============================================================================
+
+L'\norme{ISO~31000:2018} donne des lignes directrices applicables à toute
+organisation et à tout type de risque~\cite{iso31000_2018}. Elle ne se
+certifie pas. Elle s'organise en trois blocs~: des \emph{principes}, un
+\emph{cadre organisationnel} et un \emph{processus}.
+
+\begin{tableaucours}{L{4.2cm}L{8.0cm}}{%
+    \tableauHeader{Principe} &
+    \tableauHeader{Ce qu'il signifie}
+}
+Intégré & Le risque se gère dans les décisions et les activités, pas à
+côté \\
+Structuré et global & Une approche cohérente donne des résultats
+comparables \\
+Adapté & Le dispositif est proportionné au contexte \\
+Inclusif & Les parties prenantes sont associées \\
+Dynamique & Le dispositif suit les changements \\
+Meilleure information disponible & On utilise les données historiques,
+actuelles et prévisionnelles, avec leurs limites \\
+Facteurs humains et culturels & Le comportement et la culture influencent
+chaque étape \\
+Amélioration continue & On apprend et on progresse \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~4.1. Les huit principes de l'ISO 31000:2018}\end{center}
+
+Le \emph{cadre organisationnel} décrit l'engagement de la direction,
+l'intégration, la conception, la mise en œuvre, l'évaluation et
+l'amélioration du dispositif~: c'est la gouvernance du
+Chapitre~\ref{chap:gouvernance}.
+
+% ============================================================================
+\section{Le Processus de Management du Risque}
+\label{sec:c04-processus}
+% ============================================================================
+
+\begin{center}
+\begin{tikzpicture}[
+    b/.style = {draw=CouleurBordDef, fill=CouleurDef, rounded corners=3pt,
+        minimum width=5.0cm, minimum height=0.75cm, align=center,
+        font=\small\color{CouleurPrimaire}},
+    s/.style = {draw=CouleurSecondaire, fill=white, rounded corners=3pt,
+        minimum height=4.9cm, minimum width=1.3cm, align=center,
+        font=\footnotesize\color{CouleurPrimaire}},
+    arrow/.style = {-{Stealth[length=4pt]}, thick, color=CouleurSecondaire}]
+\node[b] (c) at (0, 2.4) {Domaine d'application, contexte, critères};
+\node[b, minimum height=2.0cm, fill=CouleurPrimaire!10] (a) at (0, 0.6)
+    {\textbf{Appréciation du risque}\\identification\\analyse\\évaluation};
+\node[b] (t) at (0, -1.2) {Traitement du risque};
+\node[b] (e) at (0, -2.3) {Enregistrement et rapport};
+\draw[arrow] (c) -- (a); \draw[arrow] (a) -- (t); \draw[arrow] (t) -- (e);
+\node[s] (cc) at (-3.6, 0.05) {\rotatebox{90}{Communication et consultation}};
+\node[s] (sr) at (3.6, 0.05) {\rotatebox{90}{Suivi et revue}};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.4em}
+\begin{center}{\small\itshape Figure~4.1. Le processus de l'ISO 31000:2018 (simplifié)}\end{center}
+
+\begin{boxdef}
+\termecle{Appréciation du risque}~: processus global d'identification,
+d'analyse et d'évaluation du risque. L'\emph{analyse} détermine la nature
+et le niveau du risque~; l'\emph{évaluation} compare le résultat aux
+critères pour décider s'il faut le traiter.
+\end{boxdef}
+
+La distinction entre \emph{analyse} et \emph{évaluation} est essentielle~:
+la première est un travail d'expert (combien~?), la seconde une décision
+de direction (est-ce acceptable~?). Les \termecle{critères de risque},
+fixés au départ, rendent la seconde reproductible.
+
+% ============================================================================
+\section{Le COSO ERM}
+\label{sec:c04-coso}
+% ============================================================================
+
+Le référentiel du COSO, \emph{Enterprise Risk Management, Integrating with
+Strategy and Performance} (2017), relie la gestion des risques à la
+stratégie et à la performance~\cite{coso2017erm}. Il compte cinq composantes
+et vingt principes.
+
+\begin{tableaucours}{L{5.0cm}L{7.2cm}}{%
+    \tableauHeader{Composante} &
+    \tableauHeader{Contenu}
+}
+Gouvernance et culture & Surveillance par le conseil, structures,
+culture, valeurs, compétences \\
+Stratégie et objectifs & Contexte, appétence, choix de la stratégie,
+objectifs \\
+Performance & Identification, gravité, priorisation, réponses, vue
+d'ensemble des risques \\
+Revue et révision & Changements importants, revue de la performance,
+amélioration \\
+Information, communication et reporting & Systèmes d'information,
+communication, rapports \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~4.2. Les cinq composantes du COSO ERM (2017)}\end{center}
+
+\textbf{Analyse.} L'ISO~31000 est plus courte et plus générale~; le COSO
+ERM est plus détaillé et parle davantage aux conseils et aux auditeurs
+financiers. Les deux sont compatibles~: on peut appliquer le processus de
+l'ISO~31000 en rendant compte selon les composantes du COSO.
+
+% ============================================================================
+\section{Les Techniques de l'IEC 31010}
+\label{sec:c04-31010}
+% ============================================================================
+
+L'\norme{IEC~31010:2019} décrit plusieurs dizaines de techniques
+d'appréciation, avec leurs usages et leurs limites~\cite{iec31010}.
+
+\begin{tableaucours}{L{3.6cm}L{4.0cm}L{4.6cm}}{%
+    \tableauHeader{Technique} &
+    \tableauHeader{Étape} &
+    \tableauHeader{Usage chez LiZbiZ}
+}
+Entretiens, ateliers & Identification & Recueillir les scénarios auprès
+des directeurs \\
+Analyse d'impact sur l'activité & Analyse & Fixer RTO et RPO
+(Chapitre~\ref{chap:bia}) \\
+Arbre de défaillances & Analyse & Décomposer l'arrêt de la facturation \\
+Nœud papillon & Analyse, traitement & Relier causes, événement,
+conséquences et barrières \\
+Matrice de cotation & Évaluation & Classer les risques
+(Chapitre~\ref{chap:matrices}) \\
+Simulation de Monte-Carlo & Analyse & Distribution des pertes
+(Chapitre~\ref{chap:simulation}) \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~4.3. Quelques techniques de l'IEC 31010}\end{center}
+
+% ============================================================================
+\section{Les Cadres Propres à la Sécurité de l'Information}
+\label{sec:c04-securite}
+% ============================================================================
+
+Pour les risques liés à l'information, l'\norme{ISO/IEC~27005:2022} décline
+le processus de l'ISO~31000 et le relie au système de management de
+l'\norme{ISO/IEC~27001}~\cite{iso27005_2022,iso27001_2022}. Le NIST
+SP~800-30 décrit, pour les systèmes fédéraux américains, une appréciation
+fondée sur les sources de menace, les vulnérabilités, la vraisemblance et
+l'impact~\cite{nist80030}. EBIOS Risk Manager, de l'ANSSI, propose une
+démarche par scénarios en cinq ateliers (Chapitre~\ref{chap:ebios}).
+
+\begin{boxalert}
+\textbf{Violation typique.} Tenir deux registres séparés, l'un « risques
+de l'entreprise », l'autre « risques informatiques ».
+
+\smallskip
+\textbf{Règle~:} un seul registre, des critères communs. Les risques de
+sécurité de l'information sont des risques de l'entreprise~: ils se
+comparent aux autres sur les mêmes échelles d'impact.
+\end{boxalert}
+
+% ============================================================================
+\section{Un Cadre pour LiZbiZ}
+\label{sec:c04-lizbiz}
+% ============================================================================
+
+\begin{boxscenario}{Opération LIZBIZ. Le cadre adopté en mai}
+\textbf{Décision du comité des risques} (mai 2026)~:
+\begin{itemize}
+    \item processus de l'ISO~31000, critères communs à toutes les
+          directions (échelles du Chapitre~\ref{chap:matrices})~;
+    \item EBIOS Risk Manager pour les risques numériques majeurs, une fois
+          par an~;
+    \item estimation quantitative (FAIR) pour les cinq risques les plus
+          élevés~;
+    \item un registre unique tenu par Mme~MOUAFO, revu chaque trimestre.
+\end{itemize}
+
+\medskip
+\textbf{Analyse} (confiance moyenne). Le cadre est proportionné~: la
+méthode lourde (EBIOS, FAIR) est réservée aux risques qui la justifient.
+\end{boxscenario}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Écrire la méthode sur deux pages.} Une méthode que les directeurs
+ne lisent pas ne sera pas appliquée. Mme~MOUAFO rédige un guide de deux
+pages~: critères, échelles, rôles, calendrier, modèle de fiche de risque.
+\end{boxmetier}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{L'ISO~31000}~: huit principes, un cadre organisationnel,
+          un processus.
+    \item \textbf{Analyse et évaluation} se distinguent~: l'une mesure,
+          l'autre décide, selon des critères fixés à l'avance.
+    \item \textbf{Le COSO ERM} relie le risque à la stratégie~; il est
+          compatible avec l'ISO~31000.
+    \item \textbf{L'IEC~31010} donne les techniques~; \textbf{l'ISO/IEC
+          27005} décline le processus pour la sécurité de l'information.
+    \item \textbf{Un registre unique}, des critères communs, une méthode
+          proportionnée.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: citer les principes et le
+processus de l'ISO~31000~; distinguer analyse et évaluation~; nommer les
+composantes du COSO ERM~; choisir une technique de l'IEC~31010~; situer
+l'ISO/IEC~27005 et le NIST SP~800-30.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.1. Le processus \niveaubase}]
+Rangez dans les étapes du processus de l'ISO~31000~: fixer les échelles
+d'impact~; lister les scénarios~; décider d'assurer un risque~; présenter le
+registre au conseil.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.2. Analyser ou évaluer \niveaubase}]
+« Le risque S1 a un score de 12 » et « le risque S1 est intolérable »~:
+laquelle de ces phrases relève de l'analyse, laquelle de l'évaluation~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.3. Principes \niveaubase}]
+Quel principe de l'ISO~31000 la pratique de LiZbiZ en avril (trois
+cotations différentes) viole-t-elle~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.4. COSO \niveaumoyen}]
+Dans quelle composante du COSO ERM se rangent~: la définition de
+l'appétence~; la revue après l'attaque~; le tableau de bord du conseil~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.5. Choisir une technique \niveaumoyen}]
+Choisissez dans l'IEC~31010 une technique pour~: identifier les risques
+d'un nouveau contrat~; comprendre pourquoi la facturation s'est arrêtée~;
+estimer la perte d'une année sévère.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.6. Nœud papillon \niveaumoyen}]
+Dessinez le nœud papillon de l'événement « chiffrement des serveurs »~:
+trois causes, trois conséquences, deux barrières de chaque côté.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.7. Un registre \niveaumoyen}]
+Pourquoi LiZbiZ ne doit-elle pas tenir un registre séparé des risques
+informatiques~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.8. Proportionner \niveaumoyen}]
+Pourquoi le comité réserve-t-il FAIR aux cinq risques les plus élevés~?
+Que perdrait-on à l'appliquer à tous~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.9. Le guide \niveauexpert}]
+Rédigez le guide de deux pages de Mme~MOUAFO~: critères, échelles, rôles,
+calendrier, modèle de fiche.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~4.10. Comparer \niveauexpert}]
+Comparez, en un tableau, l'ISO~31000, le COSO ERM, l'ISO/IEC~27005 et le
+NIST SP~800-30~: portée, public, certification, apports.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item ISO~31000~\cite{iso31000_2018}~; IEC~31010~\cite{iec31010}.
+    \item COSO ERM~\cite{coso2017erm}~; NIST SP~800-30~\cite{nist80030}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Le cadre doit aussi répondre à la loi. Le
+Chapitre~\ref{chap:droit} présente les obligations juridiques des
+exploitants et des dirigeants.
+\end{boxinfo}

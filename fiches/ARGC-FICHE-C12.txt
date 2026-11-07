@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C12
+Chapitre 12 : L'audit selon l'ISO 19011
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quelle norme donne les lignes directrices pour l'audit des systèmes de management ?
+      a) ISO 19011
+      b) ISO 31000
+      c) ISO 22301
+      d) ISO/IEC 27005
+
+ 2. Un audit interne est un audit de :
+      a) Deuxième partie
+      b) Première partie
+      c) Troisième partie
+      d) Quatrième partie
+
+ 3. L'audit de SAHEL INFOGÉRANCE par LiZbiZ est un audit de :
+      a) Première partie
+      b) Troisième partie
+      c) Deuxième partie
+      d) Certification
+
+ 4. Un audit de certification ISO/IEC 27001 est un audit de :
+      a) Première partie
+      b) Deuxième partie
+      c) Aucune partie
+      d) Troisième partie
+
+ 5. À quoi compare-t-on les preuves d'audit ?
+      a) Aux critères d'audit
+      b) Aux opinions
+      c) Aux rumeurs
+      d) Au budget
+
+ 6. Combien de principes de l'audit l'ISO 19011:2018 énonce-t-elle ?
+      a) Cinq
+      b) Sept
+      c) Six
+      d) Huit
+
+ 7. Rapporter fidèlement les désaccords non résolus relève de :
+      a) La confidentialité
+      b) L'intégrité
+      c) La présentation impartiale
+      d) L'indépendance
+
+ 8. Ne pas auditer son propre travail relève de :
+      a) La conscience professionnelle
+      b) La confidentialité
+      c) L'approche fondée sur le risque
+      d) L'indépendance
+
+ 9. Concentrer l'audit sur ce qui compte relève de :
+      a) L'approche fondée sur le risque
+      b) L'intégrité
+      c) La confidentialité
+      d) La présentation impartiale
+
+10. Qui peut auditer le registre tenu par Mme MOUAFO ?
+      a) Mme MOUAFO
+      b) Mme NKENG
+      c) M. KOUNOU
+      d) Le prestataire
+
+11. Qu'est-ce qu'un programme d'audit ?
+      a) Un logiciel
+      b) Un rapport
+      c) Un ensemble d'audits planifiés pour une durée donnée
+      d) Une norme
+
+12. Sur quoi s'appuie un programme fondé sur les risques ?
+      a) L'ordre alphabétique
+      b) Les souhaits des audités
+      c) Le hasard
+      d) Le registre des risques
+
+13. Quel est le premier audit du programme 2026-2027 de LiZbiZ ?
+      a) Accès distants et prestataire
+      b) Données personnelles
+      c) Continuité des agences
+      d) Préparation à la certification
+
+14. Quand le comité d'audit valide-t-il le programme ?
+      a) Le 6 mars
+      b) Le 30 septembre
+      c) Le 2 avril
+      d) Le 16 mars
+
+15. Qui établit et surveille le programme ?
+      a) L'expert technique
+      b) L'observateur
+      c) Le responsable du programme
+      d) L'audité
+
+16. Qui signe les constats auxquels contribue un expert technique ?
+      a) L'expert
+      b) L'audité
+      c) Le guide
+      d) Un auditeur
+
+17. Un guide ou un observateur :
+      a) Accompagne sans participer à l'évaluation
+      b) Évalue les preuves
+      c) Rédige le rapport
+      d) Signe les constats
+
+18. Quelle norme complète l'ISO 19011 pour l'audit d'un SMSI ?
+      a) ISO/IEC 27035
+      b) ISO/IEC 27007
+      c) ISO 22320
+      d) ISO/TS 22317
+
+19. Quelles clauses de l'ISO/IEC 27001 l'audit examine-t-il ?
+      a) 1 à 3
+      b) 11 à 14
+      c) 4 à 10
+      d) Annexe B seulement
+
+20. Quelle preuve démontre la revue de direction (clause 9.3) ?
+      a) Le contrat du prestataire
+      b) Le registre des incidents
+      c) La politique de mots de passe
+      d) Le compte rendu de la revue
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. Sans critère, il n'y a pas d'écart, seulement des opinions.
+      Vrai / Faux
+
+22. L'approche fondée sur la preuve repose sur un échantillon d'informations disponibles.
+      Vrai / Faux
+
+23. Un auditeur ayant conseillé la conception peut l'auditer sans le déclarer.
+      Vrai / Faux
+
+24. Le programme de LiZbiZ audite aussi le dispositif de gestion des risques.
+      Vrai / Faux
+
+25. Un registre faux orienterait faussement tout le programme.
+      Vrai / Faux
+
+26. L'expert technique travaille sous la responsabilité d'un auditeur.
+      Vrai / Faux
+
+27. Le comportement professionnel fait partie des compétences de l'auditeur.
+      Vrai / Faux
+
+28. L'ISO/IEC 27007 remplace l'ISO 19011.
+      Vrai / Faux
+
+29. L'audit de l'Agence au titre de l'article 32 est un audit de troisième partie.
+      Vrai / Faux
+
+30. La préparation à la certification est prévue en septembre 2027.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La norme d'audit des systèmes de management est l'ISO ______.
+
+32. La norme d'audit des SMSI est l'ISO/IEC ______.
+
+33. Le référentiel auquel on compare les preuves est constitué des ______ d'audit.
+
+34. Un ensemble d'audits planifiés est un ______ d'audit.
+
+35. L'ISO 19011 énonce ______ principes.
+
+36. La personne qui apporte une compétence particulière sans être auditeur est l'expert ______.
+
+37. Un audit réalisé par l'organisation elle-même est un audit de ______ partie.
+
+38. Ne pas auditer son propre travail relève du principe d'______.
+
+39. La contrôleuse interne qui conduit l'audit s'appelle Mme ______.
+
+40. La clause de l'ISO/IEC 27001 sur l'audit interne est la clause 9.______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

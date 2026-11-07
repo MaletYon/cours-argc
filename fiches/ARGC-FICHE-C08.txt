@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C08
+Chapitre 8 : ISO/IEC 27005 et EBIOS Risk Manager
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. L'ISO/IEC 27005 donne des recommandations pour gérer les risques :
+      a) Liés à la sécurité de l'information
+      b) Financiers
+      c) Environnementaux
+      d) Sanitaires
+
+ 2. Quelles sont les deux approches de l'ISO/IEC 27005:2022 ?
+      a) Par les coûts et par les dates
+      b) Par les événements et par les actifs
+      c) Par les clients et par les fournisseurs
+      d) Qualitative et juridique
+
+ 3. Quel document justifie chaque mesure retenue ou exclue dans un SMSI ?
+      a) Le registre des incidents
+      b) La main courante
+      c) La déclaration d'applicabilité
+      d) Le contrat
+
+ 4. Quel organisme publie EBIOS Risk Manager ?
+      a) L'ISO
+      b) Le NIST
+      c) L'IIA
+      d) L'ANSSI
+
+ 5. Combien d'ateliers compte EBIOS Risk Manager ?
+      a) Cinq
+      b) Trois
+      c) Quatre
+      d) Six
+
+ 6. En quelle année EBIOS Risk Manager a-t-elle été publiée ?
+      a) 2010
+      b) 2018
+      c) 2014
+      d) 2022
+
+ 7. Quels ateliers forment le cycle stratégique ?
+      a) 4 et 5
+      b) 1 et 5
+      c) 1 à 3
+      d) 2 à 4
+
+ 8. Que produit l'atelier 1 ?
+      a) Modes opératoires
+      b) Plan d'amélioration
+      c) Cartographie de l'écosystème
+      d) Valeurs métier, biens supports, événements redoutés, socle
+
+ 9. Quelle gravité reçoit l'événement « facturation arrêtée plus de trois jours » ?
+      a) G4
+      b) G1
+      c) G2
+      d) G3
+
+10. Quel couple source de risque et objectif visé n'est pas retenu ?
+      a) Groupe criminel, lucre
+      b) Concurrent, espionnage des tarifs
+      c) Complice interne, fraude
+      d) Ancien salarié, revente de données
+
+11. Quelle formule donne la menace d'une partie prenante ?
+      a) Dépendance + Confiance
+      b) Maturité × Confiance
+      c) (Dépendance × Pénétration) / (Maturité × Confiance)
+      d) Pénétration ÷ Dépendance
+
+12. Quelle menace a SAHEL INFOGÉRANCE ?
+      a) 0,67
+      b) 2,00
+      c) 16
+      d) 4,00
+
+13. Quelle menace ont les transporteurs sous-traitants ?
+      a) 2,00
+      b) 0,33
+      c) 1,00
+      d) 4,00
+
+14. Au-dessus de quel seuil une partie prenante est-elle en zone de danger chez LiZbiZ ?
+      a) 0,9
+      b) 2,5
+      c) 2,0
+      d) 4,0
+
+15. Dans quelle zone est la banque (menace 0,13) ?
+      a) Danger
+      b) Contrôle
+      c) Veille
+      d) Hors cartographie
+
+16. Après mesures, le prestataire a D 4, P 2, M 3, C 3. Sa menace ?
+      a) 0,44
+      b) 1,33
+      c) 2,67
+      d) 0,89
+
+17. Quelle mesure arrête l'étape « Entrer » du scénario du rançongiciel ?
+      a) Le second facteur
+      b) Les sauvegardes
+      c) La sensibilisation seule
+      d) Le chiffrement
+
+18. Quelle mesure limite l'étape « Agir » (copier, détruire, chiffrer) ?
+      a) La sensibilisation
+      b) Les sauvegardes hors ligne et la détection
+      c) Le second facteur seul
+      d) Le contrat
+
+19. Quelle vraisemblance a le scénario avant mesures ?
+      a) V1
+      b) V2
+      c) V4
+      d) V3
+
+20. Le risque résiduel se réévalue avec :
+      a) Toutes les mesures décidées
+      b) Aucune mesure
+      c) Les mesures du prestataire seulement
+      d) Les seules mesures en place et vérifiées
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. L'ISO/IEC 27005 reprend le processus de l'ISO 31000.
+      Vrai / Faux
+
+22. EBIOS RM est incompatible avec l'ISO 31000.
+      Vrai / Faux
+
+23. Le cycle opérationnel se reprend plus souvent que le cycle stratégique.
+      Vrai / Faux
+
+24. La maturité cyber et la confiance réduisent la menace d'une partie prenante.
+      Vrai / Faux
+
+25. Les seuils des zones sont fixés une fois pour toutes par l'ANSSI.
+      Vrai / Faux
+
+26. En juillet, SAHEL INFOGÉRANCE est seule en zone de danger.
+      Vrai / Faux
+
+27. Plusieurs barrières indépendantes réduisent la vraisemblance.
+      Vrai / Faux
+
+28. Les risques résiduels sont acceptés formellement par la direction.
+      Vrai / Faux
+
+29. Le scénario opérationnel de juillet décrit presque l'attaque de mars.
+      Vrai / Faux
+
+30. Les couples non retenus disparaissent sans trace.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. L'Agence nationale de la sécurité des systèmes d'information a pour sigle ______.
+
+32. Dans la formule de la menace, la confiance figure au ______.
+
+33. La norme de gestion des risques de sécurité de l'information est l'ISO/IEC ______.
+
+34. Le plan d'amélioration continue de la sécurité a pour sigle ______.
+
+35. La zone de menace la plus forte est la zone de ______.
+
+36. Ce que l'on protège au sens d'EBIOS RM sont les valeurs ______.
+
+37. EBIOS Risk Manager compte ______ ateliers.
+
+38. Le critère qui mesure l'accès d'une partie prenante au système est la ______.
+
+39. L'atelier 4 décrit les scénarios ______.
+
+40. L'atelier 2 associe une source de risque et un objectif ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................

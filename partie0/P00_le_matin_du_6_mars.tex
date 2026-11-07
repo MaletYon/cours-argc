@@ -1,0 +1,360 @@
+% ============================================================================
+% Fichier  : partie0/P00_le_matin_du_6_mars.tex
+% Titre    : Prologue : le Matin du 6 Mars
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Opération GAROUA vue par la direction. Mêmes faits techniques que le cours
+% SEC3266 (connexion du 2 mars à 23 h 12, chiffrement du 5 mars à 21 h 40,
+% découverte le 6 mars à 7 h 30). Cas fictif.
+% ============================================================================
+
+\chapter{Prologue : le Matin du 6 Mars}
+\label{chap:prologue}
+\chaptermark{Prologue}
+
+\epigraph{%
+    « Le plan n'est rien~; la planification est tout. »%
+}{Formule attribuée à Dwight D.~Eisenhower}
+
+\niveauChapitre{Fondamental}{Aucun~; le cours SEC3266 (Sécurité
+informatique) éclaire les causes techniques.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Lire le déroulement d'une crise réelle du point de vue de la
+          direction.
+    \item Séparer ce qui a été constaté de ce qui a été supposé, et des
+          opinions exprimées.
+    \item Repérer, dans une crise, ce qui relevait du risque, de l'audit, de
+          la continuité et de la décision.
+    \item Formuler les questions auxquelles le cours répond.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : qui décide, quand rien n'a été prévu~?}
+% ============================================================================
+
+Le vendredi 6~mars 2026, à 7~h~30, le responsable informatique de LiZbiZ
+découvre que les serveurs de Douala et de Garoua sont chiffrés. Trois
+heures plus tard, une cellule de crise improvisée se réunit dans le bureau
+du directeur général. Personne n'a de liste des clients à prévenir, ni de
+numéro de l'assureur, ni d'idée du temps qu'il faudra pour facturer à
+nouveau. Ce prologue raconte cette journée et les suivantes, sans les
+juger~; les chapitres qui suivent donnent les outils pour les juger.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item LiZbiZ avant la crise (section~\ref{sec:p00-avant}).
+    \item La journée du 6 mars (section~\ref{sec:p00-journee}).
+    \item Les jours suivants (section~\ref{sec:p00-suite}).
+    \item Constatations, suppositions, opinions (section~\ref{sec:p00-lire}).
+    \item Les questions du cours (section~\ref{sec:p00-questions}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{LiZbiZ avant la Crise}
+\label{sec:p00-avant}
+% ============================================================================
+
+LiZbiZ\footnote{LiZbiZ, ses dirigeants, ses clients et ses prestataires
+sont fictifs, comme les dates, les montants et les adresses du cours~; les
+méthodes et les normes citées sont réelles.} est une société anonyme de
+logistique dont le siège est à Douala. Elle emploie 150~salariés et
+réalise un chiffre d'affaires d'environ 24~milliards de FCFA par an, soit
+quelque 80~millions de FCFA par jour ouvré. Elle exploite quatre centres
+de données, à Douala, Yaoundé, Garoua et Bafoussam, et a confié en
+septembre 2025 l'exploitation de Garoua et de Douala au prestataire SAHEL
+INFOGÉRANCE.
+
+\begin{tableaucours}{L{4.0cm}L{8.2cm}}{%
+    \tableauHeader{Acteur} &
+    \tableauHeader{Rôle pendant la crise}
+}
+M.~ETEME & Directeur général~; préside la cellule de crise \\
+Mme~MBALLA & Directrice administrative et financière~; trésorerie,
+assurance, clients \\
+M.~KOUNOU & Responsable informatique~; découvre l'attaque, pilote la
+reprise \\
+Mme~NKENG & Contrôleuse interne~; tient la main courante à partir du
+7~mars \\
+M.~NGUELE & Directeur des opérations~; expéditions, agences, mode dégradé \\
+Mme~ABOMO & Chargée de communication~; clients, presse, personnel \\
+M.~NANGA & Chef d'agence de Garoua \\
+Me~TSALA & Avocat de la société~; plainte, rançon, données personnelles \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~0.1. Les acteurs de l'Opération GAROUA}\end{center}
+
+\textbf{Constatation.} En février 2026, LiZbiZ n'a ni registre des
+risques, ni plan de continuité, ni plan de gestion de crise. Le dernier
+audit de sécurité date de 2023 et ne couvrait pas le prestataire. Le
+contrat avec SAHEL INFOGÉRANCE ne mentionne ni délai de notification d'un
+incident, ni obligation de second facteur.
+
+% ============================================================================
+\section{La Journée du 6 Mars}
+\label{sec:p00-journee}
+% ============================================================================
+
+La chronologie ci-dessous a été reconstituée par Mme~NKENG à partir des
+messages, des appels et des souvenirs des participants~; aucune main
+courante n'a été tenue avant le 7~mars.
+
+\begin{tableaucours}{L{2.2cm}L{10.0cm}}{%
+    \tableauHeader{Heure} &
+    \tableauHeader{Événement}
+}
+07~h~30 & M.~KOUNOU constate que les serveurs de Douala et de Garoua sont
+chiffrés~; un message de rançon réclame 85\,000~dollars en cryptoactifs. \\
+07~h~45 & Il appelle M.~ETEME, qui est en route pour Yaoundé. \\
+08~h~40 & M.~NGUELE apprend par un client que le portail de suivi ne
+répond plus. \\
+09~h~05 & Les liaisons entre les sites sont toujours ouvertes~; personne
+n'a autorité pour les couper sans le directeur général. \\
+10~h~30 & Réunion dans le bureau du DG, par téléphone pour M.~ETEME~:
+huit personnes, aucun ordre du jour, aucun compte rendu. \\
+11~h~10 & Décision de couper les liaisons entre les sites. Yaoundé et
+Bafoussam sont épargnés. \\
+13~h~00 & Mme~MBALLA cherche le contrat d'assurance~: la police ne couvre
+pas les cyberattaques. \\
+15~h~30 & Les agents des agences reçoivent la consigne orale de noter les
+expéditions sur papier. \\
+18~h~30 & Une photographie du message de rançon, prise par un salarié,
+circule sur les réseaux sociaux. \\
+20~h~00 & Un journaliste appelle le standard~; personne n'est désigné pour
+répondre. \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~0.2. La journée du 6 mars, reconstituée}\end{center}
+
+\begin{boxscenario}{Opération GAROUA. Trois heures et quarante minutes}
+\textbf{Constatation.} Entre la découverte (7~h~30) et la coupure des
+liaisons (11~h~10), 3~h~40 se sont écoulées. Pendant ce temps, aucune
+action de confinement n'a été prise, faute de personne autorisée à la
+décider.
+
+\medskip
+\textbf{Analyse} (confiance moyenne). Les serveurs de Yaoundé et de
+Bafoussam n'ont pas été touchés~; il n'est donc pas établi que le délai ait
+aggravé les dommages. Il est établi, en revanche, que l'organisation ne
+savait pas qui pouvait décider~: c'est le premier défaut de gestion de
+crise (Chapitre~\ref{chap:cellule}).
+\end{boxscenario}
+
+% ============================================================================
+\section{Les Jours Suivants}
+\label{sec:p00-suite}
+% ============================================================================
+
+\begin{tableaucours}{L{2.2cm}L{10.0cm}}{%
+    \tableauHeader{Date} &
+    \tableauHeader{Événement}
+}
+7~mars & Première réunion avec main courante~; communiqué aux clients à
+9~h~; plainte déposée auprès de la police judiciaire à Douala. \\
+8~mars & Après avis de Me~TSALA, M.~ETEME décide de ne pas payer la
+rançon. \\
+9~mars & Les mots de passe d'administration sont changés. \\
+12~mars & Premier comité de sécurité~: registre des risques établi après
+coup. \\
+16~mars & Reprise de la facturation, onze jours après l'attaque. \\
+19~mars & L'attaquant publie sur son site un échantillon de 2~Go de
+données clients~; seconde vague d'appels. \\
+2~avril & Réunion de retour d'expérience, avec la direction et SAHEL
+INFOGÉRANCE. \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~0.3. Les jours suivants}\end{center}
+
+Le 2~avril, Mme~MBALLA présente une première estimation des coûts de la
+crise.
+
+\begin{tableaucours}{L{7.4cm}R{2.8cm}}{%
+    \tableauHeader{Poste} &
+    \tableauHeader{Millions de FCFA}
+}
+Remise en état (prestataires, matériel, licences) & 96 \\
+Ressaisie de six semaines de factures & 18 \\
+Pénalités contractuelles versées aux clients & 74 \\
+Clients perdus (marge annuelle estimée) & 110 \\
+Conseil juridique et communication & 14 \\
+\textbf{Total} & \textbf{312} \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~0.4. Les coûts de l'Opération GAROUA (estimation du 2 avril)}\end{center}
+
+\begin{boxalert}
+\textbf{Violation typique.} Présenter « 312~millions » comme un fait.
+
+\smallskip
+\textbf{Règle~:} trois postes sont constatés (remise en état, ressaisie,
+pénalités, soit 188~millions)~; deux sont estimés (clients perdus,
+conseil). Une estimation se présente avec ses hypothèses et sa marge
+(Chapitre~\ref{chap:quantitatif}).
+\end{boxalert}
+
+% ============================================================================
+\section{Constatations, Suppositions, Opinions}
+\label{sec:p00-lire}
+% ============================================================================
+
+Au retour d'expérience du 2~avril, chacun a sa lecture de la crise. Le
+cours demande de séparer trois registres.
+
+\begin{tableaucours}{L{3.0cm}L{9.2cm}}{%
+    \tableauHeader{Registre} &
+    \tableauHeader{Exemples entendus le 2 avril}
+}
+Constatation & « Les liaisons ont été coupées à 11~h~10 »~; « la police
+d'assurance exclut les cyberattaques » \\
+Supposition & « Si l'on avait coupé à 8~h, rien n'aurait changé »~;
+« les clients perdus le sont à cause de la photo » \\
+Opinion & « Le prestataire est incompétent »~; « on a bien géré, vu les
+circonstances » \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~0.5. Trois registres}\end{center}
+
+\begin{boxmetier}{Directeur de crise}
+\textbf{Faire tenir la main courante dès la première minute.} Le directeur
+de crise désigne, avant toute décision, une personne qui consigne l'heure,
+le fait, la source et la décision. Sans elle, la crise se raconte après
+coup, de mémoire.
+\end{boxmetier}
+
+\begin{boxmetier}{Chargé de communication de crise}
+\textbf{Parler avant les réseaux sociaux.} Un message bref et exact, publié
+tôt, vaut mieux qu'un communiqué complet publié après la rumeur. À 18~h~30,
+la rumeur a parlé la première.
+\end{boxmetier}
+
+% ============================================================================
+\section{Les Questions du Cours}
+\label{sec:p00-questions}
+% ============================================================================
+
+\begin{tableaucours}{L{3.4cm}L{6.6cm}L{2.2cm}}{%
+    \tableauHeader{Partie} &
+    \tableauHeader{Question posée par la crise} &
+    \tableauHeader{Chapitres}
+}
+I. Fondements & Pourquoi personne n'avait-il jugé ce risque prioritaire~?
+& \ref{chap:risque} à~\ref{chap:droit} \\
+II. Analyser & Quelle perte fallait-il craindre, et avec quelle
+probabilité~? & \ref{chap:identifier} à~\ref{chap:traiter} \\
+III. Auditer & Un audit aurait-il vu le compte sans second facteur~? &
+\ref{chap:audit} à~\ref{chap:rapport} \\
+IV. Continuer & Pourquoi onze jours pour facturer~? & \ref{chap:incidents}
+à~\ref{chap:exercer} \\
+V. Crise & Qui devait décider à 7~h~45, et que fallait-il dire~? &
+\ref{chap:crise} à~\ref{chap:exercices-crise} \\
+VI. Apprendre & Qu'a-t-on appris, et comment le mesurer~? &
+\ref{chap:retex} \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~0.6. Les questions du cours}\end{center}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{La crise de LiZbiZ} n'a pas commencé le 6~mars~: elle
+          tenait à l'absence de registre, de plan et d'audit.
+    \item \textbf{Le premier défaut} du 6~mars fut de ne pas savoir qui
+          décidait~: 3~h~40 sans confinement.
+    \item \textbf{Sans main courante}, une crise se reconstitue de mémoire.
+    \item \textbf{Les coûts} mêlent constatations et estimations~; il faut
+          les distinguer.
+    \item \textbf{Constatation, supposition, opinion}~: trois registres à
+          ne jamais confondre.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: retracer la chronologie
+du 6~mars~; nommer les acteurs et leur rôle~; distinguer les coûts
+constatés des coûts estimés~; classer une affirmation en constatation,
+supposition ou opinion~; relier chaque défaut à une partie du cours.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.1. Le délai \niveaubase}]
+Calculez le délai entre la découverte de l'attaque et la décision de
+couper les liaisons, puis entre la découverte et le premier communiqué aux
+clients.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.2. Les registres \niveaubase}]
+Classez en constatation, supposition ou opinion~: « la rançon aurait été
+payée sans Me~TSALA »~; « la facturation a repris le 16~mars »~; « SAHEL
+INFOGÉRANCE aurait dû prévenir »~; « le portail ne répondait plus à
+8~h~40 ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.3. Les coûts \niveaubase}]
+Dans le Tableau~0.4, quelle part du total est constatée, et quelle part
+est estimée~? Donnez les montants et les pourcentages.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.4. Les absents \niveaumoyen}]
+Quelles fonctions manquaient à la réunion de 10~h~30 pour décider vite~?
+Quelles informations auraient dû être disponibles à l'ouverture de la
+réunion~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.5. Le message \niveaumoyen}]
+Rédigez le message de trois phrases que LiZbiZ aurait pu publier à
+19~h le 6~mars, après la diffusion de la photographie.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.6. L'assurance \niveaumoyen}]
+La police d'assurance excluait les cyberattaques. Quelle étape de la
+gestion des risques aurait dû le révéler, et à quel moment~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.7. La rançon \niveaumoyen}]
+Listez les éléments que la cellule de crise devait réunir avant de
+décider de payer ou non la rançon.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.8. La seconde vague \niveaumoyen}]
+Le 19~mars, un échantillon de données est publié. Quelles parties
+prenantes faut-il informer, et dans quel ordre~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.9. La chronologie idéale \niveauexpert}]
+Réécrivez la journée du 6~mars, de 7~h~30 à 20~h, telle qu'elle aurait dû
+se dérouler avec une cellule de crise préparée.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~0.10. Le programme \niveauexpert}]
+À partir du Tableau~0.6, proposez à M.~ETEME un programme de six mois
+pour que la prochaine crise soit mieux gérée~: actions, responsables,
+échéances.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item P.~Lagadec, \emph{La gestion des crises}~\cite{lagadec1991}.
+    \item ISO~22361, lignes directrices pour la gestion de
+          crise~\cite{iso22361_2022}.
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Transition.} Avant de gérer une crise, il faut savoir ce qu'est un
+risque. Le Chapitre~\ref{chap:risque} distingue risque et incertitude, et
+montre ce qu'est une bonne décision sous incertitude.
+\end{boxinfo}

@@ -1,0 +1,343 @@
+% ============================================================================
+% Fichier  : partie6/P06_C26_retex.tex
+% Titre    : Retour d'Expérience, Résilience et Mesure
+% Auteur   : MINKA MI NGUIDJOÏ Thierry Emmanuel
+% Version  : 1.0 -- novembre 2026
+% ============================================================================
+% Sources : Reason (1997) ; ISO 22361:2022 ; ISO 22301:2019 (10) ; instrument
+% OUI / NON / NEK (prépublications HAL de l'auteur). Questionnaire de
+% résilience de LiZbiZ : cas fictif ; mu, U, H et intervalles de Wilson à
+% 95 % calculés et vérifiés.
+% ============================================================================
+
+\chapter{Retour d'Expérience, Résilience et Mesure}
+\label{chap:retex}
+\chaptermark{Retour d'expérience et mesure}
+
+\epigraph{%
+    « Une organisation apprend quand ses erreurs\\
+    changent ses pratiques, pas quand elle les raconte. »%
+}{Principe du cours}
+
+\niveauChapitre{Expert}{Ensemble du cours.}
+
+\begin{boxobjectifs}
+\begin{itemize}
+    \item Conduire un retour d'expérience~: faits, écarts, causes, actions.
+    \item Remonter aux causes profondes sans désigner de coupable.
+    \item Suivre les actions jusqu'à leur effet.
+    \item Mesurer la résilience avec l'instrument \OUI{}~/ \NON{}~/ \NEK{}
+          et les mesures $\mu$, $U$, $H$.
+    \item Dire la précision d'une mesure et ce qu'elle ne permet pas de
+          conclure.
+\end{itemize}
+\end{boxobjectifs}
+
+\bigskip
+
+% ============================================================================
+\section*{Question directrice : LiZbiZ est-elle plus résiliente en octobre qu'en mars, et le sait-elle~?}
+% ============================================================================
+
+Le 2~avril, la réunion de retour d'expérience de l'Opération GAROUA a
+produit quarante idées et aucune décision. En mai, Mme~MOUAFO a repris la
+méthode. En octobre, le conseil demande~: « sommes-nous plus résilients~?
+De combien~? Avec quelle certitude~? » Ce dernier chapitre répond, et
+résume le cours.
+
+\medskip
+\textbf{Plan du chapitre.}
+\begin{enumerate}
+    \item Le retour d'expérience (section~\ref{sec:c26-retex}).
+    \item Remonter aux causes (section~\ref{sec:c26-causes}).
+    \item Suivre jusqu'à l'effet (section~\ref{sec:c26-suivre}).
+    \item Mesurer la résilience (section~\ref{sec:c26-mesurer}).
+    \item La précision de la mesure (section~\ref{sec:c26-precision}).
+    \item Synthèse du cours (section~\ref{sec:c26-synthese}).
+\end{enumerate}
+
+\separateur
+
+% ============================================================================
+\section{Le Retour d'Expérience}
+\label{sec:c26-retex}
+% ============================================================================
+
+\begin{boxdef}
+\termecle{Retour d'expérience} (RETEX)~: démarche structurée qui, après un
+incident, une crise ou un exercice, établit les faits, les compare à ce
+qui était prévu, en recherche les causes et décide des actions qui
+changent durablement les pratiques.
+\end{boxdef}
+
+\begin{boxprocedure}
+\textbf{Conduire un retour d'expérience}
+\begin{enumerate}
+    \item \textbf{Établir la chronologie} à partir de la main courante et
+          des journaux, avant toute interprétation.
+    \item \textbf{Comparer} à ce qui était prévu (plans, objectifs,
+          procédures)~: les écarts.
+    \item \textbf{Rechercher les causes} de chaque écart, jusqu'aux causes
+          d'organisation.
+    \item \textbf{Décider} d'un petit nombre d'actions, chacune avec un
+          responsable, une échéance et un indicateur d'effet.
+    \item \textbf{Diffuser} les enseignements à ceux qui doivent changer
+          leurs pratiques.
+    \item \textbf{Vérifier}, à l'exercice suivant, que les actions ont
+          produit leur effet.
+\end{enumerate}
+\end{boxprocedure}
+
+\begin{boxalert}
+\textbf{Violation typique.} Faire du retour d'expérience la recherche d'un
+coupable.
+
+\smallskip
+\textbf{Règle~:} dans une culture juste (Chapitre~\ref{chap:perception}),
+on cherche pourquoi le système a permis l'erreur, et non qui l'a commise.
+Le technicien qui a redémarré les serveurs le 5~mars n'avait ni consigne,
+ni grille, ni formation~: c'est l'organisation qu'il faut corriger.
+\end{boxalert}
+
+% ============================================================================
+\section{Remonter aux Causes}
+\label{sec:c26-causes}
+% ============================================================================
+
+James Reason distingue les \emph{défaillances actives}, commises au
+contact du système (un clic, un redémarrage), et les \emph{conditions
+latentes}, créées par des décisions d'organisation, parfois anciennes, qui
+laissent passer les défaillances~\cite{reason1997}. Le retour
+d'expérience remonte des unes aux autres.
+
+\begin{tableaucours}{L{4.4cm}L{7.8cm}}{%
+    \tableauHeader{Écart de mars} &
+    \tableauHeader{Chaîne des causes}
+}
+Serveurs redémarrés à 22~h~05 & Pas de consigne~$\rightarrow$ pas de
+grille d'escalade~$\rightarrow$ pas de procédure d'incident~$\rightarrow$
+aucun dispositif de gestion des risques \\
+Cellule réunie à 10~h~30 & Pas de plan de crise~$\rightarrow$ personne ne
+savait qui décidait~$\rightarrow$ crise jamais envisagée \\
+Onze jours pour facturer & Pas de copie immuable~$\rightarrow$ pas d'objectif
+de reprise~$\rightarrow$ pas d'analyse d'impact \\
+Compte du prestataire sans second facteur & Exception jamais revue
+$\rightarrow$ recommandation de 2023 non suivie~$\rightarrow$ pas de suivi
+des audits \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~26.1. Des défaillances actives aux conditions latentes}\end{center}
+
+% ============================================================================
+\section{Suivre jusqu'à l'Effet}
+\label{sec:c26-suivre}
+% ============================================================================
+
+\begin{boxscenario}{Opération GAROUA. Le retour d'expérience repris en mai}
+\textbf{Décisions} (cinq actions au lieu de quarante idées)~: dispositif
+de gestion des risques (Partie~II)~; programme d'audit et suivi des
+recommandations (Partie~III)~; analyse d'impact et plans (Partie~IV)~;
+cellule de crise et fiche réflexe (Partie~V)~; exercices réguliers.
+
+\medskip
+\textbf{Effets vérifiés en octobre.} Registre et comité en place~; audit
+d'octobre réalisé et suivi~; test de reprise de la facturation en
+19~heures~; cellule réunie en 25~minutes à l'exercice. \textbf{Analyse}
+(confiance moyenne). Les cinq actions ont produit un effet mesurable~;
+leur solidité face à une crise inopinée reste à démontrer.
+\end{boxscenario}
+
+% ============================================================================
+\section{Mesurer la Résilience}
+\label{sec:c26-mesurer}
+% ============================================================================
+
+Mme~MOUAFO pose les mêmes vingt questions en mars (après coup, sur
+l'état antérieur) et en octobre~: « Existe-t-il un plan de crise
+approuvé~? », « Le RTO de la facturation a-t-il été mesuré en test~? »,
+« L'annuaire de crise a-t-il été vérifié ce trimestre~? »~\ldots~Chaque
+question reçoit \OUI{}, \NON{} ou \NEK{} (connaissance insuffisante pour
+conclure), selon l'instrument proposé par l'auteur~\cite{minka2026nek}.
+
+\begin{boxdef}
+\textbf{Trois mesures.} Sur $n$ questions, avec $n_O$ réponses \OUI{},
+$n_N$ \NON{} et $n_K$ \NEK{}~: $\mu = n_O / n$, la \termecle{conformité}~;
+$U = n_K / n$, l'\termecle{incertitude}~; $H = -\sum p \log_2 p$ sur les
+trois proportions, l'\termecle{entropie}, au plus $\log_2 3 \approx 1{,}585$
+bit.
+\end{boxdef}
+
+\begin{boxlecture}{La résilience de LiZbiZ, mars et octobre}
+Vingt questions sur la préparation (plans, cellule, exercices, annuaire,
+objectifs mesurés, assurance, contrats).
+
+\medskip
+\begin{tableaucours}{L{2.6cm}cccc}{%
+    \tableauHeader{Date} &
+    \tableauHeader{O / N / K} &
+    \tableauHeader{$\mu$} &
+    \tableauHeader{$U$} &
+    \tableauHeader{$H$ (bit)}
+}
+Mars & 3 / 9 / 8 & 0,15 & 0,40 & 1,458 \\
+Octobre & 13 / 3 / 4 & 0,65 & 0,20 & 1,279 \\
+\end{tableaucours}
+
+\medskip
+\textbf{Constatation.} La conformité passe de 0,15 à 0,65, l'incertitude
+de 0,40 à 0,20. \textbf{Analyse} (confiance moyenne). La préparation a
+progressé, et l'on sait mieux où l'on en est~: quatre questions restent
+sans réponse établie. Compter les \NEK{} comme des \OUI{} afficherait
+85~\% en octobre, une image flatteuse que rien ne justifie.
+
+\hfill\lecture{0{,}65}{0{,}20}{1{,}28}
+\end{boxlecture}
+
+% ============================================================================
+\section{La Précision de la Mesure}
+\label{sec:c26-precision}
+% ============================================================================
+
+Vingt questions, c'est peu. L'intervalle de Wilson à 95~\% donne, pour
+$\mu$, de 0,05 à 0,36 en mars et de 0,43 à 0,82 en octobre~: les deux
+intervalles ne se recouvrent pas, la progression de la conformité est
+établie. Pour $U$, il va de 0,22 à 0,61 en mars et de 0,08 à 0,42 en
+octobre~: les intervalles se recouvrent, la baisse de l'incertitude est
+probable mais pas établie avec vingt questions.
+
+\begin{boxalert}
+\textbf{Violation typique.} Annoncer au conseil « 65~\% de résilience ».
+
+\smallskip
+\textbf{Règle~:} on donne la mesure, son effectif, sa marge et ce qu'elle
+mesure (la préparation déclarée et vérifiée, pas la résilience face à une
+crise réelle). « Résilience » se démontre par des exercices inopinés et
+par les crises elles-mêmes.
+\end{boxalert}
+
+\begin{boxmetier}{Gestionnaire de risques}
+\textbf{Faire baisser $U$ d'abord.} Mme~MOUAFO consacre le trimestre
+suivant aux quatre questions \NEK{}~: chacune deviendra \OUI{} ou \NON{}.
+Un \NON{} établi vaut mieux qu'un \NEK{}~: il se traite.
+\end{boxmetier}
+
+% ============================================================================
+\section{Synthèse du Cours}
+\label{sec:c26-synthese}
+% ============================================================================
+
+\begin{tableaucours}{L{3.4cm}L{8.8cm}}{%
+    \tableauHeader{Partie} &
+    \tableauHeader{Ce qu'elle apprend}
+}
+I. Fondements & Le risque est une incertitude sur des pertes~; nos
+jugements sont biaisés~; il faut des rôles, un cadre, et la loi l'exige \\
+II. Analyser & Formuler, coter avec prudence, conduire EBIOS RM, chiffrer
+avec FAIR, simuler, traiter et rendre compte \\
+III. Auditer & Vérifier par la preuve que ce que l'on croit en place l'est,
+et suivre jusqu'à l'effet \\
+IV. Continuer & Savoir ce qui ne peut pas attendre, préparer les plans,
+reconstruire sain, exercer \\
+V. Décider en crise & Une cellule organisée, une main courante, des
+décisions structurées, une parole tôt et juste \\
+VI. Apprendre & Remonter aux conditions latentes, mesurer, et dire ce que
+l'on ne sait pas \\
+\end{tableaucours}
+\vspace{-0.8em}
+\begin{center}{\small\itshape Tableau~26.2. Les six parties du cours}\end{center}
+
+\separateur
+
+\begin{boxresume}
+\textbf{Ce qu'il faut retenir de ce chapitre~:}
+\begin{itemize}
+    \item \textbf{Le retour d'expérience}~: chronologie, écarts, causes,
+          quelques actions, diffusion, vérification.
+    \item \textbf{On remonte} des défaillances actives aux conditions
+          latentes, sans chercher de coupable.
+    \item \textbf{Une action} n'est finie que lorsque son effet est vérifié.
+    \item \textbf{$\mu$, $U$, $H$} mesurent la préparation et ce que l'on en
+          ignore~; on fait d'abord baisser $U$.
+    \item \textbf{Une mesure} se donne avec son effectif et sa marge.
+\end{itemize}
+\end{boxresume}
+
+\begin{boxinfo}
+\textbf{Points de contrôle de l'élève.} Je sais~: conduire un retour
+d'expérience~; distinguer défaillance active et condition latente~;
+calculer $\mu$, $U$ et $H$~; lire un intervalle de Wilson~; présenter une
+mesure avec sa marge.
+\end{boxinfo}
+
+\bigskip
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.1. Actif ou latent \niveaubase}]
+Classez en défaillance active ou condition latente~: le clic de
+l'assistante hameçonnée~; l'absence de politique de dérogation~; le
+redémarrage des serveurs.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.2. Calculer \niveaubase}]
+Calculez $\mu$, $U$ et $H$ pour 10 \OUI{}, 6 \NON{} et 4 \NEK{}.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.3. Quarante idées \niveaubase}]
+Pourquoi la réunion du 2~avril, avec quarante idées, n'a-t-elle rien
+changé~? Que fallait-il faire~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.4. La chaîne \niveaumoyen}]
+Construisez la chaîne des causes de l'écart « premier message externe
+25~h~30 après la découverte ».
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.5. NEK compté \niveaumoyen}]
+Calculez la conformité d'octobre si l'on compte les \NEK{} comme des
+\OUI{}, puis comme des \NON{}. Pourquoi les deux sont-elles trompeuses~?
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.6. Les intervalles \niveaumoyen}]
+Expliquez à M.~ETEME, sans formule, pourquoi la progression de la
+conformité est établie et celle de l'incertitude seulement probable.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.7. Un indicateur d'effet \niveaumoyen}]
+Pour chacune des cinq actions décidées en mai, proposez un indicateur qui
+mesure son effet, et non sa seule réalisation.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.8. Faire baisser U \niveaumoyen}]
+Pour les quatre questions \NEK{} d'octobre (à imaginer), indiquez la preuve
+qui permettrait de répondre \OUI{} ou \NON{}.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.9. Le rapport au conseil \niveauexpert}]
+Rédigez la page de Mme~MOUAFO au conseil sur la résilience de LiZbiZ~:
+mesures, marges, limites, décisions demandées.
+\end{boxexo}
+
+\begin{boxexo}[title={\ding{45}\quad Exercice~26.10. Synthèse \niveauexpert}]
+En deux pages, racontez la crise de mars telle qu'elle se serait déroulée
+si LiZbiZ avait appliqué ce cours un an plus tôt~: risques, audit,
+continuité, crise, retour d'expérience.
+\end{boxexo}
+
+\bigskip
+
+\begin{boxinfo}
+\textbf{Pour aller plus loin.}
+\begin{itemize}
+    \item J.~Reason~\cite{reason1997}.
+    \item L'instrument \OUI{}~/ \NON{}~/ \NEK{}~\cite{minka2026nek}~;
+          l'auditologie~\cite{minka2026auditologie}.
+    \item Les UE INF3226 (audit des systèmes d'information), SEC3266
+          (sécurité informatique), SEC4031 et SEC4052 (investigation
+          numérique), SEC4062 (hacking éthique).
+\end{itemize}
+\end{boxinfo}
+
+\begin{boxinfo}
+\textbf{Conclusion.} Gérer les risques, c'est décider avant de savoir~;
+gérer une crise, c'est décider sans avoir le temps de savoir~; apprendre,
+c'est savoir enfin, et le dire avec sa marge.
+\end{boxinfo}

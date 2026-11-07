@@ -1,0 +1,233 @@
+NDAP SUKULU · ARGC · fiche ARGC-FICHE-C18
+Chapitre 18 : Stratégies et plans de continuité
+
+Version papier, à utiliser en attendant l'ouverture du portail NDAP SUKULU.
+La fiche complète compte 40 questions. Répondez sur la grille en fin de fiche.
+Durée indicative : 60 minutes. Seuil de réussite : 60 %.
+Les corrections figurent dans le livret de correction du cours.
+
+========================================================================
+Questions à choix multiple (une seule bonne réponse)
+========================================================================
+
+ 1. Quelle norme fixe les exigences d'un système de management de la continuité ?
+      a) ISO 22301
+      b) ISO 22313
+      c) ISO 19011
+      d) ISO/IEC 27035
+
+ 2. L'ISO 22301 est-elle certifiable ?
+      a) Non
+      b) Oui
+      c) Seulement en Afrique
+      d) Seulement pour les banques
+
+ 3. Quelle norme donne les lignes directrices de l'ISO 22301 ?
+      a) ISO 31000
+      b) ISO/IEC 27007
+      c) ISO 22313
+      d) ISO 22320
+
+ 4. Quelle clause de l'ISO 22301 organise analyse, stratégies, plans et exercices ?
+      a) La clause 4
+      b) La clause 6
+      c) La clause 10
+      d) La clause 8
+
+ 5. L'accord avec l'entrepôt de Bassa est une stratégie pour :
+      a) Les locaux
+      b) Les personnes
+      c) L'information
+      d) Les technologies
+
+ 6. Le second opérateur à Garoua est une stratégie pour :
+      a) Les locaux
+      b) Les fournisseurs
+      c) Les personnes
+      d) L'information
+
+ 7. Deux suppléants formés par poste clé est une stratégie pour :
+      a) Les locaux
+      b) Les technologies
+      c) Les personnes
+      d) Les fournisseurs
+
+ 8. Comment choisir une stratégie ?
+      a) Prendre la plus chère
+      b) Prendre la plus rapide toujours
+      c) Suivre le prestataire
+      d) Comparer son coût et le RTO qu'elle permet au RTO exigé
+
+ 9. Qu'est-ce qu'un mode dégradé ?
+      a) Poursuivre une activité à un niveau réduit sans certaines ressources
+      b) Arrêter l'activité
+      c) Payer la rançon
+      d) Licencier
+
+10. Quel est le mode dégradé des expéditions de LiZbiZ ?
+      a) Aucun
+      b) Bordereaux papier numérotés en carnets
+      c) Un tableur sur le serveur chiffré
+      d) Fermer les agences
+
+11. Quelle erreur rend un mode dégradé inutile ?
+      a) Utiliser le papier
+      b) Être entraîné
+      c) Dépendre de ce qui est en panne
+      d) Être préparé à l'avance
+
+12. Quelle rubrique dit qui décide et à partir de quel seuil ?
+      a) Les contacts
+      b) Les ressources
+      c) L'objet
+      d) Les critères de déclenchement
+
+13. Quand l'entrepôt de Bonabéri est-il inondé ?
+      a) Dans la nuit du 14 au 15 août 2026
+      b) Le 6 mars 2026
+      c) Le 2 avril 2026
+      d) Le 19 mars 2026
+
+14. Quelle hauteur d'eau dans l'entrepôt ?
+      a) 10 cm
+      b) 40 cm
+      c) 1 m
+      d) 2 m
+
+15. Qui déclenche le plan à 5 h 30 ?
+      a) M. ETEME
+      b) M. KOUNOU
+      c) M. NGUELE
+      d) Mme ABOMO
+
+16. Combien de colis sont endommagés ?
+      a) 47
+      b) 1 200
+      c) 96
+      d) 310
+
+17. Quelle est la valeur déclarée des colis endommagés ?
+      a) 96 millions
+      b) 47 millions
+      c) 310 millions
+      d) 1 200 millions
+
+18. Combien de temps les expéditions sont-elles interrompues ?
+      a) 12 heures
+      b) 36 heures
+      c) 48 heures
+      d) 11 jours
+
+19. Qui est responsable du plan de gestion de crise de LiZbiZ ?
+      a) M. KOUNOU
+      b) Mme NKENG
+      c) M. ETEME
+      d) M. NGUELE
+
+20. Quelle question traite le plan de reprise informatique ?
+      a) Qui communique
+      b) Comment continuer l'activité
+      c) Qui paie
+      d) Comment rétablir les systèmes
+
+========================================================================
+Vrai ou faux
+========================================================================
+
+21. La continuité d'activité vise un niveau acceptable pendant la perturbation.
+      Vrai / Faux
+
+22. On finance une stratégie plus rapide que nécessaire.
+      Vrai / Faux
+
+23. Le mode dégradé doit être préparé et entraîné.
+      Vrai / Faux
+
+24. Le RTO des expéditions (48 heures) a été tenu lors de MOUNGO.
+      Vrai / Faux
+
+25. Les rayonnages surélevés étaient déjà posés en août.
+      Vrai / Faux
+
+26. Les colis endommagés étaient ceux stockés au sol.
+      Vrai / Faux
+
+27. Plan de crise, plan de continuité et plan de reprise répondent à la même question.
+      Vrai / Faux
+
+28. Un plan stocké sur le serveur tombé n'existe pas en pratique.
+      Vrai / Faux
+
+29. La reprise du système central se fait à Yaoundé.
+      Vrai / Faux
+
+30. Le plan de continuité de LiZbiZ a été écrit en juin, après la crise de mars.
+      Vrai / Faux
+
+========================================================================
+Textes à trous
+========================================================================
+
+31. La norme d'exigences de la continuité d'activité est l'ISO ______.
+
+32. Poursuivre une activité réduite sans certaines ressources, c'est le mode ______.
+
+33. L'entrepôt de repli est situé à ______ (Douala).
+
+34. L'opération de l'inondation s'appelle l'opération ______.
+
+35. Le plan de continuité d'activité a pour sigle ______.
+
+36. Le plan de reprise d'activité informatique a pour sigle ______.
+
+37. ______ colis sont endommagés à Bonabéri.
+
+38. Les lignes directrices de l'ISO 22301 sont l'ISO ______.
+
+39. L'entrepôt inondé compte ______ colis.
+
+40. La reprise informatique du système central se fait au centre de ______.
+
+========================================================================
+Grille de réponses   Nom : ............................  Matricule : ............
+========================================================================
+ 1. ............................................
+ 2. ............................................
+ 3. ............................................
+ 4. ............................................
+ 5. ............................................
+ 6. ............................................
+ 7. ............................................
+ 8. ............................................
+ 9. ............................................
+10. ............................................
+11. ............................................
+12. ............................................
+13. ............................................
+14. ............................................
+15. ............................................
+16. ............................................
+17. ............................................
+18. ............................................
+19. ............................................
+20. ............................................
+21. ............................................
+22. ............................................
+23. ............................................
+24. ............................................
+25. ............................................
+26. ............................................
+27. ............................................
+28. ............................................
+29. ............................................
+30. ............................................
+31. ............................................
+32. ............................................
+33. ............................................
+34. ............................................
+35. ............................................
+36. ............................................
+37. ............................................
+38. ............................................
+39. ............................................
+40. ............................................
