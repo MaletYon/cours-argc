@@ -1,0 +1,14 @@
+LiZbiZ SA - Audit « accès distants et prestataire » (octobre 2026)
+
+Critère : politique d'accès distant (juillet 2026) : « toute connexion distante
+exige un second facteur ».
+Population : 1 340 connexions distantes de septembre 2026 (export de la
+passerelle du 8 octobre, empreinte consignée au dossier).
+Plan d'échantillonnage : par attributs, confiance 95 %, taux tolérable 10 %,
+aucune anomalie attendue. L'outil d'audit a tiré l'échantillon au hasard
+(fichier echantillon_tire.csv).
+Classement des constats : non-conformité majeure si l'écart rend inopérante une
+mesure qui traite un risque intolérable ; mineure sinon.
+Le risque R-02 (usurpation de l'accès distant du prestataire) est intolérable.
+
+(Document fictif établi pour le cours GES4062. Noms, dates, adresses et montants fictifs.)

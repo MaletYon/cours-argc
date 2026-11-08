@@ -1,0 +1,29 @@
+ARGC-LAB-06, échantillonnage et constats de l'audit des accès distants (opération LIZBIZ)
+
+Les pièces du lab se trouvent dans le dossier preuves, en lecture seule, et
+une copie de travail modifiable dans le dossier travail (ouvert au démarrage).
+  population_connexions_septembre.csv   les 1 340 connexions de septembre
+  echantillon_tire.csv                  les 29 connexions tirées
+  plan_audit_acces_distants.txt         critère, plan d'échantillonnage, classement
+  MANIFESTE_SHA256.txt                  empreintes de référence (preuves)
+
+Marche à suivre.
+
+1. Vérifier l'intégrité avant toute analyse. Ouvrez un terminal, puis tapez :
+       cd ~/preuves
+       sha256sum -c MANIFESTE_SHA256.txt
+   Chaque fichier doit afficher OK.
+
+2. Taille d'échantillon sans anomalie attendue : n >= ln(0,05) / ln(1 - t).
+
+3. Retrouver les connexions tirées dans la population (RECHERCHEV), compter
+   les anomalies, puis passer au test exhaustif sur la cause.
+
+4. Limite supérieure à 95 % pour 1 anomalie sur 29 : voir le Tableau 13.4 du cours.
+
+5. Répondre. Saisissez vos réponses dans le volet Points de contrôle de la
+   page du lab, puis enregistrez. Nombres avec un point ou une virgule
+   décimale ; codes et listes comme indiqué dans chaque question. Quand vous
+   avez terminé, cliquez sur Terminer et corriger pour obtenir votre note.
+
+Toute votre activité dans le terminal est journalisée.

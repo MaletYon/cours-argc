@@ -1,0 +1,14 @@
+LiZbiZ SA - Grille de gravité et d'escalade (chapitre 16)
+
+Gravité 4 (critique) : au moins deux sites arrêtés, OU données exfiltrées, OU
+incident connu du public. Escalade au DG et à la cellule de crise sous 60 minutes.
+Gravité 3 (haute) : compte à privilèges compromis, OU un site arrêté.
+Escalade au RSSI et à la direction sous 240 minutes.
+Gravité 2 (moyenne) : poste ou serveur touché, sans autre critère.
+Escalade à l'équipe de réponse sous 480 minutes.
+Gravité 1 (basse) : aucun des critères ci-dessus. Traitement courant.
+
+On applique le premier niveau dont un critère est rempli, en partant de 4.
+Le délai d'escalade se mesure de la détection à l'escalade.
+
+(Document fictif établi pour le cours GES4062. Noms, dates, adresses et montants fictifs.)

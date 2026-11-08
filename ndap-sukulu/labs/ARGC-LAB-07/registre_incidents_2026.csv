@@ -1,0 +1,41 @@
+id;debut;detection;escalade;retablissement;description;sites_arretes;compte_privilegie;donnees_exfiltrees;connu_du_public;poste_ou_serveur_touche;risque_registre;gravite_declaree
+INC-001;2026-01-06 12:00;2026-01-06 16:35;2026-01-06 16:40;2026-01-07 11:35;Message frauduleux relayé sur un réseau social;0;non;non;oui;non;R-21;4
+INC-002;2026-01-10 06:00;2026-01-10 14:52;2026-01-10 18:37;2026-01-12 02:52;Coupure du lien de Garoua;1;non;non;non;non;R-03;3
+INC-003;2026-01-14 20:00;2026-01-15 02:05;2026-01-15 17:00;2026-01-16 12:05;Tentative de connexion bloquée;0;non;non;non;non;R-02;1
+INC-004;2026-01-17 21:00;2026-01-18 06:46;2026-01-19 11:18;2026-01-19 21:46;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-005;2026-01-21 22:00;2026-01-21 22:07;2026-01-22 00:44;2026-01-23 13:07;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-006;2026-01-26 14:00;2026-01-26 15:12;2026-01-27 19:13;2026-01-28 03:12;Erreur de tarif sur un contrat;0;non;non;non;non;R-19;1
+INC-007;2026-01-29 21:00;2026-01-30 01:18;2026-01-31 06:00;2026-01-30 10:18;Tentative de connexion bloquée;0;non;non;non;non;R-02;1
+INC-008;2026-02-01 13:00;2026-02-01 19:04;2026-02-02 02:06;2026-02-02 17:04;Poste infecté par un logiciel malveillant, isolé;0;non;non;non;oui;R-02;2
+INC-009;2026-02-06 23:00;2026-02-07 02:57;2026-02-07 03:03;2026-02-07 12:57;Message frauduleux relayé sur un réseau social;0;non;non;oui;non;R-21;3
+INC-010;2026-02-11 02:00;2026-02-11 10:42;2026-02-12 01:48;2026-02-11 13:42;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-011;2026-02-16 00:00;2026-02-16 06:32;2026-02-16 07:07;2026-02-18 08:32;Poste infecté par un logiciel malveillant, isolé;0;non;non;non;oui;R-02;2
+INC-012;2026-02-19 07:00;2026-02-19 10:24;2026-02-19 10:35;2026-02-21 21:24;Message frauduleux relayé sur un réseau social;0;non;non;oui;non;R-21;4
+INC-013;2026-02-23 13:00;2026-02-23 14:16;2026-02-24 19:54;2026-02-24 13:16;Erreur de tarif sur un contrat;0;non;non;non;non;R-19;1
+INC-014;2026-02-26 22:00;2026-02-27 03:09;2026-02-27 06:35;2026-02-27 14:09;Panne de climatisation du centre de Douala;1;non;non;non;non;;3
+INC-015;2026-03-02 23:12;2026-03-06 07:30;2026-03-06 07:45;2026-03-16 08:00;Rançongiciel, serveurs chiffrés à Douala et Garoua;2;oui;oui;oui;oui;R-02;4
+INC-016;2026-03-03 01:00;2026-03-03 05:08;2026-03-04 11:20;2026-03-05 22:08;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-017;2026-03-06 00:00;2026-03-06 04:25;2026-03-06 05:26;2026-03-07 00:25;Coupure du lien de Garoua;1;non;non;non;non;R-03;3
+INC-018;2026-03-09 03:00;2026-03-09 09:52;2026-03-09 17:48;2026-03-09 18:52;Tentative de connexion bloquée;0;non;non;non;non;R-02;1
+INC-019;2026-03-12 13:00;2026-03-12 19:02;2026-03-12 20:53;2026-03-13 18:02;Compte d'administrateur utilisé hors heures;0;oui;non;non;oui;R-02;3
+INC-020;2026-03-17 20:00;2026-03-18 01:15;2026-03-18 14:05;2026-03-20 01:15;Poste infecté par un logiciel malveillant, isolé;0;non;non;non;oui;R-02;2
+INC-021;2026-03-23 06:00;2026-03-23 11:41;2026-03-23 16:44;2026-03-26 09:41;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-022;2026-03-28 04:00;2026-03-28 04:58;2026-03-28 07:55;2026-03-28 17:58;Compte d'administrateur utilisé hors heures;0;oui;non;non;oui;R-02;3
+INC-023;2026-04-01 23:00;2026-04-02 01:44;2026-04-02 05:24;2026-04-02 08:44;Panne de climatisation du centre de Douala;1;non;non;non;non;;2
+INC-024;2026-04-06 18:00;2026-04-06 21:03;2026-04-07 04:36;2026-04-07 01:03;Panne de climatisation du centre de Douala;1;non;non;non;non;;3
+INC-025;2026-04-12 19:00;2026-04-13 00:49;2026-04-13 17:33;2026-04-13 14:49;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-026;2026-04-15 20:00;2026-04-16 01:50;2026-04-16 03:03;2026-04-18 09:50;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-027;2026-04-21 11:00;2026-04-21 15:59;2026-04-22 11:32;2026-04-22 16:59;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-028;2026-04-25 19:00;2026-04-26 00:26;2026-04-26 01:07;2026-04-27 04:26;Message frauduleux relayé sur un réseau social;0;non;non;oui;non;R-21;4
+INC-029;2026-04-30 04:00;2026-04-30 09:40;2026-04-30 16:29;2026-05-02 00:40;Poste infecté par un logiciel malveillant, isolé;0;non;non;non;oui;R-02;2
+INC-030;2026-05-03 05:00;2026-05-03 06:27;2026-05-03 13:33;2026-05-03 08:27;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-031;2026-05-07 12:00;2026-05-07 18:53;2026-05-07 19:10;2026-05-08 09:53;Poste infecté par un logiciel malveillant, isolé;0;non;non;non;oui;R-02;2
+INC-032;2026-05-10 19:00;2026-05-11 00:14;2026-05-11 09:57;2026-05-11 06:14;Vol d'un ordinateur portable;0;non;non;non;oui;;2
+INC-033;2026-05-15 08:00;2026-05-15 13:58;2026-05-16 15:57;2026-05-18 11:58;Erreur de tarif sur un contrat;0;non;non;non;non;R-19;1
+INC-034;2026-05-19 13:00;2026-05-19 22:49;2026-05-19 23:08;2026-05-22 02:49;Message frauduleux relayé sur un réseau social;0;non;non;oui;non;R-21;4
+INC-035;2026-05-23 19:00;2026-05-24 04:00;2026-05-24 04:57;2026-05-24 17:00;Panne de climatisation du centre de Douala;1;non;non;non;non;;2
+INC-036;2026-05-27 09:00;2026-05-27 14:59;2026-05-27 15:30;2026-05-29 20:59;Message frauduleux relayé sur un réseau social;0;non;non;oui;non;R-21;4
+INC-037;2026-05-31 11:00;2026-05-31 13:12;2026-06-01 21:20;2026-05-31 18:12;Hameçonnage signalé, aucun clic;0;non;non;non;non;R-02;1
+INC-038;2026-06-05 19:00;2026-06-05 20:58;2026-06-06 03:09;2026-06-08 00:58;Tentative de connexion bloquée;0;non;non;non;non;R-02;1
+INC-039;2026-06-10 11:00;2026-06-10 19:30;2026-06-10 21:26;2026-06-13 11:30;Panne de climatisation du centre de Douala;1;non;non;non;non;;3
+INC-040;2026-06-15 15:00;2026-06-15 18:17;2026-06-15 22:50;2026-06-17 00:17;Poste infecté par un logiciel malveillant, isolé;0;non;non;non;oui;R-02;1

@@ -1,0 +1,39 @@
+id;horodatage;type;contenu;source_ou_auteur;echeance;realisee_le
+MC-001;2026-03-06 07:30;fait;"Serveurs de Douala et de Garoua chiffrés ; message de rançon de 85 000 dollars";M. KOUNOU;;
+MC-002;2026-03-06 07:45;information;Le DG est prévenu par téléphone, en route pour Yaoundé;M. KOUNOU;;
+MC-003;2026-03-06 08:40;information;Un client signale que le portail de suivi ne répond plus;M. NGUELE;;
+MC-004;2026-03-06 09:05;fait;Les liaisons entre les sites sont toujours ouvertes;M. KOUNOU;;
+MC-005;2026-03-06 10:30;information;Réunion dans le bureau du DG, le DG au téléphone;Mme NKENG;;
+MC-006;2026-03-06 11:10;décision;Couper les liaisons entre les sites;M. ETEME;;
+MC-007;2026-03-06 11:10;action;Couper les liaisons entre les sites;M. KOUNOU;2026-03-06 11:30;2026-03-06 11:25
+MC-008;2026-03-06 13:00;information;La police d'assurance exclut les cyberattaques;Mme MBALLA;;
+MC-009;2026-03-06 15:30;décision;Passer aux bordereaux papier dans les agences;M. ETEME;;
+MC-010;2026-03-06 15:30;action;Diffuser la consigne des bordereaux papier;M. NGUELE;2026-03-06 16:30;2026-03-06 17:40
+MC-011;2026-03-06 18:30;information;Une photographie du message de rançon circule sur les réseaux sociaux;;;
+MC-012;2026-03-06 20:00;information;Un journaliste appelle le standard;;;
+MC-013;2026-03-07 08:00;décision;Ouvrir une main courante et fixer des points à 8 h, 12 h et 18 h;M. ETEME;;
+MC-014;2026-03-07 08:05;fait;Yaoundé et Bafoussam opérationnels, sans trace de chiffrement;M. KOUNOU;;
+MC-015;2026-03-07 08:20;décision;Ne pas payer la rançon tant que l'avis juridique n'est pas rendu;M. ETEME;;
+MC-016;2026-03-07 08:25;action;Déposer plainte à la police judiciaire;Me TSALA;2026-03-07 12:00;2026-03-07 11:40
+MC-017;2026-03-07 08:40;information;Un client majeur demande un point écrit avant midi;Mme ABOMO;;
+MC-018;2026-03-07 09:00;action;Diffuser le communiqué aux clients;Mme ABOMO;2026-03-07 09:00;2026-03-07 09:00
+MC-019;2026-03-07 10:00;action;Vérifier l'état des sauvegardes;M. KOUNOU;2026-03-07 14:00;2026-03-08 10:00
+MC-020;2026-03-07 11:30;action;Répondre par écrit au client majeur;Mme ABOMO;2026-03-07 12:00;2026-03-07 11:50
+MC-021;2026-03-07 12:00;fait;Les sauvegardes en ligne ont été supprimées le 5 mars à 21 h 15;M. KOUNOU;;
+MC-022;2026-03-07 12:10;action;Déclarer le sinistre à l'assureur;Mme MBALLA;2026-03-07 18:00;
+MC-023;2026-03-07 14:00;information;Le prestataire indique que le compte de maintenance a servi la nuit du 2 mars;SAHEL INFOGÉRANCE;;
+MC-024;2026-03-07 16:00;fait;Un disque contenant une copie de fin janvier est retrouvé;M. KOUNOU;;
+MC-025;2026-03-07 18:00;décision;Restaurer à partir de la copie de fin janvier;M. ETEME;;
+MC-026;2026-03-07 18:00;action;Préparer la ressaisie des factures depuis les bordereaux;Mme MBALLA;2026-03-09 08:00;2026-03-09 08:00
+MC-027;2026-03-07 18:05;information;Rumeur : des salaires ne seraient pas payés;;;
+MC-028;2026-03-07 18:10;action;Message interne aux salariés sur les salaires;Mme ABOMO;2026-03-07 20:00;2026-03-07 19:30
+MC-029;2026-03-08 08:00;fait;Annuaire compromis : un compte svc_maj2 a été créé le 4 mars;M. KOUNOU;;
+MC-030;2026-03-08 08:05;décision;Reconstruire l'annuaire à partir d'un environnement sain;M. ETEME;;
+MC-031;2026-03-08 08:05;action;Reconstruire l'annuaire;M. KOUNOU;2026-03-11 18:00;2026-03-12 12:00
+MC-032;2026-03-08 10:00;information;Avis juridique sur la rançon rendu;Me TSALA;;
+MC-033;2026-03-08 12:00;information;Trois clients demandent des pénalités;Mme MBALLA;;
+MC-034;2026-03-08 18:10;décision;Ne pas payer la rançon;M. ETEME;;
+MC-035;2026-03-08 18:15;action;Informer le prestataire de la décision et du plan;M. NGUELE;2026-03-08 20:00;2026-03-09 09:00
+MC-036;2026-03-09 09:00;action;Changer les mots de passe d'administration;M. KOUNOU;2026-03-09 12:00;2026-03-09 17:00
+MC-037;2026-03-09 12:00;fait;Les mots de passe d'administration sont changés;M. KOUNOU;;
+MC-038;2026-03-09 18:00;décision;Passer à deux points de situation par jour;M. ETEME;;

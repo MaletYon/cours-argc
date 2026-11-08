@@ -1,0 +1,26 @@
+ARGC-LAB-07, registre des incidents de LiZbiZ (opération GAROUA)
+
+Les pièces du lab se trouvent dans le dossier preuves, en lecture seule, et
+une copie de travail modifiable dans le dossier travail (ouvert au démarrage).
+  registre_incidents_2026.csv   40 incidents de janvier à septembre 2026
+  grille_gravite.txt            grille de gravité et délais d'escalade
+  MANIFESTE_SHA256.txt          empreintes de référence (preuves)
+
+Marche à suivre.
+
+1. Vérifier l'intégrité avant toute analyse. Ouvrez un terminal, puis tapez :
+       cd ~/preuves
+       sha256sum -c MANIFESTE_SHA256.txt
+   Chaque fichier doit afficher OK.
+
+2. Ouvrir le CSV dans LibreOffice Calc. Ajouter une colonne Gravité calculée
+   selon la grille, puis les délais en minutes ((escalade - détection) x 1440).
+
+3. Partie A : classer. Partie B : mesurer.
+
+4. Répondre. Saisissez vos réponses dans le volet Points de contrôle de la
+   page du lab, puis enregistrez. Nombres avec un point ou une virgule
+   décimale ; codes et listes comme indiqué dans chaque question. Quand vous
+   avez terminé, cliquez sur Terminer et corriger pour obtenir votre note.
+
+Toute votre activité dans le terminal est journalisée.

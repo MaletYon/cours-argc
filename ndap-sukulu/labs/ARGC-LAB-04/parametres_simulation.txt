@@ -1,0 +1,12 @@
+LiZbiZ SA - Simulation de Monte-Carlo du risque R-02 (juin 2026)
+
+Chaque ligne du fichier simulation_R-02.csv est une année simulée : la perte
+annuelle totale, en millions de FCFA, sans et avec second facteur.
+Nombre d'événements par an : loi de Poisson, paramètre 0,29 (sans) ou 0,062 (avec).
+Perte par événement : loi log-normale, médiane 290 et 90e centile 540 millions.
+Graines aléatoires : 20261 (sans) et 20262 (avec). 10 000 années.
+
+Appétence du conseil : perte annuelle liée aux incidents informatiques
+inférieure à 100 millions de FCFA dans neuf ans sur dix.
+
+(Document fictif établi pour le cours GES4062. Noms, dates, adresses et montants fictifs.)

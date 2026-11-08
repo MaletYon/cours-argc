@@ -1,0 +1,10 @@
+LiZbiZ SA - Main courante de l'Opération GAROUA (6 au 9 mars 2026)
+
+La main courante n'a été ouverte que le 7 mars à 8 h ; les entrées du 6 mars
+ont été reconstituées par Mme NKENG à partir des messages et des appels.
+Chaque ligne a un type : fait, information, décision ou action.
+Une action porte une échéance et, si elle a été faite, l'heure de réalisation.
+Pour le retour d'expérience, on mesure les délais, les actions en retard et
+les informations sans source.
+
+(Document fictif établi pour le cours GES4062. Noms, dates, adresses et montants fictifs.)

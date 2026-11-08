@@ -1,0 +1,26 @@
+ARGC-LAB-08, analyse d'impact sur l'activité de la BANQUE SANAGA (opération WOURI)
+
+Les pièces du lab se trouvent dans le dossier preuves, en lecture seule, et
+une copie de travail modifiable dans le dossier travail (ouvert au démarrage).
+  analyse_impact_BANQUE_SANAGA.xlsx   impacts dans le temps, objectifs proposés, ressources et dépendances
+  MANIFESTE_SHA256.txt                empreintes de référence (preuves)
+
+Marche à suivre.
+
+1. Vérifier l'intégrité avant toute analyse. Ouvrez un terminal, puis tapez :
+       cd ~/preuves
+       sha256sum -c MANIFESTE_SHA256.txt
+   Chaque fichier doit afficher OK.
+
+2. Partie A : pour chaque activité, prendre l'impact le plus élevé des quatre
+   critères à chaque durée et en déduire la MTPD ; contrôler le RTO proposé.
+
+3. Partie B : calculer le RTO exigé de chaque ressource et l'écart avec son
+   RTO actuel.
+
+4. Répondre. Saisissez vos réponses dans le volet Points de contrôle de la
+   page du lab, puis enregistrez. Nombres avec un point ou une virgule
+   décimale ; codes et listes comme indiqué dans chaque question. Quand vous
+   avez terminé, cliquez sur Terminer et corriger pour obtenir votre note.
+
+Toute votre activité dans le terminal est journalisée.

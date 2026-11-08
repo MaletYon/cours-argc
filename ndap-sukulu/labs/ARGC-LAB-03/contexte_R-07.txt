@@ -1,0 +1,9 @@
+LiZbiZ SA - Risque R-07 : fuite de données personnelles de clients
+
+Le 19 mars 2026, l'attaquant de l'Opération GAROUA a publié 2 Go de données de
+clients. En juin, Mme MOUAFO réunit la DAF, l'informatique, la communication
+et Me TSALA pour estimer le risque d'une nouvelle fuite, par la méthode FAIR.
+Chaque expert a donné, pour chaque facteur, un minimum, une valeur la plus
+probable et un maximum (classeur estimation_FAIR_R-07.xlsx).
+
+(Document fictif établi pour le cours GES4062. Noms, dates, adresses et montants fictifs.)
